@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BEAUTY SUPPLY</title>
+    <meta name="description" content="BEAUTY SUPPLY. Systems design, brutalist web architecture, and closed-loop HTML frameworks. Published by Seven Eighty Three.">
+    <link rel="canonical" href="https://argelysoriach.com/beauty-supply">
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Periodical",
+  "name": "BEAUTY SUPPLY",
+  "url": "https://argelysoriach.com/beauty-supply",
+  "issn": "0000-0000",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Seven Eighty Three"
+  },
+  "creator": {
+    "@type": "Person",
+    "name": "Argelys Samuel Oriach",
+    "url": "https://argelysoriach.com"
+  },
+  "about": "Systems design, brutalist web architecture, and closed-loop HTML frameworks.",
+  "hasPart": [
+    {
+      "@type": "PublicationIssue",
+      "issueNumber": "001",
+      "datePublished": "2026-10",
+      "name": "THE MESSINESS OF BECOMING"
+    },
+    {
+      "@type": "PublicationIssue",
+      "issueNumber": "000",
+      "datePublished": "2026-09",
+      "name": "MEDEN AGAN"
+    }
+  ]
+}
+    </script>
+    <style>
+        @font-face{font-family:'Archivo';src:url('../fonts/Archivo-Variable.woff2') format('woff2'),url('../fonts/Archivo-Variable.ttf') format('truetype');font-weight:100 900;font-stretch:62% 125%;font-style:normal;font-display:swap}
+        @font-face{font-family:'Archivo';src:url('../fonts/Archivo-Italic-Variable.woff2') format('woff2'),url('../fonts/Archivo-Italic-Variable.ttf') format('truetype');font-weight:100 900;font-stretch:62% 125%;font-style:italic;font-display:swap}
+
+        :root {
+            --void: #000000;
+            --signal: #FFFFFF;
+            --mute: #666666;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: var(--void);
+            color: var(--signal);
+            font-family: 'Archivo', sans-serif;
+            -webkit-font-smoothing: antialiased;
+            padding: 10vh 12vw;
+            overflow-x: hidden;
+        }
+
+        /* Typography */
+        h1, h2, h3 {
+            font-weight: 900;
+            line-height: 0.9;
+            letter-spacing: -0.05em;
+        }
+
+        a {
+            color: var(--signal);
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        /* Monolithic Header */
+        header {
+            display: flex;
+            flex-direction: column;
+            gap: 4vh;
+            margin-bottom: 12vh;
+        }
+
+        .brand-container {
+            display: inline-block;
+        }
+
+        .brand-mark {
+            font-size: clamp(2.25rem, 10vw, 12rem);
+            font-weight: 900;
+            white-space: nowrap;
+            overflow: hidden;
+            display: inline-block;
+            vertical-align: bottom;
+            font-family: 'Archivo', monospace;
+            width: 13ch;
+            border-right: 0.05em solid transparent;
+            animation: kinetic-backspace 4.5s steps(4, end) forwards;
+            animation-delay: 1s;
+        }
+
+        @keyframes kinetic-backspace {
+            0%   { width: 13ch; border-right-color: var(--signal); }
+            30%  { width: 9ch; border-right-color: var(--signal); }
+            50%  { width: 9ch; border-right-color: var(--signal); }
+            80%  { width: 13ch; border-right-color: var(--signal); }
+            95%  { width: 13ch; border-right-color: var(--signal); }
+            100% { width: 13ch; border-right-color: transparent; }
+        }
+
+        nav {
+            display: flex;
+            gap: 2vw;
+            font-weight: 700;
+            font-size: 1rem;
+            text-transform: uppercase;
+        }
+
+        nav a:hover {
+            color: var(--mute);
+        }
+
+        /* View Management */
+        .view {
+            display: none;
+        }
+
+        .view.active {
+            display: block;
+            animation: structure-fade 0.4s ease-out forwards;
+        }
+
+        @keyframes structure-fade {
+            from { opacity: 0; transform: translateY(1vh); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        /* Read View */
+        #view-read {
+            max-width: 60ch;
+        }
+
+        .metadata {
+            font-size: 0.85rem;
+            font-weight: 700;
+            color: var(--signal);
+            margin-bottom: 4vh;
+            letter-spacing: 0.05em;
+        }
+
+        .essay-title {
+            font-size: clamp(2.5rem, 6vw, 6rem);
+            margin-bottom: 6vh;
+        }
+
+        .essay-body {
+            font-size: 1.25rem;
+            line-height: 1.6;
+            font-weight: 400;
+        }
+
+        .essay-body p {
+            margin-bottom: 2em;
+        }
+
+        /* Archive View */
+        .archive-list {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .archive-row {
+            display: grid;
+            grid-template-columns: 1fr 3fr 1fr;
+            padding: 2.5vh 0;
+            border-bottom: 1px solid var(--mute);
+            transition: all 0.2s;
+            cursor: pointer;
+        }
+
+        .archive-row:hover {
+            background-color: var(--signal);
+            color: var(--void);
+            padding-left: 1.5vw;
+        }
+
+        .archive-row:hover .mute-text {
+            color: var(--void);
+        }
+
+        .mute-text {
+            color: var(--mute);
+            font-weight: 300;
+        }
+
+        .archive-title {
+            font-weight: 700;
+            text-transform: uppercase;
+        }
+
+        /* Subscribe View */
+        .subscribe-container {
+            max-width: 60ch;
+            display: flex;
+            align-items: baseline;
+            border-bottom: 1px solid var(--signal);
+            padding-bottom: 1.5vh;
+        }
+
+        input[type="email"] {
+            background: transparent;
+            border: none;
+            color: var(--signal);
+            font-family: 'Archivo', sans-serif;
+            font-size: clamp(2rem, 4vw, 4rem);
+            font-weight: 700;
+            width: 100%;
+            outline: none;
+            text-transform: uppercase;
+            letter-spacing: -0.02em;
+        }
+
+        input[type="email"]::placeholder {
+            color: var(--mute);
+        }
+
+        button.join-btn {
+            background: transparent;
+            border: none;
+            color: var(--signal);
+            font-family: 'Archivo', sans-serif;
+            font-size: clamp(2rem, 4vw, 4rem);
+            font-weight: 900;
+            cursor: pointer;
+            transition: color 0.2s;
+            letter-spacing: -0.02em;
+        }
+
+        button.join-btn:hover {
+            color: var(--mute);
+        }
+
+        /* Viewport Parity */
+        @media (max-width: 768px) {
+            body { padding: 8vh 6vw; }
+            nav { flex-direction: column; gap: 2vh; }
+            .archive-row { grid-template-columns: 1fr; gap: 1vh; padding: 3vh 0; }
+            .subscribe-container { flex-direction: column; border: none; gap: 2vh; }
+            input[type="email"] { border-bottom: 1px solid var(--signal); padding-bottom: 1vh; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="brand-container">
+            <div class="brand-mark">BEAUTY SUPPLY</div>
+        </div>
+        <nav>
+            <a data-target="view-read">[ READ ]</a>
+            <a data-target="view-archive">[ ARCHIVE ]</a>
+            <a data-target="view-subscribe">[ SUBSCRIBE ]</a>
+        </nav>
+    </header>
+
+    <main>
+        <!-- READ VIEW -->
+        <section id="view-read" class="view active">
+            <div class="metadata">ISSUE_001 · OCTOBER 2026</div>
+            <h1 class="essay-title">THE MESSINESS OF BECOMING</h1>
+            <div class="essay-body">
+                <p>My name tells you that I’m Dominican before I’m American. I was born in Santiago de los Caballeros, a city in the Dominican Republic, though the specifics of my birth are hazy. I think I was born at El Hospital Cabral y Báez, but I’d have to ask my mother to confirm. I have many questions I’d like to ask her, but I try not to overwhelm her with them. I wonder if I’m just afraid to learn about myself, where I come from, my story, which I understand is kind of ironic considering I’m a writer.</p>
+                <p>What I do know is that both sides of my family come from rural areas in the Santiago and Espaillat provinces in the Cibao region, where poverty was a near certainty and privacy was often a luxury. My father’s family is from Moca, and my mother’s from Licey. Both were raised in small villages—known as el campo (the countryside)—that, from above, resemble a quilt of tin roofs and stretches of undeveloped land. Even today, these regions are home to people who, like unripened fruit deprived of the conditions needed to grow, have endured generations of structural underdevelopment.</p>
+                <p>I mention all of this because some readers might assume I was born in the U.S., but I wasn’t. I was born in the Caribbean, the birthplace of what we’ve come to know as America. And like Adam, I’m rooted in the earth—grounded in the soil of my homeland.</p>
+                <p>I consider myself as much raised over there as I was here. After my parents migrated to the U.S. in the early nineties, we spent every summer in the Dominican Republic until 2006. It was then that my parents decided to move back to the island for good, the result of a long-held dream of building a home on the plot of land they purchased off the main highway connecting Moca and Licey to Santiago. They sent my brothers and me first while they worked to sell our first (and only) single-family home, a three-bedroom, two-bath in Valdosta, Georgia, which sat on an acre lot with a pecan tree in the front and a row of peach trees out back.</p>
+                <p>But life didn’t go as my parents had hoped, especially as the harsh realities of living in a narco-state became impossible to ignore—especially for me, as my fear of being kidnapped for ransom grew stronger every day. Just as my brothers and I were starting the school year at Colegio Andrés Bello, a private school in Licey al Medio, I called my parents and told them I didn’t want to stay. I burst into tears, trying to explain that I wanted a “good education in the U.S.” so I could “attend a prestigious college like Harvard.” I cringe at this now, but even as a kid, I was worried that my dreams of a successful career in whatever field I decided to pursue would be squashed. You could be a doctor in the Dominican Republic, but if you moved to the U.S. and wanted to practice, you’d have to go to medical school all over again. Though, I wasn’t sure I wanted to be a doctor — I’d told almost everyone I knew up until that point that I wanted to be an architect — the implications of this scared me.</p>
+                <p>On the phone, my mother reassured me, saying she understood what I was saying and would talk to my father about it. Within a month, my brothers and I were back with our pecans and peaches in Georgia, where we were treated like outsiders. Down in the south, we were Mexicans because no one seemed to know—or care to know—the difference between a Mexican and a Dominican. It was like they’d never heard of ethnicities. By the time we returned to Georgia, my parents had already sold our house. They used the small amount of money they made from the sale to rent a mobile home in a more rural town nearby while they worked factory jobs for minimum wage. This would be my first time living in a mobile home. I say first because I’m back in one now with my parents, who live in a trailer park in North Tampa. I’ve been running away from home for as long as I can remember, and now, in a way, I find myself back where it all began.</p>
+                <p>Spanish was my first language, and I was introduced to English as an ESL student in kindergarten at an elementary school in Lawrence, Massachusetts, where more than half the population is Dominican. I didn’t begin writing creatively in English until many years later, as a scholarship student at Phillips Academy in the predominantly white and affluent town of Andover, just a town over from Lawrence.</p>
+                <p>We spent another year in Georgia before moving back to Haverhill, a bedroom community in the suburbs of Boston about ten miles north of Lawrence, in the middle of the fall semester. I enrolled at Haverhill High about two months into the school year. Administrators almost didn’t let me enroll. They were concerned I was too far behind on coursework. But my parents and I convinced them that I was more than capable of catching up. We showed them my report cards from middle school, and I guess that was enough to convince them to start the ninth grade.</p>
+                <p>In Georgia, perhaps out of a deep-seated desire for comfort and stability, I wore the same navy blue Champion hoodie every day and grew attached to it, and I kept this up for a bit as a freshman at Haverhill High. Wearing the same hoodie every day likely gave me the security that comes with routine; it was my first habit, one I eventually broke to avoid being teased about it.</p>
+                <p>For a long time, my habits were all I had, and I suppose one could say the same of my parents. Throughout my childhood, I would regularly join them on their quests for yard sales, where they would haggle with middle-aged white women to buy their used toasters and printers, objects we would end up barely using or immediately storing away in our basement (whenever we had one). It was during one of those drives that I discovered the storied institution I would later transfer to.</p>
+                <p>We were driving down Main Street in Andover on a Saturday morning when a clock tower came into view. I asked my father what it was we were driving past, and he said in Spanish, “Phillips Academy. My coworker said it’s the best high school in the world.”</p>
+                <p>I assumed he was exaggerating, since he had a habit of doing so, but a quick Google search later on confirmed what he said. That night, I spent hours browsing Andover’s website, visualizing myself on campus, living a life that wasn’t the one I felt stuck with. I need to go there, I thought, I will do everything in my power to make sure I get in. I wanted to prove to my parents that my role in thwarting their plans to return to the Dominican Republic hadn’t been for nothing. I also wanted to get the hell away from home. My homosexuality was becoming difficult to hide. Mostly, though, I just knew I could pull it off. Life was a game, and despite the cards I was dealt, I was good at playing it. Though I wasn’t born to be a baseball player, much to my father’s disappointment, I was a competitive person. I owe my survival to my determination to succeed.</p>
+                <p>Within a few weeks, I found myself sitting for the Independent School Entrance Exam. I scored in the 93rd percentile, which I thought was pretty good for someone who learned there was such a thing as an Independent School Entrance Exam only a few weeks before taking it. Though I wished I scored higher, I had a perfect GPA and a couple of extracurriculars that I felt could sway the admissions committee in my favor and help me secure a spot in the incoming class. I assumed everyone applying had better scores than me. But there was only one way to find out if Andover would accept me, and I quite literally had nothing to lose. I requested an application from Andover through the website and waited for it to arrive in the mail. When it finally did, I used a Bic ballpoint pen—blue ink to match the school’s colors—to fill it out.</p>
+                <p>In my personal statement, which I typed out and printed, I wrote about my father, a mechanic at a bread manufacturer, and my mother, a homemaker, and what it was like to be raised in a working-class, low-income household. Being first-generation was all I ever knew. I didn’t ask anyone to read it before I submitted my application. I simply asked my father for his W-2, so that I could complete the financial aid forms on my own.</p>
+                <p>I received an acceptance letter a few months later in the spring. Really, it was more of an acceptance packet. I came home from school one day and waltzed into the kitchen as I usually did when my mother pulled a large envelope out from the cabinet under the sink. We literally jumped with excitement as I opened it. I read aloud the first page in the folder, which included details about my scholarship; it not only covered tuition in full, but also included a weekly stipend of $20. The letter also mentioned a summer program I was required to attend as a condition of my acceptance.</p>
+                <p>A couple of months later, Andover shipped me off to the Colorado Rocky Mountain School in Carbondale, where I took math, science, and writing courses designed to prepare me for the academic rigor of the elite boarding school I’d be attending in the fall. We went hiking and white water rafting and made a religion out of drinking water from our Nalgenes. We spent our afternoons rotating through electives like rock climbing and glass blowing. And, at night, we watched movies in the common room. For my final project in the writing course, I wrote my first piece of creative nonfiction, about witnessing a kid my age get shot with a BB gun and having his Nikes stolen. It was only the second piece of creative writing I had ever produced—the first being my personal statement for my application to Andover.</p>
+                <p>One day after class, the writing instructor, who was an English teacher at Andover, encouraged me to keep writing. And I kept this in mind as the school year began. After completing two required English courses, I enrolled in upper-level English seminars with intimidating titles like The Short Novel. I took single-author courses including one on Edith Wharton, where we read The House of Mirth and I found my understanding of class completely reshaped. Over the course of my time at Andover, I studied American writers like Denis Johnson, William Kotzwinkle, Kurt Vonnegut, Mary Karr, and Sherman Alexie. I read The Brief Wondrous Life of Oscar Wao by Junot Díaz, who visited campus to give a reading in the chapel and signed my copy at a meet-and-greet afterward. “The world to you,” he wrote. I asked him what his advice was for someone like me, and he urged me to travel as much as I can. I have yet to follow his advice, mostly because I couldn’t afford to. I still can’t. Beyond the Dominican Republic, I’ve only ever been to the U.K., and it was to perform the role of Caesar in Hot Grog, a pirate musical, at the Edinburgh Fringe Festival the summer after my senior year at Andover.</p>
+                <p>At Wesleyan, I took two or three English courses a semester while dedicating the rest of my schedule to classes in the Department of Art and Art History, including drawing, sculpture, painting, and video art. I took an acting course that I told very few people about. My dream of becoming an actor was one I wanted to protect, and I didn’t feel I would be ready to act until much later in life anyway. I felt I needed to gain more life experience and develop a strong command of the English language first, hence my decision to major in English. Whenever I wrote essays in college, I found myself treating the page like a canvas, or a stage, using words to evoke emotion. But it wasn’t until I took a creative nonfiction course that I learned to approach writing as a craft.</p>
+                <p>Though I didn’t take any fiction writing workshops at Wesleyan, I’ve since learned to rely on my natural storytelling instincts to whip up narratives inspired by my life. My practice involves creating composite characters from real people I know and placing them in imagined scenarios—some based on true events, others not. But at the core of this process are the feelings I’ve experienced that form the structure around which I build my narratives.</p>
+                <p>So, I don’t just imagine the characters and situations in my stories. I pull them out from the emotions I’ve personally lived through. Many readers have commented on how they feel when they read my pieces, that it’s like experiencing the same emotions the narrator is describing, as if they are living out the scene themselves. Hearing that makes me happy because those emotions they’re referring to are my starting point. It’s from that emotional framework that I plug in the details—characters, settings, conflicts—to create my narratives. That’s why the stories feel so real, even when they’re, well, not. The feelings are always real.</p>
+                <p>A few years ago, I was reading Alexander Chee’s How to Write an Autobiographical Novel when I realized that the emotions I had experienced—grief, joy, love, and uncertainty—could serve as the core of my stories, that a feeling could be the star of the show. I was doing something I didn’t know was already a tradition, and learning this about my work and its place in the literary landscape was deeply validating.</p>
+                <p>Since then, my work, which was mostly in the realm of autofiction, has expanded to include literary fiction and prose poetry. Last year, I joined a writer’s workshop, where I wrote two short stories. The instructor, the editor-in-chief of a renowned literary journal, was aware I was thinking of applying to MFA programs and, impressed by my work, offered to write me a letter of recommendation one night after class. I became a writer on that day, though I suspect I was one all along. But because of my dedication to craft and how I treat the page as both a sculptural object and a performance, I’ve since embraced the term “artist” to describe myself, despite most of my projects remaining text-based.</p>
+                <p>I’m sharing all of this with you because the act of sharing is integral to my process—it’s how I refine my work. I may not always show it (credit my Aquarius moon for that), but I’m deeply emotional. I’ve accepted this about myself a long time ago. No matter how hard I try not to, I care tremendously about others’ reactions to my work. What they think about what I do informs what I do, not because I’m especially insecure or impressionable, but because caring is how I create. Sometimes I place myself in my readers’ shoes and read my work from their perspective to try and get a sense of what’s working and what isn’t. It’s why you’ll receive a piece from me in your inbox only to find an extensively revised version on Substack.</p>
+                <p>However, this publication, now bearing my name, isn’t just a platform for works in progress, which are what I’ve published here so far; it’s also a vehicle for my journey as a writer. Ultimately, the writing you see here may change or appear elsewhere, and while I enjoy working on my own projects, I plan to one day publish something beyond this platform. My Substack is merely a step in that direction. I just hope you don’t mind me taking you along for the ride.</p>
+                <p>So, where does that leave me now? God, I really wish I knew the answer to that question. All I know is that renaming my Substack from Not Really Here to Argelys Oriach wasn’t just a superficial change. It was meant to represent a shift from uncertainty to, I guess, something like self-ownership. My journey as a writer has always been shaped by my history and emotions. But today, I’m more committed to owning my narrative—both in writing and in life. I’m still pulling threads from the past to inform my stories, but I’m no longer doing so from a place of questioning my path.</p>
+                <p>I don’t have all the answers about where my writing will take me. But I’m confident in the direction I’m moving. I’ve come to understand that my stories aren’t just for me. They aren’t bound by a single place or identity. They’re for anyone who can relate to the feeling of being in-between. Between cultures. Between homes. Between past and future.</p>
+                <p>This platform, like my writing, is both a reflection of who I am and an invitation to journey with me. I’m sharing my process not because I’ve arrived at any final destination, but because I believe there’s value in the messiness of becoming. And wherever this path leads, I’m here now, fully committed to the dive.</p>
+            </div>
+        </section>
+
+        <!-- ARCHIVE VIEW -->
+        <section id="view-archive" class="view">
+            <ul class="archive-list">
+                <li class="archive-row">
+                    <span class="mute-text">ISSUE_001</span>
+                    <span class="archive-title">THE MESSINESS OF BECOMING</span>
+                    <span class="mute-text">OCT 2026</span>
+                </li>
+                <li class="archive-row">
+                    <span class="mute-text">ISSUE_000</span>
+                    <span class="archive-title">MEDEN AGAN</span>
+                    <span class="mute-text">SEP 2026</span>
+                </li>
+            </ul>
+        </section>
+
+        <!-- SUBSCRIBE VIEW -->
+        <section id="view-subscribe" class="view">
+            <div class="subscribe-container">
+                <input type="email" placeholder="ENTER EMAIL" aria-label="Email address">
+                <button class="join-btn">[ JOIN ]</button>
+            </div>
+        </section>
+    </main>
+
+    <script>
+        document.querySelectorAll('nav a').forEach(anchor => {
+            anchor.addEventListener('click', (e) => {
+                const targetId = e.target.getAttribute('data-target');
+                document.querySelectorAll('.view').forEach(view => {
+                    view.classList.remove('active');
+                });
+                document.getElementById(targetId).classList.add('active');
+            });
+        });
+    </script>
+</body>
+</html>

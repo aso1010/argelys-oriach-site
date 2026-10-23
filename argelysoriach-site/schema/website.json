@@ -1,0 +1,254 @@
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "@id": "https://argelysoriach.com/#website",
+  "url": "https://argelysoriach.com/",
+  "name": "Argelys Samuel Oriach",
+  "alternateName": "argelysoriach.com",
+  "description": "Personal site of Argelys Samuel Oriach: bio, availability, primary deployments, portfolio, operating philosophy, and writing.",
+  "inLanguage": "en",
+  "publisher": {
+    "@id": "https://argelysoriach.com/#person"
+  },
+  "about": {
+    "@id": "https://argelysoriach.com/#person"
+  },
+  "hasPart": [
+    {
+      "@type": "WebPage",
+      "@id": "https://argelysoriach.com/#home",
+      "url": "https://argelysoriach.com/",
+      "name": "Argelys Samuel Oriach — Systems Architect, Founder, Artist & Writer | Matter and Body Architecture",
+      "isPartOf": {
+        "@id": "https://argelysoriach.com/#website"
+      },
+      "mainEntity": {
+        "@id": "https://argelysoriach.com/#person"
+      },
+      "description": "Chief systems architect, founder and artist-writer in Brooklyn. Author of This Is Not a Love Story. Advisory, consulting and concept acquisition."
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://argelysoriach.com/matter-and-body-architecture/#page",
+      "url": "https://argelysoriach.com/matter-and-body-architecture/",
+      "name": "Matter and Body Architecture",
+      "isPartOf": {
+        "@id": "https://argelysoriach.com/#website"
+      },
+      "about": [
+        {
+          "@id": "https://argelysoriach.com/matter-and-body-architecture/#matter-and-body-architecture"
+        },
+        {
+          "@id": "https://argelysoriach.com/matter-and-body-architecture/#matter-architecture"
+        },
+        {
+          "@id": "https://argelysoriach.com/matter-and-body-architecture/#body-architecture"
+        }
+      ],
+      "mainEntity": {
+        "@id": "https://argelysoriach.com/matter-and-body-architecture/#terms"
+      },
+      "description": "The practice of Argelys Samuel Oriach, defined: matter and body architecture, matter architecture, and body architecture."
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://argelysoriach.com/nothing-artist/#page",
+      "url": "https://argelysoriach.com/nothing-artist/",
+      "name": "Argelys Samuel Oriach — Nothing Artist | Matter & Body Architect",
+      "isPartOf": {
+        "@id": "https://argelysoriach.com/#website"
+      },
+      "about": {
+        "@id": "https://argelysoriach.com/#person"
+      },
+      "description": "The earlier homepage: the Nothing Artist position, current architecture, selected work, and the intake gate."
+    },
+    {
+      "@type": "CollectionPage",
+      "@id": "https://argelysoriach.com/portfolio/#page",
+      "url": "https://argelysoriach.com/portfolio/",
+      "name": "Portfolio",
+      "isPartOf": {
+        "@id": "https://argelysoriach.com/#website"
+      },
+      "about": {
+        "@id": "https://argelysoriach.com/#person"
+      },
+      "description": "Four brand platforms for four companies, 2025 to 2026: Seven Eighty Three, Wild-Lake, Communal Foundation, and CookUnity Commons. Also a rebrand concept for Banana Republic, October 2026."
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://argelysoriach.com/banana-republic/#page",
+      "url": "https://argelysoriach.com/banana-republic/",
+      "name": "Banana Republic, Rebrand Concept",
+      "isPartOf": {
+        "@id": "https://argelysoriach.com/#website"
+      },
+      "mainEntity": {
+        "@id": "https://argelysoriach.com/banana-republic/#work"
+      }
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://argelysoriach.com/catalogue-001/#page",
+      "url": "https://argelysoriach.com/catalogue-001/",
+      "name": "Catalogue 001: The Architect",
+      "isPartOf": {
+        "@id": "https://argelysoriach.com/#website"
+      },
+      "mainEntity": {
+        "@id": "https://argelysoriach.com/catalogue-001/#work"
+      }
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://argelysoriach.com/catalogue-002/#page",
+      "url": "https://argelysoriach.com/catalogue-002/",
+      "name": "Catalogue 002: Communal Foundation",
+      "isPartOf": {
+        "@id": "https://argelysoriach.com/#website"
+      },
+      "mainEntity": {
+        "@id": "https://argelysoriach.com/catalogue-002/#work"
+      }
+    },
+    {
+      "@type": "ProfilePage",
+      "@id": "https://argelysoriach.com/cv/#page",
+      "url": "https://argelysoriach.com/cv/",
+      "name": "Curriculum Vitae",
+      "isPartOf": {
+        "@id": "https://argelysoriach.com/#website"
+      },
+      "mainEntity": {
+        "@id": "https://argelysoriach.com/#person"
+      }
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://argelysoriach.com/ethos/#page",
+      "url": "https://argelysoriach.com/ethos/",
+      "name": "Ethos",
+      "isPartOf": {
+        "@id": "https://argelysoriach.com/#website"
+      },
+      "about": {
+        "@id": "https://argelysoriach.com/#person"
+      },
+      "description": "The ethos of Argelys Samuel Oriach: methodology, roles, discipline, and framework."
+    },
+    {
+      "@type": "ContactPage",
+      "@id": "https://argelysoriach.com/intake/#page",
+      "url": "https://argelysoriach.com/intake/",
+      "name": "Intake",
+      "isPartOf": {
+        "@id": "https://argelysoriach.com/#website"
+      },
+      "about": {
+        "@id": "https://argelysoriach.com/#person"
+      },
+      "description": "Available for advisory, consulting, and concept acquisition. The intake portal of Argelys Samuel Oriach."
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://argelysoriach.com/universe-api/#page",
+      "url": "https://argelysoriach.com/universe-api/",
+      "name": "Universe API",
+      "isPartOf": {
+        "@id": "https://argelysoriach.com/#website"
+      },
+      "mainEntity": {
+        "@id": "https://argelysoriach.com/universe-api/#framework"
+      }
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://argelysoriach.com/sovereignty/#page",
+      "url": "https://argelysoriach.com/sovereignty/",
+      "name": "Sovereignty",
+      "isPartOf": {
+        "@id": "https://argelysoriach.com/#website"
+      },
+      "mainEntity": {
+        "@id": "https://argelysoriach.com/sovereignty/#work"
+      }
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://argelysoriach.com/mad-matter/#page",
+      "url": "https://argelysoriach.com/mad-matter/",
+      "name": "Mad Matter",
+      "isPartOf": {
+        "@id": "https://argelysoriach.com/#website"
+      },
+      "mainEntity": {
+        "@id": "https://argelysoriach.com/mad-matter/#work"
+      }
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://argelysoriach.com/this-is-not-a-love-story-yankees/#page",
+      "url": "https://argelysoriach.com/this-is-not-a-love-story-yankees/",
+      "name": "This Is Not a Love Story (Yankees)",
+      "isPartOf": {
+        "@id": "https://argelysoriach.com/#website"
+      },
+      "mainEntity": {
+        "@id": "https://thisisnotalovestory.net/#work"
+      }
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://argelysoriach.com/community-presentation/#page",
+      "url": "https://argelysoriach.com/community-presentation/",
+      "name": "CookUnity Commons: Community Presentation",
+      "isPartOf": {
+        "@id": "https://argelysoriach.com/#website"
+      },
+      "mainEntity": {
+        "@id": "https://argelysoriach.com/community-presentation/#work"
+      }
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://argelysoriach.com/schema/#page",
+      "url": "https://argelysoriach.com/schema/",
+      "name": "Schema",
+      "isPartOf": {
+        "@id": "https://argelysoriach.com/#website"
+      },
+      "about": {
+        "@id": "https://argelysoriach.com/#person"
+      },
+      "description": "The machine-readable description of Argelys Samuel Oriach: person, website, organizations, works, and terms, plus llms.txt."
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://argelysoriach.com/privacy/#page",
+      "url": "https://argelysoriach.com/privacy/",
+      "name": "Privacy",
+      "isPartOf": {
+        "@id": "https://argelysoriach.com/#website"
+      },
+      "about": {
+        "@id": "https://argelysoriach.com/#person"
+      },
+      "description": "What this site collects, what it does not, and how a message sent through the intake form is handled."
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://argelysoriach.com/terms/#page",
+      "url": "https://argelysoriach.com/terms/",
+      "name": "Terms",
+      "isPartOf": {
+        "@id": "https://argelysoriach.com/#website"
+      },
+      "about": {
+        "@id": "https://argelysoriach.com/#person"
+      },
+      "description": "Terms of use: ownership, third-party names, proposals and hypotheses, and messages sent to Argelys Samuel Oriach."
+    }
+  ]
+}

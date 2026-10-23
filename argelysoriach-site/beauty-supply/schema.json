@@ -1,0 +1,31 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Periodical",
+  "name": "BEAUTY SUPPLY",
+  "url": "https://argelysoriach.com/beauty-supply",
+  "issn": "0000-0000",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Seven Eighty Three"
+  },
+  "creator": {
+    "@type": "Person",
+    "name": "Argelys Samuel Oriach",
+    "url": "https://argelysoriach.com"
+  },
+  "about": "Systems design, brutalist web architecture, and closed-loop HTML frameworks.",
+  "hasPart": [
+    {
+      "@type": "PublicationIssue",
+      "issueNumber": "001",
+      "datePublished": "2026-10",
+      "name": "THE MESSINESS OF BECOMING"
+    },
+    {
+      "@type": "PublicationIssue",
+      "issueNumber": "000",
+      "datePublished": "2026-09",
+      "name": "MEDEN AGAN"
+    }
+  ]
+}

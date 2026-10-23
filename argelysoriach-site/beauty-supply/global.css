@@ -1,0 +1,60 @@
+/* Structural Parity: "Nothing in excess" */
+:root {
+  --terminal-state: 13ch;
+  --degraded-state: 9ch; /* Isolates "BEAUTY SU" */
+  --cursor-color: #000000;
+}
+
+.newsletter-masthead {
+  display: flex;
+  align-items: center;
+  /* Brutalist layout constraints */
+}
+
+.kinetic-type {
+  font-family: monospace; /* Critical for strict 'ch' unit rendering */
+  font-size: 2rem;
+  font-weight: 700;
+  margin: 0;
+  color: #000;
+}
+
+.typewriter-sequence {
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 2px solid var(--cursor-color);
+  width: var(--terminal-state);
+  /* 
+    4s total duration, runs once (forwards) to hold terminal state.
+    Animation triggers synchronously with DOM load.
+  */
+  animation: 
+    keystroke-physics 4s cubic-bezier(0.4, 0.0, 0.2, 1) forwards,
+    cursor-blink 0.8s step-end infinite;
+}
+
+@keyframes keystroke-physics {
+  0%, 15% { 
+    width: var(--terminal-state); 
+  }
+  30% { 
+    width: var(--degraded-state); 
+    animation-timing-function: steps(4, end); /* 4 distinct backspaces */
+  }
+  45% { 
+    width: var(--degraded-state); 
+  }
+  65% { 
+    width: var(--terminal-state); 
+    animation-timing-function: steps(4, end); /* 4 distinct forward strokes */
+  }
+  100% { 
+    width: var(--terminal-state); 
+  }
+}
+
+@keyframes cursor-blink {
+  0%, 100% { border-color: transparent; }
+  50% { border-color: var(--cursor-color); }
+}

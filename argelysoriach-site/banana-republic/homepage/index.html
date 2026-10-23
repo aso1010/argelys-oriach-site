@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en" data-ground="black">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-22DRN1XNE9"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-22DRN1XNE9');
+</script>
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="referrer" content="no-referrer">
+<meta name="robots" content="noindex,follow">
+<meta name="theme-color" content="#000000">
+<meta name="color-scheme" content="dark light">
+<script>try{var g=localStorage.getItem('783.banana-republic.ground');if(g==='brown'||g==='black')document.documentElement.setAttribute('data-ground',g)}catch(e){}</script>
+<title>Banana Republic, Concept Homepage — Argelys Samuel Oriach</title>
+<meta name="description" content="A prototype of the concept homepage for an independent Banana Republic rebrand by Argelys Samuel Oriach. Not a store. Not affiliated with Banana Republic or Gap Inc.">
+<link rel="canonical" href="https://argelysoriach.com/banana-republic/homepage/">
+<link rel="preload" href="../../fonts/Archivo-Variable.woff2" as="font" type="font/woff2" crossorigin>
+<style>
+@font-face{font-family:'Archivo VF';src:url('../../fonts/Archivo-Variable.woff2') format('woff2');font-weight:100 900;font-stretch:62% 125%;font-style:normal;font-display:swap}
+@font-face{font-family:'Archivo Full';src:url('../../fonts/Archivo-Variable.ttf') format('truetype');font-weight:100 900;font-stretch:62% 125%;font-style:normal;font-display:swap}
+@font-face{font-family:'JetBrains Mono';src:url('../../fonts/JetBrainsMono-Variable.woff2') format('woff2');font-weight:100 800;font-style:normal;font-display:swap}
+:root{
+  --ink:#FFFFFF;--ground:#000000;--dim:rgba(255,255,255,.72);--faint:rgba(255,255,255,.55);--rule:rgba(255,255,255,.4);
+  --sans:'Archivo VF','Archivo Full',"Helvetica Neue",Arial,sans-serif;
+  --mono:"JetBrains Mono",ui-monospace,Menlo,"DejaVu Sans Mono",monospace;
+  --pad:clamp(1.3125rem,2.8vw,2.5rem);--label:.75rem;
+}
+:root[data-ground="brown"]{--ground:#2C1A10;--ink:#FFFFFF;--dim:rgba(255,255,255,.72);--faint:rgba(255,255,255,.55);--rule:rgba(255,255,255,.4)}
+*,*::before,*::after{box-sizing:border-box}
+html{color-scheme:dark;-webkit-text-size-adjust:100%}
+html,body{margin:0;padding:0;background:var(--ground)}
+body{color:var(--ink);font-family:var(--sans);font-variant-ligatures:none;-webkit-font-smoothing:antialiased;overflow-x:hidden;line-height:1.5}
+a{color:var(--ink);text-decoration:none}
+a:hover{text-decoration:underline;text-underline-offset:.22em;text-decoration-thickness:1px}
+button{appearance:none;-webkit-appearance:none;border:0;border-radius:0;margin:0;padding:0;background:transparent;color:inherit;font:inherit;letter-spacing:inherit;text-transform:inherit;cursor:pointer}
+::selection{background:var(--ink);color:var(--ground)}
+:focus-visible{outline:1px solid var(--ink);outline-offset:4px}
+h1,p,ul{margin:0;padding:0}ul{list-style:none}
+.mono{font-family:var(--mono);font-weight:500;font-size:var(--label);letter-spacing:.2em;text-transform:uppercase;line-height:1.4}
+.dim{color:var(--dim)}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+@media (prefers-reduced-motion:no-preference){html,body{transition:background-color .4s ease,color .4s ease}}
+
+/* concept bar: this is not the store; it says so on every view */
+.cbar{display:flex;flex-wrap:wrap;align-items:baseline;gap:.375rem 1.5rem;padding:.8125rem var(--pad);border-bottom:1px solid var(--rule);letter-spacing:.14em}
+.cbar span{flex:1 1 20rem;color:var(--dim)}
+.cbar a:hover{text-decoration:underline}
+.ground{color:var(--faint);white-space:nowrap;padding:.25rem .3125rem;margin-right:-.3125rem}
+.pole{color:var(--faint)}
+:root:not([data-ground="brown"]) .pole-black,:root[data-ground="brown"] .pole-brown{color:var(--ink)}
+.ground:hover{background:var(--ink);color:var(--ground);box-shadow:0 0 0 3px var(--ink)}
+.ground:hover .pole{color:var(--ground)}
+
+/* one promotion, one line */
+.promo{padding:.625rem var(--pad);text-align:center;font-size:.875rem;letter-spacing:.01em;border-bottom:1px solid var(--rule)}
+.promo a{text-decoration:underline;text-underline-offset:.22em;margin-left:.5rem}
+.promo small{color:var(--dim);margin-left:.75rem;font-size:.8125rem}
+@media (max-width:40em){.promo small{display:block;margin:0}}
+
+/* header */
+.site{position:relative;display:grid;grid-template-columns:auto 1fr auto;align-items:center;gap:0 clamp(1.3125rem,3vw,2.75rem);padding:1.3125rem var(--pad);border-bottom:1px solid var(--rule);z-index:20;background:var(--ground)}
+.mark{display:block;line-height:0;color:var(--ink)}
+.mark svg{display:block;height:2.75rem;width:auto;aspect-ratio:6415/1732;overflow:visible;color:var(--ink)}
+.dnav>ul{display:flex;flex-wrap:wrap;gap:.5rem clamp(1.3125rem,2.6vw,2.75rem)}
+.dep,.mdep{display:block;font-weight:800;font-stretch:125%;font-variation-settings:'wdth' 125,'wght' 800;text-transform:uppercase;letter-spacing:.02em;font-size:.8125rem;line-height:1.2;padding:.5rem 0;position:relative}
+.dep:hover,.dep[aria-expanded="true"]{text-decoration:underline;text-underline-offset:.4em;text-decoration-thickness:2px}
+.tools{display:flex;align-items:center;gap:1.3125rem}
+.cut{display:flex;align-items:baseline;gap:.5rem;letter-spacing:.14em;white-space:nowrap}
+.cut button{color:var(--faint);padding:.25rem 0}
+.cut button[aria-pressed="true"]{color:var(--ink);text-decoration:underline;text-underline-offset:.4em;text-decoration-thickness:1px}
+.cut button:hover{color:var(--ink)}
+.cut i{font-style:normal;color:var(--faint)}
+.search{display:flex;align-items:center;border-bottom:1px solid var(--ink);width:10.5rem}
+.search input{appearance:none;-webkit-appearance:none;border:0;border-radius:0;background:transparent;color:var(--ink);font:inherit;font-size:.875rem;padding:.375rem 0;width:100%;min-width:0}
+.search input::placeholder{color:var(--faint);opacity:1}
+.search input:focus{outline:none}.search:focus-within{outline:1px solid var(--ink);outline-offset:4px}
+.search button{line-height:0;padding:.25rem 0 .25rem .5rem}
+.search svg{width:1rem;height:1rem}
+.bag{letter-spacing:.14em;white-space:nowrap}
+.bag:hover{text-decoration:underline;text-underline-offset:.4em}
+.menu-btn{display:none;letter-spacing:.14em;padding:.5rem 0}
+
+/* department panels */
+.panel{position:absolute;left:0;right:0;top:100%;background:var(--ground);border-bottom:1px solid var(--rule);padding:2.125rem var(--pad) 2.75rem;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,3fr);gap:1.3125rem 2.75rem;z-index:30}
+.panel[hidden]{display:none}
+.pword{font-weight:900;font-stretch:125%;font-variation-settings:'wdth' 125,'wght' 900;text-transform:uppercase;font-size:clamp(1.9rem,3.4vw,3.05rem);line-height:1;letter-spacing:-.02em;align-self:start}
+.pcols{display:flex;flex-wrap:wrap;gap:1.3125rem 3.4375rem}
+.pcol{min-width:9rem}.pcol--wide ul{columns:2;column-gap:3.4375rem}.pcol--wide li{break-inside:avoid}
+.ptitle{margin-bottom:.8125rem;letter-spacing:.14em}
+.pcol li a,.msub li a{display:inline-block;padding:.1875rem 0;font-size:.9375rem}
+.pcol li a:hover,.msub li a:hover{text-decoration:underline;text-underline-offset:.22em}
+
+/* hero: the type holds the weight; a campaign photograph sits behind it */
+.hero{margin:var(--pad);border:1px solid var(--rule);padding:clamp(1rem,2.2vw,1.75rem);min-height:min(66vh,42rem);display:flex;flex-direction:column;justify-content:space-between;gap:clamp(1.3125rem,3vw,2.75rem)}
+.hero__top{display:flex;flex-wrap:wrap;justify-content:space-between;gap:.5rem 1.5rem;letter-spacing:.14em;color:var(--dim)}
+.hero__mark{margin:auto 0}
+.hero__mark svg{display:block;width:100%;height:auto;color:var(--ink);overflow:visible}
+.hero__foot{display:flex;flex-wrap:wrap;align-items:flex-end;justify-content:space-between;gap:1.3125rem 2rem}
+.hero__line{font-weight:800;font-stretch:125%;font-variation-settings:'wdth' 125,'wght' 800;text-transform:uppercase;font-size:clamp(1.25rem,2.6vw,1.953rem);line-height:1.15;letter-spacing:-.01em;max-width:30rem}
+.btn{display:inline-block;padding:.9375rem 1.75rem;border:1px solid var(--ink);letter-spacing:.2em;background:var(--ink);color:var(--ground);text-decoration:none}
+.btn:hover{background:var(--ground);color:var(--ink);text-decoration:none}
+
+/* four ways in. One link each. */
+.tiles{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:var(--pad);padding:0 var(--pad) var(--pad)}
+.tile{container-type:inline-size;display:flex;flex-direction:column;justify-content:space-between;aspect-ratio:4/5;border:1px solid var(--rule);padding:clamp(.75rem,1.4vw,1.125rem);overflow:hidden}
+.tile:hover{text-decoration:none;border-color:var(--ink)}
+.tile__top{display:flex;justify-content:space-between;color:var(--dim);letter-spacing:.14em}
+.tile:hover .tile__top span:last-child{color:var(--ink);text-decoration:underline;text-underline-offset:.4em}
+.word{display:block;white-space:nowrap;font-weight:900;font-stretch:125%;font-variation-settings:'wdth' 125,'wght' 900;font-size:calc(100cqw / var(--w));line-height:1.2;color:var(--ink)}
+.l{display:inline-block;transform:translate(var(--dx),var(--dy)) rotate(var(--r))}
+@media (prefers-reduced-motion:no-preference){.l{transition:transform .38s cubic-bezier(.2,.8,.2,1)}}
+.tile:hover .l,.tile:focus-visible .l{transform:translate(calc(var(--dx)*1.8),calc(var(--dy)*1.8)) rotate(calc(var(--r)*1.8))}
+
+/* footer */
+.foot2{display:flex;flex-wrap:wrap;gap:1.3125rem 3.4375rem;justify-content:space-between;align-items:flex-start;padding:2.125rem var(--pad);border-top:1px solid var(--rule)}
+.foot2 .mark svg{height:2rem}
+.fcol{display:flex;flex-direction:column;gap:.5rem;font-size:.9375rem}
+.fcol a:hover{text-decoration:underline;text-underline-offset:.22em}
+.fine{padding:0 var(--pad) 2.125rem;max-width:50rem;line-height:1.7;letter-spacing:.14em;color:var(--dim)}
+
+.toast{position:fixed;left:var(--pad);bottom:var(--pad);z-index:80;padding:.625rem .9375rem;background:var(--ink);color:var(--ground);letter-spacing:.14em}
+.toast[hidden]{display:none}
+
+/* phone: the bar collapses, the menu opens over the page */
+.mnav{position:fixed;inset:0;z-index:60;background:var(--ground);overflow-y:auto;padding:1.3125rem var(--pad) 2.75rem;display:none}
+.mnav.open{display:block}
+.mnav__bar{display:flex;justify-content:space-between;align-items:baseline;gap:1rem;padding-bottom:1.3125rem;border-bottom:1px solid var(--rule);letter-spacing:.14em}
+.mnav .search{width:100%;margin:1.3125rem 0 .8125rem}
+.mnav li{border-bottom:1px solid var(--rule)}
+.mdep{display:block;width:100%;text-align:left;font-size:clamp(1.6rem,8.2vw,2.4rem);line-height:1.1;letter-spacing:-.02em;padding:.9375rem 0}
+.mdep[aria-expanded="true"]{text-decoration:none}
+a.mdep:hover{text-decoration:underline}
+.msub{padding:0 0 1.3125rem}
+.msub .ptitle{margin-top:1.3125rem}
+.msub ul{columns:2;column-gap:1.3125rem}.msub li{border:0;break-inside:avoid}
+.msub li a{font-size:.9375rem}
+
+@media (max-width:100em){
+  .site{gap:0 1.75rem}
+  .dnav>ul{gap:.5rem 1.3125rem}
+  .tools{gap:1rem}
+  .search{width:8rem}
+}
+@media (max-width:84em){
+  .site{grid-template-columns:1fr auto 1fr;padding:1rem var(--pad)}
+  .menu-btn{display:block;justify-self:start}
+  .dnav,.site .cut,.site .search{display:none}
+  .mark{justify-self:center}.mark svg{height:2.25rem}
+  .tools{justify-self:end}
+  .tiles{grid-template-columns:repeat(2,minmax(0,1fr))}
+}
+@media (max-width:40em){
+  .hero{min-height:min(70svh,35rem)}
+  .tiles{gap:.8125rem;padding-bottom:.8125rem}
+  .hero{margin:.8125rem}
+  .foot2{display:grid;grid-template-columns:1fr 1fr;gap:1.3125rem}
+  .foot2 .mark{grid-column:1/-1}
+}
+.fx-g{fill:var(--ground)}.fx-i{fill:var(--ink)}
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <defs>
+    <clipPath id="clL"><rect x="-3514.0" y="-1931.0" width="3980.0" height="6000" transform="rotate(-18 486.0 1069.0)"/></clipPath><clipPath id="clR"><rect x="506.0" y="-1931.0" width="4000" height="6000" transform="rotate(-18 486.0 1069.0)"/></clipPath>
+    <symbol id="wm-static" viewBox="-160 -160 6415 1732"><g fill="currentColor">
+      <g transform="translate(0 7.2) rotate(5 455.1 343.0)"><path d="M0 686V-2H663.4Q726.6 -2 778.8 19.5Q830.9 41 861.6 79Q892.3 117 892.3 167Q892.3 217 873.3 249Q854.3 281 822.6 299.5Q790.8 318 752.7 327V331Q796.4 339 832.1 358.5Q867.7 378 889 413Q910.2 448 910.2 503Q910.2 558 878.4 599Q846.5 640 791.8 663Q737.1 686 670.1 686ZM275.8 526H559.5Q590.1 526 608.9 510Q627.6 494 627.6 462Q627.6 447 619 434.5Q610.4 422 594.8 415Q579.1 408 559.5 408H275.8ZM275.8 266H541.6Q563.3 266 578.2 258.5Q593 251 601.4 237Q609.8 223 609.8 202Q609.8 180 589.9 164.5Q570.1 149 541.6 149H275.8Z"/></g>
+      <g transform="translate(0.5 -70) rotate(-0.8 1397.5 343.0)"><path d="M873.7 686 1245.6 -2H1549.3L1921.2 686H1625.3L1579.5 595H1203.1L1158.5 686ZM1286.9 424H1495.7L1442.1 308Q1438.8 300 1433.2 286.5Q1427.6 273 1420.9 256Q1414.2 239 1408.1 222Q1401.9 205 1396.3 191H1388.5Q1381.8 208 1372.9 230Q1364 252 1355.6 273Q1347.2 294 1340.5 308Z"/></g>
+      <g transform="translate(18 70) rotate(12.5 2440.9 343.0)"><path d="M1961.2 686V-2H2201.4L2581.1 285Q2587.8 290 2600 300Q2612.3 310 2625.7 321Q2639.1 332 2650.3 341H2661.5Q2661.5 327 2661.5 303.5Q2661.5 280 2661.5 258V-2H2920.6V686H2682.7L2322 415Q2298.5 398 2272.3 377Q2246 356 2230.4 343H2220.3Q2220.3 357 2220.3 382.5Q2220.3 408 2220.3 434V686Z"/></g>
+      <g transform="translate(-16.7 -65.6) rotate(-8.6 3484.3 343.0)"><path d="M2960.6 686 3332.5 -2H3636.2L4008.1 686H3712.2L3666.4 595H3290L3245.3 686ZM3373.8 424H3582.6L3529 308Q3525.7 300 3520.1 286.5Q3514.5 273 3507.8 256Q3501.1 239 3495 222Q3488.8 205 3483.2 191H3475.4Q3468.7 208 3459.8 230Q3450.8 252 3442.5 273Q3434.1 294 3427.4 308Z"/></g>
+      <g transform="translate(13.5 70) rotate(10.1 4527.8 343.0)"><path d="M4048.1 686V-2H4288.2L4667.9 285Q4674.6 290 4686.9 300Q4699.2 310 4712.6 321Q4726 332 4737.2 341H4748.4Q4748.4 327 4748.4 303.5Q4748.4 280 4748.4 258V-2H5007.4V686H4769.6L4408.8 415Q4385.4 398 4359.1 377Q4332.9 356 4317.3 343H4307.2Q4307.2 357 4307.2 382.5Q4307.2 408 4307.2 434V686Z"/></g>
+      <g transform="translate(0 -11.4) rotate(-5 5571.2 343.0)"><path d="M5047.4 686 5419.3 -2H5723.1L6095 686H5799L5753.3 595H5376.9L5332.2 686ZM5460.7 424H5669.5L5615.9 308Q5612.5 300 5607 286.5Q5601.4 273 5594.7 256Q5588 239 5581.8 222Q5575.7 205 5570.1 191H5562.3Q5555.6 208 5546.7 230Q5537.7 252 5529.3 273Q5521 294 5514.3 308Z"/></g>
+      <g transform="translate(0 0) rotate(0 422.0 1069.0)"><path class="hl" d="M0 1412V724H596Q673 724 724.5 756Q776 788 802 840Q828 892 828 952Q828 1021 797.5 1074.5Q767 1128 708 1160L844 1412H565L461 1197H247V1412ZM247 1026H509Q537 1026 556 1008.5Q575 991 575 960Q575 939 566 924.5Q557 910 542.5 902.5Q528 895 509 895H247Z" clip-path="url(#clL)"/><path class="hr" d="M0 1412V724H596Q673 724 724.5 756Q776 788 802 840Q828 892 828 952Q828 1021 797.5 1074.5Q767 1128 708 1160L844 1412H565L461 1197H247V1412ZM247 1026H509Q537 1026 556 1008.5Q575 991 575 960Q575 939 566 924.5Q557 910 542.5 902.5Q528 895 509 895H247Z" clip-path="url(#clR)"/></g>
+      <g transform="translate(13.1 -70) rotate(4.4 1255.5 1069.0)"><path d="M884 1412V724H1619V895H1132V984H1552V1146H1132V1241H1627V1412Z"/></g>
+      <g transform="translate(-14.5 70) rotate(-13 2058.5 1069.0)"><path d="M1667 1412V724H2220Q2288 724 2340 754.5Q2392 785 2421 839.5Q2450 894 2450 965Q2450 1038 2420.5 1093Q2391 1148 2339 1178Q2287 1208 2220 1208H1914V1412ZM1914 1037H2151Q2189.3 1037 2207.7 1018.9Q2226 1000.9 2226 965.9Q2226 942 2217.5 926.4Q2208.9 910.9 2192.5 902.9Q2176 895 2151 895H1914Z"/></g>
+      <g transform="translate(-18 43.2) rotate(-13 2910.5 1069.0)"><path d="M2910 1424Q2768 1424 2675 1384.5Q2582 1345 2536 1268.5Q2490 1192 2490 1081V724H2737V1070Q2737 1156 2782.5 1204Q2828 1252 2910 1252Q2993 1252 3038.5 1204Q3084 1156 3084 1070V724H3331V1081Q3331 1192 3285 1268.5Q3239 1345 3145.5 1384.5Q3052 1424 2910 1424Z"/></g>
+      <g transform="translate(-10.9 -70) rotate(8.2 3778.5 1069.0)"><path d="M3371 1412V724H3965Q4021.6 724 4068.3 745.5Q4115 767 4142.5 805Q4170 843 4170 893Q4170 943 4153 975Q4136 1007 4107.5 1025.5Q4079.1 1044 4045 1053V1057Q4084.1 1065 4116.1 1084.5Q4148 1104 4167 1139Q4186 1174 4186 1229Q4186 1284 4157.5 1325Q4129 1366 4080 1389Q4031 1412 3971 1412ZM3618 1252H3872Q3899.4 1252 3916.2 1236Q3933 1220 3933 1188Q3933 1173 3925.3 1160.5Q3917.6 1148 3903.6 1141Q3889.6 1134 3872 1134H3618ZM3618 992H3856Q3875.4 992 3888.7 984.5Q3902 977 3909.5 963Q3917 949 3917 928Q3917 906 3899.2 890.5Q3881.5 875 3856 875H3618Z"/></g>
+      <g transform="translate(15.3 6.3) rotate(13 4572.5 1069.0)"><path d="M4226 1412V724H4473V1223H4919V1412Z"/></g>
+      <g transform="translate(2.3 45.6) rotate(9.1 5082.5 1069.0)"><path d="M4959 1412V724H5206V1412Z"/></g>
+      <g transform="translate(0 -30) rotate(-5 5670.5 1069.0)"><path d="M5688 1424Q5539 1424 5441 1383.5Q5343 1343 5294.5 1264Q5246 1185 5246 1068Q5246 897 5359 804.5Q5472 712 5690 712Q5810 712 5901 749.5Q5992 787 6043.5 853.5Q6095 920 6095 1007H5855Q5855 971 5834 943Q5813 915 5775 899Q5737 883 5686 883Q5622 883 5580.5 906Q5539 929 5519.5 968Q5500 1007 5500 1055V1080Q5500 1126 5519.5 1165.5Q5539 1205 5579 1229Q5619 1253 5681 1253Q5738 1253 5778.5 1238Q5819 1223 5840.5 1196Q5862 1169 5862 1133H6095Q6095 1217 6046.5 1283Q5998 1349 5907 1386.5Q5816 1424 5688 1424Z"/></g>
+    </g></symbol>
+  </defs>
+</svg>
+
+<div class="cbar mono"><span>Concept. An independent rebrand. Not Banana Republic. Not affiliated with Banana Republic or Gap Inc.</span><a href="../">Case study</a><button class="ground" id="ground" type="button" aria-pressed="false" aria-label="Switch the ground to brown">[<span class="pole pole-black">Black</span> / <span class="pole pole-brown">Brown</span>]</button></div>
+
+<p class="promo">The Fall Edit. 30% off your purchase.<a href="#" data-x>Shop</a><small>Limited time. Exclusions apply.</small></p>
+
+<header class="site">
+  <button class="menu-btn mono" id="menu" type="button" aria-expanded="false" aria-controls="mnav">Menu</button>
+  <a class="mark" href="#" data-x aria-label="Banana Republic, home"><svg viewBox="0 0 6415 1732" aria-hidden="true" focusable="false"><use href="#wm-static" x="0" y="0" width="6415" height="1732"/></svg></a>
+  <nav class="dnav" aria-label="Main"><ul><li><a class="dep" href="#" data-x>New</a></li><li><button class="dep" type="button" aria-expanded="false" aria-controls="p-1">Clothing</button><div class="panel" id="p-1" role="region" aria-label="Clothing" hidden><p class="pword" aria-hidden="true">CLOTHING</p><div class="pcols"><div class="pcol pcol--wide"><p class="mono dim ptitle">By garment</p><ul><li><a href="#" data-x>Shop All</a></li><li><a href="#" data-x>Best Sellers</a></li><li><a href="#" data-x>Outerwear</a></li><li><a href="#" data-x>Dresses &amp; Jumpsuits</a></li><li><a href="#" data-x>Sweaters</a></li><li><a href="#" data-x>Shirts &amp; Tops</a></li><li><a href="#" data-x>T-Shirts</a></li><li><a href="#" data-x>Pants</a></li><li><a href="#" data-x>Jeans</a></li><li><a href="#" data-x>Skirts &amp; Shorts</a></li><li><a href="#" data-x>Suits &amp; Blazers</a></li><li><a href="#" data-x>Swim</a></li></ul></div><div class="pcol"><p class="mono dim ptitle">Sizes</p><ul><li><a href="#" data-x>Petites</a></li><li><a href="#" data-x>Tall</a></li></ul></div><div class="pcol"><p class="mono dim ptitle">Editions</p><ul><li><a href="#" data-x>Fall Gatherings</a></li><li><a href="#" data-x>Crafted for Fall</a></li><li><a href="#" data-x>The Work Edit</a></li><li><a href="#" data-x>The October Lookbook</a></li></ul></div></div></div></li><li><button class="dep" type="button" aria-expanded="false" aria-controls="p-2">Cashmere</button><div class="panel" id="p-2" role="region" aria-label="Cashmere" hidden><p class="pword" aria-hidden="true">CASHMERE</p><div class="pcols"><div class="pcol"><ul><li><a href="#" data-x>The Cashmere Shop</a></li><li><a href="#" data-x>Cashmere Accessories</a></li></ul></div></div></div></li><li><button class="dep" type="button" aria-expanded="false" aria-controls="p-3">Archive</button><div class="panel" id="p-3" role="region" aria-label="Archive" hidden><p class="pword" aria-hidden="true">ARCHIVE</p><div class="pcols"><div class="pcol"><ul><li><a href="#" data-x>Archive Reissue</a></li><li><a href="#" data-x>Shop Archive</a></li><li><a href="#" data-x>Archive Jewelry</a></li><li><a href="#" data-x>With The Explorers Club</a></li></ul></div></div></div></li><li><button class="dep" type="button" aria-expanded="false" aria-controls="p-4">Accessories</button><div class="panel" id="p-4" role="region" aria-label="Accessories" hidden><p class="pword" aria-hidden="true">ACCESSORIES</p><div class="pcols"><div class="pcol pcol--wide"><p class="mono dim ptitle">Shoes &amp; accessories</p><ul><li><a href="#" data-x>Shop All Accessories</a></li><li><a href="#" data-x>Shoes</a></li><li><a href="#" data-x>Bags &amp; Wallets</a></li><li><a href="#" data-x>Jewelry</a></li><li><a href="#" data-x>Belts</a></li><li><a href="#" data-x>Hats</a></li><li><a href="#" data-x>Scarves &amp; Bandanas</a></li><li><a href="#" data-x>Cold Weather</a></li><li><a href="#" data-x>Ties &amp; Pocket Squares</a></li><li><a href="#" data-x>Sunglasses</a></li><li><a href="#" data-x>Socks</a></li></ul></div><div class="pcol"><p class="mono dim ptitle">Home</p><ul><li><a href="#" data-x>Shop All Home</a></li><li><a href="#" data-x>Bedding</a></li><li><a href="#" data-x>Pillows &amp; Throws</a></li></ul></div></div></div></li><li><button class="dep" type="button" aria-expanded="false" aria-controls="p-5">Sale</button><div class="panel" id="p-5" role="region" aria-label="Sale" hidden><p class="pword" aria-hidden="true">SALE</p><div class="pcols"><div class="pcol"><ul><li><a href="#" data-x>Shop All Sale</a></li><li><a href="#" data-x>Clothing Sale</a></li><li><a href="#" data-x>Accessories Sale</a></li><li><a href="#" data-x>Home Sale</a></li></ul></div></div></div></li></ul></nav>
+  <div class="tools">
+    <div class="cut mono" role="group" aria-label="Show"><button type="button" data-cut="all" aria-pressed="true">All</button><i>/</i><button type="button" data-cut="women" aria-pressed="false">Women</button><i>/</i><button type="button" data-cut="men" aria-pressed="false">Men</button></div>
+    <form class="search" role="search" data-x><label class="sr" for="q">Search</label><input id="q" type="search" placeholder="Search" autocomplete="off"><button type="submit" aria-label="Search"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.25" aria-hidden="true"><circle cx="6.5" cy="6.5" r="5"/><path d="M10.2 10.2 15 15"/></svg></button></form>
+    <button class="bag mono" type="button" data-x aria-label="Bag, 0 items">Bag (0)</button>
+  </div>
+</header>
+
+<div class="mnav" id="mnav" role="dialog" aria-label="Menu">
+  <div class="mnav__bar mono"><button type="button" id="mclose">Close</button><div class="cut" role="group" aria-label="Show"><button type="button" data-cut="all" aria-pressed="true">All</button><i>/</i><button type="button" data-cut="women" aria-pressed="false">Women</button><i>/</i><button type="button" data-cut="men" aria-pressed="false">Men</button></div></div>
+  <form class="search" role="search" data-x><label class="sr" for="q2">Search</label><input id="q2" type="search" placeholder="Search" autocomplete="off"><button type="submit" aria-label="Search"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.25" aria-hidden="true"><circle cx="6.5" cy="6.5" r="5"/><path d="M10.2 10.2 15 15"/></svg></button></form>
+  <ul><li><a class="mdep" href="#" data-x>New</a></li><li><button class="mdep" type="button" aria-expanded="false" aria-controls="m-1">Clothing</button><div class="msub" id="m-1" hidden><p class="mono dim ptitle">By garment</p><ul><li><a href="#" data-x>Shop All</a></li><li><a href="#" data-x>Best Sellers</a></li><li><a href="#" data-x>Outerwear</a></li><li><a href="#" data-x>Dresses &amp; Jumpsuits</a></li><li><a href="#" data-x>Sweaters</a></li><li><a href="#" data-x>Shirts &amp; Tops</a></li><li><a href="#" data-x>T-Shirts</a></li><li><a href="#" data-x>Pants</a></li><li><a href="#" data-x>Jeans</a></li><li><a href="#" data-x>Skirts &amp; Shorts</a></li><li><a href="#" data-x>Suits &amp; Blazers</a></li><li><a href="#" data-x>Swim</a></li></ul><p class="mono dim ptitle">Sizes</p><ul><li><a href="#" data-x>Petites</a></li><li><a href="#" data-x>Tall</a></li></ul><p class="mono dim ptitle">Editions</p><ul><li><a href="#" data-x>Fall Gatherings</a></li><li><a href="#" data-x>Crafted for Fall</a></li><li><a href="#" data-x>The Work Edit</a></li><li><a href="#" data-x>The October Lookbook</a></li></ul></div></li><li><button class="mdep" type="button" aria-expanded="false" aria-controls="m-2">Cashmere</button><div class="msub" id="m-2" hidden><ul><li><a href="#" data-x>The Cashmere Shop</a></li><li><a href="#" data-x>Cashmere Accessories</a></li></ul></div></li><li><button class="mdep" type="button" aria-expanded="false" aria-controls="m-3">Archive</button><div class="msub" id="m-3" hidden><ul><li><a href="#" data-x>Archive Reissue</a></li><li><a href="#" data-x>Shop Archive</a></li><li><a href="#" data-x>Archive Jewelry</a></li><li><a href="#" data-x>With The Explorers Club</a></li></ul></div></li><li><button class="mdep" type="button" aria-expanded="false" aria-controls="m-4">Accessories</button><div class="msub" id="m-4" hidden><p class="mono dim ptitle">Shoes &amp; accessories</p><ul><li><a href="#" data-x>Shop All Accessories</a></li><li><a href="#" data-x>Shoes</a></li><li><a href="#" data-x>Bags &amp; Wallets</a></li><li><a href="#" data-x>Jewelry</a></li><li><a href="#" data-x>Belts</a></li><li><a href="#" data-x>Hats</a></li><li><a href="#" data-x>Scarves &amp; Bandanas</a></li><li><a href="#" data-x>Cold Weather</a></li><li><a href="#" data-x>Ties &amp; Pocket Squares</a></li><li><a href="#" data-x>Sunglasses</a></li><li><a href="#" data-x>Socks</a></li></ul><p class="mono dim ptitle">Home</p><ul><li><a href="#" data-x>Shop All Home</a></li><li><a href="#" data-x>Bedding</a></li><li><a href="#" data-x>Pillows &amp; Throws</a></li></ul></div></li><li><button class="mdep" type="button" aria-expanded="false" aria-controls="m-5">Sale</button><div class="msub" id="m-5" hidden><ul><li><a href="#" data-x>Shop All Sale</a></li><li><a href="#" data-x>Clothing Sale</a></li><li><a href="#" data-x>Accessories Sale</a></li><li><a href="#" data-x>Home Sale</a></li></ul></div></li></ul>
+</div>
+
+<main>
+<section class="hero" aria-label="Campaign">
+  <h1 class="sr">Banana Republic</h1>
+  <p class="hero__top mono"><span>New for October &middot; Showing <span data-cutlabel>all</span></span><span>Campaign photograph sits behind the type</span></p>
+  <div class="hero__mark"><svg id="wm" viewBox="-260 -260 6615 1932" role="img" aria-label="Banana Republic, concept wordmark">
+    <g fill="currentColor">
+      <g data-i="0" data-cx="455.1" data-cy="343.0" data-dx="0" data-dy="7.2" data-r="5" data-end="1" transform="translate(0 7.2) rotate(5 455.1 343.0)"><path d="M0 686V-2H663.4Q726.6 -2 778.8 19.5Q830.9 41 861.6 79Q892.3 117 892.3 167Q892.3 217 873.3 249Q854.3 281 822.6 299.5Q790.8 318 752.7 327V331Q796.4 339 832.1 358.5Q867.7 378 889 413Q910.2 448 910.2 503Q910.2 558 878.4 599Q846.5 640 791.8 663Q737.1 686 670.1 686ZM275.8 526H559.5Q590.1 526 608.9 510Q627.6 494 627.6 462Q627.6 447 619 434.5Q610.4 422 594.8 415Q579.1 408 559.5 408H275.8ZM275.8 266H541.6Q563.3 266 578.2 258.5Q593 251 601.4 237Q609.8 223 609.8 202Q609.8 180 589.9 164.5Q570.1 149 541.6 149H275.8Z"/></g>
+      <g data-i="1" data-cx="1397.5" data-cy="343.0" data-dx="0.5" data-dy="-70" data-r="-0.8" data-end="0" transform="translate(0.5 -70) rotate(-0.8 1397.5 343.0)"><path d="M873.7 686 1245.6 -2H1549.3L1921.2 686H1625.3L1579.5 595H1203.1L1158.5 686ZM1286.9 424H1495.7L1442.1 308Q1438.8 300 1433.2 286.5Q1427.6 273 1420.9 256Q1414.2 239 1408.1 222Q1401.9 205 1396.3 191H1388.5Q1381.8 208 1372.9 230Q1364 252 1355.6 273Q1347.2 294 1340.5 308Z"/></g>
+      <g data-i="2" data-cx="2440.9" data-cy="343.0" data-dx="18" data-dy="70" data-r="12.5" data-end="0" transform="translate(18 70) rotate(12.5 2440.9 343.0)"><path d="M1961.2 686V-2H2201.4L2581.1 285Q2587.8 290 2600 300Q2612.3 310 2625.7 321Q2639.1 332 2650.3 341H2661.5Q2661.5 327 2661.5 303.5Q2661.5 280 2661.5 258V-2H2920.6V686H2682.7L2322 415Q2298.5 398 2272.3 377Q2246 356 2230.4 343H2220.3Q2220.3 357 2220.3 382.5Q2220.3 408 2220.3 434V686Z"/></g>
+      <g data-i="3" data-cx="3484.3" data-cy="343.0" data-dx="-16.7" data-dy="-65.6" data-r="-8.6" data-end="0" transform="translate(-16.7 -65.6) rotate(-8.6 3484.3 343.0)"><path d="M2960.6 686 3332.5 -2H3636.2L4008.1 686H3712.2L3666.4 595H3290L3245.3 686ZM3373.8 424H3582.6L3529 308Q3525.7 300 3520.1 286.5Q3514.5 273 3507.8 256Q3501.1 239 3495 222Q3488.8 205 3483.2 191H3475.4Q3468.7 208 3459.8 230Q3450.8 252 3442.5 273Q3434.1 294 3427.4 308Z"/></g>
+      <g data-i="4" data-cx="4527.8" data-cy="343.0" data-dx="13.5" data-dy="70" data-r="10.1" data-end="0" transform="translate(13.5 70) rotate(10.1 4527.8 343.0)"><path d="M4048.1 686V-2H4288.2L4667.9 285Q4674.6 290 4686.9 300Q4699.2 310 4712.6 321Q4726 332 4737.2 341H4748.4Q4748.4 327 4748.4 303.5Q4748.4 280 4748.4 258V-2H5007.4V686H4769.6L4408.8 415Q4385.4 398 4359.1 377Q4332.9 356 4317.3 343H4307.2Q4307.2 357 4307.2 382.5Q4307.2 408 4307.2 434V686Z"/></g>
+      <g data-i="5" data-cx="5571.2" data-cy="343.0" data-dx="0" data-dy="-11.4" data-r="-5" data-end="1" transform="translate(0 -11.4) rotate(-5 5571.2 343.0)"><path d="M5047.4 686 5419.3 -2H5723.1L6095 686H5799L5753.3 595H5376.9L5332.2 686ZM5460.7 424H5669.5L5615.9 308Q5612.5 300 5607 286.5Q5601.4 273 5594.7 256Q5588 239 5581.8 222Q5575.7 205 5570.1 191H5562.3Q5555.6 208 5546.7 230Q5537.7 252 5529.3 273Q5521 294 5514.3 308Z"/></g>
+      <g data-i="6" data-cx="422.0" data-cy="1069.0" data-dx="0" data-dy="0" data-r="0" data-end="1" transform="translate(0 0) rotate(0 422.0 1069.0)"><path class="hl" d="M0 1412V724H596Q673 724 724.5 756Q776 788 802 840Q828 892 828 952Q828 1021 797.5 1074.5Q767 1128 708 1160L844 1412H565L461 1197H247V1412ZM247 1026H509Q537 1026 556 1008.5Q575 991 575 960Q575 939 566 924.5Q557 910 542.5 902.5Q528 895 509 895H247Z" clip-path="url(#clL)"/><path class="hr" d="M0 1412V724H596Q673 724 724.5 756Q776 788 802 840Q828 892 828 952Q828 1021 797.5 1074.5Q767 1128 708 1160L844 1412H565L461 1197H247V1412ZM247 1026H509Q537 1026 556 1008.5Q575 991 575 960Q575 939 566 924.5Q557 910 542.5 902.5Q528 895 509 895H247Z" clip-path="url(#clR)"/></g>
+      <g data-i="7" data-cx="1255.5" data-cy="1069.0" data-dx="13.1" data-dy="-70" data-r="4.4" data-end="0" transform="translate(13.1 -70) rotate(4.4 1255.5 1069.0)"><path d="M884 1412V724H1619V895H1132V984H1552V1146H1132V1241H1627V1412Z"/></g>
+      <g data-i="8" data-cx="2058.5" data-cy="1069.0" data-dx="-14.5" data-dy="70" data-r="-13" data-end="0" transform="translate(-14.5 70) rotate(-13 2058.5 1069.0)"><path d="M1667 1412V724H2220Q2288 724 2340 754.5Q2392 785 2421 839.5Q2450 894 2450 965Q2450 1038 2420.5 1093Q2391 1148 2339 1178Q2287 1208 2220 1208H1914V1412ZM1914 1037H2151Q2189.3 1037 2207.7 1018.9Q2226 1000.9 2226 965.9Q2226 942 2217.5 926.4Q2208.9 910.9 2192.5 902.9Q2176 895 2151 895H1914Z"/></g>
+      <g data-i="9" data-cx="2910.5" data-cy="1069.0" data-dx="-18" data-dy="43.2" data-r="-13" data-end="0" transform="translate(-18 43.2) rotate(-13 2910.5 1069.0)"><path d="M2910 1424Q2768 1424 2675 1384.5Q2582 1345 2536 1268.5Q2490 1192 2490 1081V724H2737V1070Q2737 1156 2782.5 1204Q2828 1252 2910 1252Q2993 1252 3038.5 1204Q3084 1156 3084 1070V724H3331V1081Q3331 1192 3285 1268.5Q3239 1345 3145.5 1384.5Q3052 1424 2910 1424Z"/></g>
+      <g data-i="10" data-cx="3778.5" data-cy="1069.0" data-dx="-10.9" data-dy="-70" data-r="8.2" data-end="0" transform="translate(-10.9 -70) rotate(8.2 3778.5 1069.0)"><path d="M3371 1412V724H3965Q4021.6 724 4068.3 745.5Q4115 767 4142.5 805Q4170 843 4170 893Q4170 943 4153 975Q4136 1007 4107.5 1025.5Q4079.1 1044 4045 1053V1057Q4084.1 1065 4116.1 1084.5Q4148 1104 4167 1139Q4186 1174 4186 1229Q4186 1284 4157.5 1325Q4129 1366 4080 1389Q4031 1412 3971 1412ZM3618 1252H3872Q3899.4 1252 3916.2 1236Q3933 1220 3933 1188Q3933 1173 3925.3 1160.5Q3917.6 1148 3903.6 1141Q3889.6 1134 3872 1134H3618ZM3618 992H3856Q3875.4 992 3888.7 984.5Q3902 977 3909.5 963Q3917 949 3917 928Q3917 906 3899.2 890.5Q3881.5 875 3856 875H3618Z"/></g>
+      <g data-i="11" data-cx="4572.5" data-cy="1069.0" data-dx="15.3" data-dy="6.3" data-r="13" data-end="0" transform="translate(15.3 6.3) rotate(13 4572.5 1069.0)"><path d="M4226 1412V724H4473V1223H4919V1412Z"/></g>
+      <g data-i="12" data-cx="5082.5" data-cy="1069.0" data-dx="2.3" data-dy="45.6" data-r="9.1" data-end="0" transform="translate(2.3 45.6) rotate(9.1 5082.5 1069.0)"><path d="M4959 1412V724H5206V1412Z"/></g>
+      <g data-i="13" data-cx="5670.5" data-cy="1069.0" data-dx="0" data-dy="-30" data-r="-5" data-end="1" transform="translate(0 -30) rotate(-5 5670.5 1069.0)"><path d="M5688 1424Q5539 1424 5441 1383.5Q5343 1343 5294.5 1264Q5246 1185 5246 1068Q5246 897 5359 804.5Q5472 712 5690 712Q5810 712 5901 749.5Q5992 787 6043.5 853.5Q6095 920 6095 1007H5855Q5855 971 5834 943Q5813 915 5775 899Q5737 883 5686 883Q5622 883 5580.5 906Q5539 929 5519.5 968Q5500 1007 5500 1055V1080Q5500 1126 5519.5 1165.5Q5539 1205 5579 1229Q5619 1253 5681 1253Q5738 1253 5778.5 1238Q5819 1223 5840.5 1196Q5862 1169 5862 1133H6095Q6095 1217 6046.5 1283Q5998 1349 5907 1386.5Q5816 1424 5688 1424Z"/></g>
+    </g>
+  </svg></div>
+  <div class="hero__foot"><p class="hero__line">New for October.</p><a class="btn mono" href="#" data-x>Shop new</a></div>
+</section>
+
+<ul class="tiles" aria-label="Shop by garment"><li><a class="tile" href="#" data-x aria-label="Shop Outerwear"><span class="tile__top mono"><span>01</span><span>Shop</span></span><span class="word" aria-hidden="true" style="--w:8.684"><span class="l" style="--dx:-0.003em;--dy:0.002em;--r:1.6deg">O</span><span class="l" style="--dx:-0.009em;--dy:-0.012em;--r:2.6deg">U</span><span class="l" style="--dx:0.005em;--dy:0.045em;--r:3.3deg">T</span><span class="l" style="--dx:0.008em;--dy:0.006em;--r:-4.7deg">E</span><span class="l" style="--dx:0.011em;--dy:0.018em;--r:3.6deg">R</span><span class="l" style="--dx:-0.001em;--dy:-0.024em;--r:-3.2deg">W</span><span class="l" style="--dx:-0.000em;--dy:-0.039em;--r:-3.6deg">E</span><span class="l" style="--dx:-0.002em;--dy:0.051em;--r:-5.0deg">A</span><span class="l" style="--dx:-0.000em;--dy:-0.024em;--r:0.2deg">R</span></span></a></li><li><a class="tile" href="#" data-x aria-label="Shop Dresses"><span class="tile__top mono"><span>02</span><span>Shop</span></span><span class="word" aria-hidden="true" style="--w:6.262"><span class="l" style="--dx:0.003em;--dy:-0.011em;--r:-0.7deg">D</span><span class="l" style="--dx:-0.003em;--dy:-0.034em;--r:0.6deg">R</span><span class="l" style="--dx:0.010em;--dy:0.019em;--r:4.7deg">E</span><span class="l" style="--dx:0.003em;--dy:0.013em;--r:-0.4deg">S</span><span class="l" style="--dx:0.007em;--dy:0.030em;--r:0.4deg">S</span><span class="l" style="--dx:-0.002em;--dy:0.030em;--r:4.0deg">E</span><span class="l" style="--dx:0.002em;--dy:0.013em;--r:-0.1deg">S</span></span></a></li><li><a class="tile" href="#" data-x aria-label="Shop Sweaters"><span class="tile__top mono"><span>03</span><span>Shop</span></span><span class="word" aria-hidden="true" style="--w:7.508"><span class="l" style="--dx:-0.001em;--dy:-0.004em;--r:0.5deg">S</span><span class="l" style="--dx:0.006em;--dy:0.052em;--r:-5.3deg">W</span><span class="l" style="--dx:-0.003em;--dy:0.006em;--r:1.8deg">E</span><span class="l" style="--dx:-0.003em;--dy:0.047em;--r:4.5deg">A</span><span class="l" style="--dx:0.009em;--dy:0.028em;--r:5.0deg">T</span><span class="l" style="--dx:-0.004em;--dy:0.028em;--r:1.1deg">E</span><span class="l" style="--dx:0.009em;--dy:-0.040em;--r:-3.0deg">R</span><span class="l" style="--dx:-0.004em;--dy:0.010em;--r:2.0deg">S</span></span></a></li><li><a class="tile" href="#" data-x aria-label="Shop Pants"><span class="tile__top mono"><span>04</span><span>Shop</span></span><span class="word" aria-hidden="true" style="--w:4.605"><span class="l" style="--dx:0.001em;--dy:-0.009em;--r:-0.1deg">P</span><span class="l" style="--dx:0.010em;--dy:0.050em;--r:0.1deg">A</span><span class="l" style="--dx:-0.002em;--dy:0.034em;--r:-1.3deg">N</span><span class="l" style="--dx:0.003em;--dy:-0.012em;--r:-3.8deg">T</span><span class="l" style="--dx:0.003em;--dy:-0.000em;--r:-1.5deg">S</span></span></a></li></ul>
+</main>
+
+<footer>
+  <div class="foot2">
+    <a class="mark" href="#" data-x aria-label="Banana Republic, home"><svg viewBox="0 0 6415 1732" aria-hidden="true" focusable="false"><use href="#wm-static" x="0" y="0" width="6415" height="1732"/></svg></a>
+    <div class="fcol"><p class="mono dim">Also from Gap Inc.</p><a href="#" data-x>Gap</a><a href="#" data-x>Old Navy</a><a href="#" data-x>Athleta</a></div>
+    <div class="fcol"><p class="mono dim">Legal</p><a href="#" data-x>Privacy Policy</a><a href="#" data-x>Your Privacy Choices</a></div>
+  </div>
+  <p class="fine mono">Concept by Argelys Samuel Oriach. A prototype, not a store: nothing here sells, signs in or takes payment. Banana Republic is a trademark of its owner. No affiliation or endorsement.</p>
+</footer>
+
+<p class="toast mono" id="toast" role="status" hidden>Prototype. This link goes nowhere.</p>
+
+<script>
+(function () {
+  var root = document.documentElement, KEY = '783.banana-republic.ground', CUT = '783.banana-republic.cut';
+  var meta = document.querySelector('meta[name="theme-color"]'), btn = document.getElementById('ground');
+  function ground() { return root.getAttribute('data-ground') === 'brown' ? 'brown' : 'black'; }
+  function setGround(g, keep) {
+    root.setAttribute('data-ground', g);
+    btn.setAttribute('aria-pressed', String(g === 'brown'));
+    btn.setAttribute('aria-label', g === 'brown' ? 'Switch the ground to black' : 'Switch the ground to brown');
+    if (meta) meta.setAttribute('content', g === 'brown' ? '#2C1A10' : '#000000');
+    if (keep) { try { localStorage.setItem(KEY, g); } catch (e) {} }
+  }
+  setGround(ground(), false);
+  btn.addEventListener('click', function () { setGround(ground() === 'brown' ? 'black' : 'brown', true); });
+
+  /* gender is a setting, set once */
+  var cuts = document.querySelectorAll('[data-cut]'), label = document.querySelector('[data-cutlabel]');
+  function setCut(c, keep) {
+    for (var i = 0; i < cuts.length; i++) cuts[i].setAttribute('aria-pressed', String(cuts[i].getAttribute('data-cut') === c));
+    if (label) label.textContent = c;
+    if (keep) { try { localStorage.setItem(CUT, c); } catch (e) {} }
+  }
+  var saved = 'all'; try { var s = localStorage.getItem(CUT); if (s === 'women' || s === 'men' || s === 'all') saved = s; } catch (e) {}
+  setCut(saved, false);
+  for (var i = 0; i < cuts.length; i++) cuts[i].addEventListener('click', function (ev) { setCut(ev.currentTarget.getAttribute('data-cut'), true); });
+
+  /* department panels: one open at a time; Escape and an outside click close */
+  var deps = document.querySelectorAll('.dnav button.dep');
+  function closeAll(except) {
+    for (var i = 0; i < deps.length; i++) if (deps[i] !== except) {
+      deps[i].setAttribute('aria-expanded', 'false');
+      document.getElementById(deps[i].getAttribute('aria-controls')).hidden = true;
+    }
+  }
+  for (var d = 0; d < deps.length; d++) deps[d].addEventListener('click', function (ev) {
+    var b = ev.currentTarget, open = b.getAttribute('aria-expanded') !== 'true';
+    closeAll(b); b.setAttribute('aria-expanded', String(open));
+    document.getElementById(b.getAttribute('aria-controls')).hidden = !open;
+  });
+  document.addEventListener('keydown', function (ev) { if (ev.key === 'Escape') { closeAll(null); closeMenu(); } });
+  document.addEventListener('click', function (ev) { if (!ev.target.closest('.site')) closeAll(null); });
+
+  /* phone menu */
+  var mnav = document.getElementById('mnav'), mbtn = document.getElementById('menu');
+  function closeMenu() { mnav.classList.remove('open'); mbtn.setAttribute('aria-expanded', 'false'); document.body.style.overflow = ''; }
+  mbtn.addEventListener('click', function () { mnav.classList.add('open'); mbtn.setAttribute('aria-expanded', 'true'); document.body.style.overflow = 'hidden'; });
+  document.getElementById('mclose').addEventListener('click', function () { closeMenu(); mbtn.focus(); });
+  var mdeps = document.querySelectorAll('button.mdep');
+  for (var m = 0; m < mdeps.length; m++) mdeps[m].addEventListener('click', function (ev) {
+    var b = ev.currentTarget, open = b.getAttribute('aria-expanded') !== 'true';
+    for (var k = 0; k < mdeps.length; k++) { mdeps[k].setAttribute('aria-expanded', 'false'); document.getElementById(mdeps[k].getAttribute('aria-controls')).hidden = true; }
+    b.setAttribute('aria-expanded', String(open)); document.getElementById(b.getAttribute('aria-controls')).hidden = !open;
+  });
+
+  /* nothing here goes anywhere. Say so. */
+  var toast = document.getElementById('toast'), tt = 0;
+  document.addEventListener('click', function (ev) {
+    var x = ev.target.closest('a[data-x]'); if (!x) return;
+    ev.preventDefault(); toast.hidden = false; clearTimeout(tt); tt = setTimeout(function () { toast.hidden = true; }, 2200);
+  });
+  var forms = document.querySelectorAll('form[data-x]');
+  for (var f = 0; f < forms.length; f++) forms[f].addEventListener('submit', function (ev) { ev.preventDefault(); toast.hidden = false; clearTimeout(tt); tt = setTimeout(function () { toast.hidden = true; }, 2200); });
+  document.querySelector('.bag').addEventListener('click', function () { toast.hidden = false; clearTimeout(tt); tt = setTimeout(function () { toast.hidden = true; }, 2200); });
+})();
+</script>
+<script>
+/* The wordmark is wayward. Every letter wanders on its own clock, so nothing here is a wave or a wind.
+   Each letter drifts, tilts, and now and then flinches out of place. The first and last letters of each line stray least.
+   The R is cut along a slash; its two halves trill against each other in a short burst, then go still.
+   Letters surface from different directions on load. No motion at all if the system asks for less. */
+(function () {
+  var svg = document.getElementById('wm');
+  if (!svg || !window.requestAnimationFrame) return;
+  if (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+  var TAU = Math.PI * 2, ANG = -18 * Math.PI / 180;
+  var ux = Math.sin(ANG), uy = -Math.cos(ANG);
+  function rng(a) { return function () { a |= 0; a = a + 0x6D2B79F5 | 0; var t = Math.imul(a ^ a >>> 15, 1 | a); t = t + Math.imul(t ^ t >>> 7, 61 | t) ^ t; return ((t ^ t >>> 14) >>> 0) / 4294967296; }; }
+  var rnd = rng(783);
+  function clamp(x) { return x < 0 ? 0 : x > 1 ? 1 : x; }
+  function smooth(x) { x = clamp(x); return x * x * (3 - 2 * x); }
+  var L = Array.prototype.map.call(svg.querySelectorAll('[data-i]'), function (g, i) {
+    var e = +g.getAttribute('data-end') ? 0.4 : 1;
+    return {
+      g: g, cx: +g.getAttribute('data-cx'), cy: +g.getAttribute('data-cy'),
+      dx: +g.getAttribute('data-dx'), dy: +g.getAttribute('data-dy'), r: +g.getAttribute('data-r'), e: e,
+      px: [5 + rnd() * 7, 3.1 + rnd() * 4], py: [4 + rnd() * 8, 2.7 + rnd() * 3.5], pr: [6 + rnd() * 9, 3.3 + rnd() * 4],
+      fx: [rnd() * TAU, rnd() * TAU], fy: [rnd() * TAU, rnd() * TAU], fr: [rnd() * TAU, rnd() * TAU],
+      next: 2.5 + rnd() * 6, fs: 0, fk: 0, fdy: 0, fr2: 0,
+      ex: (rnd() - .5) * 700, ey: (rnd() < .5 ? -1 : 1) * (260 + rnd() * 260), er: (rnd() - .5) * 90, delay: 0.1 + i * 0.07 + rnd() * 0.25
+    };
+  });
+  var hl = svg.querySelector('.hl'), hr = svg.querySelector('.hr'), t0 = 0, nextTrill = 3.2, trillAt = -99;
+  function render(t) {
+    for (var k = 0; k < L.length; k++) {
+      var o = L[k], a = o.e;
+      if (t >= o.next) { o.fs = t; o.fk = rnd() < .5 ? -1 : 1; o.fdy = (rnd() * 18 + 8) * (rnd() < .5 ? -1 : 1); o.fr2 = (rnd() * 4 + 3) * o.fk; o.next = t + 3.5 + rnd() * 7; }
+      var s = t - o.fs, fl = s < 2.2 ? Math.exp(-3.2 * s) * Math.sin(TAU * 1.5 * s) : 0;
+      var dx = a * (6 * Math.sin(TAU * t / o.px[0] + o.fx[0]) + 2.5 * Math.sin(TAU * t / o.px[1] + o.fx[1]));
+      var dy = a * (10 * Math.sin(TAU * t / o.py[0] + o.fy[0]) + 4 * Math.sin(TAU * t / o.py[1] + o.fy[1])) + fl * o.fdy * a;
+      var r = a * (1.5 * Math.sin(TAU * t / o.pr[0] + o.fr[0]) + 0.6 * Math.sin(TAU * t / o.pr[1] + o.fr[1])) + fl * o.fr2 * a;
+      var p = smooth((t - o.delay) / 1.1), q = 1 - p;
+      var X = o.dx + dx + q * o.ex, Y = o.dy + dy + q * o.ey, R = o.r + r + q * o.er;
+      o.g.setAttribute('transform', 'translate(' + X.toFixed(2) + ' ' + Y.toFixed(2) + ') rotate(' + R.toFixed(2) + ' ' + o.cx + ' ' + o.cy + ')');
+      o.g.style.opacity = p.toFixed(3);
+    }
+    if (hl && hr) {
+      if (t >= nextTrill) { trillAt = t; nextTrill = t + 7 + rnd() * 5; }
+      var s2 = t - trillAt, tr = s2 >= 0 && s2 < 0.6 ? Math.sin(TAU * 8 * s2) * (1 - s2 / 0.6) * 15 : 0;
+      hl.setAttribute('transform', 'translate(' + (ux * tr).toFixed(2) + ' ' + (uy * tr).toFixed(2) + ')');
+      hr.setAttribute('transform', 'translate(' + (-ux * tr).toFixed(2) + ' ' + (-uy * tr).toFixed(2) + ')');
+    }
+  }
+  function frame(now) { render((now - t0) / 1000); window.requestAnimationFrame(frame); }
+  function boot() { t0 = performance.now(); render(0); window.requestAnimationFrame(frame); }
+  if (document.fonts && document.fonts.ready) document.fonts.ready.then(boot, boot); else boot();
+})();
+</script>
+</body>
+</html>

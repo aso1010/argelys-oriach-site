@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-22DRN1XNE9"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-22DRN1XNE9');
+</script>
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Universe API — Argelys Samuel Oriach</title>
+<meta name="description" content="The Universe API is a foundational macro-systems design framework grounded in first-principles engineering and sovereign logic.">
+<meta name="theme-color" content="#000000">
+<link rel="canonical" href="https://argelysoriach.com/universe-api/">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebPage",
+      "@id": "https://argelysoriach.com/universe-api/#page",
+      "url": "https://argelysoriach.com/universe-api/",
+      "name": "Universe API",
+      "isPartOf": {
+        "@id": "https://argelysoriach.com/#website"
+      },
+      "mainEntity": {
+        "@id": "https://argelysoriach.com/universe-api/#framework"
+      }
+    },
+    {
+      "@type": "CreativeWork",
+      "@id": "https://argelysoriach.com/universe-api/#framework",
+      "name": "Universe API",
+      "url": "https://argelysoriach.com/universe-api/",
+      "description": "A foundational macro-systems design framework grounded in first-principles engineering and sovereign logic.",
+      "abstract": "The operating philosophy centers on re-architecting digital infrastructure from the mulch up: replacing synthetic friction with closed-loop systems, asset-based leverage, and forms of growth that emerge organically rather than through extractive mechanisms.",
+      "keywords": [
+        "Closed-loop systems",
+        "Sovereign logic",
+        "Asset-based leverage",
+        "First-principles engineering",
+        "Organic/unforced biological growth",
+        "Infrastructure designed to compound rather than extract"
+      ],
+      "author": {
+        "@id": "https://argelysoriach.com/#person"
+      },
+      "isPartOf": {
+        "@id": "https://argelysoriach.com/#website"
+      },
+      "inLanguage": "en"
+    }
+  ]
+}
+</script>
+<link rel="preload" href="../fonts/Archivo-Variable.woff2" as="font" type="font/woff2" crossorigin>
+<style>
+@font-face{font-family:'Archivo VF';src:url('../fonts/Archivo-Variable.woff2') format('woff2');font-weight:100 900;font-stretch:62% 125%;font-style:normal;font-display:swap}
+@font-face{font-family:'Archivo VF';src:url('../fonts/Archivo-Italic-Variable.woff2') format('woff2');font-weight:100 900;font-stretch:62% 125%;font-style:italic;font-display:swap}
+/* The full files. A browser fetches one only if a page uses a letter the small file does not carry. */
+@font-face{font-family:'Archivo Full';src:url('../fonts/Archivo-Variable.ttf') format('truetype');font-weight:100 900;font-stretch:62% 125%;font-style:normal;font-display:swap}
+@font-face{font-family:'Archivo Full';src:url('../fonts/Archivo-Italic-Variable.ttf') format('truetype');font-weight:100 900;font-stretch:62% 125%;font-style:italic;font-display:swap}
+:root{
+  --ground:#000000;
+  --ink:#F4F4F0;
+  --sans:'Archivo VF','Archivo Full',"Helvetica Neue",Arial,sans-serif;
+  --gutter:clamp(1.3125rem,4vw,5.5625rem);
+  --rule:4px solid var(--ink);
+}
+*,*::before,*::after{box-sizing:border-box}
+html{color-scheme:dark;-webkit-text-size-adjust:100%}
+html,body{margin:0;padding:0;background:var(--ground)}
+body{
+  color:var(--ink);
+  font-family:var(--sans);
+  font-size:clamp(1.125rem,.5vw + 1rem,1.375rem);
+  line-height:1.5;
+  font-variant-ligatures:none;
+  overflow-x:hidden;
+}
+a{color:var(--ink)}
+a:hover{background:var(--ink);color:var(--ground)}
+:focus-visible{outline:3px solid var(--ink);outline-offset:3px}
+::selection{background:var(--ink);color:var(--ground)}
+
+.label{
+  font-weight:800;
+  font-stretch:125%;
+  text-transform:uppercase;
+  letter-spacing:.04em;
+  font-size:clamp(.8125rem,.4vw + .6875rem,1rem);
+  line-height:1.3;
+}
+header,footer{
+  display:flex;flex-wrap:wrap;justify-content:space-between;gap:.5rem 1.5rem;
+  padding:.4375rem var(--gutter);
+}
+header{border-bottom:var(--rule)}
+footer{border-top:var(--rule)}
+header a,footer a{text-decoration:none;padding-block:.8125rem}
+
+h1{
+  margin:0;
+  padding:clamp(2rem,6vw,5.5rem) var(--gutter);
+  border-bottom:var(--rule);
+  font-weight:900;
+  font-stretch:125%;
+  text-transform:uppercase;
+  font-size:clamp(1.75rem,9.6vw,11rem);
+  line-height:.88;
+  letter-spacing:-.03em;
+  overflow-wrap:anywhere;
+}
+.for{
+  margin:0;
+  padding:1.25rem var(--gutter);
+  border-bottom:var(--rule);
+}
+
+section{
+  padding:clamp(1.75rem,4vw,3.5rem) var(--gutter);
+  border-bottom:var(--rule);
+}
+h2{margin:0 0 1.5em}
+.prose{margin:0;max-width:36em}
+a.text{text-decoration:underline;text-decoration-thickness:2px;text-underline-offset:3px}
+a.text:hover{text-decoration:none}
+.base{list-style:none;margin:0;padding:0;max-width:36em;counter-reset:b}
+.base li{
+  counter-increment:b;
+  display:flex;gap:1.25em;align-items:baseline;
+  padding:.75em 0;
+  border-top:2px solid var(--ink);
+  font-weight:700;
+}
+.base li:last-child{border-bottom:2px solid var(--ink)}
+.base li::before{
+  content:counter(b,decimal-leading-zero);
+  flex:none;
+  font-weight:800;font-stretch:125%;letter-spacing:.04em;
+  font-size:.8em;
+}
+
+/* one list of pages, the same on every page */
+footer nav{display:flex;flex-wrap:wrap;gap:0 2.125rem}
+footer a[aria-current]{text-decoration:underline;text-decoration-thickness:2px;text-underline-offset:3px}
+footer{flex-direction:column;flex-wrap:nowrap;align-items:stretch;justify-content:flex-start;gap:0}
+.legal{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:baseline;gap:0 2rem;margin-top:.4375rem;border-top:2px solid var(--ink)}
+.legal nav{display:flex;flex-wrap:wrap;align-items:baseline;gap:0 2.125rem}
+.legal p,.legal span{margin:0;padding-block:.8125rem}
+
+/* spirit and engineering */
+.spirit p{margin:0}
+.spirit p + p{margin-top:1.3125rem}
+.spirit strong{font-weight:900}
+
+/* Site menu: Menu in the top corner opens one index of the whole site, in groups.
+   Without script the link still opens it (:target), and Close returns to the page. */
+html.menu-open{overflow:hidden}
+.menu-btn{cursor:pointer;flex:none;margin-left:auto}
+.site-menu{position:fixed;inset:0;z-index:100;display:none;flex-direction:column;background:var(--ground);color:var(--ink);overflow-y:auto;overscroll-behavior:contain}
+.site-menu.is-open,.site-menu:target{display:flex}
+.site-menu__groups{display:grid;grid-template-columns:minmax(0,1fr);gap:34px clamp(21px,3vw,55px);align-content:start;width:100%;max-width:1600px;margin:0 auto;padding:34px var(--gutter) 55px}
+@media (min-width:700px){.site-menu__groups{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (min-width:1200px){.site-menu__groups{grid-template-columns:repeat(3,minmax(0,1fr))}}
+.site-menu h2,.site-index h2{margin:0 0 8px;padding:13px 0 0;border-top:4px solid var(--ink);font-family:var(--sans);font-weight:800;font-stretch:125%;font-size:13px;line-height:1.3;letter-spacing:.06em;text-transform:uppercase}
+.site-menu ul,.site-index ul{list-style:none;margin:0;padding:0}
+.site-menu li a,.site-index li a{display:block;padding:5px 0;color:var(--ink);background:none;text-decoration:none;font-family:var(--sans);font-weight:900;font-stretch:125%;font-variation-settings:'wdth' 125,'wght' 900;text-transform:uppercase;letter-spacing:-.01em;line-height:1.05;font-size:clamp(22px,1.6vw + 14px,38px)}
+.site-menu li a:hover,.site-menu li a:focus-visible,.site-index li a:hover,.site-index li a:focus-visible{background:var(--ink);color:var(--ground)}
+.site-menu li a[aria-current]{text-decoration:underline;text-decoration-thickness:3px;text-underline-offset:.15em}
+.site-index{display:grid;grid-template-columns:minmax(0,1fr);gap:34px clamp(21px,3vw,55px);margin-top:34px}
+@media (min-width:700px){.site-index{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (min-width:1200px){.site-index{grid-template-columns:repeat(3,minmax(0,1fr))}}
+footer>.legal:first-child{margin-top:0;border-top:0}
+header.label{flex-wrap:nowrap}
+.sr{position:absolute;width:1px;height:1px;margin:-1px;padding:0;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap;border:0}.skip{position:absolute;left:-9999px;top:0;z-index:200;background:#F4F4F0;color:#000;padding:8px 13px;font-family:"JetBrains Mono",ui-monospace,monospace;font-size:13px;letter-spacing:.06em;text-transform:uppercase;text-decoration:none}.skip:focus{left:0}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="label">
+  <a href="https://argelysoriach.com/">Argelys Samuel Oriach</a>
+  <a class="menu-btn" href="#site-menu" aria-controls="site-menu" aria-expanded="false" data-menu-open>Menu</a>
+</header>
+<nav class="site-menu" id="site-menu" aria-label="Site">
+  <header class="label"><a href="https://argelysoriach.com/">Argelys Samuel Oriach</a><a class="menu-btn" href="#" data-menu-close>Close</a></header>
+  <div class="site-menu__groups">
+    <div class="site-menu__group"><h2>Work</h2><ul><li><a href="https://argelysoriach.com/portfolio/">Portfolio</a></li><li><a href="https://argelysoriach.com/banana-republic/">Banana Republic</a></li><li><a href="https://argelysoriach.com/catalogue-001/">Catalogue 001</a></li><li><a href="https://argelysoriach.com/catalogue-002/">Catalogue 002</a></li><li><a href="https://argelysoriach.com/community-presentation/">Community Presentation</a></li></ul></div>
+    <div class="site-menu__group"><h2>Systems</h2><ul><li><a href="https://argelysoriach.com/universe-api/" aria-current="page">Universe API</a></li><li><a href="https://argelysoriach.com/matter-and-body-architecture/">Matter and Body Architecture</a></li></ul></div>
+    <div class="site-menu__group"><h2>Writing</h2><ul><li><a href="https://argelysoriach.com/this-is-not-a-love-story-yankees/">This Is Not a Love Story (Yankees)</a></li><li><a href="https://argelysoriach.com/mad-matter/">Mad Matter</a></li><li><a href="https://argelysoriach.com/beauty-supply/">Beauty Supply</a></li><li><a href="https://argelysoriach.com/sovereignty/">Sovereignty</a></li></ul></div>
+    <div class="site-menu__group"><h2>About</h2><ul><li><a href="https://argelysoriach.com/#bio">Bio</a></li><li><a href="https://argelysoriach.com/ethos/">Ethos</a></li><li><a href="https://argelysoriach.com/cv/">CV</a></li><li><a href="https://argelysoriach.com/nothing-artist/">Nothing Artist</a></li><li><a href="/intake/">Intake</a></li><li><a href="mailto:argelys@seveneightythree.com">Contact</a></li></ul></div>
+    <div class="site-menu__group"><h2>Elsewhere</h2><ul><li><a href="https://seveneightythree.com/" target="_blank" rel="noopener noreferrer">Seven Eighty Three<span class="sr"> (opens in a new tab)</span></a></li><li><a href="https://communalfoundation.org/" target="_blank" rel="noopener noreferrer">Communal Foundation<span class="sr"> (opens in a new tab)</span></a></li><li><a href="https://www.linkedin.com/in/argelys-samuel-oriach/" target="_blank" rel="noopener noreferrer">LinkedIn<span class="sr"> (opens in a new tab)</span></a></li><li><a href="https://paragraph.com/@seven83hertz" target="_blank" rel="noopener noreferrer">Dispatches<span class="sr"> (opens in a new tab)</span></a></li></ul></div>
+  </div>
+</nav>
+<main id="main">
+
+<h1>Universe API</h1>
+<p class="for label">Macro-systems design framework</p>
+
+<section>
+  <h2 class="label">Definition</h2>
+  <p class="prose">The Universe API is a foundational macro-systems design framework grounded in first-principles engineering and sovereign logic. It is the central deployment of <a class="text" href="https://argelysoriach.com/">Argelys Samuel Oriach</a>, Systems Architect and Principal at <a class="text" href="https://seveneightythree.com/">Seven Eighty Three</a> (783). It is applied through <a class="text" href="https://communalfoundation.org/">Communal Foundation</a>, his food infrastructure laboratory under Seven Eighty Three.</p>
+</section>
+
+<section>
+  <h2 class="label">Operating Philosophy</h2>
+  <p class="prose">The operating philosophy centers on re-architecting digital infrastructure from the mulch up: replacing synthetic friction with closed-loop systems, asset-based leverage, and forms of growth that emerge organically rather than through extractive mechanisms.</p>
+</section>
+
+<section>
+  <h2 class="label">Spirit and engineering</h2>
+  <div class="prose spirit">
+    <p><strong>Both is the only way it holds.</strong></p>
+    <p>Engineering without spirit is synthetic friction: it looks efficient, but it extracts.</p>
+    <p>Spirit without engineering is performance without structure: it feels true, but it collapses under load.</p>
+    <p>Together:</p>
+    <p><strong>Engineering makes the spirit legible.</strong><br>First-principles, closed-loop, asset-based leverage: that’s how you make sure the feeling can actually travel from your body to the back wall.</p>
+    <p><strong>Spirit makes the engineering worth holding.</strong><br>Sovereign logic, organic growth, matter as matter: that’s why you build it at all. Not to extract, but to compound.</p>
+    <p>That’s the <a class="text" href="https://argelysoriach.com/sovereignty/">Nothing Artist</a>. A <a class="text" href="https://argelysoriach.com/matter-and-body-architecture/">matter and body architect</a>. The body is the spirit. The matter is the engineering.</p>
+    <p><strong>Same sentence.</strong></p>
+  </div>
+</section>
+
+<section>
+  <h2 class="label">Baseline</h2>
+  <ol class="base">
+    <li>Closed-loop systems</li>
+    <li>Sovereign logic</li>
+    <li>Asset-based leverage</li>
+    <li>First-principles engineering</li>
+    <li>Organic/unforced biological growth</li>
+    <li>Infrastructure designed to compound rather than extract</li>
+  </ol>
+</section>
+</main>
+<footer class="label"><div class="legal"><nav aria-label="About this site"><a href="mailto:argelys@seveneightythree.com">Contact</a><a href="https://argelysoriach.com/schema/">Schema</a><a href="https://argelysoriach.com/privacy/">Privacy</a><a href="https://argelysoriach.com/terms/">Terms</a><span>Brooklyn, New York</span></nav><p>© 2026 Argelys Samuel Oriach · Seven Eighty Three</p></div></footer>
+<script>
+/* Site menu. Menu opens it, Close or Escape shuts it and returns focus; a jump link shuts it and goes. */
+(function () {
+  var menu = document.getElementById('site-menu');
+  if (!menu) return;
+  var root = document.documentElement, back = null;
+  var openers = Array.prototype.slice.call(document.querySelectorAll('[data-menu-open]'));
+  function isOpen() { return menu.classList.contains('is-open'); }
+  function set(open) {
+    menu.classList.toggle('is-open', open);
+    root.classList.toggle('menu-open', open);
+    Array.prototype.forEach.call(document.body.children, function (el) {
+      if (el === menu || el.tagName === 'SCRIPT') return;
+      if (open) el.setAttribute('inert', ''); else el.removeAttribute('inert');
+    });
+    openers.forEach(function (b) { b.setAttribute('aria-expanded', open ? 'true' : 'false'); });
+    if (open) { back = document.activeElement; var first = menu.querySelector('.site-menu__groups a'); if (first) first.focus(); }
+    else if (back && back.focus) { back.focus(); back = null; }
+  }
+  openers.forEach(function (b) { b.addEventListener('click', function (e) { e.preventDefault(); set(!isOpen()); }); });
+  menu.addEventListener('click', function (e) {
+    var a = e.target.closest ? e.target.closest('a') : null;
+    if (!a) return;
+    if (a.hasAttribute('data-menu-close')) { e.preventDefault(); set(false); return; }
+    if ((a.getAttribute('href') || '').charAt(0) === '#') { back = null; set(false); }
+  });
+  document.addEventListener('keydown', function (e) {
+    if (!isOpen()) return;
+    if (e.key === 'Escape') { e.preventDefault(); set(false); return; }
+    if (e.key !== 'Tab') return;
+    var f = menu.querySelectorAll('a[href]'), first = f[0], last = f[f.length - 1];
+    if (!menu.contains(document.activeElement)) { e.preventDefault(); (e.shiftKey ? last : first).focus(); return; }
+    if (e.shiftKey && document.activeElement === first) { e.preventDefault(); last.focus(); }
+    else if (!e.shiftKey && document.activeElement === last) { e.preventDefault(); first.focus(); }
+  });
+  if (location.hash === '#site-menu') { history.replaceState(null, '', location.pathname + location.search); set(true); }
+})();
+</script>
+</body>
+</html>

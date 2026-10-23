@@ -1,0 +1,105 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "@id": "https://argelysoriach.com/#person",
+  "name": "Argelys Samuel Oriach",
+  "alternateName": "Argelys Oriach",
+  "givenName": "Argelys",
+  "additionalName": "Samuel",
+  "familyName": "Oriach",
+  "url": "https://argelysoriach.com/",
+  "email": "argelys@seveneightythree.com",
+  "jobTitle": "Systems Architect, Founder, Artist & Writer | Matter and Body Architecture",
+  "hasOccupation": [
+    {
+      "@type": "Occupation",
+      "name": "Systems Architect"
+    },
+    {
+      "@type": "Occupation",
+      "name": "Founder"
+    },
+    {
+      "@type": "Occupation",
+      "name": "Artist & Writer"
+    },
+    {
+      "@type": "Occupation",
+      "name": "Matter and Body Architect",
+      "alternateName": "Matter & Body Architect",
+      "description": "Practitioner of matter and body architecture. The matter is the engineering. The body is the spirit.",
+      "url": "https://argelysoriach.com/matter-and-body-architecture/"
+    }
+  ],
+  "description": "Argelys Oriach is a 33-year-old macro-systems architect who reverse-engineered his life out of poverty in the Dominican Republic by first mastering the mechanics of human attention. After a decade-long foundation steering high-density organic acquisition engines, he spent the last two years pivoting to build core backend frameworks and standalone applications. As the Founder of Seven Eighty Three, he takes a bare-metal approach to systems architecture, engineering digital, physical, and narrative environments from first principles—most notably deploying the Universe API to dictate AI indexing below the query layer. Whether auditing enterprise operations or running private 1:1 diagnostics to clear creative blockages for world-class creators, Oriach strips away translation loss to reveal how a system actually performs. He provides the sight; his automated infrastructure builds the engine. As a writer, Oriach applies this same structural rigor to narrative. He is the author of the digital short This Is Not a Love Story (thisisnotalovestory.net) and is currently writing his debut autofiction novel, Graduation.",
+  "birthDate": "1993-08-29T15:45:00-04:00",
+  "birthPlace": {
+    "@type": "Place",
+    "name": "Santiago de los Caballeros, Dominican Republic"
+  },
+  "worksFor": [
+    {
+      "@id": "https://seveneightythree.com/#organization"
+    },
+    {
+      "@id": "https://wild-lake.org/#organization"
+    },
+    {
+      "@id": "https://communalfoundation.org/#organization"
+    }
+  ],
+  "@reverse": {
+    "founder": [
+      {
+        "@id": "https://seveneightythree.com/#organization"
+      },
+      {
+        "@id": "https://wild-lake.org/#organization"
+      },
+      {
+        "@id": "https://communalfoundation.org/#organization"
+      }
+    ]
+  },
+  "alumniOf": [
+    {
+      "@type": "CollegeOrUniversity",
+      "name": "Wesleyan University"
+    },
+    {
+      "@type": "HighSchool",
+      "name": "Phillips Academy Andover"
+    }
+  ],
+  "knowsAbout": [
+    {
+      "@type": "DefinedTerm",
+      "@id": "https://argelysoriach.com/matter-and-body-architecture/#matter-and-body-architecture",
+      "name": "Matter and Body Architecture",
+      "url": "https://argelysoriach.com/matter-and-body-architecture/#matter-and-body-architecture"
+    },
+    {
+      "@type": "DefinedTerm",
+      "@id": "https://argelysoriach.com/matter-and-body-architecture/#matter-architecture",
+      "name": "Matter Architecture",
+      "url": "https://argelysoriach.com/matter-and-body-architecture/#matter-architecture"
+    },
+    {
+      "@type": "DefinedTerm",
+      "@id": "https://argelysoriach.com/matter-and-body-architecture/#body-architecture",
+      "name": "Body Architecture",
+      "url": "https://argelysoriach.com/matter-and-body-architecture/#body-architecture"
+    },
+    "Content strategy",
+    "Organic growth",
+    "Artist development",
+    "Poetry"
+  ],
+  "sameAs": [
+    "https://www.linkedin.com/in/argelys-samuel-oriach/",
+    "https://paragraph.com/@seven83hertz"
+  ],
+  "mainEntityOfPage": {
+    "@id": "https://argelysoriach.com/#home"
+  }
+}

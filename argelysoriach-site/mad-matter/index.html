@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-22DRN1XNE9"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-22DRN1XNE9');
+</script>
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Mad Matter — Argelys Samuel Oriach</title>
+<meta name="description" content="Mad Matter: the artist statement and manifesto of Argelys Samuel Oriach, matter architect. The medium is matter. The method is madness: the refusal to let reality settle into predictable forms.">
+<meta name="theme-color" content="#000000">
+<link rel="canonical" href="https://argelysoriach.com/mad-matter/">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebPage",
+      "@id": "https://argelysoriach.com/mad-matter/#page",
+      "url": "https://argelysoriach.com/mad-matter/",
+      "name": "Mad Matter",
+      "isPartOf": { "@id": "https://argelysoriach.com/#website" },
+      "mainEntity": { "@id": "https://argelysoriach.com/mad-matter/#work" },
+      "inLanguage": "en"
+    },
+    {
+      "@type": "CreativeWork",
+      "@id": "https://argelysoriach.com/mad-matter/#work",
+      "name": "Mad Matter",
+      "alternateName": "Artist statement and manifesto of a matter architect",
+      "url": "https://argelysoriach.com/mad-matter/",
+      "genre": ["Artist statement", "Manifesto"],
+      "abstract": "The medium is matter and the method is madness: the refusal to let reality settle into predictable forms. A body is not only biological. The statement names eight bodies, from a word to a celestial monolith.",
+      "keywords": ["Matter architect", "Matter", "Body", "Word", "Sentence", "Paragraph", "Literature", "Work", "Human", "Earth", "Celestial monolith"],
+      "about": [{ "@id": "https://argelysoriach.com/matter-and-body-architecture/#matter-architecture" }, { "@id": "https://argelysoriach.com/matter-and-body-architecture/#body-architecture" }],
+      "author": { "@id": "https://argelysoriach.com/#person" },
+      "isPartOf": { "@id": "https://argelysoriach.com/#website" },
+      "dateCreated": "2026",
+      "inLanguage": "en"
+    }
+  ]
+}
+</script>
+<link rel="preload" href="../fonts/Archivo-Variable.woff2" as="font" type="font/woff2" crossorigin>
+<style>
+@font-face{font-family:'Archivo VF';src:url('../fonts/Archivo-Variable.woff2') format('woff2');font-weight:100 900;font-stretch:62% 125%;font-style:normal;font-display:swap}
+@font-face{font-family:'Archivo VF';src:url('../fonts/Archivo-Italic-Variable.woff2') format('woff2');font-weight:100 900;font-stretch:62% 125%;font-style:italic;font-display:swap}
+/* The full files. A browser fetches one only if a page uses a letter the small file does not carry. */
+@font-face{font-family:'Archivo Full';src:url('../fonts/Archivo-Variable.ttf') format('truetype');font-weight:100 900;font-stretch:62% 125%;font-style:normal;font-display:swap}
+@font-face{font-family:'Archivo Full';src:url('../fonts/Archivo-Italic-Variable.ttf') format('truetype');font-weight:100 900;font-stretch:62% 125%;font-style:italic;font-display:swap}
+:root{
+  --ground:#000000;
+  --ink:#F4F4F0;
+  --sans:'Archivo VF','Archivo Full',"Helvetica Neue",Arial,sans-serif;
+  --gutter:clamp(1.3125rem,4vw,5.5625rem);
+  --rule:4px solid var(--ink);
+  /* Fibonacci steps, in rem: 8, 13, 21, 34, 55, 89 px */
+  --s1:.5rem;--s2:.8125rem;--s3:1.3125rem;--s4:2.125rem;--s5:3.4375rem;--s6:5.5625rem;
+}
+*,*::before,*::after{box-sizing:border-box}
+html{color-scheme:dark;-webkit-text-size-adjust:100%}
+html,body{margin:0;padding:0;background:var(--ground)}
+body{
+  color:var(--ink);
+  font-family:var(--sans);
+  font-size:clamp(1.125rem,.5vw + 1rem,1.375rem);
+  line-height:1.5;
+  font-variant-ligatures:none;
+  overflow-x:hidden;
+}
+a{color:var(--ink)}
+a:hover{background:var(--ink);color:var(--ground)}
+:focus-visible{outline:3px solid var(--ink);outline-offset:3px}
+::selection{background:var(--ink);color:var(--ground)}
+
+.label{
+  font-weight:800;
+  font-stretch:125%;
+  text-transform:uppercase;
+  letter-spacing:.04em;
+  font-size:clamp(.8125rem,.4vw + .6875rem,1rem);
+  line-height:1.3;
+}
+header,footer{
+  display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:var(--s1) var(--s3);
+  padding:.4375rem var(--gutter);
+}
+header{border-bottom:var(--rule)}
+footer{border-top:var(--rule)}
+header a,footer a{text-decoration:none;padding-block:var(--s2)}
+
+/* the title: two bodies of type, each fitted to the full width */
+h1{margin:0;padding:var(--s4) var(--gutter) var(--s3);border-bottom:var(--rule)}
+h1 svg{display:block;width:100%;height:auto;overflow:visible}
+h1 svg + svg{margin-top:var(--s1)}
+h1 text{
+  font-family:var(--sans);font-weight:900;font-stretch:125%;
+  font-variation-settings:'wdth' 125,'wght' 900;
+  letter-spacing:-.02em;fill:var(--ink);
+}
+.for{margin:0;padding:var(--s3) var(--gutter);border-bottom:var(--rule)}
+
+section{padding:clamp(var(--s4),4vw,var(--s5)) var(--gutter);border-bottom:var(--rule)}
+h2{margin:0 0 var(--s4)}
+
+/* statement */
+.statement{max-width:30em;font-size:clamp(1.3125rem,1.2vw + 1rem,2.125rem);line-height:1.3;font-weight:500}
+.statement p{margin:0}
+.statement p + p{margin-top:var(--s3)}
+.statement strong{font-weight:900}
+.lead{margin-bottom:var(--s3)}
+.close{font-size:clamp(1.5rem,2.6vw + 1rem,3.4375rem);line-height:1.1;max-width:20em}
+
+/* eight bodies: each rule is as long as its Fibonacci number, 1 1 2 3 5 8 13 21 */
+.bodies{list-style:none;margin:0;padding:0;counter-reset:b}
+.bodies li{counter-increment:b;padding:var(--s3) 0 0}
+.bodies li + li{margin-top:var(--s3)}
+.scale{display:block;height:4px;background:var(--ink);width:calc(var(--f) / 21 * 100%);min-width:var(--s1);margin-bottom:var(--s2)}
+.bodies .row{display:grid;grid-template-columns:2.5em minmax(0,1fr);gap:0 var(--s2);align-items:baseline}
+.bodies .row::before{content:counter(b,decimal-leading-zero);font-weight:800;font-stretch:125%;font-size:.75em;letter-spacing:.04em}
+.bodies h3{
+  margin:0;
+  font-weight:900;font-stretch:125%;font-variation-settings:'wdth' 125,'wght' 900;
+  text-transform:uppercase;letter-spacing:-.01em;line-height:1;
+  font-size:clamp(1.5rem,3.4vw,3.4375rem);
+}
+.bodies p{margin:var(--s1) 0 0;max-width:34em;grid-column:2}
+
+/* manifesto */
+.rules{list-style:none;margin:0;padding:0;counter-reset:r;max-width:44em}
+.rules li{
+  counter-increment:r;
+  display:grid;grid-template-columns:2.5em minmax(0,1fr);gap:0 var(--s2);align-items:baseline;
+  padding:var(--s3) 0;border-top:2px solid var(--ink);
+}
+.rules li:last-child{border-bottom:2px solid var(--ink)}
+.rules li::before{content:counter(r,decimal-leading-zero);font-weight:800;font-stretch:125%;font-size:.75em;letter-spacing:.04em}
+.rules strong{display:block;font-weight:900;font-size:clamp(1.3125rem,1.6vw + .875rem,2.125rem);line-height:1.15}
+.rules span{display:block;margin-top:var(--s1)}
+
+.sign{display:flex;flex-wrap:wrap;align-items:center;gap:var(--s3) var(--s4)}
+.sign svg{display:block;width:var(--s6);height:auto;flex:none}
+.sign p{margin:0}
+
+/* one list of pages, the same on every page */
+footer nav{display:flex;flex-wrap:wrap;gap:0 2.125rem}
+footer a[aria-current]{text-decoration:underline;text-decoration-thickness:2px;text-underline-offset:3px}
+footer{flex-direction:column;flex-wrap:nowrap;align-items:stretch;justify-content:flex-start;gap:0}
+.legal{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:baseline;gap:0 2rem;margin-top:.4375rem;border-top:2px solid var(--ink)}
+.legal nav{display:flex;flex-wrap:wrap;align-items:baseline;gap:0 2.125rem}
+.legal p,.legal span{margin:0;padding-block:.8125rem}
+
+/* Site menu: Menu in the top corner opens one index of the whole site, in groups.
+   Without script the link still opens it (:target), and Close returns to the page. */
+html.menu-open{overflow:hidden}
+.menu-btn{cursor:pointer;flex:none;margin-left:auto}
+.site-menu{position:fixed;inset:0;z-index:100;display:none;flex-direction:column;background:var(--ground);color:var(--ink);overflow-y:auto;overscroll-behavior:contain}
+.site-menu.is-open,.site-menu:target{display:flex}
+.site-menu__groups{display:grid;grid-template-columns:minmax(0,1fr);gap:34px clamp(21px,3vw,55px);align-content:start;width:100%;max-width:1600px;margin:0 auto;padding:34px var(--gutter) 55px}
+@media (min-width:700px){.site-menu__groups{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (min-width:1200px){.site-menu__groups{grid-template-columns:repeat(3,minmax(0,1fr))}}
+.site-menu h2,.site-index h2{margin:0 0 8px;padding:13px 0 0;border-top:4px solid var(--ink);font-family:var(--sans);font-weight:800;font-stretch:125%;font-size:13px;line-height:1.3;letter-spacing:.06em;text-transform:uppercase}
+.site-menu ul,.site-index ul{list-style:none;margin:0;padding:0}
+.site-menu li a,.site-index li a{display:block;padding:5px 0;color:var(--ink);background:none;text-decoration:none;font-family:var(--sans);font-weight:900;font-stretch:125%;font-variation-settings:'wdth' 125,'wght' 900;text-transform:uppercase;letter-spacing:-.01em;line-height:1.05;font-size:clamp(22px,1.6vw + 14px,38px)}
+.site-menu li a:hover,.site-menu li a:focus-visible,.site-index li a:hover,.site-index li a:focus-visible{background:var(--ink);color:var(--ground)}
+.site-menu li a[aria-current]{text-decoration:underline;text-decoration-thickness:3px;text-underline-offset:.15em}
+.site-index{display:grid;grid-template-columns:minmax(0,1fr);gap:34px clamp(21px,3vw,55px);margin-top:34px}
+@media (min-width:700px){.site-index{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (min-width:1200px){.site-index{grid-template-columns:repeat(3,minmax(0,1fr))}}
+footer>.legal:first-child{margin-top:0;border-top:0}
+header.label{flex-wrap:nowrap}
+.sr{position:absolute;width:1px;height:1px;margin:-1px;padding:0;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap;border:0}.skip{position:absolute;left:-9999px;top:0;z-index:200;background:#F4F4F0;color:#000;padding:8px 13px;font-family:"JetBrains Mono",ui-monospace,monospace;font-size:13px;letter-spacing:.06em;text-transform:uppercase;text-decoration:none}.skip:focus{left:0}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="label">
+  <a href="https://argelysoriach.com/">Argelys Samuel Oriach</a>
+  <a class="menu-btn" href="#site-menu" aria-controls="site-menu" aria-expanded="false" data-menu-open>Menu</a>
+</header>
+<nav class="site-menu" id="site-menu" aria-label="Site">
+  <header class="label"><a href="https://argelysoriach.com/">Argelys Samuel Oriach</a><a class="menu-btn" href="#" data-menu-close>Close</a></header>
+  <div class="site-menu__groups">
+    <div class="site-menu__group"><h2>Work</h2><ul><li><a href="https://argelysoriach.com/portfolio/">Portfolio</a></li><li><a href="https://argelysoriach.com/banana-republic/">Banana Republic</a></li><li><a href="https://argelysoriach.com/catalogue-001/">Catalogue 001</a></li><li><a href="https://argelysoriach.com/catalogue-002/">Catalogue 002</a></li><li><a href="https://argelysoriach.com/community-presentation/">Community Presentation</a></li></ul></div>
+    <div class="site-menu__group"><h2>Systems</h2><ul><li><a href="https://argelysoriach.com/universe-api/">Universe API</a></li><li><a href="https://argelysoriach.com/matter-and-body-architecture/">Matter and Body Architecture</a></li></ul></div>
+    <div class="site-menu__group"><h2>Writing</h2><ul><li><a href="https://argelysoriach.com/this-is-not-a-love-story-yankees/">This Is Not a Love Story (Yankees)</a></li><li><a href="https://argelysoriach.com/mad-matter/" aria-current="page">Mad Matter</a></li><li><a href="https://argelysoriach.com/beauty-supply/">Beauty Supply</a></li><li><a href="https://argelysoriach.com/sovereignty/">Sovereignty</a></li></ul></div>
+    <div class="site-menu__group"><h2>About</h2><ul><li><a href="https://argelysoriach.com/#bio">Bio</a></li><li><a href="https://argelysoriach.com/ethos/">Ethos</a></li><li><a href="https://argelysoriach.com/cv/">CV</a></li><li><a href="https://argelysoriach.com/nothing-artist/">Nothing Artist</a></li><li><a href="/intake/">Intake</a></li><li><a href="mailto:argelys@seveneightythree.com">Contact</a></li></ul></div>
+    <div class="site-menu__group"><h2>Elsewhere</h2><ul><li><a href="https://seveneightythree.com/" target="_blank" rel="noopener noreferrer">Seven Eighty Three<span class="sr"> (opens in a new tab)</span></a></li><li><a href="https://communalfoundation.org/" target="_blank" rel="noopener noreferrer">Communal Foundation<span class="sr"> (opens in a new tab)</span></a></li><li><a href="https://www.linkedin.com/in/argelys-samuel-oriach/" target="_blank" rel="noopener noreferrer">LinkedIn<span class="sr"> (opens in a new tab)</span></a></li><li><a href="https://paragraph.com/@seven83hertz" target="_blank" rel="noopener noreferrer">Dispatches<span class="sr"> (opens in a new tab)</span></a></li></ul></div>
+  </div>
+</nav>
+<main id="main">
+
+<h1 aria-label="Mad Matter">
+  <svg viewBox="0 0 4000 672" aria-hidden="true" focusable="false"><text x="0" y="664" textLength="4000" lengthAdjust="spacingAndGlyphs" font-size="900">MAD</text></svg>
+  <svg viewBox="0 0 4000 672" aria-hidden="true" focusable="false"><text x="0" y="664" textLength="4000" lengthAdjust="spacingAndGlyphs" font-size="900">MATTER</text></svg>
+</h1>
+<p class="for label">Artist statement and manifesto of a <a href="https://argelysoriach.com/matter-and-body-architecture/#matter-architecture">matter architect</a></p>
+
+<section>
+  <h2 class="label">Statement</h2>
+  <div class="statement">
+    <p><strong>I am a matter architect. An architect of the volatile.</strong></p>
+    <p>I do not paint, write or sculpt. I work the raw fabric: mass, scale, syntax.</p>
+    <p>My medium is Matter. My method is Madness: the refusal to let reality settle into predictable forms.</p>
+  </div>
+</section>
+
+<section>
+  <h2 class="label">Body</h2>
+  <div class="statement lead"><p>A body is not only biological.</p></div>
+  <ol class="bodies">
+    <li style="--f:1">
+      <span class="scale" aria-hidden="true"></span>
+      <div class="row"><h3>A word</h3><p>Unyielding. The smallest body I build with.</p></div>
+    </li>
+    <li style="--f:1">
+      <span class="scale" aria-hidden="true"></span>
+      <div class="row"><h3>A sentence</h3><p>Sudden. It arrives whole.</p></div>
+    </li>
+    <li style="--f:2">
+      <span class="scale" aria-hidden="true"></span>
+      <div class="row"><h3>A paragraph</h3><p>Volatile. Sentences under pressure in one room.</p></div>
+    </li>
+    <li style="--f:3">
+      <span class="scale" aria-hidden="true"></span>
+      <div class="row"><h3>A literature</h3><p>A dense collection of text. Mass made of pages.</p></div>
+    </li>
+    <li style="--f:5">
+      <span class="scale" aria-hidden="true"></span>
+      <div class="row"><h3>A work</h3><p>What a body builds and leaves standing.</p></div>
+    </li>
+    <li style="--f:8">
+      <span class="scale" aria-hidden="true"></span>
+      <div class="row"><h3>A human</h3><p>The biological body. It carries all the others. It needs rest.</p></div>
+    </li>
+    <li style="--f:13">
+      <span class="scale" aria-hidden="true"></span>
+      <div class="row"><h3>The Earth</h3><p>A vast landscape. Ground that shifts.</p></div>
+    </li>
+    <li style="--f:21">
+      <span class="scale" aria-hidden="true"></span>
+      <div class="row"><h3>A celestial monolith</h3><p>The crushing weight. The largest body I can name.</p></div>
+    </li>
+  </ol>
+</section>
+
+<section>
+  <h2 class="label">Material</h2>
+  <div class="statement">
+    <p><strong>Everything is material.</strong></p>
+    <p>A syllable has density.<br>A void has gravity.<br>A blank space is a room waiting to collapse or expand.</p>
+  </div>
+</section>
+
+<section>
+  <h2 class="label">Method</h2>
+  <ol class="rules">
+    <li><div><strong>I take down the wall between the small and the vast.</strong></div></li>
+    <li><div><strong>I give one word the reverence of a monument.</strong></div></li>
+    <li><div><strong>I carve away until only the heavy core remains.</strong></div></li>
+    <li><div><strong>I let elements collide.</strong></div></li>
+    <li><div><strong>I let syntax bend.</strong></div></li>
+    <li><div><strong>I let structure find its own equilibrium.</strong></div></li>
+  </ol>
+</section>
+
+<section>
+  <div class="statement close">
+    <p>I do not build clean frameworks to contain the world.</p>
+    <p><strong>I architect the spaces where the world breaks open.</strong></p>
+  </div>
+</section>
+
+<section>
+  <div class="sign">
+    <svg viewBox="184 204 432 452" role="img" aria-label="Emblem">
+      <g fill="none" stroke="#F4F4F0" stroke-linecap="round" stroke-linejoin="round">
+        <path stroke-width="52" d="M210 230 L400 630 L590 230"/>
+        <path stroke-width="36" d="M270 420 L530 440"/>
+      </g>
+    </svg>
+    <p class="label">Argelys Samuel Oriach<br>Matter architect<br>New York, 2026</p>
+  </div>
+</section>
+</main>
+<footer class="label"><div class="legal"><nav aria-label="About this site"><a href="mailto:argelys@seveneightythree.com">Contact</a><a href="https://argelysoriach.com/schema/">Schema</a><a href="https://argelysoriach.com/privacy/">Privacy</a><a href="https://argelysoriach.com/terms/">Terms</a><span>Brooklyn, New York</span></nav><p>© 2026 Argelys Samuel Oriach · Seven Eighty Three</p></div></footer>
+<script>
+/* Site menu. Menu opens it, Close or Escape shuts it and returns focus; a jump link shuts it and goes. */
+(function () {
+  var menu = document.getElementById('site-menu');
+  if (!menu) return;
+  var root = document.documentElement, back = null;
+  var openers = Array.prototype.slice.call(document.querySelectorAll('[data-menu-open]'));
+  function isOpen() { return menu.classList.contains('is-open'); }
+  function set(open) {
+    menu.classList.toggle('is-open', open);
+    root.classList.toggle('menu-open', open);
+    Array.prototype.forEach.call(document.body.children, function (el) {
+      if (el === menu || el.tagName === 'SCRIPT') return;
+      if (open) el.setAttribute('inert', ''); else el.removeAttribute('inert');
+    });
+    openers.forEach(function (b) { b.setAttribute('aria-expanded', open ? 'true' : 'false'); });
+    if (open) { back = document.activeElement; var first = menu.querySelector('.site-menu__groups a'); if (first) first.focus(); }
+    else if (back && back.focus) { back.focus(); back = null; }
+  }
+  openers.forEach(function (b) { b.addEventListener('click', function (e) { e.preventDefault(); set(!isOpen()); }); });
+  menu.addEventListener('click', function (e) {
+    var a = e.target.closest ? e.target.closest('a') : null;
+    if (!a) return;
+    if (a.hasAttribute('data-menu-close')) { e.preventDefault(); set(false); return; }
+    if ((a.getAttribute('href') || '').charAt(0) === '#') { back = null; set(false); }
+  });
+  document.addEventListener('keydown', function (e) {
+    if (!isOpen()) return;
+    if (e.key === 'Escape') { e.preventDefault(); set(false); return; }
+    if (e.key !== 'Tab') return;
+    var f = menu.querySelectorAll('a[href]'), first = f[0], last = f[f.length - 1];
+    if (!menu.contains(document.activeElement)) { e.preventDefault(); (e.shiftKey ? last : first).focus(); return; }
+    if (e.shiftKey && document.activeElement === first) { e.preventDefault(); last.focus(); }
+    else if (!e.shiftKey && document.activeElement === last) { e.preventDefault(); first.focus(); }
+  });
+  if (location.hash === '#site-menu') { history.replaceState(null, '', location.pathname + location.search); set(true); }
+})();
+</script>
+</body>
+</html>

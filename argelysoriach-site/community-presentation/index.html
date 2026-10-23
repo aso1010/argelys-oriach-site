@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-22DRN1XNE9"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-22DRN1XNE9');
+</script>
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>CookUnity Commons — Pilot Proposal</title>
+<meta name="description" content="A pilot proposal for CookUnity leadership: an opt-in tier that treats every neighborhood as a node served by the nearest kitchen hub. It is a proposal, not a CookUnity product.">
+<meta name="theme-color" content="#0A0A0A">
+<link rel="canonical" href="https://argelysoriach.com/community-presentation/">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebPage",
+      "@id": "https://argelysoriach.com/community-presentation/#page",
+      "url": "https://argelysoriach.com/community-presentation/",
+      "name": "CookUnity Commons: Community Presentation",
+      "isPartOf": {
+        "@id": "https://argelysoriach.com/#website"
+      },
+      "mainEntity": {
+        "@id": "https://argelysoriach.com/community-presentation/#work"
+      }
+    },
+    {
+      "@type": "PresentationDigitalDocument",
+      "@id": "https://argelysoriach.com/community-presentation/#work",
+      "name": "CookUnity Commons",
+      "alternateName": "Community Presentation",
+      "url": "https://argelysoriach.com/community-presentation/",
+      "description": "A pilot proposal for CookUnity leadership: an opt-in tier that treats every neighborhood as a node served by the nearest kitchen hub. It is a proposal, not a CookUnity product.",
+      "creativeWorkStatus": "Proposal",
+      "about": {
+        "@type": "Organization",
+        "name": "CookUnity",
+        "url": "https://www.cookunity.com/"
+      },
+      "isBasedOn": "https://communalfoundation.org/community/",
+      "author": {
+        "@id": "https://argelysoriach.com/#person"
+      },
+      "isPartOf": {
+        "@id": "https://argelysoriach.com/#website"
+      },
+      "inLanguage": "en"
+    }
+  ]
+}
+</script>
+<script>document.documentElement.className = 'js';</script>
+<style>
+@font-face{font-family:'Archivo';src:url('../fonts/Archivo-Variable.woff2') format('woff2');font-weight:100 900;font-stretch:62% 125%;font-style:normal;font-display:swap}
+@font-face{font-family:'Archivo';src:url('../fonts/Archivo-Italic-Variable.woff2') format('woff2');font-weight:100 900;font-stretch:62% 125%;font-style:italic;font-display:swap}
+/* The full files. A browser fetches one only if a page uses a letter the small file does not carry. */
+@font-face{font-family:'Archivo Full';src:url('../fonts/Archivo-Variable.ttf') format('truetype');font-weight:100 900;font-stretch:62% 125%;font-style:normal;font-display:swap}
+@font-face{font-family:'Archivo Full';src:url('../fonts/Archivo-Italic-Variable.ttf') format('truetype');font-weight:100 900;font-stretch:62% 125%;font-style:italic;font-display:swap}
+@font-face{font-family:'JetBrains Mono';src:url('../fonts/JetBrainsMono-Variable.woff2') format('woff2');font-weight:100 800;font-style:normal;font-display:swap}
+:root{
+  --ground:#0A0A0A;  /* ground */
+  --panel:#000000;   /* panels */
+  --ink:#EAF1FA;     /* cool white: reads blue against the brown */
+  --white:#FFFFFF;   /* headlines */
+  --blue:#A9B6C4;    /* labels */
+  --cream:#E9B872;   /* accent: the thing to look at */
+  --rule:3px solid var(--ink);
+  --hair:1px solid rgba(234,241,250,.3);
+  --sans:'Archivo','Archivo Full',"Helvetica Neue",Arial,sans-serif;
+  --mono:'JetBrains Mono',ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;
+  --u:min(1vw,1.5vh);
+  --gutter:clamp(1.25rem,4vw,4.5rem);
+  --pad:clamp(.875rem,calc(var(--u) * 1.6),1.75rem);
+}
+*,*::before,*::after{box-sizing:border-box}
+/* State changes are instantaneous. No animated state anywhere. */
+*,*::before,*::after{transition:none!important;animation:none!important}
+html{color-scheme:dark;-webkit-text-size-adjust:100%}
+html,body{margin:0;background:var(--ground);color:var(--ink)}
+body{
+  font-family:var(--sans);
+  font-size:clamp(1rem,calc(var(--u) * 1.45),1.5rem);
+  line-height:1.4;
+  -webkit-font-smoothing:antialiased;
+  text-rendering:optimizeLegibility;
+}
+a{color:inherit}
+p{margin:0}
+:focus-visible{outline:3px solid var(--cream);outline-offset:3px}
+::selection{background:var(--cream);color:var(--ground)}
+
+.mono{
+  font-family:var(--mono);
+  font-weight:500;
+  font-size:clamp(.6875rem,calc(var(--u) * .85),.875rem);
+  letter-spacing:.14em;
+  text-transform:uppercase;
+  line-height:1.45;
+}
+.blue{color:var(--blue)}
+.cream{color:var(--cream)}
+
+/* ── frame: bar, slide, bar ─────────────────────────────── */
+.js body{
+  height:100vh;height:100dvh;
+  display:grid;grid-template-rows:auto minmax(0,1fr) auto;
+  overflow:hidden;
+}
+.bar{
+  display:flex;align-items:center;justify-content:space-between;gap:1rem;
+  padding:.625rem var(--gutter);
+}
+.bar--top{border-bottom:var(--hair)}
+.bar--top a{text-decoration:none;padding:.5rem 0}
+.bar--top a:hover{background:var(--ink);color:var(--ground);box-shadow:0 0 0 4px var(--ink)}
+.bar--bottom{
+  position:relative;
+  padding-top:calc(.75rem + 4px);
+  padding-bottom:calc(.75rem + env(safe-area-inset-bottom));
+}
+html:not(.js) .bar--bottom{display:none}
+
+.prog{position:absolute;inset:0 0 auto 0;display:flex;gap:3px;height:4px}
+.prog i{flex:1;background:rgba(234,241,250,.22)}
+.prog i.on{background:var(--cream)}
+
+.arrow{
+  flex:none;
+  width:clamp(2.75rem,calc(var(--u) * 4),3.5rem);aspect-ratio:1;
+  display:grid;place-items:center;
+  padding:0;border:var(--rule);background:none;color:var(--ink);
+  cursor:pointer;
+}
+.arrow svg{width:46%;height:46%;fill:none;stroke:currentColor;stroke-width:2.5;stroke-linecap:square;stroke-linejoin:miter}
+.arrow:hover:not(:disabled),.arrow:active:not(:disabled){background:var(--ink);color:var(--ground)}
+.arrow:disabled{opacity:.28;cursor:default}
+.where{display:flex;flex-wrap:wrap;justify-content:center;gap:0 1.25em;text-align:center}
+
+/* ── slides ─────────────────────────────────────────────── */
+.deck{min-height:0}
+.slide{padding:clamp(1.5rem,calc(var(--u) * 3),4rem) var(--gutter);border-bottom:var(--rule)}
+.js .slide{display:none;height:100%;overflow-y:auto;border-bottom:0;outline:0}
+.js .slide.is-on{display:flex;flex-direction:column}
+.slide__in{margin-block:auto;width:100%}
+
+.kicker{margin:0 0 clamp(.75rem,calc(var(--u) * 1.4),1.5rem);color:var(--cream)}
+.head{
+  margin:0 0 clamp(1.25rem,calc(var(--u) * 2.6),3rem);
+  max-width:16em;
+  color:var(--white);
+  font-weight:900;font-stretch:125%;font-variation-settings:'wdth' 125,'wght' 900;
+  text-transform:uppercase;
+  font-size:clamp(1.625rem,calc(var(--u) * 4.3),4.5rem);
+  line-height:.94;letter-spacing:-.02em;
+  text-wrap:balance;
+}
+.after{margin-top:clamp(1rem,calc(var(--u) * 2),2rem);max-width:60em}
+.after strong{color:var(--cream);font-weight:800}
+
+/* title */
+.wordmark{width:min(100%,86vh);margin:0 0 clamp(1.25rem,calc(var(--u) * 2.4),2.5rem)}
+.wordmark svg{display:block;width:100%;height:auto;overflow:visible}
+.wordmark text{
+  font-family:var(--sans);font-weight:900;font-stretch:125%;
+  font-variation-settings:'wdth' 125,'wght' 900;
+  letter-spacing:-.02em;fill:var(--white);
+}
+.wordmark svg + svg text{fill:var(--cream)}
+.lede{
+  max-width:26em;
+  font-size:clamp(1.25rem,calc(var(--u) * 2.3),2.375rem);
+  line-height:1.18;font-weight:500;
+}
+.meta{margin-top:clamp(1.25rem,calc(var(--u) * 2.4),2.5rem);display:grid;gap:.75rem;justify-items:start}
+.status{border:var(--hair);padding:.625rem .875rem}
+
+/* cells */
+.grid{display:grid;border:var(--rule)}
+.grid + .grid{border-top:0}
+.cell{padding:var(--pad);min-width:0}
+.cell + .cell{border-top:var(--rule)}
+.cell--fill{background:var(--panel)}
+.cell h3{margin:0 0 .875em;color:var(--blue);font-weight:500}
+.cell--fill h3{color:var(--cream)}
+.cell .mono + p,.cell p + .mono{margin-top:.75em}
+.list{list-style:none;margin:0;padding:0}
+.list li{padding:.5em 0;border-top:var(--hair)}
+.list li:first-child{border-top:0;padding-top:0}
+.list li:last-child{padding-bottom:0}
+@media (min-width:52em){
+  .grid{grid-template-columns:repeat(var(--cols,2),minmax(0,1fr))}
+  .grid--3{--cols:3}
+  .cell + .cell{border-top:0;border-left:var(--rule)}
+  .grid--2x2 .cell:nth-child(3){border-left:0}
+  .grid--2x2 .cell:nth-child(n+3){border-top:var(--rule)}
+}
+
+/* economics */
+table{width:100%;border-collapse:collapse;border:var(--rule)}
+th,td{text-align:left;vertical-align:top;padding:clamp(.625rem,calc(var(--u) * 1.2),1.25rem) var(--pad);border-top:var(--hair);border-left:var(--hair)}
+tr > *:first-child{border-left:0}
+thead th{border-top:0;color:var(--blue);font-weight:500}
+tbody tr:first-child > *{border-top:var(--rule)}
+tbody th{font-weight:800;color:var(--white)}
+td:last-child{background:var(--panel)}
+/* four rows: tighter cells keep the slide on one screen */
+@media (min-width:52em){
+  th,td{padding-block:clamp(.375rem,calc(var(--u) * .6),1rem)}
+}
+@media (max-width:51.99em){
+  table,thead,tbody,tr,th,td{display:block}
+  thead{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%)}
+  tr{border-top:var(--rule)}
+  tbody tr:first-child{border-top:0}
+  tbody tr:first-child > *{border-top:0}
+  th,td{border:0;padding:.5rem var(--pad)}
+  tbody th{padding-top:var(--pad);font-size:1.125em}
+  td:last-child{padding-bottom:var(--pad);padding-top:.75rem;margin-top:.5rem}
+  td::before{
+    content:attr(data-k);display:block;margin-bottom:.125rem;
+    font-family:var(--mono);font-weight:500;font-size:.6875rem;letter-spacing:.14em;text-transform:uppercase;color:var(--blue);
+  }
+}
+
+/* pricing architecture */
+.price{
+  margin:0;color:var(--white);
+  font-weight:900;font-stretch:125%;font-variation-settings:'wdth' 125,'wght' 900;
+  font-size:clamp(1.75rem,calc(var(--u) * 4.3),4.5rem);
+  line-height:.94;letter-spacing:-.02em;
+}
+.price span{font-size:.42em;font-stretch:100%;font-variation-settings:'wdth' 100,'wght' 500;letter-spacing:0}
+.cell--fill .price{color:var(--cream)}
+.formula{font-size:clamp(.8125rem,calc(var(--u) * 1.1),1.125rem);letter-spacing:.02em;text-transform:none;color:var(--white)}
+@media (min-width:52em){
+  .grid--tiers{grid-template-columns:minmax(0,8fr) minmax(0,5fr)}
+}
+
+/* logistics */
+.split{display:grid;gap:clamp(1rem,calc(var(--u) * 2.4),2.5rem);align-items:center}
+.diagram{display:block;width:100%;max-width:19rem;height:auto;margin-inline:auto}
+.diagram .reach{fill:none;stroke:var(--blue);stroke-width:1;stroke-dasharray:3 4}
+.diagram .edges{stroke:var(--ink);stroke-width:1.25}
+.diagram .nodes{fill:var(--cream)}
+.diagram .hub{fill:var(--white)}
+.diagram .wait{fill:none;stroke:var(--blue);stroke-width:1.25;stroke-dasharray:2 2.5}
+.diagram text{font-family:var(--mono);font-size:9.5px;letter-spacing:.1em;fill:var(--ink)}
+.diagram .q{fill:var(--blue)}
+@media (min-width:52em){
+  .split{grid-template-columns:minmax(0,5fr) minmax(0,13fr)}
+  .diagram{max-width:none}
+}
+
+/* the ask */
+.head--ask{color:var(--cream);font-size:clamp(2.125rem,calc(var(--u) * 7),7.5rem);max-width:10em;line-height:.9}
+.links{display:flex;flex-wrap:wrap;gap:.25rem 1.75rem;margin-top:clamp(1.25rem,calc(var(--u) * 2.6),3rem);padding-top:1rem;border-top:var(--rule)}
+.links a{text-decoration:none;padding:.5rem 0}
+.links a:hover{background:var(--ink);color:var(--ground);box-shadow:0 0 0 4px var(--ink)}
+
+/* print: every slide, one per page */
+@media print{
+  *{-webkit-print-color-adjust:exact;print-color-adjust:exact}
+  .js body{display:block;height:auto;overflow:visible}
+  .bar{display:none}
+  .js .slide{display:flex!important;flex-direction:column;height:100vh;overflow:visible;break-after:page}
+  @page{size:landscape;margin:0}
+}
+.skip{position:absolute;left:-9999px;top:0;z-index:200;background:#F4F4F0;color:#000;padding:8px 13px;font-family:"JetBrains Mono",ui-monospace,monospace;font-size:13px;letter-spacing:.06em;text-transform:uppercase;text-decoration:none}.skip:focus{left:0}
+</style>
+</head>
+<body>
+<a class="skip" href="#deck">Skip to content</a>
+<header class="bar bar--top mono">
+  <a href="https://communalfoundation.org/">Communal Foundation</a>
+  <a href="https://communalfoundation.org/community/">Community</a>
+</header>
+
+<main class="deck" id="deck">
+
+  <section class="slide is-on" data-name="Title" aria-roledescription="slide" aria-label="Title" tabindex="-1">
+    <div class="slide__in">
+      <p class="kicker mono">Pilot proposal // For CookUnity leadership</p>
+      <h1 class="wordmark" aria-label="CookUnity Commons">
+        <svg viewBox="0 0 1000 208" aria-hidden="true" focusable="false"><text x="0" y="206" textLength="1000" lengthAdjust="spacingAndGlyphs" font-size="279">COOKUNITY</text></svg>
+        <svg viewBox="0 0 1000 208" aria-hidden="true" focusable="false"><text x="0" y="206" textLength="1000" lengthAdjust="spacingAndGlyphs" font-size="279">COMMONS</text></svg>
+      </h1>
+      <p class="lede">Every neighborhood is a table. Every table is served by the kitchen nearest to it.</p>
+      <div class="meta">
+        <p class="mono">Argelys Samuel Oriach</p>
+        <p class="mono blue">Chief Architect and Principal Advisor, Communal Foundation &middot; October 2026</p>
+        <p class="status mono">Status // Proposal. Not a CookUnity product.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="slide" data-name="The decision" aria-roledescription="slide" aria-label="The decision" tabindex="-1">
+    <div class="slide__in">
+      <p class="kicker mono">Decision requested</p>
+      <h2 class="head">Approve a one-node pilot in Crown Heights.</h2>
+      <div class="grid grid--3">
+        <div class="cell cell--fill">
+          <h3 class="mono">What</h3>
+          <p>Five chefs cook for one New York neighborhood, as an opt-in subscription tier.</p>
+        </div>
+        <div class="cell">
+          <h3 class="mono">Why</h3>
+          <p>To learn whether subscribers and chefs stay longer when the meal belongs to a neighborhood.</p>
+        </div>
+        <div class="cell">
+          <h3 class="mono">What you get</h3>
+          <p>A measured answer against your current platform baseline, and the break-even number the model does not have yet.</p>
+        </div>
+      </div>
+      <p class="after mono blue">Owner, budget and start date: to be set with leadership.</p>
+      <p class="qual mono">Status // Proposal. Not a CookUnity product. Modeled, not built. No kitchen is secured. All figures, chefs, kitchens, farms, and prices are illustrative.</p>
+    </div>
+  </section>
+
+  <section class="slide" data-name="The opportunity" aria-roledescription="slide" aria-label="The opportunity" tabindex="-1">
+    <div class="slide__in">
+      <p class="kicker mono">The opportunity</p>
+      <h2 class="head">Make the neighborhood the unit, not the subscriber</h2>
+      <div class="grid">
+        <div class="cell">
+          <h3 class="mono">Current model</h3>
+          <ul class="list">
+            <li>The unit is the subscriber.</li>
+            <li>The relationship is a weekly transaction.</li>
+            <li>Chefs earn a standard revenue share.</li>
+          </ul>
+        </div>
+        <div class="cell cell--fill">
+          <h3 class="mono">Commons model</h3>
+          <ul class="list">
+            <li>The unit is the neighborhood: a node.</li>
+            <li>Each node is served by the kitchen hub nearest to it.</li>
+            <li>Chefs earn a higher share and a say.</li>
+            <li>A share of revenue stays in the node.</li>
+          </ul>
+        </div>
+      </div>
+      <p class="after"><strong>Hypothesis.</strong> Subscribers and chefs both stay longer when the meal belongs to a neighborhood.</p>
+    </div>
+  </section>
+
+  <section class="slide" data-name="Problem and solution" aria-roledescription="slide" aria-label="Problem and solution" tabindex="-1">
+    <div class="slide__in">
+      <p class="kicker mono">Problem and solution</p>
+      <h2 class="head">An opt-in tier. Not an overhaul.</h2>
+      <div class="grid">
+        <div class="cell">
+          <h3 class="mono">Problem</h3>
+          <p>Subscriber churn and chef turnover are highest in competitive urban markets, where margins are tightest.</p>
+          <p class="mono blue">To confirm with internal data.</p>
+        </div>
+        <div class="cell cell--fill">
+          <h3 class="mono">Solution</h3>
+          <p>CookUnity Commons: a subscription tier that customers choose. The core service does not change.</p>
+        </div>
+      </div>
+      <div class="grid grid--3">
+        <div class="cell">
+          <h3 class="mono">01 // Neighborhood by neighborhood</h3>
+          <p>Each neighborhood has its own menu, delivery zone and chef roster.</p>
+        </div>
+        <div class="cell">
+          <h3 class="mono">02 // Two prices per meal</h3>
+          <p>Standard is set to what the neighborhood can afford. Premium costs more and covers the difference. Ordering more meals each week lowers the price per meal in both tiers.</p>
+        </div>
+        <div class="cell">
+          <h3 class="mono">03 // Chefs and farms paid directly</h3>
+          <p>Chefs earn a higher share. Every meal shows where its ingredients came from. Producers are paid directly.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="slide" data-name="Economics" aria-roledescription="slide" aria-label="Economics" tabindex="-1">
+    <div class="slide__in">
+      <p class="kicker mono">Economics</p>
+      <h2 class="head">The pilot must win back the margin it gives up</h2>
+      <table>
+        <thead>
+          <tr class="mono"><th scope="col">Channel</th><th scope="col">Traditional model</th><th scope="col">Commons pilot tier</th><th scope="col">What the pilot must prove</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">Chef share</th>
+            <td data-k="Traditional model">Standard revenue share</td>
+            <td data-k="Commons pilot tier">Higher share, plus governance</td>
+            <td data-k="What the pilot must prove">Chef retention improves enough to pay for the higher share.</td>
+          </tr>
+          <tr>
+            <th scope="row">Mutual aid</th>
+            <td data-k="Traditional model">None</td>
+            <td data-k="Commons pilot tier">Subscriber opt-in, with a 1:1 match option</td>
+            <td data-k="What the pilot must prove">Grants, municipal partners or the tier price can fund the match. No source is secured.</td>
+          </tr>
+          <tr>
+            <th scope="row">Last mile</th>
+            <td data-k="Traditional model">Standard delivery</td>
+            <td data-k="Commons pilot tier">Short routes from a nearby hub, by electric cargo trike</td>
+            <td data-k="What the pilot must prove">Cost per delivery falls in dense zones.</td>
+          </tr>
+          <tr>
+            <th scope="row">Pricing structure</th>
+            <td data-k="Traditional model">Static platform pricing</td>
+            <td data-k="Commons pilot tier">Dynamic node pricing (Premium &amp; Standard rates)</td>
+            <td data-k="What the pilot must prove">Premium tier adoption naturally offsets the margin loss of the localized Standard tier.</td>
+          </tr>
+        </tbody>
+      </table>
+      <p class="after"><strong>The break-even number per node is not known. The pilot exists to find it.</strong> Margin leaves in three places: the chef share, the mutual aid share, and the match. It must return in three: longer retention, lower acquisition cost, and lower delivery cost.</p>
+    </div>
+  </section>
+
+  <section class="slide" data-name="Pricing architecture" aria-roledescription="slide" aria-label="Pricing architecture" tabindex="-1">
+    <div class="slide__in">
+      <p class="kicker mono">Pricing architecture</p>
+      <h2 class="head">How the two prices work</h2>
+      <div class="grid grid--tiers">
+        <div class="cell cell--fill">
+          <h3 class="mono">Premium Rate</h3>
+          <p class="price">$18<span> / meal</span></p>
+          <p class="mono blue">(scales down with higher meal volume)</p>
+          <p>Costs more, pays independent chefs a higher share and covers the difference, so Standard stays within reach. It also supports the small businesses behind this neighborhood's kitchen hub.</p>
+        </div>
+        <div class="cell">
+          <h3 class="mono">Standard Rate</h3>
+          <p class="price">$12<span> / meal</span></p>
+          <p class="mono blue">(scales down with higher meal volume)</p>
+          <p>The access price, set from regional income so the neighborhood can afford it.</p>
+        </div>
+      </div>
+      <div class="grid">
+        <div class="cell">
+          <h3 class="mono">How the Standard price is set</h3>
+          <p class="mono formula"><span class="blue">Price(node)</span> = <span class="blue">Price(base)</span> &times; (<span class="blue">Income(node)</span> / <span class="blue">Income(metro)</span>)</p>
+          <p>Prices scale dynamically based on the area's median income compared to the broader city baseline. The Food API writes the same rule as <code>standard_price_cap = ami_index &times; &tau;_threshold</code>, where &tau;_threshold = Price(base) / Income(metro).</p>
+        </div>
+        <div class="cell">
+          <h3 class="mono">How the pilot finds break-even</h3>
+          <p class="mono formula">(<span class="blue">Price(premium)</span> &times; <span class="blue">Vol(premium)</span>) + (<span class="blue">Price(standard)</span> &times; <span class="blue">Vol(standard)</span>) = <span class="blue">Fixed Costs</span> + <span class="blue">Variable Costs</span></p>
+          <p>The pilot exists to solve for the volume required across both tiers to sustain the local kitchen hub.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="slide" data-name="Logistics" aria-roledescription="slide" aria-label="Logistics" tabindex="-1">
+    <div class="slide__in">
+      <p class="kicker mono">Logistics</p>
+      <h2 class="head">Each neighborhood is served by the kitchen nearest to it</h2>
+      <div class="split">
+        <svg class="diagram" viewBox="0 0 400 270" role="img" aria-label="Diagram: one kitchen hub at the centre, six neighborhood nodes inside its delivery reach, and one node outside the reach on a waitlist.">
+          <circle cx="170" cy="140" r="104" class="reach"/>
+          <g class="edges"><line x1="170" y1="140" x2="245" y2="113"/><line x1="170" y1="140" x2="184" y2="61"/><line x1="170" y1="140" x2="109" y2="89"/><line x1="170" y1="140" x2="95" y2="167"/><line x1="170" y1="140" x2="156" y2="219"/><line x1="170" y1="140" x2="231" y2="191"/></g>
+          <g class="nodes"><circle cx="245" cy="113" r="7"/><circle cx="184" cy="61" r="7"/><circle cx="109" cy="89" r="7"/><circle cx="95" cy="167" r="7"/><circle cx="156" cy="219" r="7"/><circle cx="231" cy="191" r="7"/></g>
+          <rect x="157" y="127" width="26" height="26" class="hub"/>
+          <circle cx="340" cy="68" r="7" class="wait"/>
+          <text x="170" y="172" text-anchor="middle" stroke="#0A0A0A" stroke-width="7" stroke-linejoin="round" paint-order="stroke">KITCHEN HUB</text>
+          <text x="170" y="28" text-anchor="middle" class="q">DELIVERY REACH</text>
+          <text x="258" y="117">NODE</text>
+          <text x="340" y="92" text-anchor="middle">WAITLIST</text>
+          <text x="340" y="105" text-anchor="middle" class="q">NO HUB IN REACH</text>
+        </svg>
+        <div class="grid grid--2x2">
+          <div class="cell">
+            <h3 class="mono">Nodes</h3>
+            <p>Five are modeled in COMMUNITY: Crown Heights, Bed-Stuy, Bushwick, Harlem, Lower East Side. Modeled, not built.</p>
+          </div>
+          <div class="cell">
+            <h3 class="mono">Kitchen hubs</h3>
+            <p>Target: kitchens held in community land trusts, each cooking for the nodes in its reach. No kitchen is secured.</p>
+          </div>
+          <div class="cell">
+            <h3 class="mono">Cold chain</h3>
+            <p>Electric cargo trikes for the last mile. No tailpipe emissions. Less exposure to street congestion.</p>
+          </div>
+          <div class="cell">
+            <h3 class="mono">Regional farms</h3>
+            <p>Regional farm co-ops scheduled directly into the menu. No supplier agreement exists yet.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="slide" data-name="Pilot" aria-roledescription="slide" aria-label="Pilot" tabindex="-1">
+    <div class="slide__in">
+      <p class="kicker mono">Pilot</p>
+      <h2 class="head">One node. Five chefs. Measured against the baseline.</h2>
+      <div class="grid grid--3">
+        <div class="cell cell--fill">
+          <h3 class="mono">Phase 1 // Launch</h3>
+          <p>A one-node pilot in New York: Crown Heights [01], five chefs, local farm partners.</p>
+        </div>
+        <div class="cell">
+          <h3 class="mono">Phase 2 // Measure</h3>
+          <p>Against the standard platform baseline: subscriber lifetime value, acquisition cost, cost per delivery, chef retention, brand affinity.</p>
+        </div>
+        <div class="cell">
+          <h3 class="mono">Phase 3 // Expand</h3>
+          <p>If the node pays for itself: a multi-node network, and applications for municipal food-security grants.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="slide" data-name="The ask" aria-roledescription="slide" aria-label="The ask" tabindex="-1">
+    <div class="slide__in">
+      <p class="kicker mono">Next step</p>
+      <h2 class="head head--ask">Approve a one-node pilot.</h2>
+      <p class="lede">Crown Heights. Five chefs. Measured against the platform baseline.</p>
+      <p class="after mono blue">Owner, budget and start date: to be set with leadership.</p>
+      <nav class="links mono" aria-label="See the work">
+        <a href="https://communalfoundation.org/community/">Read the concept: COMMUNITY</a>
+        <a href="https://communalfoundation.org/food-api/">Read the model: Food API</a>
+        <a href="https://communalfoundation.org/integration-map/">Read the integration map</a>
+        <a href="https://communalfoundation.org/community/crown-heights/">See the pilot node: Crown Heights</a>
+        <a href="https://argelysoriach.com/">Argelys Samuel Oriach</a>
+      </nav>
+    </div>
+  </section>
+
+</main>
+
+<nav class="bar bar--bottom" aria-label="Slides">
+  <div class="prog" id="prog" aria-hidden="true"></div>
+  <button class="arrow" id="prev" type="button" aria-label="Previous slide"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M21 12H4M11 5l-7 7 7 7"/></svg></button>
+  <p class="where mono" aria-live="polite"><span id="count">01 / 09</span><span id="name" class="blue">Title</span></p>
+  <button class="arrow" id="next" type="button" aria-label="Next slide"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M3 12h17M13 5l7 7-7 7"/></svg></button>
+</nav>
+
+<script>
+/* One slide on screen. Arrows, arrow keys, Page Up and Page Down, Space, Home, End, and swipe all move it.
+   The address carries the slide number, so a link can open on any slide. */
+(function () {
+  var slides = [].slice.call(document.querySelectorAll('.slide'));
+  var n = slides.length, i = 0;
+  var prev = document.getElementById('prev'), next = document.getElementById('next');
+  var count = document.getElementById('count'), name = document.getElementById('name');
+  var prog = document.getElementById('prog');
+  var segs = slides.map(function () { return prog.appendChild(document.createElement('i')); });
+  function pad(x) { return (x < 10 ? '0' : '') + x; }
+
+  function show(k) {
+    i = Math.max(0, Math.min(n - 1, k));
+    slides.forEach(function (s, j) {
+      s.classList.toggle('is-on', j === i);
+      s.setAttribute('aria-hidden', j === i ? 'false' : 'true');
+    });
+    segs.forEach(function (s, j) { s.classList.toggle('on', j <= i); });
+    count.textContent = pad(i + 1) + ' / ' + pad(n);
+    name.textContent = slides[i].getAttribute('data-name');
+    var held = document.activeElement;
+    prev.disabled = i === 0;
+    next.disabled = i === n - 1;
+    if (held === prev && prev.disabled) next.focus();
+    if (held === next && next.disabled) prev.focus();
+    slides[i].scrollTop = 0;
+    try { history.replaceState(null, '', '#' + (i + 1)); } catch (e) {}
+  }
+
+  prev.addEventListener('click', function () { show(i - 1); });
+  next.addEventListener('click', function () { show(i + 1); });
+
+  document.addEventListener('keydown', function (e) {
+    if (e.altKey || e.ctrlKey || e.metaKey) return;
+    var k = e.key, onControl = /^(A|BUTTON)$/.test(e.target.tagName);
+    if (k === 'ArrowRight' || k === 'PageDown' || (k === ' ' && !e.shiftKey && !onControl)) { e.preventDefault(); show(i + 1); }
+    else if (k === 'ArrowLeft' || k === 'PageUp' || (k === ' ' && e.shiftKey && !onControl)) { e.preventDefault(); show(i - 1); }
+    else if (k === 'Home') { e.preventDefault(); show(0); }
+    else if (k === 'End') { e.preventDefault(); show(n - 1); }
+    else if (k === 'ArrowDown') { slides[i].scrollTop += 80; }
+    else if (k === 'ArrowUp') { slides[i].scrollTop -= 80; }
+  });
+
+  var x0 = null, y0 = null;
+  document.addEventListener('touchstart', function (e) { var t = e.changedTouches[0]; x0 = t.clientX; y0 = t.clientY; }, { passive: true });
+  document.addEventListener('touchend', function (e) {
+    if (x0 === null) return;
+    var t = e.changedTouches[0], dx = t.clientX - x0, dy = t.clientY - y0;
+    x0 = null;
+    if (Math.abs(dx) > 60 && Math.abs(dx) > Math.abs(dy) * 1.5) show(i + (dx < 0 ? 1 : -1));
+  }, { passive: true });
+
+  function fromHash() { var h = parseInt(location.hash.slice(1), 10); return h >= 1 && h <= n ? h - 1 : null; }
+  window.addEventListener('hashchange', function () { var h = fromHash(); if (h !== null && h !== i) show(h); });
+  var first = fromHash();
+  show(first === null ? 0 : first);
+})();
+</script>
+</body>
+</html>

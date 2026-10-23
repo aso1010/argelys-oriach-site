@@ -1,0 +1,77 @@
+{
+  "@context": "https://schema.org",
+  "@type": "DefinedTermSet",
+  "@id": "https://argelysoriach.com/matter-and-body-architecture/#terms",
+  "name": "Matter and Body Architecture",
+  "description": "The terms of the practice of Argelys Samuel Oriach: matter and body architecture, matter architecture, and body architecture.",
+  "url": "https://argelysoriach.com/matter-and-body-architecture/",
+  "author": {
+    "@id": "https://argelysoriach.com/#person"
+  },
+  "creator": {
+    "@id": "https://argelysoriach.com/#person"
+  },
+  "copyrightHolder": {
+    "@id": "https://argelysoriach.com/#person"
+  },
+  "isPartOf": {
+    "@id": "https://argelysoriach.com/#website"
+  },
+  "mainEntityOfPage": {
+    "@id": "https://argelysoriach.com/matter-and-body-architecture/#page"
+  },
+  "inLanguage": "en",
+  "hasDefinedTerm": [
+    {
+      "@type": "DefinedTerm",
+      "@id": "https://argelysoriach.com/matter-and-body-architecture/#matter-and-body-architecture",
+      "name": "Matter and Body Architecture",
+      "alternateName": [
+        "Matter and body architecture",
+        "Matter & Body Architecture",
+        "Body and Matter Architecture"
+      ],
+      "description": "The practice of Argelys Samuel Oriach. Its medium is matter: code, text, the physical body, and the organization itself. The matter is the engineering. The body is the spirit.",
+      "url": "https://argelysoriach.com/matter-and-body-architecture/#matter-and-body-architecture",
+      "inDefinedTermSet": {
+        "@id": "https://argelysoriach.com/matter-and-body-architecture/#terms"
+      },
+      "subjectOf": [
+        {
+          "@id": "https://argelysoriach.com/universe-api/#framework"
+        },
+        {
+          "@id": "https://argelysoriach.com/mad-matter/#work"
+        }
+      ]
+    },
+    {
+      "@type": "DefinedTerm",
+      "@id": "https://argelysoriach.com/matter-and-body-architecture/#matter-architecture",
+      "name": "Matter Architecture",
+      "alternateName": "Matter architecture",
+      "description": "The matter half of matter and body architecture, the practice of Argelys Samuel Oriach. The matter is the engineering. A matter architect is an architect of the volatile and works the raw fabric: mass, scale, syntax. Everything is material.",
+      "url": "https://argelysoriach.com/matter-and-body-architecture/#matter-architecture",
+      "inDefinedTermSet": {
+        "@id": "https://argelysoriach.com/matter-and-body-architecture/#terms"
+      },
+      "subjectOf": {
+        "@id": "https://argelysoriach.com/mad-matter/#work"
+      }
+    },
+    {
+      "@type": "DefinedTerm",
+      "@id": "https://argelysoriach.com/matter-and-body-architecture/#body-architecture",
+      "name": "Body Architecture",
+      "alternateName": "Body architecture",
+      "description": "The body half of matter and body architecture, the practice of Argelys Samuel Oriach. The body is the spirit. A body is not only biological: a word, a sentence, a paragraph, a literature, a work, a human, the Earth, a celestial monolith.",
+      "url": "https://argelysoriach.com/matter-and-body-architecture/#body-architecture",
+      "inDefinedTermSet": {
+        "@id": "https://argelysoriach.com/matter-and-body-architecture/#terms"
+      },
+      "subjectOf": {
+        "@id": "https://argelysoriach.com/mad-matter/#work"
+      }
+    }
+  ]
+}

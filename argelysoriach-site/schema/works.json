@@ -1,0 +1,193 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "CreativeWork",
+      "@id": "https://argelysoriach.com/banana-republic/#work",
+      "name": "Banana Republic, Rebrand Concept",
+      "url": "https://argelysoriach.com/banana-republic/",
+      "description": "An independent, speculative rebrand concept for the clothing retailer Banana Republic. The wordmark is wayward: every letter leaves the line, and the one R in the name is cut. Includes a re-architected homepage. Not affiliated with Banana Republic or Gap Inc.",
+      "creativeWorkStatus": "Concept",
+      "genre": [
+        "Brand identity",
+        "Speculative design"
+      ],
+      "about": {
+        "@type": "Brand",
+        "name": "Banana Republic"
+      },
+      "author": {
+        "@id": "https://argelysoriach.com/#person"
+      },
+      "isPartOf": {
+        "@id": "https://argelysoriach.com/#website"
+      },
+      "dateCreated": "2026-10",
+      "inLanguage": "en"
+    },
+    {
+      "@type": "CreativeWork",
+      "@id": "https://argelysoriach.com/catalogue-001/#work",
+      "name": "Catalogue 001: The Architect",
+      "url": "https://argelysoriach.com/catalogue-001/",
+      "description": "The first entry in the Seven Eighty Three catalogue: Argelys Samuel Oriach, and the infrastructure behind the work. Published by Seven Eighty Three.",
+      "creativeWorkStatus": "Published",
+      "genre": [
+        "Catalogue",
+        "Case study"
+      ],
+      "about": {
+        "@id": "https://argelysoriach.com/#person"
+      },
+      "author": {
+        "@id": "https://argelysoriach.com/#person"
+      },
+      "publisher": {
+        "@id": "https://seveneightythree.com/#organization"
+      },
+      "mentions": [
+        {
+          "@id": "https://wild-lake.org/#organization"
+        }
+      ],
+      "isPartOf": {
+        "@id": "https://argelysoriach.com/#website"
+      },
+      "dateCreated": "2026-10",
+      "inLanguage": "en"
+    },
+    {
+      "@type": "CreativeWork",
+      "@id": "https://argelysoriach.com/catalogue-002/#work",
+      "name": "Catalogue 002: Communal Foundation",
+      "url": "https://argelysoriach.com/catalogue-002/",
+      "description": "The second entry in the Seven Eighty Three catalogue: Communal Foundation, and why the Food API can help meal delivery companies. Published by Seven Eighty Three.",
+      "creativeWorkStatus": "Published",
+      "genre": [
+        "Catalogue",
+        "Explainer"
+      ],
+      "about": {
+        "@id": "https://communalfoundation.org/#organization"
+      },
+      "author": {
+        "@id": "https://argelysoriach.com/#person"
+      },
+      "publisher": {
+        "@id": "https://seveneightythree.com/#organization"
+      },
+      "mentions": [
+        {
+          "@id": "https://communalfoundation.org/food-api/#spec"
+        },
+        {
+          "@id": "https://argelysoriach.com/universe-api/#framework"
+        }
+      ],
+      "isPartOf": {
+        "@id": "https://argelysoriach.com/#website"
+      },
+      "dateCreated": "2026-10",
+      "inLanguage": "en"
+    },
+    {
+      "@type": "ShortStory",
+      "@id": "https://thisisnotalovestory.net/#work",
+      "name": "This Is Not a Love Story (Yankees)",
+      "url": "https://thisisnotalovestory.net/",
+      "sameAs": "https://argelysoriach.com/this-is-not-a-love-story-yankees/",
+      "author": {
+        "@id": "https://argelysoriach.com/#person"
+      },
+      "publisher": {
+        "@id": "https://seveneightythree.com/#organization"
+      },
+      "datePublished": "2026-10",
+      "inLanguage": "en"
+    },
+    {
+      "@type": "CreativeWork",
+      "@id": "https://argelysoriach.com/universe-api/#framework",
+      "name": "Universe API",
+      "url": "https://argelysoriach.com/universe-api/",
+      "description": "A foundational macro-systems design framework grounded in first-principles engineering and sovereign logic.",
+      "abstract": "The operating philosophy centers on re-architecting digital infrastructure from the mulch up: replacing synthetic friction with closed-loop systems, asset-based leverage, and forms of growth that emerge organically rather than through extractive mechanisms.",
+      "disambiguatingDescription": "Engineering makes the spirit legible. Spirit makes the engineering worth holding.",
+      "keywords": [
+        "Closed-loop systems",
+        "Sovereign logic",
+        "Asset-based leverage",
+        "First-principles engineering",
+        "Organic/unforced biological growth",
+        "Infrastructure designed to compound rather than extract"
+      ],
+      "author": {
+        "@id": "https://argelysoriach.com/#person"
+      },
+      "isPartOf": {
+        "@id": "https://argelysoriach.com/#website"
+      },
+      "inLanguage": "en"
+    },
+    {
+      "@type": "PresentationDigitalDocument",
+      "@id": "https://argelysoriach.com/community-presentation/#work",
+      "name": "CookUnity Commons",
+      "alternateName": "Community Presentation",
+      "url": "https://argelysoriach.com/community-presentation/",
+      "description": "A pilot proposal for CookUnity leadership: an opt-in tier that treats every neighborhood as a node served by the nearest kitchen hub. It is a proposal, not a CookUnity product.",
+      "creativeWorkStatus": "Proposal",
+      "about": {
+        "@type": "Organization",
+        "name": "CookUnity",
+        "url": "https://www.cookunity.com/"
+      },
+      "isBasedOn": "https://communalfoundation.org/community/",
+      "author": {
+        "@id": "https://argelysoriach.com/#person"
+      },
+      "isPartOf": {
+        "@id": "https://argelysoriach.com/#website"
+      },
+      "inLanguage": "en"
+    },
+    {
+      "@type": "CreativeWork",
+      "@id": "https://argelysoriach.com/mad-matter/#work",
+      "name": "Mad Matter",
+      "alternateName": "Artist statement and manifesto of a matter architect",
+      "url": "https://argelysoriach.com/mad-matter/",
+      "genre": [
+        "Artist statement",
+        "Manifesto"
+      ],
+      "author": {
+        "@id": "https://argelysoriach.com/#person"
+      },
+      "isPartOf": {
+        "@id": "https://argelysoriach.com/#website"
+      },
+      "inLanguage": "en"
+    },
+    {
+      "@type": "CreativeWork",
+      "@id": "https://argelysoriach.com/sovereignty/#work",
+      "name": "Sovereignty",
+      "alternateName": "Statement on tools, and on graphic design as sculpture",
+      "url": "https://argelysoriach.com/sovereignty/",
+      "genre": [
+        "Artist statement"
+      ],
+      "abstract": "AI assistance is just making up for lack of sovereignty in America as a queer Dominican immigrant artist.",
+      "disambiguatingDescription": "People who have nothing matter. Not in spite of having nothing. Because.",
+      "author": {
+        "@id": "https://argelysoriach.com/#person"
+      },
+      "isPartOf": {
+        "@id": "https://argelysoriach.com/#website"
+      },
+      "dateCreated": "2026",
+      "inLanguage": "en"
+    }
+  ]
+}

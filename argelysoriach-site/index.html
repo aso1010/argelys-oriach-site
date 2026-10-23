@@ -679,6 +679,8 @@ a{color:inherit;text-decoration:none}
   --fold-chrome:calc(var(--strip) + var(--fold-gap) + var(--fold-pad) + var(--role-h) + env(safe-area-inset-bottom));
 }
 .fold{min-height:min(calc(100svh - var(--strip)),calc(51vw + 14rem));display:flex;flex-direction:column;justify-content:space-between;gap:var(--fold-gap);padding:var(--fold-gap) 0 calc(var(--fold-pad) + env(safe-area-inset-bottom))}
+/* Keep the mobile name and title rule together instead of spreading them across the fold. */
+@media (max-width:899px){.fold{min-height:0;justify-content:flex-start;gap:13px}}
 .cap{width:calc(100% - 2 * var(--gutter));margin:0 auto;padding:0;max-width:min(100%,calc((100svh - var(--fold-chrome)) / 0.51));container-type:inline-size}
 /* The letters are drawn outlines of Archivo at wght 900, wdth 125, so their edges are cut by geometry, not by a font
    renderer, and they are moved only by the page itself, never by the compositor, so the edges stay hard. */

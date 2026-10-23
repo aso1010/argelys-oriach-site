@@ -18,14 +18,14 @@
       "@type": "WebPage",
       "@id": "https://argelysoriach.com/#home",
       "url": "https://argelysoriach.com/",
-      "name": "Argelys Samuel Oriach — Systems Architect, Founder, Artist & Writer | Matter and Body Architecture",
+      "name": "Argelys Samuel Oriach — Artist, Architect, Author | Matter and Body Architecture",
       "isPartOf": {
         "@id": "https://argelysoriach.com/#website"
       },
       "mainEntity": {
         "@id": "https://argelysoriach.com/#person"
       },
-      "description": "Artist, systems architect and writer in Brooklyn. Founder of Seven Eighty Three, Communal Foundation and Wild-Lake. Author of This Is Not a Love Story."
+      "description": "Artist, architect and author in Brooklyn. Founder of Seven Eighty Three, Communal Foundation and Wild-Lake. Author of This Is Not a Love Story."
     },
     {
       "@type": "WebPage",

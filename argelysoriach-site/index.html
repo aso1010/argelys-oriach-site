@@ -692,6 +692,11 @@ html.drop-wait .mark{visibility:hidden}
 h1{margin:0;font-weight:900}
 .role{display:block;padding-top:clamp(13px,1.6vw,21px);border-top:13px solid var(--ink);font-family:var(--sans);font-weight:900;font-variation-settings:'wdth' 125,'wght' 900;font-stretch:125%;text-transform:uppercase;letter-spacing:-.035em;line-height:1.04;font-size:clamp(19px,2.35vw,38px)}
 .role .part{display:inline-block}
+/* Scale the title to its available width so narrow phones keep all three roles on one line. */
+@media (max-width:600px){
+  .fold>.wrap{width:100%;container-type:inline-size}
+  .role{font-size:min(19px,5cqw);white-space:nowrap}
+}
 .role .pipe{padding-left:.3em}
 
 /* One band under the fold. On wide screens the bio and the deployments stand side by side, the deployments in a

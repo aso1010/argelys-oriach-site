@@ -74,7 +74,7 @@ Engineering makes the spirit legible. Spirit makes the engineering worth holding
 
 ## Pages
 
-- [Home](https://argelysoriach.com/): Bio, deployments (Seven Eighty Three, Communal Foundation, Universe API, This Is Not a Love Story, Wild-Lake, Point Zero Systems), and at the foot of the page Availability and the intake portal.
+- [Home](https://argelysoriach.com/): Bio, deployments (Universe API, Point Zero Systems, This Is Not a Love Story, Seven Eighty Three, Communal Foundation, Wild-Lake), and at the foot of the page Availability and the intake portal.
 - [Ethos](https://argelysoriach.com/ethos/): Methodology, roles, discipline, and framework.
 - [Intake](https://argelysoriach.com/intake/): Availability for advisory, consulting, and concept acquisition, and the intake portal.
 - [Matter and Body Architecture](https://argelysoriach.com/matter-and-body-architecture/): The practice of Argelys Samuel Oriach, defined: matter and body architecture, matter architecture, and body architecture.

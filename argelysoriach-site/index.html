@@ -28,11 +28,17 @@
     :root {
       --ink: #f4f4f0;
       --ground: #000000;
-      --mono: "JetBrains Mono", ui-monospace, monospace;
-      --sans: "Archivo VF", "Arial", sans-serif;
+      --muted: rgba(244, 244, 240, 0.72);
+      --mono: "SFMono-Regular", "Consolas", "Liberation Mono", monospace;
+      --sans: "Helvetica Neue", Arial, sans-serif;
     }
+
     * { box-sizing: border-box; }
-    html { background: var(--ground); color: var(--ink); scroll-behavior: smooth; }
+    html {
+      background: var(--ground);
+      color: var(--ink);
+      scroll-behavior: smooth;
+    }
     body {
       margin: 0;
       background: var(--ground);
@@ -44,6 +50,7 @@
     }
     a { color: inherit; text-decoration: none; }
     .wrap { max-width: 1400px; margin: 0 auto; padding: 0 24px; }
+
     .top {
       border-bottom: 1px solid var(--ink);
       font-family: var(--mono);
@@ -58,20 +65,58 @@
       min-height: 58px;
     }
     .top a { display: inline-block; padding: 8px 0; }
+
     .fold {
       border-bottom: 1px solid var(--ink);
-      padding: 40px 0 32px;
+      padding: 36px 0 28px;
+      overflow: hidden;
     }
-    .role {
-      display: block;
+
+    .name-monolith {
       margin: 0;
-      font-size: clamp(2.1rem, 5vw, 6rem);
+      display: block;
+      font-size: clamp(3.6rem, 8vw, 11rem);
       font-weight: 900;
-      letter-spacing: -0.06em;
-      line-height: 0.9;
-      text-transform: none;
+      line-height: 0.82;
+      letter-spacing: -0.08em;
+      text-transform: uppercase;
+      position: relative;
+      white-space: nowrap;
+      transform: translateZ(0);
     }
-    .role .part { display: inline-block; }
+
+    .name-monolith .drop {
+      display: block;
+      position: relative;
+      opacity: 0;
+      transform: translateY(-180px);
+      animation: dropIn 0.85s cubic-bezier(0.2, 0.7, 0.2, 1) forwards;
+      text-shadow: 0 1px 0 rgba(255,255,255,0.04), 0 14px 22px rgba(0,0,0,0.12);
+    }
+
+    .name-monolith .drop:nth-child(2) { animation-delay: 0.08s; }
+    .name-monolith .drop:nth-child(3) { animation-delay: 0.16s; }
+
+    @keyframes dropIn {
+      0% {
+        opacity: 0;
+        transform: translateY(-180px) scaleY(1.2);
+      }
+      10% { opacity: 1; }
+      55% {
+        opacity: 1;
+        transform: translateY(14px) scaleY(0.98);
+      }
+      72% {
+        opacity: 1;
+        transform: translateY(-10px) scaleY(1.02);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0) scaleY(1);
+      }
+    }
+
     .band {
       border-bottom: 1px solid var(--ink);
       padding: 56px 0 72px;
@@ -97,15 +142,14 @@
       font-weight: 500;
     }
     .lead a { text-decoration: underline; text-underline-offset: 0.15em; }
+
     .matrix {
       list-style: none;
       margin: 0;
       padding: 0;
       border-top: 1px solid var(--ink);
     }
-    .matrix li {
-      border-bottom: 1px solid var(--ink);
-    }
+    .matrix li { border-bottom: 1px solid var(--ink); }
     .matrix a {
       display: flex;
       justify-content: space-between;
@@ -116,6 +160,7 @@
       letter-spacing: -0.04em;
       text-transform: uppercase;
     }
+
     .intake .wrap {
       display: grid;
       grid-template-columns: 0.8fr 1.2fr;
@@ -140,10 +185,7 @@
       font-size: 1.05rem;
       max-width: 36em;
     }
-    .gate form {
-      display: grid;
-      gap: 22px;
-    }
+    .gate form { display: grid; gap: 22px; }
     .field label {
       display: flex;
       justify-content: space-between;
@@ -179,6 +221,7 @@
       text-transform: uppercase;
       cursor: pointer;
     }
+
     .foot {
       padding: 28px 0 40px;
       font-family: var(--mono);
@@ -192,11 +235,15 @@
       gap: 16px 28px;
       margin-bottom: 18px;
     }
+
     @media (max-width: 820px) {
       .band .wrap,
       .intake .wrap { grid-template-columns: 1fr; }
       .lead p { font-size: 1.2rem; }
-      .role { font-size: clamp(2.1rem, 13vw, 4rem); }
+      .name-monolith {
+        font-size: clamp(2.8rem, 18vw, 5rem);
+        white-space: normal;
+      }
     }
   </style>
 </head>
@@ -211,10 +258,10 @@
   <main>
     <section class="fold">
       <div class="wrap">
-        <h1 class="role" aria-label="Argelys Samuel Oriach">
-          <span class="part">Actor,</span>
-          <span class="part">Architect,</span>
-          <span class="part">Author</span>
+        <h1 class="name-monolith" aria-label="Argelys Samuel Oriach">
+          <span class="drop">ARGELYS</span>
+          <span class="drop">SAMUEL</span>
+          <span class="drop">ORIACH</span>
         </h1>
       </div>
     </section>
@@ -243,7 +290,7 @@
             <li><a href="https://thisisnotalovestory.net/"><span>This Is Not a Love Story</span><span aria-hidden="true">→</span></a></li>
             <li><a href="https://seveneightythree.com/"><span>Seven Eighty Three</span><span aria-hidden="true">→</span></a></li>
             <li><a href="https://communalfoundation.org/"><span>Communal Foundation</span><span aria-hidden="true">→</span></a></li>
-            <li><a href="https://wild-lake.org"><span>Wild-Lake</span><span aria-hidden="true">→</span></a></li>
+            <li><a href="https://wild-lake.org/"><span>Wild-Lake</span><span aria-hidden="true">→</span></a></li>
           </ol>
         </div>
       </div>

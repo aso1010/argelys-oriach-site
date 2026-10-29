@@ -18,14 +18,14 @@
       "@type": "WebPage",
       "@id": "https://argelysoriach.com/#home",
       "url": "https://argelysoriach.com/",
-      "name": "Argelys Samuel Oriach — Actor, Writer, Director",
+      "name": "Argelys Samuel Oriach — Actor, Writer, Director, Auteur",
       "isPartOf": {
         "@id": "https://argelysoriach.com/#website"
       },
       "mainEntity": {
         "@id": "https://argelysoriach.com/#person"
       },
-      "description": "Actor, writer and director in Brooklyn. Founder of Seven Eighty Three, Communal Foundation and Wild-Lake. Author of This Is Not a Love Story."
+      "description": "Actor, writer, director and auteur in Brooklyn. Founder of Seven Eighty Three, Communal Foundation and Wild-Lake. Author of This Is Not a Love Story."
     },
     {
       "@type": "WebPage",

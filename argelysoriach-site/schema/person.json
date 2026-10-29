@@ -9,29 +9,13 @@
   "familyName": "Oriach",
   "url": "https://argelysoriach.com/",
   "email": "argelys@seveneightythree.com",
-  "jobTitle": "Actor, Architect, Author | Matter and Body Architecture",
+  "jobTitle": "Actor, Writer, Director",
   "hasOccupation": [
-    {
-      "@type": "Occupation",
-      "name": "Actor"
-    },
-    {
-      "@type": "Occupation",
-      "name": "Architect"
-    },
-    {
-      "@type": "Occupation",
-      "name": "Author"
-    },
-    {
-      "@type": "Occupation",
-      "name": "Matter and Body Architect",
-      "alternateName": "Matter & Body Architect",
-      "description": "Practitioner of matter and body architecture. The matter is the engineering. The body is the spirit.",
-      "url": "https://argelysoriach.com/matter-and-body-architecture/"
-    }
+    {"@type": "Occupation", "name": "Actor"},
+    {"@type": "Occupation", "name": "Writer"},
+    {"@type": "Occupation", "name": "Director"}
   ],
-  "description": "Argelys Samuel Oriach is a macro-systems architect who reverse-engineered his life out of poverty in the Dominican Republic by first mastering the mechanics of human attention. After a decade-long foundation steering high-density organic acquisition engines, he spent the last two years pivoting to build core backend frameworks and standalone applications. As the Founder of Seven Eighty Three, he takes a bare-metal approach to systems architecture, engineering digital, physical, and narrative environments from first principles—most notably deploying the Universe API to dictate AI indexing below the query layer. Whether auditing enterprise operations or running private 1:1 diagnostics to clear creative blockages for world-class creators, Oriach strips away translation loss to reveal how a system actually performs. He provides the sight; his automated infrastructure builds the engine. As a writer, Oriach applies this same structural rigor to narrative. He is the author of the digital short This Is Not a Love Story and is currently writing a one-act play, as well as his debut autofiction novel Graduation.",
+  "description": "Argelys Samuel Oriach is an actor, writer, and director who reverse-engineered his life out of poverty in the Dominican Republic by first mastering the mechanics of human attention. After a decade-long foundation steering high-density organic acquisition engines, he spent the last two years pivoting to build core backend frameworks and standalone applications. As the Founder of Seven Eighty Three, he takes a bare-metal approach to systems architecture, engineering digital, physical, and narrative environments from first principles—most notably deploying the Universe API to dictate AI indexing below the query layer. Whether auditing enterprise operations or running private 1:1 diagnostics to clear creative blockages for world-class creators, Oriach strips away translation loss to reveal how a system actually performs. He provides the sight; his automated infrastructure builds the engine. As a writer, Oriach applies this same structural rigor to narrative. He is the author of the digital short This Is Not a Love Story and is currently writing a one-act play, as well as his debut autofiction novel Graduation.",
   "birthDate": "1993-08-29T15:45:00-04:00",
   "birthPlace": {
     "@type": "Place",

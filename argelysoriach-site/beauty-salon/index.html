@@ -252,6 +252,48 @@
             .subscribe-container { flex-direction: column; border: none; gap: 2vh; }
             input[type="email"] { border-bottom: 1px solid var(--signal); padding-bottom: 1vh; }
         }
+
+        /* Reading edition: the same Archivo, basalt/parchment palette, and measured rhythm as Yankees. */
+        @font-face{font-family:'JetBrains Mono';src:url('../fonts/JetBrainsMono-Variable.woff2') format('woff2');font-weight:100 800;font-display:swap}
+        :root{--void:#0c0c0b;--signal:#ece8e1;--mute:#a6a198;--hair:rgba(236,232,225,.16);--accent:#d47a2c;--page-margin:clamp(21px,4.75vw,89px);color-scheme:dark}
+        :root[data-theme="light"]{--void:#f4f1ea;--signal:#0c0c0b;--mute:#4c4943;--hair:rgba(12,12,11,.18);--accent:#9a4b0f;color-scheme:light}
+        html{scroll-padding-top:89px;-webkit-text-size-adjust:100%}
+        body{padding:0 var(--page-margin) 89px;background:var(--void);color:var(--signal)}
+        a:focus-visible,button:focus-visible,input:focus-visible{outline:2px solid var(--accent);outline-offset:5px}
+        .skip-reading{position:fixed;top:8px;left:21px;transform:translateY(-200%);z-index:30;background:var(--signal);color:var(--void);padding:13px}
+        .skip-reading:focus{transform:none}
+        .reading-bar{position:sticky;top:0;z-index:10;display:flex;align-items:center;justify-content:space-between;gap:13px;min-height:55px;background:var(--void);border-bottom:1px solid var(--hair);font:500 11px/1.4 'JetBrains Mono',monospace;letter-spacing:.08em;text-transform:uppercase}
+        .reading-home{display:flex;align-items:center;gap:13px;min-height:44px}
+        .reading-home img{width:34px;height:34px;object-fit:contain}
+        .reading-mode{border:1px solid var(--hair);background:transparent;color:var(--signal);font:inherit;text-transform:uppercase;letter-spacing:inherit;min-height:36px;padding:8px 13px;cursor:pointer}
+        .reading-mode:hover{border-color:var(--signal)}
+        .reading-progress{position:absolute;bottom:-1px;left:0;width:100%;height:2px;background:var(--accent);transform:scaleX(0);transform-origin:left;pointer-events:none}
+        header,main,.reading-end{max-width:1597px;margin-inline:auto}
+        header{padding-top:55px;margin-bottom:55px;gap:34px}
+        nav{flex-direction:row;flex-wrap:wrap;gap:13px 34px;font:500 12px/1.5 'JetBrains Mono',monospace;letter-spacing:.08em}
+        nav a{padding:8px 0;border-bottom:1px solid transparent}
+        nav a[aria-current="page"]{border-bottom-color:var(--accent)}
+        nav a:hover{color:var(--signal);border-bottom-color:var(--signal)}
+        #view-read{max-width:none}
+        .article-head{border-top:1px solid var(--hair);padding-top:34px;margin-bottom:clamp(55px,8vw,144px)}
+        .metadata,.reading-rail,.reading-end{font:500 clamp(11px,.25vw + 10px,13px)/1.5 'JetBrains Mono',monospace;letter-spacing:.08em;text-transform:uppercase}
+        .metadata{color:var(--mute);margin-bottom:34px}
+        .essay-title{font-size:clamp(2.75rem,8vw,8rem);font-stretch:125%;line-height:.9;letter-spacing:-.045em;max-width:14ch;margin:0;text-wrap:balance}
+        .reading-layout{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));gap:34px clamp(13px,1.6vw,34px);align-items:start}
+        .reading-rail{grid-column:1/4;position:sticky;top:89px;color:var(--mute);max-width:23ch;border-top:1px solid var(--hair);padding-top:13px}
+        .reading-rail p{margin-bottom:13px}
+        .reading-rail a{color:var(--signal);text-transform:none;letter-spacing:0}
+        .essay-body{grid-column:4/11;max-width:68ch;font-size:clamp(17px,1.15vw,19.6px);font-weight:400;font-stretch:100%;line-height:1.61803398875;letter-spacing:0}
+        .essay-body p{margin:0 0 21px;text-wrap:pretty;hanging-punctuation:first}
+        .essay-body p:last-child::after{content:'';display:block;width:8px;height:8px;background:var(--accent);margin-top:34px}
+        .reading-end{margin-top:89px;padding-top:21px;border-top:1px solid var(--hair);display:flex;justify-content:space-between;flex-wrap:wrap;gap:13px;color:var(--mute)}
+        .reading-end a{color:var(--signal);padding-block:8px}
+        .reading-end a:hover{text-decoration:underline;text-underline-offset:4px}
+        .reading-end a[hidden]{display:none}
+        @media(max-width:899px){.reading-rail{position:static;grid-column:1/-1;max-width:none;display:flex;flex-wrap:wrap;gap:8px 21px;padding-block:13px;border-bottom:1px solid var(--hair)}.reading-rail p{margin:0}.essay-body{grid-column:1/-1;margin-inline:auto;width:100%}.essay-title{font-size:clamp(2.75rem,10vw,5.5rem)}}
+        @media(min-width:900px) and (max-width:1199px){.essay-body{grid-column:4/-1}}
+        @media(max-width:480px){.reading-home{gap:8px}.reading-bar{font-size:10px}.reading-mode{padding-inline:8px}.article-head{padding-top:21px}.metadata{margin-bottom:21px}}
+        @media print{html{color-scheme:light}body{background:#fff;color:#000;padding:0}.reading-bar,.skip-reading,header,.reading-end,.reading-rail,#view-archive,#view-subscribe{display:none!important}.article-head{margin-bottom:34px}.essay-title{font-size:36pt}.reading-layout{display:block}.essay-body{max-width:none;font-size:11pt;line-height:1.5}.essay-body p{break-inside:avoid}.view.active{animation:none}}
     </style>
 <meta property="og:image" content="https://argelysoriach.com/social-card-systems-architect-artist-auteur.png">
 <meta property="og:image:secure_url" content="https://argelysoriach.com/social-card-systems-architect-artist-auteur.png">
@@ -263,24 +305,38 @@
 <meta name="twitter:image" content="https://argelysoriach.com/social-card-systems-architect-artist-auteur.png">
 <meta name="twitter:image:alt" content="Argelys Samuel Oriach — Systems Architect, Artist, and Auteur">
 </head>
-<body>
+<body id="top">
+    <a class="skip-reading" href="#essay-title">Skip to essay</a>
+    <div class="reading-bar" aria-label="Reading tools">
+        <a class="reading-home" href="/" aria-label="Argelys Samuel Oriach — Home"><img src="/media/community-avatar.png" width="34" height="34" alt=""><span>Beauty Salon · Issue 001</span></a>
+        <button class="reading-mode" type="button" aria-label="Switch to light reading mode" aria-pressed="false">Light</button>
+        <div class="reading-progress" aria-hidden="true"></div>
+    </div>
     <header>
         <div class="brand-container">
             <div class="brand-mark" role="img" aria-label="Beauty Salon"><span class="brand-text" aria-hidden="true">BEAUTY SALON</span><span class="brand-cursor" aria-hidden="true"></span></div>
         </div>
         <nav>
-            <a data-target="view-read">[ READ ]</a>
-            <a data-target="view-archive">[ ARCHIVE ]</a>
-            <a data-target="view-subscribe">[ SUBSCRIBE ]</a>
+            <a href="#read" data-target="view-read" aria-current="page">[ READ ]</a>
+            <a href="#archive" data-target="view-archive">[ ARCHIVE ]</a>
+            <a href="#subscribe" data-target="view-subscribe">[ SUBSCRIBE ]</a>
         </nav>
     </header>
 
     <main>
         <!-- READ VIEW -->
-        <section id="view-read" class="view active">
-            <div class="metadata">ISSUE_001 · OCTOBER 2026</div>
-            <h1 class="essay-title">THE MESSINESS OF BECOMING</h1>
-            <div class="essay-body">
+        <article id="view-read" class="view active" aria-labelledby="essay-title">
+            <div class="article-head">
+                <div class="metadata">Issue 001 · October 2026 · An essay</div>
+                <h1 class="essay-title" id="essay-title" tabindex="-1">THE MESSINESS OF BECOMING</h1>
+            </div>
+            <div class="reading-layout">
+                <aside class="reading-rail" aria-label="Essay details">
+                    <p>Written by<br><a href="/">Argelys Samuel Oriach</a></p>
+                    <p class="reading-time"></p>
+                    <p>Beauty Salon<br>Seven Eighty Three</p>
+                </aside>
+                <div class="essay-body">
                 <p>My name tells you that I’m Dominican before I’m American. I was born in Santiago de los Caballeros, a city in the Dominican Republic, though the specifics of my birth are hazy. I think I was born at El Hospital Cabral y Báez, but I’d have to ask my mother to confirm. I have many questions I’d like to ask her, but I try not to overwhelm her with them. I wonder if I’m just afraid to learn about myself, where I come from, my story, which I understand is kind of ironic considering I’m a writer.</p>
                 <p>What I do know is that both sides of my family come from rural areas in the Santiago and Espaillat provinces in the Cibao region, where poverty was a near certainty and privacy was often a luxury. My father’s family is from Moca, and my mother’s from Licey. Both were raised in small villages—known as el campo (the countryside)—that, from above, resemble a quilt of tin roofs and stretches of undeveloped land. Even today, these regions are home to people who, like unripened fruit deprived of the conditions needed to grow, have endured generations of structural underdevelopment.</p>
                 <p>I mention all of this because some readers might assume I was born in the U.S., but I wasn’t. I was born in the Caribbean, the birthplace of what we’ve come to know as America. And like Adam, I’m rooted in the earth—grounded in the soil of my homeland.</p>
@@ -308,8 +364,9 @@
                 <p>So, where does that leave me now? God, I really wish I knew the answer to that question. All I know is that renaming this publication from Not Really Here to Argelys Oriach wasn’t just a superficial change. It was meant to represent a shift from uncertainty to, I guess, something like self-ownership. My journey as a writer has always been shaped by my history and emotions. But today, I’m more committed to owning my narrative—both in writing and in life. I’m still pulling threads from the past to inform my stories, but I’m no longer doing so from a place of questioning my path.</p>
                 <p>I don’t have all the answers about where my writing will take me. But I’m confident in the direction I’m moving. I’ve come to understand that my stories aren’t just for me. They aren’t bound by a single place or identity. They’re for anyone who can relate to the feeling of being in-between. Between cultures. Between homes. Between past and future.</p>
                 <p>This platform, like my writing, is both a reflection of who I am and an invitation to journey with me. I’m sharing my process not because I’ve arrived at any final destination, but because I believe there’s value in the messiness of becoming. And wherever this path leads, I’m here now, fully committed to the dive.</p>
+                </div>
             </div>
-        </section>
+        </article>
 
         <!-- ARCHIVE VIEW -->
         <section id="view-archive" class="view">
@@ -335,6 +392,7 @@
             </div>
         </section>
     </main>
+    <footer class="reading-end"><a href="#top">Back to top ↑</a><a href="https://seveneightythree.com/">Published by Seven Eighty Three</a></footer>
 
     <script>
         // Correct the old masthead once, character by character, without announcing every keystroke.
@@ -373,13 +431,49 @@
 
         document.querySelectorAll('nav a').forEach(anchor => {
             anchor.addEventListener('click', (e) => {
-                const targetId = e.target.getAttribute('data-target');
+                e.preventDefault();
+                const targetId = e.currentTarget.getAttribute('data-target');
                 document.querySelectorAll('.view').forEach(view => {
                     view.classList.remove('active');
                 });
                 document.getElementById(targetId).classList.add('active');
+                document.querySelectorAll('nav [data-target]').forEach(link => {
+                    if (link.dataset.target === targetId) link.setAttribute('aria-current', 'page');
+                    else link.removeAttribute('aria-current');
+                });
+                updateProgress();
             });
         });
+
+        const themeButton = document.querySelector('.reading-mode');
+        function setTheme(light) {
+            document.documentElement.dataset.theme = light ? 'light' : 'dark';
+            themeButton.textContent = light ? 'Dark' : 'Light';
+            themeButton.setAttribute('aria-pressed', String(light));
+            themeButton.setAttribute('aria-label', 'Switch to ' + (light ? 'dark' : 'light') + ' reading mode');
+        }
+        try { setTheme(localStorage.getItem('beauty-salon-theme') === 'light'); } catch (_) { setTheme(false); }
+        themeButton.addEventListener('click', () => {
+            const light = document.documentElement.dataset.theme !== 'light';
+            setTheme(light);
+            try { localStorage.setItem('beauty-salon-theme', light ? 'light' : 'dark'); } catch (_) {}
+        });
+        const essay = document.querySelector('.essay-body');
+        const words = essay.textContent.trim().split(/\s+/).length;
+        document.querySelector('.reading-time').textContent = Math.max(1, Math.ceil(words / 220)) + ' min read';
+        let progressFrame;
+        function updateProgress() {
+            const bounds = essay.getBoundingClientRect();
+            const active = document.getElementById('view-read').classList.contains('active');
+            const distance = Math.max(1, bounds.height - innerHeight * .65);
+            const value = active ? Math.min(1, Math.max(0, (innerHeight * .2 - bounds.top) / distance)) : 0;
+            document.querySelector('.reading-progress').style.transform = 'scaleX(' + value + ')';
+            progressFrame = null;
+        }
+        function queueProgress() { if (progressFrame == null) progressFrame = requestAnimationFrame(updateProgress); }
+        addEventListener('scroll', queueProgress, {passive:true});
+        addEventListener('resize', queueProgress);
+        updateProgress();
     </script>
 </body>
 </html>

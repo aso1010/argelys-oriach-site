@@ -1,0 +1,29 @@
+/* Shared masthead: the Universe API typography, spacing and four-pixel rule. */
+@font-face{font-family:AO Archivo;src:url('/fonts/Archivo-Variable.woff2') format('woff2');font-weight:100 900;font-stretch:62% 125%;font-display:swap}
+.ao-shell,.ao-shell :not(svg):not(path){all:revert;box-sizing:border-box}
+.ao-shell{color:#F4F4F0;background:#000;font-family:'AO Archivo','Helvetica Neue',Arial,sans-serif;font-variant-ligatures:none;text-align:left}
+.ao-shell.ao-bar,.ao-shell .ao-bar{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:baseline;gap:8px 24px;padding:7px clamp(21px,4vw,89px);border-bottom:4px solid #F4F4F0;font-family:'AO Archivo','Helvetica Neue',Arial,sans-serif;font-weight:800;font-stretch:125%;font-variation-settings:'wght' 800,'wdth' 125;text-transform:uppercase;letter-spacing:.04em;font-size:clamp(13px,.4vw + 11px,16px);line-height:1.3}
+.ao-shell a{color:inherit;text-decoration:none;cursor:pointer}
+.ao-shell .ao-bar a,.ao-shell.ao-bar a{display:block;padding:13px 0;font:inherit;letter-spacing:inherit;text-transform:inherit}
+.ao-shell a:hover,.ao-shell a:focus-visible{color:#000;background:#F4F4F0}
+.ao-shell a:focus-visible{outline:3px solid #F4F4F0;outline-offset:3px}
+.ao-shell .ao-toggle{margin-left:auto;flex:none}
+.ao-shell.ao-menu{position:fixed;inset:0;z-index:10000;display:none;flex-direction:column;overflow-y:auto;overscroll-behavior:contain}
+.ao-shell.ao-menu:target,.ao-shell.ao-menu.is-open{display:flex}
+html.ao-menu-open{overflow:hidden}
+.ao-shell .ao-groups{display:grid;grid-template-columns:minmax(0,1fr);gap:34px clamp(21px,3vw,55px);width:100%;max-width:1600px;margin:0 auto;padding:34px clamp(21px,4vw,89px) 55px}
+.ao-shell .ao-group h2{display:block;margin:0 0 8px;padding:13px 0 0;border-top:4px solid #F4F4F0;font:800 13px/1.3 'AO Archivo',Arial,sans-serif;font-stretch:125%;letter-spacing:.06em;text-transform:uppercase}
+.ao-shell ul{display:block;list-style:none;margin:0;padding:0}
+.ao-shell li{display:block;margin:0;padding:0}
+.ao-shell li a{display:block;padding:5px 0;font:900 clamp(22px,1.6vw + 14px,38px)/1.05 'AO Archivo',Arial,sans-serif;font-stretch:125%;font-variation-settings:'wdth' 125,'wght' 900;text-transform:uppercase;letter-spacing:-.01em}
+.ao-shell li a[aria-current]{text-decoration:underline;text-decoration-thickness:3px;text-underline-offset:.15em}
+.ao-shell .ao-sr{position:absolute;width:1px;height:1px;margin:-1px;padding:0;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap}
+@media(min-width:700px){.ao-shell .ao-groups{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(min-width:1200px){.ao-shell .ao-groups{grid-template-columns:repeat(3,minmax(0,1fr))}}
+/* The essay has an inset body; its shared masthead still spans the viewport. */
+body:has(.reading-bar)>.ao-bar{margin-inline:calc(-1 * var(--page-margin))}
+@media print{.ao-shell{display:none!important}}
+/* The homepage leaves the full opening screen to the monolith. */
+a.ao-shell.ao-icon{position:fixed;top:13px;right:clamp(13px,2vw,55px);z-index:50;display:flex;align-items:center;justify-content:center;width:44px;height:44px;color:#F4F4F0;background:#000;cursor:pointer}
+a.ao-shell.ao-icon svg{display:block;width:24px;height:24px;fill:none;stroke:currentColor;stroke-width:2}
+a.ao-shell.ao-icon:hover,a.ao-shell.ao-icon:focus-visible{color:#000;background:#F4F4F0;outline:3px solid #F4F4F0;outline-offset:3px}

@@ -645,7 +645,7 @@ a{color:inherit;text-decoration:none}
 
 /* The opening screen belongs to the name. Its title rule is the load-bearing floor below it. */
 :root{
-  --strip:3.5rem;
+  --strip:0rem;
   --fold-gap:13px;
   --fold-pad:clamp(21px,3.2vw,55px);
   --hero-gutter:clamp(13px,2vw,55px);
@@ -790,29 +790,28 @@ html.menu-open{overflow:hidden}
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:image" content="https://argelysoriach.com/social-card-monolith-floor-v2.png">
 <meta name="twitter:image:alt" content="Argelys Samuel Oriach — Systems Architect, Artist, and Auteur">
+<link rel="stylesheet" href="/assets/navigation.css?v=1">
+<script src="/assets/navigation.js?v=1" defer></script>
 </head>
 <body id="top">
+<!-- Shared navigation -->
+<a class="ao-shell ao-icon" href="#ao-menu" aria-label="Open menu" aria-controls="ao-menu" aria-expanded="false" data-ao-open><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true"><path d="M2 6h20M2 12h20M2 18h20"/></svg></a>
+<div class="ao-shell ao-menu" id="ao-menu" role="navigation" aria-label="Site">
+  <div class="ao-bar"><a href="/" aria-current="page" class="ao-home">Argelys Samuel Oriach</a><a href="#" class="ao-toggle" data-ao-close>Close</a></div>
+  <div class="ao-groups">
+    <div class="ao-group"><h2>Work</h2><ul><li><a href="/portfolio/">Portfolio</a></li><li><a href="/banana-republic/">Banana Republic</a></li><li><a href="/catalogue-001/">Catalogue 001</a></li><li><a href="/catalogue-002/">Catalogue 002</a></li></ul></div>
+    <div class="ao-group"><h2>Systems</h2><ul><li><a href="/universe-api/">Universe API</a></li><li><a href="/matter-and-body-architecture/">Matter and Body Architecture</a></li></ul></div>
+    <div class="ao-group"><h2>Writing</h2><ul><li><a href="/this-is-not-a-love-story-yankees/">This Is Not a Love Story (Yankees)</a></li><li><a href="/mad-matter/">Mad Matter</a></li><li><a href="/beauty-salon/">Beauty Salon</a></li><li><a href="/sovereignty/">Sovereignty</a></li></ul></div>
+    <div class="ao-group"><h2>About</h2><ul><li><a href="/" aria-current="page">Home</a></li><li><a href="/#bio">Bio</a></li><li><a href="/ethos/">Ethos</a></li><li><a href="/cv/">CV</a></li><li><a href="/nothing-artist/">Nothing Artist</a></li><li><a href="/intake/">Intake</a></li><li><a href="mailto:argelys@seveneightythree.com">Contact</a></li></ul></div>
+    <div class="ao-group"><h2>Elsewhere</h2><ul><li><a href="https://seveneightythree.com/" target="_blank" rel="noopener noreferrer">Seven Eighty Three<span class="ao-sr"> (opens in a new tab)</span></a></li><li><a href="https://wild-lake.org/" target="_blank" rel="noopener noreferrer">Wild-Lake<span class="ao-sr"> (opens in a new tab)</span></a></li><li><a href="https://communalfoundation.org/" target="_blank" rel="noopener noreferrer">Communal Foundation<span class="ao-sr"> (opens in a new tab)</span></a></li><li><a href="https://www.linkedin.com/in/argelys-samuel-oriach/" target="_blank" rel="noopener noreferrer">LinkedIn<span class="ao-sr"> (opens in a new tab)</span></a></li><li><a href="https://paragraph.com/@seven83hertz" target="_blank" rel="noopener noreferrer">Dispatches<span class="ao-sr"> (opens in a new tab)</span></a></li></ul></div>
+  </div>
+</div>
+<!-- /Shared navigation -->
+
 <a class="skip mono" href="#main">Skip to content</a>
 
-<header class="top mono">
-  <div class="wrap">
-    <a class="brand-avatar" href="https://argelysoriach.com/" aria-current="page" aria-label="Argelys Samuel Oriach — Home"><img src="/media/community-avatar.png" width="44" height="44" alt=""></a>
-    <div class="top__end">
-      <a class="menu-btn" href="#site-menu" aria-controls="site-menu" aria-expanded="false" data-menu-open>Menu</a>
-    </div>
-  </div>
-</header>
-<nav class="site-menu" id="site-menu" aria-label="Site">
-  <div class="top mono"><div class="wrap"><a class="brand-avatar" href="https://argelysoriach.com/" aria-current="page" aria-label="Argelys Samuel Oriach — Home"><img src="/media/community-avatar.png" width="44" height="44" alt=""></a><a class="menu-btn" href="#" data-menu-close>Close</a></div></div>
-  <div class="site-menu__groups">
-    <div class="site-menu__group"><h2>This page</h2><ul><li><a href="#bio">Bio</a></li><li><a href="#deployments">Deployments</a></li><li><a href="#intake">Intake</a></li></ul></div>
-    <div class="site-menu__group"><h2>Work</h2><ul><li><a href="https://argelysoriach.com/portfolio/">Portfolio</a></li><li><a href="https://argelysoriach.com/banana-republic/">Banana Republic</a></li><li><a href="https://argelysoriach.com/catalogue-001/">Catalogue 001</a></li><li><a href="https://argelysoriach.com/catalogue-002/">Catalogue 002</a></li></ul></div>
-    <div class="site-menu__group"><h2>Systems</h2><ul><li><a href="https://argelysoriach.com/universe-api/">Universe API</a></li><li><a href="https://argelysoriach.com/matter-and-body-architecture/">Matter and Body Architecture</a></li></ul></div>
-    <div class="site-menu__group"><h2>Writing</h2><ul><li><a href="https://argelysoriach.com/this-is-not-a-love-story-yankees/">This Is Not a Love Story (Yankees)</a></li><li><a href="https://argelysoriach.com/mad-matter/">Mad Matter</a></li><li><a href="https://argelysoriach.com/beauty-salon/">Beauty Salon</a></li><li><a href="https://argelysoriach.com/sovereignty/">Sovereignty</a></li></ul></div>
-    <div class="site-menu__group"><h2>About</h2><ul><li><a href="https://argelysoriach.com/ethos/">Ethos</a></li><li><a href="https://argelysoriach.com/cv/">CV</a></li><li><a href="https://argelysoriach.com/nothing-artist/">Nothing Artist</a></li><li><a href="/cdn-cgi/l/email-protection#f9988b9e9c95808ab98a9c8f9c979c909e918d808d918b9c9cd79a9694">Contact</a></li></ul></div>
-    <div class="site-menu__group"><h2>Elsewhere</h2><ul><li><a href="https://seveneightythree.com/" target="_blank" rel="noopener noreferrer">Seven Eighty Three<span class="sr"> (opens in a new tab)</span></a></li><li><a href="https://wild-lake.org/" target="_blank" rel="noopener noreferrer">Wild-Lake<span class="sr"> (opens in a new tab)</span></a></li><li><a href="https://communalfoundation.org/" target="_blank" rel="noopener noreferrer">Communal Foundation<span class="sr"> (opens in a new tab)</span></a></li><li><a href="https://www.linkedin.com/in/argelys-samuel-oriach/" target="_blank" rel="noopener noreferrer">LinkedIn<span class="sr"> (opens in a new tab)</span></a></li><li><a href="https://paragraph.com/@seven83hertz" target="_blank" rel="noopener noreferrer">Dispatches<span class="sr"> (opens in a new tab)</span></a></li></ul></div>
-  </div>
-</nav>
+
+
 
 <main id="main">
   <section class="fold" aria-labelledby="headline">
@@ -1125,44 +1124,7 @@ html.menu-open{overflow:hidden}
   });
 })();
 </script>
-<script>
-/* Site menu. Menu opens it, Close or Escape shuts it and returns focus; a jump link shuts it and goes. */
-(function () {
-  var menu = document.getElementById('site-menu');
-  if (!menu) return;
-  var root = document.documentElement, back = null;
-  var openers = Array.prototype.slice.call(document.querySelectorAll('[data-menu-open]'));
-  function isOpen() { return menu.classList.contains('is-open'); }
-  function set(open) {
-    menu.classList.toggle('is-open', open);
-    root.classList.toggle('menu-open', open);
-    Array.prototype.forEach.call(document.body.children, function (el) {
-      if (el === menu || el.tagName === 'SCRIPT') return;
-      if (open) el.setAttribute('inert', ''); else el.removeAttribute('inert');
-    });
-    openers.forEach(function (b) { b.setAttribute('aria-expanded', open ? 'true' : 'false'); });
-    if (open) { back = document.activeElement; var first = menu.querySelector('.site-menu__groups a'); if (first) first.focus(); }
-    else if (back && back.focus) { back.focus(); back = null; }
-  }
-  openers.forEach(function (b) { b.addEventListener('click', function (e) { e.preventDefault(); set(!isOpen()); }); });
-  menu.addEventListener('click', function (e) {
-    var a = e.target.closest ? e.target.closest('a') : null;
-    if (!a) return;
-    if (a.hasAttribute('data-menu-close')) { e.preventDefault(); set(false); return; }
-    if ((a.getAttribute('href') || '').charAt(0) === '#') { back = null; set(false); }
-  });
-  document.addEventListener('keydown', function (e) {
-    if (!isOpen()) return;
-    if (e.key === 'Escape') { e.preventDefault(); set(false); return; }
-    if (e.key !== 'Tab') return;
-    var f = menu.querySelectorAll('a[href]'), first = f[0], last = f[f.length - 1];
-    if (!menu.contains(document.activeElement)) { e.preventDefault(); (e.shiftKey ? last : first).focus(); return; }
-    if (e.shiftKey && document.activeElement === first) { e.preventDefault(); last.focus(); }
-    else if (!e.shiftKey && document.activeElement === last) { e.preventDefault(); first.focus(); }
-  });
-  if (location.hash === '#site-menu') { history.replaceState(null, '', location.pathname + location.search); set(true); }
-})();
-</script>
+
 <script type="module" src="https://static.cloudflareinsights.com/beacon.min.js/vce701823e78c4301a35b7e07294d87301792088814092" integrity="sha512-UKNk8GbxkABxKcXYuLkO16EleLGUkcvJWtpSNmExE0Too3ZaFAxTscNWEc1OdAv5/BikHawapSCaiD2XCmp+Bw==" data-cf-beacon='{"version":"2024.11.0","token":"5dc1f8cb30c941d4bae97b5549cad8b7","r":1,"spa":2}' crossorigin="anonymous"></script>
 <script>window.__CF$cv$params={r:'a5166f51ebc2be78',t:'MTc5MzE1Mzc0OA==',u:'01a147d7004e72a5ad8ddbd1cd5c62c3',ut:'3kJSGQZypwtw5gsoitRZy8ZNeOTRn77aXxkGculHyNk-1793153748-1.2.1.1-G6ujIP8xPSox7sP.pnekMmhcZksRmMWH0HyaChuCGwHzmzMG3aB7HHYphsoGI1LytWK97oUBRxz6tOs9ovbKS6MbVfqUrPFBSzbt0LYmHIw',i:60};(function(){if(!document.body)return;var s=document.createElement('script');s.src='/cdn-cgi/challenge-platform/scripts/precursor/main.js';document.head.appendChild(s);})();</script><script>window.__CF$cv$params={r:'a516838639d1c269',t:'MTc5MzE1NDU3Ng==',u:'01a147d7004e72a5ad8ddbd1cd5c62c3',ut:'jQAf53v5sHJkGn5oz3bq96n56dTZYaqOpiADE5SyBVE-1793154576-1.2.1.1-hegzNwCH59kzByf2HHlwYVIbxGp4SZxxf9MYkYwX4ka0tL1A3AeAWEnCDgg4qyzQNemvHjljzHpPY8kq1ir0lq1v.z4przw.EVQxhxnTStQ',i:60};(function(){if(!document.body)return;var s=document.createElement('script');s.src='/cdn-cgi/challenge-platform/scripts/precursor/main.js';document.head.appendChild(s);})();</script><script type="module" src="https://static.cloudflareinsights.com/beacon.min.js/vce701823e78c4301a35b7e07294d87301792088814092" integrity="sha512-UKNk8GbxkABxKcXYuLkO16EleLGUkcvJWtpSNmExE0Too3ZaFAxTscNWEc1OdAv5/BikHawapSCaiD2XCmp+Bw==" data-cf-beacon='{"version":"2024.11.0","token":"5dc1f8cb30c941d4bae97b5549cad8b7","r":1,"spa":2}' crossorigin="anonymous"></script>
 </body>

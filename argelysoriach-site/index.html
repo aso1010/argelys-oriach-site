@@ -757,6 +757,11 @@ html.menu-open{overflow:hidden}
 .site-index{display:grid;grid-template-columns:minmax(0,1fr);gap:34px clamp(21px,3vw,55px);margin-top:34px}
 @media (min-width:700px){.site-index{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media (min-width:1200px){.site-index{grid-template-columns:repeat(3,minmax(0,1fr))}}
+
+/* The shared home link uses the community emblem as a compact avatar. */
+.top .wrap{padding-top:5px;padding-bottom:5px}
+.top a.brand-avatar{display:inline-flex;align-items:center;justify-content:center;width:44px;height:44px;padding:0;border:0;flex-shrink:0}
+.top a.brand-avatar img{display:block;width:44px;height:44px;object-fit:contain}
 </style>
 <script>
 /* Ethos has its own page; an old link to its anchor here goes there. Intake sits at the foot of this page, so a host
@@ -791,14 +796,14 @@ html.menu-open{overflow:hidden}
 
 <header class="top mono">
   <div class="wrap">
-    <a href="https://argelysoriach.com/" aria-current="page">argelysoriach.com</a>
+    <a class="brand-avatar" href="https://argelysoriach.com/" aria-current="page" aria-label="Argelys Samuel Oriach — Home"><img src="/media/community-avatar.png" width="44" height="44" alt=""></a>
     <div class="top__end">
       <a class="menu-btn" href="#site-menu" aria-controls="site-menu" aria-expanded="false" data-menu-open>Menu</a>
     </div>
   </div>
 </header>
 <nav class="site-menu" id="site-menu" aria-label="Site">
-  <div class="top mono"><div class="wrap"><a href="https://argelysoriach.com/" aria-current="page">argelysoriach.com</a><a class="menu-btn" href="#" data-menu-close>Close</a></div></div>
+  <div class="top mono"><div class="wrap"><a class="brand-avatar" href="https://argelysoriach.com/" aria-current="page" aria-label="Argelys Samuel Oriach — Home"><img src="/media/community-avatar.png" width="44" height="44" alt=""></a><a class="menu-btn" href="#" data-menu-close>Close</a></div></div>
   <div class="site-menu__groups">
     <div class="site-menu__group"><h2>This page</h2><ul><li><a href="#bio">Bio</a></li><li><a href="#deployments">Deployments</a></li><li><a href="#intake">Intake</a></li></ul></div>
     <div class="site-menu__group"><h2>Work</h2><ul><li><a href="https://argelysoriach.com/portfolio/">Portfolio</a></li><li><a href="https://argelysoriach.com/banana-republic/">Banana Republic</a></li><li><a href="https://argelysoriach.com/catalogue-001/">Catalogue 001</a></li><li><a href="https://argelysoriach.com/catalogue-002/">Catalogue 002</a></li></ul></div>

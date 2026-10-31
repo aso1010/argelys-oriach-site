@@ -294,6 +294,12 @@
         @media(min-width:900px) and (max-width:1199px){.essay-body{grid-column:4/-1}}
         @media(max-width:480px){.reading-home{gap:8px}.reading-bar{font-size:10px}.reading-mode{padding-inline:8px}.article-head{padding-top:21px}.metadata{margin-bottom:21px}}
         @media print{html{color-scheme:light}body{background:#fff;color:#000;padding:0}.reading-bar,.skip-reading,header,.reading-end,.reading-rail,#view-archive,#view-subscribe{display:none!important}.article-head{margin-bottom:34px}.essay-title{font-size:36pt}.reading-layout{display:block}.essay-body{max-width:none;font-size:11pt;line-height:1.5}.essay-body p{break-inside:avoid}.view.active{animation:none}}
+
+        /* Reserve the button's intrinsic width; the email field may shrink without clipping the action. */
+        .subscribe-container{display:grid;grid-template-columns:minmax(0,1fr) auto;align-items:center;gap:21px;width:min(100%,60rem);max-width:none;border:0;border-bottom:1px solid var(--signal);padding:21px 0}
+        .subscribe-container input[type="email"]{min-width:0;width:100%;padding:0;border:0;font-size:clamp(1.125rem,2.4vw,2rem);line-height:1.3}
+        .subscribe-container .join-btn{white-space:nowrap;font-size:clamp(1.125rem,2.4vw,2rem);line-height:1.3;min-height:44px;padding:8px 0}
+        @media(max-width:480px){.subscribe-container{gap:13px}}
     </style>
 <meta property="og:image" content="https://argelysoriach.com/social-card-systems-architect-artist-auteur.png">
 <meta property="og:image:secure_url" content="https://argelysoriach.com/social-card-systems-architect-artist-auteur.png">
@@ -387,7 +393,7 @@
         <!-- SUBSCRIBE VIEW -->
         <section id="view-subscribe" class="view">
             <div class="subscribe-container">
-                <input type="email" placeholder="ENTER EMAIL" aria-label="Email address">
+                <input type="email" name="email" autocomplete="email" inputmode="email" placeholder="ENTER EMAIL" aria-label="Email address">
                 <button class="join-btn">[ JOIN ]</button>
             </div>
         </section>

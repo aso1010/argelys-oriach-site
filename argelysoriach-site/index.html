@@ -643,17 +643,18 @@ a{color:inherit;text-decoration:none}
 .top a[aria-current]{border-bottom-color:var(--ink)}
 .top__end{display:flex;flex-wrap:wrap;align-items:center;gap:8px 34px}
 
-/* The opening screen belongs to the name. The title rule follows just below the viewport. */
+/* The opening screen belongs to the name. Its title rule is the load-bearing floor below it. */
 :root{
   --strip:3.5rem;
   --fold-gap:13px;
   --fold-pad:clamp(21px,3.2vw,55px);
   --hero-gutter:clamp(13px,2vw,55px);
+  --monolith-width:calc((100svh - var(--strip) - 2 * clamp(13px,2svh,34px)) / .504);
 }
 .fold{padding:0 0 calc(var(--fold-pad) + env(safe-area-inset-bottom))}
 .cap{width:calc(100% - 2 * var(--hero-gutter));height:calc(100svh - var(--strip));margin:0 auto;padding:clamp(13px,2svh,34px) 0;display:flex;align-items:center;justify-content:center;container-type:inline-size}
-.mark{width:100%;max-width:calc((100svh - var(--strip) - 2 * clamp(13px,2svh,34px)) / .504)}
-.fold>.wrap{width:100%;margin-top:var(--fold-gap);container-type:inline-size}
+.mark{width:100%;max-width:var(--monolith-width)}
+.fold>.wrap{width:calc(100% - 2 * var(--hero-gutter));max-width:var(--monolith-width);padding:0;margin-top:var(--fold-gap);container-type:inline-size}
 /* The letters are high-resolution images of Archivo outlines at wght 900, wdth 125.
    Each image keeps its original outline coordinates so the drop and interaction geometry stays the same. */
 /* Use image paint for the mark and title rule: Samsung Internet remaps inline fills and borders in dark mode. */
@@ -663,12 +664,11 @@ html.drop-wait .mark{visibility:hidden}
 @media (prefers-reduced-motion:no-preference){.mark{cursor:pointer;touch-action:manipulation;-webkit-tap-highlight-color:transparent;-webkit-user-select:none;user-select:none}}
 .sr{position:absolute;width:1px;height:1px;margin:-1px;padding:0;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap;border:0}
 h1{margin:0;font-weight:900}
-.role{display:block;padding-top:clamp(13px,1.6vw,21px);border-top:13px solid transparent;background-image:url("media/monolith/ink.png");background-origin:border-box;background-repeat:no-repeat;background-size:100% 13px;font-family:var(--sans);font-weight:900;font-variation-settings:'wdth' 125,'wght' 900;font-stretch:125%;text-transform:uppercase;letter-spacing:-.035em;line-height:1.04;font-size:clamp(19px,2.35vw,38px)}
+.role{display:block;padding-top:clamp(13px,1.6vw,21px);border-top:13px solid transparent;background-image:url("media/monolith/ink.png");background-origin:border-box;background-repeat:no-repeat;background-size:100% 13px;font-family:var(--sans);font-weight:900;font-variation-settings:'wdth' 125,'wght' 900;font-stretch:125%;text-transform:uppercase;letter-spacing:-.035em;line-height:1.04;font-size:3.5cqw;text-align:center;white-space:nowrap}
 .role .part{display:inline-block}
-/* Scale the title to its available width so narrow phones keep all three roles on one line. */
+/* Fill the floor evenly; use the narrower font axis on phones to keep every role on one line. */
 @media (max-width:600px){
-  .fold>.wrap{width:100%;container-type:inline-size}
-  .role{font-size:min(19px,4.2cqw);font-variation-settings:'wdth' 100,'wght' 900;font-stretch:100%;white-space:nowrap}
+  .role{font-size:4.2cqw;font-variation-settings:'wdth' 100,'wght' 900;font-stretch:100%;white-space:nowrap}
 }
 .role .pipe{padding-left:.3em}
 

@@ -643,21 +643,17 @@ a{color:inherit;text-decoration:none}
 .top a[aria-current]{border-bottom-color:var(--ink)}
 .top__end{display:flex;flex-wrap:wrap;align-items:center;gap:8px 34px}
 
-/* Fold one: the name, edge to edge, under the strip. On load its letters drop in, land every which way and right
-   themselves one by one; from then on it stands still, set straight like the Seven Eighty Three monolith, and a
-   letter moves only when it is poked. The mark takes its width from .cap, so it scales exactly as the
-   old homepage did. On narrow screens .cap keeps the page gutter, so a letter in motion never runs off the edge. */
+/* The opening screen belongs to the name. The title rule follows just below the viewport. */
 :root{
   --strip:3.5rem;
-  --fold-gap:clamp(1.25rem,3.5svh,2.75rem);
-  --fold-pad:clamp(1.25rem,3.2vw,3.5rem);
-  --role-h:clamp(6.25rem,9vw,8.75rem);
-  --fold-chrome:calc(var(--strip) + var(--fold-gap) + var(--fold-pad) + var(--role-h) + env(safe-area-inset-bottom));
+  --fold-gap:13px;
+  --fold-pad:clamp(21px,3.2vw,55px);
+  --hero-gutter:clamp(13px,2vw,55px);
 }
-.fold{min-height:min(calc(100svh - var(--strip)),calc(51vw + 14rem));display:flex;flex-direction:column;justify-content:space-between;gap:var(--fold-gap);padding:var(--fold-gap) 0 calc(var(--fold-pad) + env(safe-area-inset-bottom))}
-/* Keep the mobile name and title rule together instead of spreading them across the fold. */
-@media (max-width:899px){.fold{min-height:0;justify-content:flex-start;gap:13px}}
-.cap{width:calc(100% - 2 * var(--gutter));margin:0 auto;padding:0;max-width:min(100%,calc((100svh - var(--fold-chrome)) / 0.51));container-type:inline-size}
+.fold{padding:0 0 calc(var(--fold-pad) + env(safe-area-inset-bottom))}
+.cap{width:calc(100% - 2 * var(--hero-gutter));height:calc(100svh - var(--strip));margin:0 auto;padding:clamp(13px,2svh,34px) 0;display:flex;align-items:center;justify-content:center;container-type:inline-size}
+.mark{width:100%;max-width:calc((100svh - var(--strip) - 2 * clamp(13px,2svh,34px)) / .504)}
+.fold>.wrap{width:100%;margin-top:var(--fold-gap);container-type:inline-size}
 /* The letters are high-resolution images of Archivo outlines at wght 900, wdth 125.
    Each image keeps its original outline coordinates so the drop and interaction geometry stays the same. */
 /* Use image paint for the mark and title rule: Samsung Internet remaps inline fills and borders in dark mode. */

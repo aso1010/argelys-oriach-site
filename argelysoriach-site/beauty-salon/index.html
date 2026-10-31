@@ -3,15 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BEAUTY SUPPLY</title>
-    <meta name="description" content="BEAUTY SUPPLY. Systems design, brutalist web architecture, and closed-loop HTML frameworks. Published by Seven Eighty Three.">
-    <link rel="canonical" href="https://argelysoriach.com/beauty-supply">
+    <title>BEAUTY SALON</title>
+    <meta property="og:title" content="Beauty Salon — Seven Eighty Three">
+    <meta name="twitter:title" content="Beauty Salon — Seven Eighty Three">
+    <meta name="description" content="BEAUTY SALON. Systems design, brutalist web architecture, and closed-loop HTML frameworks. Published by Seven Eighty Three.">
+    <link rel="canonical" href="https://argelysoriach.com/beauty-salon/">
     <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "Periodical",
-  "name": "BEAUTY SUPPLY",
-  "url": "https://argelysoriach.com/beauty-supply",
+  "name": "BEAUTY SALON",
+  "url": "https://argelysoriach.com/beauty-salon/",
   "issn": "0000-0000",
   "publisher": {
     "@type": "Organization",
@@ -85,31 +87,28 @@
             margin-bottom: 12vh;
         }
 
-        .brand-container {
-            display: inline-block;
-        }
-
+        .brand-container { width:100%; container-type:inline-size; }
         .brand-mark {
-            font-size: clamp(2.25rem, 10vw, 12rem);
-            font-weight: 900;
-            white-space: nowrap;
-            overflow: hidden;
-            display: inline-block;
-            vertical-align: bottom;
-            font-family: 'Archivo', monospace;
-            width: 13ch;
-            border-right: 0.05em solid transparent;
-            animation: kinetic-backspace 4.5s steps(4, end) forwards;
-            animation-delay: 1s;
+            font-size:clamp(1.5rem,10.5cqw,12rem);
+            font-weight:900;
+            white-space:nowrap;
+            line-height:1.15;
+            min-height:1.15em;
+            font-family:'Archivo',sans-serif;
         }
-
-        @keyframes kinetic-backspace {
-            0%   { width: 13ch; border-right-color: var(--signal); }
-            30%  { width: 9ch; border-right-color: var(--signal); }
-            50%  { width: 9ch; border-right-color: var(--signal); }
-            80%  { width: 13ch; border-right-color: var(--signal); }
-            95%  { width: 13ch; border-right-color: var(--signal); }
-            100% { width: 13ch; border-right-color: transparent; }
+        .brand-cursor { display:none; }
+        .brand-mark.is-correcting .brand-cursor {
+            display:inline-block;
+            height:.85em;
+            border-left:.05em solid var(--signal);
+            margin-left:.035em;
+            vertical-align:-.02em;
+            animation:cursor-blink .8s steps(1,end) infinite;
+        }
+        @keyframes cursor-blink { 50% { opacity:0; } }
+        @media (prefers-reduced-motion:reduce) {
+            .brand-mark.is-correcting .brand-cursor { display:none; animation:none; }
+            .view.active { animation:none; }
         }
 
         nav {
@@ -267,7 +266,7 @@
 <body>
     <header>
         <div class="brand-container">
-            <div class="brand-mark">BEAUTY SUPPLY</div>
+            <div class="brand-mark" role="img" aria-label="Beauty Salon"><span class="brand-text" aria-hidden="true">BEAUTY SALON</span><span class="brand-cursor" aria-hidden="true"></span></div>
         </div>
         <nav>
             <a data-target="view-read">[ READ ]</a>
@@ -338,6 +337,40 @@
     </main>
 
     <script>
+        // Correct the old masthead once, character by character, without announcing every keystroke.
+        const brand = document.querySelector('.brand-mark');
+        const brandText = brand.querySelector('.brand-text');
+        const motion = window.matchMedia('(prefers-reduced-motion: reduce)');
+        let run = 0;
+        const pause = ms => new Promise(resolve => setTimeout(resolve, ms));
+        function settleBrand() {
+            run++;
+            brandText.textContent = 'BEAUTY SALON';
+            brand.classList.remove('is-correcting');
+        }
+        async function correctBrand() {
+            if (motion.matches) { settleBrand(); return; }
+            const current = ++run;
+            brandText.textContent = 'BEAUTY SUPPLY';
+            brand.classList.add('is-correcting');
+            await pause(800);
+            for (let remaining = 5; remaining >= 0; remaining--) {
+                if (current !== run) return;
+                brandText.textContent = 'BEAUTY ' + 'SUPPLY'.slice(0, remaining);
+                await pause(95);
+            }
+            await pause(300);
+            for (let length = 1; length <= 5; length++) {
+                if (current !== run) return;
+                brandText.textContent = 'BEAUTY ' + 'SALON'.slice(0, length);
+                await pause(140);
+            }
+            await pause(600);
+            if (current === run) settleBrand();
+        }
+        motion.addEventListener('change', () => { if (motion.matches) settleBrand(); });
+        correctBrand();
+
         document.querySelectorAll('nav a').forEach(anchor => {
             anchor.addEventListener('click', (e) => {
                 const targetId = e.target.getAttribute('data-target');

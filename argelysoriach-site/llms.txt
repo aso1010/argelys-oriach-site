@@ -88,7 +88,7 @@ Engineering makes the spirit legible. Spirit makes the engineering worth holding
 - [Universe API](https://argelysoriach.com/universe-api/): The framework: definition, operating philosophy, and baseline.
 - [Sovereignty](https://argelysoriach.com/sovereignty/): Statement on tools, and on graphic design as sculpture.
 - [Mad Matter](https://argelysoriach.com/mad-matter/): Artist statement and manifesto of a matter architect. The medium is matter; the method is madness. Eight bodies, from a word to a celestial monolith.
-- [Beauty Supply](https://argelysoriach.com/beauty-supply/): Periodical published by Seven Eighty Three. Systems design, brutalist web architecture, and closed-loop HTML frameworks. Issue 001, The Messiness of Becoming, October 2026.
+- [Beauty Salon](https://argelysoriach.com/beauty-salon/): Periodical published by Seven Eighty Three. Systems design, brutalist web architecture, and closed-loop HTML frameworks. Issue 001, The Messiness of Becoming, October 2026.
 - [Community Presentation](https://argelysoriach.com/community-presentation/): CookUnity Commons, a pilot proposal for CookUnity leadership, built on the COMMUNITY concept. A proposal, not a CookUnity product.
 - [Schema](https://argelysoriach.com/schema/): Human-readable view of the machine-readable data.
 - [Privacy](https://argelysoriach.com/privacy/): What this site collects, what it does not, and how a message sent through the intake form is handled.

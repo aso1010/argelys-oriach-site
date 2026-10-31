@@ -5,3 +5,6 @@
 /yale-art /sovereignty/ 301
 /body-and-matter-architecture/* /matter-and-body-architecture/:splat 301
 /body-and-matter-architecture /matter-and-body-architecture/ 301
+
+/beauty-supply /beauty-salon/ 301
+/beauty-supply/* /beauty-salon/:splat 301

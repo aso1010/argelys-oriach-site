@@ -1,11 +1,11 @@
 /* Shared masthead: the Universe API typography, spacing and four-pixel rule. */
 @font-face{font-family:AO Archivo;src:url('/fonts/Archivo-Variable.woff2') format('woff2');font-weight:100 900;font-stretch:62% 125%;font-display:swap}
-.ao-shell,.ao-shell :not(svg):not(path){all:revert;box-sizing:border-box}
+.ao-shell,.ao-shell :where(:not(svg):not(path)){all:revert;box-sizing:border-box}
 .ao-shell{color:#F4F4F0;background:#000;font-family:'AO Archivo','Helvetica Neue',Arial,sans-serif;font-variant-ligatures:none;text-align:left}
 .ao-shell.ao-bar,.ao-shell .ao-bar{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:baseline;gap:8px 24px;padding:7px clamp(21px,4vw,89px);border-bottom:4px solid #F4F4F0;font-family:'AO Archivo','Helvetica Neue',Arial,sans-serif;font-weight:800;font-stretch:125%;font-variation-settings:'wght' 800,'wdth' 125;text-transform:uppercase;letter-spacing:.04em;font-size:clamp(13px,.4vw + 11px,16px);line-height:1.3}
-.ao-shell a{color:inherit;text-decoration:none;cursor:pointer}
+.ao-shell a:any-link{color:#F4F4F0;text-decoration:none;cursor:pointer}
 .ao-shell .ao-bar a,.ao-shell.ao-bar a{display:block;padding:13px 0;font:inherit;letter-spacing:inherit;text-transform:inherit}
-.ao-shell a:hover,.ao-shell a:focus-visible{color:#000;background:#F4F4F0}
+.ao-shell a:any-link:hover,.ao-shell a:any-link:focus-visible{color:#000;background:#F4F4F0}
 .ao-shell a:focus-visible{outline:3px solid #F4F4F0;outline-offset:3px}
 .ao-shell .ao-toggle{margin-left:auto;flex:none}
 .ao-shell.ao-menu{position:fixed;inset:0;z-index:10000;display:none;flex-direction:column;overflow-y:auto;overscroll-behavior:contain}

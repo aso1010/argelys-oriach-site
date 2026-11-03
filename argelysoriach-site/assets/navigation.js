@@ -35,7 +35,7 @@
     if (!menu.classList.contains('is-open')) return;
     if (e.key === 'Escape') { e.preventDefault(); set(false); }
     if (e.key !== 'Tab') return;
-    const links = [...menu.querySelectorAll('a[href]')];
+    const links = [...menu.querySelectorAll('a[href],summary')].filter(element => (!element.closest('details:not([open])') || element.matches('summary')) && element.getClientRects().length > 0);
     const first = links[0], last = links.at(-1);
     if (e.shiftKey && document.activeElement === first) { e.preventDefault(); last.focus(); }
     else if (!e.shiftKey && document.activeElement === last) { e.preventDefault(); first.focus(); }

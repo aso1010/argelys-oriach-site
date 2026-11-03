@@ -25,7 +25,7 @@ for p in root.rglob('*.html'):
         nav = re.sub(r'<div class="ao-shell ao-bar" role="banner">.*?</div>', '<a class="ao-shell ao-icon" href="#ao-menu" aria-label="Open menu" aria-controls="ao-menu" aria-expanded="false" data-ao-open><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true"><path d="M2 6h20M2 12h20M2 18h20"/></svg></a>', nav, count=1, flags=re.S)
     s = re.sub(r'(<body\b[^>]*>)', lambda m: m[0]+'\n'+nav+'\n', s, count=1)
     if '/assets/navigation.css' not in s:
-        s = s.replace('</head>', '<link rel="stylesheet" href="/assets/navigation.css?v=3">\n<script src="/assets/navigation.js?v=2" defer></script>\n</head>')
-    s = re.sub(r'/assets/navigation.css\?v=\d+', '/assets/navigation.css?v=3', s)
+        s = s.replace('</head>', '<link rel="stylesheet" href="/assets/navigation.css?v=4">\n<script src="/assets/navigation.js?v=2" defer></script>\n</head>')
+    s = re.sub(r'/assets/navigation.css\?v=\d+', '/assets/navigation.css?v=4', s)
     s = re.sub(r'/assets/navigation.js\?v=\d+', '/assets/navigation.js?v=2', s)
     p.write_text(s)

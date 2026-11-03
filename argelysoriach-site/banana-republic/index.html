@@ -152,7 +152,7 @@ figcaption{font-family:var(--mono);font-weight:500;font-size:var(--label);letter
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:image" content="https://argelysoriach.com/social-card-systems-architect-artist-auteur.png">
 <meta name="twitter:image:alt" content="Argelys Samuel Oriach — Systems Architect, Artist, and Auteur">
-<link rel="stylesheet" href="/assets/navigation.css?v=3">
+<link rel="stylesheet" href="/assets/navigation.css?v=4">
 <script src="/assets/navigation.js?v=2" defer></script>
 <link rel="stylesheet" href="/assets/motion.css?v=1">
 <script src="/assets/motion.js?v=1" defer></script>
@@ -230,7 +230,7 @@ figcaption{font-family:var(--mono);font-weight:500;font-size:var(--label);letter
   </defs>
 </svg>
 
-<header class="top mono"><a href="https://argelysoriach.com/">Argelys Samuel Oriach</a><a href="https://argelysoriach.com/portfolio/">Portfolio</a><span aria-current="page">Banana Republic</span><button class="ground" id="ground" type="button" aria-pressed="false" aria-label="Switch the ground to brown">[<span class="pole pole-black">Black</span> / <span class="pole pole-brown">Brown</span>]</button></header>
+<div class="ao-shell ao-project-tools" role="group" aria-label="Project controls"><span>Banana Republic</span><button class="ground" id="ground" type="button" aria-pressed="false" aria-label="Switch the ground to brown">[<span class="pole pole-black">Black</span> / <span class="pole pole-brown">Brown</span>]</button></div>
 
 <main id="main">
 <section class="hero">
@@ -369,7 +369,21 @@ figcaption{font-family:var(--mono);font-weight:500;font-size:var(--label);letter
   <a href="https://argelysoriach.com/">Home</a><a href="https://argelysoriach.com/portfolio/">Portfolio</a><a href="https://argelysoriach.com/banana-republic/" aria-current="page">Banana Republic</a><a href="https://argelysoriach.com/catalogue-001/">Catalogue 001</a><a href="https://argelysoriach.com/catalogue-002/">Catalogue 002</a><a href="https://argelysoriach.com/cv/">CV</a><a href="https://argelysoriach.com/matter-and-body-architecture/">Matter and Body Architecture</a><a href="https://argelysoriach.com/universe-api/">Universe API</a><a href="https://argelysoriach.com/sovereignty/">Sovereignty</a><a href="https://argelysoriach.com/mad-matter/">Mad Matter</a><a href="https://argelysoriach.com/this-is-not-a-love-story-yankees/">This Is Not a Love Story (Yankees)</a><a href="https://argelysoriach.com/schema/">Schema</a>
 </nav>
 
-<footer class="foot mono dim"><span>Set in Archivo</span><span>Direction, writing and design: Argelys Samuel Oriach</span><span>Built with Claude</span><div class="legal"><nav aria-label="About this site"><a href="https://argelysoriach.com/#bio">About</a><a href="mailto:argelys@seveneightythree.com">Contact</a><a href="https://argelysoriach.com/privacy/">Privacy</a><a href="https://argelysoriach.com/terms/">Terms</a><span>Brooklyn, New York</span></nav><p>© 2026 Argelys Samuel Oriach · Seven Eighty Three</p></div></footer>
+<!-- Shared footer -->
+<footer class="ao-shell ao-footer">
+  <div class="ao-footer-bar">
+    <div class="ao-footer-links" role="navigation" aria-label="About this site">
+      <a href="mailto:argelys@seveneightythree.com">Contact</a>
+      <a href="/schema/">Schema</a>
+      <a href="/privacy/">Privacy</a>
+      <a href="/terms/">Terms</a>
+      <span>Brooklyn, New York</span>
+    </div>
+    <p class="ao-copyright">&copy; 2026 Argelys Samuel Oriach &middot; <a href="https://seveneightythree.com/">Seven Eighty Three</a></p>
+  </div>
+<p class="ao-footer-notes">Set in Archivo · Direction, writing and design: Argelys Samuel Oriach · Built with Claude</p>
+</footer>
+<!-- /Shared footer -->
 
 <script>
 /* Ground: black, or Banana Republic brown. The choice is kept for the next visit. */

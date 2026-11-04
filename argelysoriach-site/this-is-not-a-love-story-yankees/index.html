@@ -11,7 +11,7 @@
   gtag('config', 'G-22DRN1XNE9');
 </script>
 
-<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self' https://www.googletagmanager.com 'sha256-V2ku6RUTqPdTJWLORGNzZtSj8IkoVJW7rqqq9vQg/QM=' 'sha256-7M8feG/BZdQuJoqrWj9WMiIGbH1cdaCyhmsW+YozNz8=' 'sha256-kci3eEiDQHUC/r9PEWpyczMLuryAd+X2z0tVPkS92Ew='; style-src 'self' 'sha256-dBFwkVN59z9HsImXybenoKii69EZVdjhzrplWHfh0bs='; font-src 'self' data:; img-src data: https://*.google-analytics.com https://*.googletagmanager.com; connect-src https://*.google-analytics.com https://*.analytics.google.com https://*.googletagmanager.com; media-src 'none'; object-src 'none'; frame-src 'none'; worker-src 'none'; manifest-src 'none'; base-uri 'none'; form-action 'none'">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self' https://www.googletagmanager.com 'sha256-V2ku6RUTqPdTJWLORGNzZtSj8IkoVJW7rqqq9vQg/QM=' 'sha256-7M8feG/BZdQuJoqrWj9WMiIGbH1cdaCyhmsW+YozNz8=' 'sha256-kci3eEiDQHUC/r9PEWpyczMLuryAd+X2z0tVPkS92Ew='; style-src 'self' 'sha256-5zCGIlVN2BJ6Gi631yxNps0WvCkXSBbibzD5k+xYe5c='; font-src 'self' data:; img-src data: https://*.google-analytics.com https://*.googletagmanager.com; connect-src https://*.google-analytics.com https://*.analytics.google.com https://*.googletagmanager.com; media-src 'none'; object-src 'none'; frame-src 'none'; worker-src 'none'; manifest-src 'none'; base-uri 'none'; form-action 'none'">
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>This Is Not a Love Story (Yankees) — Argelys Samuel Oriach</title>
@@ -204,10 +204,10 @@
   --ease-organic: cubic-bezier(0.37, 0, 0.63, 1);
 
   /* Basalt Monolith & Warm Parchment / Sepia Streetlamp */
-  --bg-basalt: #0c0c0b; --bg-elevated: #141412;
-  --text-parchment: #ece8e1; --text-secondary: #a6a198; --text-telemetry: #8f8a81;
-  --accent-amber: #d47a2c; --accent-yankees: #1c2841;
-  --border-hairline: rgba(236, 232, 225, 0.13);
+  --bg-basalt: #000000; --bg-elevated: #000000;
+  --text-parchment: #FFFFFF; --text-secondary: #FFFFFF; --text-telemetry: #FFFFFF;
+  --accent-amber: #FFFFFF; --accent-yankees: #000000;
+  --border-hairline:var(--ink);
 
   --font-sans: 'Archivo 783', 'Archivo', -apple-system, BlinkMacSystemFont, sans-serif;
   --font-mono: 'JetBrains Mono 783', 'JetBrains Mono', ui-monospace, Menlo, monospace;
@@ -221,10 +221,10 @@
   --hair: var(--border-hairline);
   --amber: var(--accent-amber);
   --amber-ink: var(--accent-amber);
-  --glow: rgba(212, 122, 44, 0.2);
+  --glow: rgba(255,255,255, 0.2);
   --sms-out: var(--accent-yankees);
   --sms-out-ink: var(--text-parchment);
-  --sms-in: #22221f;
+  --sms-in: #000000;
   --sms-in-ink: var(--text-parchment);
   color-scheme: dark;
 
@@ -242,18 +242,19 @@
 
 /* polarity: Warm Archival Parchment */
 :root[data-theme="light"] {
-  --ground: #f4f1ea;
-  --slab: #ebe6db;
-  --ink: #0c0c0b;
-  --dim: #4c4943;
-  --faint: #5f5b55;
-  --hair: rgba(12, 12, 11, 0.14);
-  --amber-ink: #9a4b0f;
-  --glow: rgba(212, 122, 44, 0.11);
+  --amber: #000000;
+  --ground: #FFFFFF;
+  --slab: #FFFFFF;
+  --ink: #000000;
+  --dim: #000000;
+  --faint: #000000;
+  --hair:var(--ink);
+  --amber-ink: #000000;
+  --glow: rgba(255,255,255, 0.11);
   --sms-out: var(--accent-yankees);
-  --sms-out-ink: #f4f1ea;
-  --sms-in: #e2dccf;
-  --sms-in-ink: #0c0c0b;
+  --sms-out-ink: #FFFFFF;
+  --sms-in: #FFFFFF;
+  --sms-in-ink: #000000;
   color-scheme: light;
 }
 
@@ -278,7 +279,7 @@ body {
   overflow-x: clip;
 }
 a { color: inherit; text-decoration: none }
-::selection { background: var(--amber); color: var(--bg-basalt) }
+::selection { background: var(--amber); color: var(--ground) }
 :focus-visible { outline: 1px solid var(--ink); outline-offset: 4px }
 
 .skip {
@@ -611,7 +612,7 @@ a { color: inherit; text-decoration: none }
 @page { size: 5.5in 8.5in; margin: 0.75in 0.625in 0.8in }
 @media print {
   :root, :root[data-theme="light"] {
-    --ground: #fff; --ink: #000; --dim: #333; --faint: #555; --hair: #000;
+    --ground: #fff; --ink: #000; --dim: #000000; --faint: #000000; --hair: #000;
     --sms-out: #fff; --sms-out-ink: #000; --sms-in: #fff; --sms-in-ink: #000;
     --amber-ink: #000; --vel: 0;
   }
@@ -646,18 +647,18 @@ a { color: inherit; text-decoration: none }
 }
 .sr{position:absolute;width:1px;height:1px;margin:-1px;padding:0;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap;border:0}
 </style>
-<meta property="og:image" content="https://argelysoriach.com/social-card-systems-architect-artist-auteur.png">
-<meta property="og:image:secure_url" content="https://argelysoriach.com/social-card-systems-architect-artist-auteur.png">
+<meta property="og:image" content="https://argelysoriach.com/social-card-pure-white-v3.png">
+<meta property="og:image:secure_url" content="https://argelysoriach.com/social-card-pure-white-v3.png">
 <meta property="og:image:type" content="image/png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta property="og:image:alt" content="Argelys Samuel Oriach — Systems Architect, Artist, and Auteur">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="https://argelysoriach.com/social-card-systems-architect-artist-auteur.png">
+<meta name="twitter:image" content="https://argelysoriach.com/social-card-pure-white-v3.png">
 <meta name="twitter:image:alt" content="Argelys Samuel Oriach — Systems Architect, Artist, and Auteur">
-<link rel="stylesheet" href="/assets/navigation.css?v=4">
+<link rel="stylesheet" href="/assets/navigation.css?v=5">
 <script src="/assets/navigation.js?v=2" defer></script>
-<link rel="stylesheet" href="/assets/motion.css?v=1">
+<link rel="stylesheet" href="/assets/motion.css?v=2">
 <script src="/assets/motion.js?v=1" defer></script>
 </head>
 <body id="top">

@@ -606,11 +606,11 @@
 @font-face{font-family:'JetBrains Mono';src:url('fonts/JetBrainsMono-Variable.woff2') format('woff2');font-weight:100 800;font-style:normal;font-display:swap}
 
 /* ARGELYSORIACH.COM / HOME
-   Two colors: #000000 ground, #F4F4F0 figure. Hierarchy comes from size, weight, rules and inversion, never from gray.
+   Two colors: #000000 ground, #FFFFFF figure. Hierarchy comes from size, weight, rules and inversion, never from gray.
    Archivo for the name, headings and prose. JetBrains Mono for labels, indexes and metadata.
    Spacing is Fibonacci (8 13 21 34 55 89 144). Type is Major Third (1.25). Grid is 12 columns. */
 :root{
-  --ink:#F4F4F0;
+  --ink:#FFFFFF;
   --ground:#000000;
   --sans:'Archivo VF','Archivo Full',"Helvetica Neue",Arial,sans-serif;
   --mono:"JetBrains Mono",ui-monospace,Menlo,monospace;
@@ -774,6 +774,9 @@ html.menu-open{overflow:hidden}
 .top .wrap{padding-top:5px;padding-bottom:5px}
 .top a.brand-avatar{display:inline-flex;align-items:center;justify-content:center;width:44px;height:44px;padding:0;border:0;flex-shrink:0}
 .top a.brand-avatar img{display:block;width:44px;height:44px;object-fit:contain}
+
+/* Pure-white paint for the existing raster monolith and its load-bearing rule. */
+.mark .wordmark,.role{filter:brightness(0) invert(1)}
 </style>
 <script>
 /* Ethos has its own page; an old link to its anchor here goes there. Intake sits at the foot of this page, so a host
@@ -793,18 +796,18 @@ html.menu-open{overflow:hidden}
   setTimeout(function () { d.classList.remove('drop-wait'); }, 2500);
 })(document.documentElement);
 </script>
-<meta property="og:image" content="https://argelysoriach.com/social-card-monolith-floor-v2.png">
-<meta property="og:image:secure_url" content="https://argelysoriach.com/social-card-monolith-floor-v2.png">
+<meta property="og:image" content="https://argelysoriach.com/social-card-pure-white-v3.png">
+<meta property="og:image:secure_url" content="https://argelysoriach.com/social-card-pure-white-v3.png">
 <meta property="og:image:type" content="image/png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta property="og:image:alt" content="Argelys Samuel Oriach — Systems Architect, Artist, and Auteur">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="https://argelysoriach.com/social-card-monolith-floor-v2.png">
+<meta name="twitter:image" content="https://argelysoriach.com/social-card-pure-white-v3.png">
 <meta name="twitter:image:alt" content="Argelys Samuel Oriach — Systems Architect, Artist, and Auteur">
-<link rel="stylesheet" href="/assets/navigation.css?v=4">
+<link rel="stylesheet" href="/assets/navigation.css?v=5">
 <script src="/assets/navigation.js?v=2" defer></script>
-<link rel="stylesheet" href="/assets/motion.css?v=1">
+<link rel="stylesheet" href="/assets/motion.css?v=2">
 <script src="/assets/motion.js?v=1" defer></script>
 </head>
 <body id="top">

@@ -58,7 +58,7 @@
 @font-face{font-family:'Archivo Full';src:url('../fonts/Archivo-Italic-Variable.ttf') format('truetype');font-weight:100 900;font-stretch:62% 125%;font-style:italic;font-display:swap}
 @font-face{font-family:'JetBrains Mono';src:url('../fonts/JetBrainsMono-Variable.woff2') format('woff2');font-weight:100 800;font-style:normal;font-display:swap}
 :root{
-  --ink:#FFFFFF;--ground:#000000;--dim:rgba(255,255,255,.72);--faint:rgba(255,255,255,.55);--rule:rgba(255,255,255,.4);
+  --ink:#FFFFFF;--ground:#000000;--dim:var(--ink);--faint:var(--ink);--rule:var(--ink);
   --sans:'Archivo VF','Archivo Full',"Helvetica Neue",Arial,sans-serif;
   --mono:"JetBrains Mono",ui-monospace,Menlo,"DejaVu Sans Mono",monospace;
   --gutter:clamp(1.3125rem,6vw,5.5625rem);--band:clamp(2.125rem,7vw,5.5625rem);
@@ -109,7 +109,7 @@ figcaption{font-family:var(--mono);font-weight:500;font-size:var(--label);letter
 .legal a{text-decoration:none}.legal a:hover{text-decoration:underline}
 
 /* ground: black, or Banana Republic brown. One click, kept for next time. Every surface reads --ground and --ink. */
-:root[data-ground="brown"]{--ground:#2C1A10;--ink:#FFFFFF;--dim:rgba(255,255,255,.72);--faint:rgba(255,255,255,.55);--rule:rgba(255,255,255,.4);color-scheme:dark}
+:root[data-ground="brown"]{--ground:#000000;--ink:#FFFFFF;--dim:var(--ink);--faint:var(--ink);--rule:var(--ink);color-scheme:dark}
 @media (prefers-reduced-motion:no-preference){html,body,figure svg{transition:background-color .4s ease,color .4s ease}}
 .ground{appearance:none;-webkit-appearance:none;border:0;border-radius:0;margin:0 0 0 auto;padding:.25rem .3125rem;margin-right:-.3125rem;background:transparent;color:var(--faint);font:inherit;letter-spacing:inherit;text-transform:inherit;white-space:nowrap;cursor:pointer}
 .pole{color:var(--faint)}
@@ -141,20 +141,20 @@ figcaption{font-family:var(--mono);font-weight:500;font-size:var(--label);letter
 }
 .open{display:inline-block;padding:.9375rem 1.75rem;border:1px solid var(--ink);text-decoration:none;margin:0 1.3125rem 1.3125rem 0}
 .open:hover{background:var(--ink);color:var(--ground);text-decoration:none}
-.skip{position:absolute;left:-9999px;top:0;z-index:200;background:#F4F4F0;color:#000;padding:8px 13px;font-family:"JetBrains Mono",ui-monospace,monospace;font-size:13px;letter-spacing:.06em;text-transform:uppercase;text-decoration:none}.skip:focus{left:0}
+.skip{position:absolute;left:-9999px;top:0;z-index:200;background:#FFFFFF;color:#000;padding:8px 13px;font-family:"JetBrains Mono",ui-monospace,monospace;font-size:13px;letter-spacing:.06em;text-transform:uppercase;text-decoration:none}.skip:focus{left:0}
 </style>
-<meta property="og:image" content="https://argelysoriach.com/social-card-systems-architect-artist-auteur.png">
-<meta property="og:image:secure_url" content="https://argelysoriach.com/social-card-systems-architect-artist-auteur.png">
+<meta property="og:image" content="https://argelysoriach.com/social-card-pure-white-v3.png">
+<meta property="og:image:secure_url" content="https://argelysoriach.com/social-card-pure-white-v3.png">
 <meta property="og:image:type" content="image/png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta property="og:image:alt" content="Argelys Samuel Oriach — Systems Architect, Artist, and Auteur">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="https://argelysoriach.com/social-card-systems-architect-artist-auteur.png">
+<meta name="twitter:image" content="https://argelysoriach.com/social-card-pure-white-v3.png">
 <meta name="twitter:image:alt" content="Argelys Samuel Oriach — Systems Architect, Artist, and Auteur">
-<link rel="stylesheet" href="/assets/navigation.css?v=4">
+<link rel="stylesheet" href="/assets/navigation.css?v=5">
 <script src="/assets/navigation.js?v=2" defer></script>
-<link rel="stylesheet" href="/assets/motion.css?v=1">
+<link rel="stylesheet" href="/assets/motion.css?v=2">
 <script src="/assets/motion.js?v=1" defer></script>
 </head>
 <body>
@@ -396,7 +396,7 @@ figcaption{font-family:var(--mono);font-weight:500;font-size:var(--label);letter
     root.setAttribute('data-ground', g);
     btn.setAttribute('aria-pressed', String(g === 'brown'));
     btn.setAttribute('aria-label', g === 'brown' ? 'Switch the ground to black' : 'Switch the ground to brown');
-    if (meta) meta.setAttribute('content', g === 'brown' ? '#2C1A10' : '#000000');
+    if (meta) meta.setAttribute('content', g === 'brown' ? '#000000' : '#000000');
     if (keep) { try { localStorage.setItem(KEY, g); } catch (e) { /* storage sealed: the ground holds for this view */ } }
   }
   set(ground(), false);

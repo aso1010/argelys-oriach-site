@@ -48,7 +48,7 @@
         :root {
             --void: #000000;
             --signal: #FFFFFF;
-            --mute: #666666;
+            --mute:var(--signal);
         }
 
         * {
@@ -255,8 +255,8 @@
 
         /* Reading edition: the same Archivo, basalt/parchment palette, and measured rhythm as Yankees. */
         @font-face{font-family:'JetBrains Mono';src:url('../fonts/JetBrainsMono-Variable.woff2') format('woff2');font-weight:100 800;font-display:swap}
-        :root{--void:#0c0c0b;--signal:#ece8e1;--mute:#a6a198;--hair:rgba(236,232,225,.16);--accent:#d47a2c;--page-margin:clamp(21px,4.75vw,89px);color-scheme:dark}
-        :root[data-theme="light"]{--void:#f4f1ea;--signal:#0c0c0b;--mute:#4c4943;--hair:rgba(12,12,11,.18);--accent:#9a4b0f;color-scheme:light}
+        :root{--void:#000000;--signal:#FFFFFF;--mute:var(--signal);--hair:var(--signal);--accent:#FFFFFF;--page-margin:clamp(21px,4.75vw,89px);color-scheme:dark}
+        :root[data-theme="light"]{--void:#FFFFFF;--signal:#000000;--mute:var(--signal);--hair:var(--signal);--accent:#000000;color-scheme:light}
         html{scroll-padding-top:89px;-webkit-text-size-adjust:100%}
         body{padding:0 var(--page-margin) 89px;background:var(--void);color:var(--signal)}
         a:focus-visible,button:focus-visible,input:focus-visible{outline:2px solid var(--accent);outline-offset:5px}
@@ -301,18 +301,18 @@
         .subscribe-container .join-btn{white-space:nowrap;font-size:clamp(1.125rem,2.4vw,2rem);line-height:1.3;min-height:44px;padding:8px 0}
         @media(max-width:480px){.subscribe-container{gap:13px}}
     </style>
-<meta property="og:image" content="https://argelysoriach.com/social-card-systems-architect-artist-auteur.png">
-<meta property="og:image:secure_url" content="https://argelysoriach.com/social-card-systems-architect-artist-auteur.png">
+<meta property="og:image" content="https://argelysoriach.com/social-card-pure-white-v3.png">
+<meta property="og:image:secure_url" content="https://argelysoriach.com/social-card-pure-white-v3.png">
 <meta property="og:image:type" content="image/png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta property="og:image:alt" content="Argelys Samuel Oriach — Systems Architect, Artist, and Auteur">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="https://argelysoriach.com/social-card-systems-architect-artist-auteur.png">
+<meta name="twitter:image" content="https://argelysoriach.com/social-card-pure-white-v3.png">
 <meta name="twitter:image:alt" content="Argelys Samuel Oriach — Systems Architect, Artist, and Auteur">
-<link rel="stylesheet" href="/assets/navigation.css?v=4">
+<link rel="stylesheet" href="/assets/navigation.css?v=5">
 <script src="/assets/navigation.js?v=2" defer></script>
-<link rel="stylesheet" href="/assets/motion.css?v=1">
+<link rel="stylesheet" href="/assets/motion.css?v=2">
 <script src="/assets/motion.js?v=1" defer></script>
 </head>
 <body id="top">

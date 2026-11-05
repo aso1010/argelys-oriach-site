@@ -47,9 +47,18 @@
       "email": "argelys@seveneightythree.com",
       "jobTitle": "Systems Architect, Artist, and Auteur",
       "hasOccupation": [
-        {"@type": "Occupation", "name": "Systems Architect"},
-        {"@type": "Occupation", "name": "Artist"},
-        {"@type": "Occupation", "name": "Auteur"}
+        {
+          "@type": "Occupation",
+          "name": "Systems Architect"
+        },
+        {
+          "@type": "Occupation",
+          "name": "Artist"
+        },
+        {
+          "@type": "Occupation",
+          "name": "Auteur"
+        }
       ],
       "description": "Argelys Samuel Oriach is a macro-systems architect, artist, and auteur constructing language for the page, stage, and screen. A method actor and vocalist trained in the Alexander Technique, he has spent two decades decoding the mechanics of human attention by fully inhabiting roles across corporate infrastructure, artistic performance, and institutional leadership. Born in the Dominican Republic, he reverse-engineered his life out of poverty through a rigorous study of human optics—mastering how people look, listen, and affect one another. This foundation fueled a twelve-year trajectory steering high-density organic growth engines before pivoting to architect backend applications and sovereign digital frameworks from first principles. He operates across two primary laboratories: Seven Eighty Three, an independent systems design practice engineering narrative environments and automated infrastructure for executive leadership and cultural institutions, and Wild-Lake, an existential mechanics studio, A&R venture, and artists agency providing high-conviction mentorship and structural stewardship for serious performers and creators. Operating below the query layer to dictate how information and artistic intent are processed, his practice treats structure as a direct conduit for understanding rather than manipulation, redefining attention as a profound systemic responsibility. As a writer, he applies this same structural rigor to narrative. He is the author of the digital short This Is Not a Love Story and is currently writing a one-act play alongside his debut autofiction novel, Graduation.",
       "birthDate": "1993-08-29T15:45:00-04:00",
@@ -79,7 +88,10 @@
           {
             "@id": "https://communalfoundation.org/#organization"
           }
-        ]
+        ],
+        "author": {
+          "@id": "https://thisisnotalovestory.net/#work"
+        }
       },
       "alumniOf": [
         {
@@ -170,7 +182,8 @@
         "@id": "https://seveneightythree.com/#organization"
       },
       "datePublished": "2026-10",
-      "inLanguage": "en"
+      "inLanguage": "en",
+      "description": "A trip to Yankee Stadium becomes a reckoning with desire, memory, and the need to be seen."
     },
     {
       "@type": "CreativeWork",
@@ -672,6 +685,11 @@ h1{margin:0;font-weight:900}
 }
 .role .pipe{padding-left:.3em}
 
+.writing-feature{margin:34px 0;border-top:4px solid var(--ink);padding-top:21px}
+.writing-feature h3.mono{margin:0 0 13px}
+.writing-feature h4{margin:0 0 21px;font-weight:900;font-variation-settings:'wdth' 125,'wght' 900;font-stretch:125%;text-transform:uppercase;font-size:clamp(26px,2vw + 13px,40px);line-height:1.05;letter-spacing:-.01em}
+.lead .writing-feature__byline{font-family:var(--mono);font-size:13px;line-height:1.5;margin:0 0 13px}
+
 /* The featured venture follows the opening monolith on every screen size. */
 .venture-feature{border-top:1px solid var(--ink)}
 .venture-feature>.wrap{padding-top:clamp(55px,6vw,89px);padding-bottom:clamp(55px,6vw,89px)}
@@ -906,6 +924,14 @@ html.menu-open{overflow:hidden}
     <p>He operates across two primary laboratories: <a href="https://seveneightythree.com/">Seven Eighty Three</a>, an independent systems design practice engineering narrative environments and automated infrastructure for executive leadership and cultural institutions, and <a href="https://wild-lake.org/">Wild-Lake</a>, an existential mechanics studio, A&amp;R venture, and artists agency providing high-conviction mentorship and structural stewardship for serious performers and creators. Operating below the query layer to dictate how information and artistic intent are processed, his practice treats structure as a direct conduit for understanding, redefining attention as a systemic responsibility.</p>
 
     <p>As a writer, he applies this same structural rigor to narrative. But his focus remains on the underlying mechanics across every medium. He is the author of the digital short <em><a href="https://thisisnotalovestory.net/">This Is Not a Love Story</a></em> and is currently writing a one-act play alongside his debut autofiction novel, <em>Graduation</em>.</p>
+
+    <section class="writing-feature" id="writing" aria-labelledby="writing-h">
+      <h3 class="mono" id="writing-h">Writing</h3>
+      <h4>This Is Not a Love Story (Yankees)</h4>
+      <p class="writing-feature__byline">A short story by Argelys Samuel Oriach, also known as Argelys Oriach.</p>
+      <p>A trip to Yankee Stadium becomes a reckoning with desire, memory, and the need to be seen.</p>
+      <a class="cta" href="https://thisisnotalovestory.net/">Read the story <span aria-hidden="true">&rarr;</span></a>
+    </section>
 
     <p class="cta-row"><a class="cta" href="#intake"><span>Intake portal</span><span aria-hidden="true">&darr;</span></a></p>
   </div>

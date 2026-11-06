@@ -22,6 +22,7 @@ for p in root.rglob('*.html'):
     current = '/' if rel == 'index.html' else '/' + rel.removesuffix('index.html')
     nav = template.replace(f'href="{current}"', f'href="{current}" aria-current="page"')
     if rel == 'index.html':
+        nav = nav.replace('href="https://wild-lake.org/"', 'href="https://wildlakestudio.com/"')
         nav = re.sub(r'<div class="ao-shell ao-bar" role="banner">.*?</div>', '<a class="ao-shell ao-icon" href="#ao-menu" aria-label="Open menu" aria-controls="ao-menu" aria-expanded="false" data-ao-open><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true"><path d="M2 6h20M2 12h20M2 18h20"/></svg></a>', nav, count=1, flags=re.S)
     s = re.sub(r'(<body\b[^>]*>)', lambda m: m[0]+'\n'+nav+'\n', s, count=1)
     if '/assets/navigation.css' not in s:

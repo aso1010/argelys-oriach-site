@@ -709,9 +709,11 @@ h1{margin:0;font-weight:900}
 .band>.wrap{display:grid;grid-template-columns:minmax(0,1fr);gap:clamp(89px,12vw,144px) var(--gap);padding-top:clamp(55px,9vw,144px);padding-bottom:clamp(89px,13vw,233px)}
 .band h2{margin:0 0 34px;font-weight:500}
 @media (min-width:900px){
-  .band>.wrap{grid-template-columns:repeat(12,minmax(0,1fr))}
-  .band .bio{grid-column:1/8}
-  .band .deploy{grid-column:9/-1;align-self:start;position:sticky;top:34px}
+  .band.intake>.wrap{grid-template-columns:repeat(12,minmax(0,1fr))}
+}
+@media (min-width:1100px){
+  .band:not(.intake)>.wrap{grid-template-columns:minmax(0,7fr) minmax(0,4fr);column-gap:55px}
+  .band .deploy{align-self:start;position:sticky;top:34px}
 }
 .lead p{margin:0 0 1.2em;font-weight:500;font-size:clamp(19px,.8vw + 14.5px,26px);line-height:1.42;max-width:34em}
 .lead p:last-child{margin-bottom:0}
@@ -826,8 +828,8 @@ html.menu-open{overflow:hidden}
 <meta name="twitter:image:alt" content="Argelys Samuel Oriach — white monolith on black">
 <link rel="stylesheet" href="/assets/navigation.css?v=5">
 <script src="/assets/navigation.js?v=2" defer></script>
-<link rel="stylesheet" href="/assets/motion.css?v=2">
-<script src="/assets/motion.js?v=1" defer></script>
+<link rel="stylesheet" href="/assets/motion.css?v=3">
+<script src="/assets/motion.js?v=2" defer></script>
 </head>
 <body id="top">
 <!-- Shared navigation -->

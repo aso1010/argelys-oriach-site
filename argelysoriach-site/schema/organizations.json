@@ -2,23 +2,36 @@
   "@context": "https://schema.org",
   "@graph": [
     {
-      "@type": "ProfessionalService",
+      "@type": "Organization",
       "@id": "https://seveneightythree.com/#organization",
       "name": "Seven Eighty Three",
       "alternateName": "783",
       "url": "https://seveneightythree.com/",
-      "description": "Systems design, workflow architecture, and automated infrastructure for executive leadership.",
+      "description": "Independent systems design laboratory.",
       "founder": {
         "@id": "https://argelysoriach.com/#person"
       }
     },
     {
-      "@type": "ProfessionalService",
+      "@type": "Organization",
       "@id": "https://wild-lake.org/#organization",
       "name": "Wild-Lake",
       "legalName": "Wild Lake Studio",
-      "url": "https://wildlakestudio.com/",
-      "description": "Talent architecture, structural mentorship, and development of artistic work.",
+      "url": "https://wild-lake.org/",
+      "description": "Existential mechanics studio and A&R venture.",
+      "founder": {
+        "@id": "https://argelysoriach.com/#person"
+      }
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://communalfoundation.org/#organization",
+      "name": "Communal Foundation",
+      "url": "https://communalfoundation.org/",
+      "description": "Systems laboratory and turnkey food infrastructure framework merging hyper-local demographic constraints with chef-driven culinary artistry.",
+      "parentOrganization": {
+        "@id": "https://seveneightythree.com/#organization"
+      },
       "founder": {
         "@id": "https://argelysoriach.com/#person"
       }

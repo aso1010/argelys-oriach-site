@@ -60,11 +60,11 @@ body:has(.reading-bar)>.ao-footer{margin-inline:calc(-1 * var(--page-margin));ma
 .ao-shell.ao-project-tools button:hover,.ao-shell.ao-project-tools button:focus-visible{color:#000;background:#FFFFFF}
 .ao-shell.ao-project-tools button:focus-visible{outline:3px solid #FFFFFF;outline-offset:3px}
 
-.ao-shell.ao-archive-note{display:block;padding:21px clamp(21px,4vw,89px);border-bottom:4px solid #FFFFFF;color:#B8B8B8;font:400 16px/1.5 Arial,sans-serif}
+.ao-shell.ao-archive-note{display:block;padding:21px clamp(21px,4vw,89px);border-bottom:4px solid #FFFFFF;color:#FFFFFF;font:400 16px/1.5 Arial,sans-serif}
 .ao-shell.ao-archive-note p{display:block;margin:0 0 8px}
 .ao-shell.ao-archive-note p:first-child{color:#FFFFFF;font:600 13px/1.5 monospace;text-transform:uppercase}
 
 .ao-index{display:block;margin-bottom:13px;font:600 13px/1.5 monospace;letter-spacing:.04em;text-transform:uppercase}
 
-.lead p,.prose,.say p,.line,.entries p{color:#B8B8B8}
+.lead p,.prose,.say p,.line,.entries p{color:#FFFFFF}
 .entries strong,.entries .label{color:#FFFFFF}

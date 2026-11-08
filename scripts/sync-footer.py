@@ -14,6 +14,7 @@ for p in root.rglob('*.html'):
  rel=p.relative_to(root).as_posix()
  if p.parent.name=='assets' or rel in ['banana-republic/homepage/index.html','community-presentation/index.html']:continue
  s=p.read_text()
+ if rel == 'index.html': continue
  footer=template.replace('  <!-- Page credits -->','<p class="ao-footer-notes">'+credits[rel]+'</p>' if rel in credits else '')
  current='/'+rel.removesuffix('index.html')
  footer=footer.replace(f'href="{current}"',f'href="{current}" aria-current="page"')

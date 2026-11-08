@@ -1,16 +1,3 @@
-/* Motion is progressive enhancement: no hidden starting state, layout or type changes. */
-:root{--motion-duration:350ms;--motion-ease:cubic-bezier(.22,1,.36,1)}
-.motion-feedback{transition:color 160ms ease-out,background-color 160ms ease-out,border-color 160ms ease-out,outline-offset 160ms ease-out,text-decoration-color 160ms ease-out}
-.ao-shell a.motion-feedback{transition:color 160ms ease-out,background-color 160ms ease-out,outline-offset 160ms ease-out}
-.motion-feedback:focus-visible{outline-offset:5px}
-/* Keep the existing arrow, color and button geometry; only its response gains a small travel. */
-.motion-feedback .glyph,.motion-feedback>span[aria-hidden="true"]{transition:transform 180ms var(--motion-ease)}
-.motion-feedback:focus-visible .glyph,.motion-feedback:focus-visible>span[aria-hidden="true"]{transform:translateX(2px)}
-@media(hover:hover){
- .motion-feedback:hover .glyph,.motion-feedback:hover>span[aria-hidden="true"]{transform:translateX(2px)}
-}
-@keyframes motion-menu-enter{from{opacity:.8;transform:translateY(8px)}to{opacity:1;transform:none}}
-.ao-shell.ao-menu.is-open .ao-groups{animation:motion-menu-enter 320ms var(--motion-ease)}
 /* A normal image link remains useful without scripting. The inline gallery geometry is unchanged. */
 a.motion-image{display:block;color:inherit;cursor:zoom-in;text-decoration:none;background:none}
 a.motion-image:hover,a.motion-image:focus-visible{background:none;color:inherit}
@@ -28,9 +15,5 @@ dialog.motion-viewer::backdrop{background:rgb(0 0 0 / .9)}
 .motion-viewer .motion-viewer-caption{display:block;margin:0;padding:0;color:#FFFFFF;font:500 13px/1.5 'AO Archivo',Arial,sans-serif;text-align:left;align-self:flex-start;letter-spacing:0;text-transform:none;border:0}
 html.motion-viewer-open{overflow:hidden}
 @media(max-width:600px){dialog.motion-viewer{padding:13px}.motion-viewer .motion-viewer-img{max-height:calc(94dvh - 134px)}}
-@media(prefers-reduced-motion:reduce){
- .motion-feedback,.ao-shell a.motion-feedback,.motion-feedback .glyph,.motion-feedback>span[aria-hidden="true"]{transition:none}
- .motion-feedback:hover .glyph,.motion-feedback:focus-visible .glyph,.motion-feedback:hover>span[aria-hidden="true"],.motion-feedback:focus-visible>span[aria-hidden="true"]{transform:none}
- .ao-shell.ao-menu.is-open .ao-groups{animation:none}
-}
+
 @media print{dialog.motion-viewer{display:none!important}}

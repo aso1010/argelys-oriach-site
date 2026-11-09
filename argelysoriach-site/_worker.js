@@ -3,12 +3,14 @@ const CANONICAL_HOST = 'argelysoriach.com';
 export default {
   async fetch(request, env) {
     const url = new URL(request.url);
-    const brokenPath = url.pathname === '/beauty-supply';
+    const redirectPath = url.pathname === '/beauty-supply'
+      ? '/beauty-salon/'
+      : url.pathname === '/home' ? '/' : null;
 
-    if (url.protocol !== 'https:' || url.host !== CANONICAL_HOST || brokenPath) {
+    if (url.protocol !== 'https:' || url.host !== CANONICAL_HOST || redirectPath !== null) {
       url.protocol = 'https:';
       url.host = CANONICAL_HOST;
-      if (brokenPath) url.pathname = '/beauty-salon/';
+      if (redirectPath !== null) url.pathname = redirectPath;
       return new Response(null, {
         status: 301,
         headers: { Location: url.href },

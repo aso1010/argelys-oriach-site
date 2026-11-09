@@ -9,18 +9,18 @@
   "familyName": "Oriach",
   "url": "https://argelysoriach.com/",
   "email": "argelys@seveneightythree.com",
-  "jobTitle": "Systems Architect & Artist",
+  "jobTitle": "Talent Architect & Artist Developer",
   "hasOccupation": [
     {
       "@type": "Occupation",
-      "name": "Systems Architect"
+      "name": "Talent Architect"
     },
     {
       "@type": "Occupation",
-      "name": "Artist"
+      "name": "Artist Developer"
     }
   ],
-  "description": "Argelys Samuel Oriach is an artist, creative director, actor, vocalist, writer, and systems architect.",
+  "description": "Talent architect and artist developer providing structural stewardship, artist development, and live production architecture through Wild-Lake.",
   "birthDate": "1993-08-29T15:45:00-04:00",
   "birthPlace": {
     "@type": "Place",

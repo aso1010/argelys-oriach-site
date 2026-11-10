@@ -196,7 +196,7 @@ html.menu-open{overflow:hidden}
         </dl>
       </section>
       <section class="gate" aria-label="Intake portal">
-        <p class="terms">All three fields are required. Drafting opens your email app with a message to argelys@seveneightythree.com. Nothing is sent until you send it.</p>
+        <p class="terms">All three fields are required. Drafting opens your email app with a message to hello@seveneightythree.com. Nothing is sent until you send it.</p>
         <form id="intake-form" novalidate>
           <div class="field">
             <label class="mono" for="f-name"><span>Name</span><span>Required</span></label>
@@ -222,9 +222,9 @@ html.menu-open{overflow:hidden}
             <span id="gate-ref"></span>
             <span id="gate-stamp"></span>
             <span>Your email app should open with the message. Nothing is sent until you send it. I review every message within 72 hours. Messages are reviewed manually.</span>
-            <span>If nothing opens, use this link: <a id="gate-send" href="mailto:argelys@seveneightythree.com">argelys@seveneightythree.com</a></span>
+            <span>If nothing opens, use this link: <a id="gate-send" href="mailto:hello@seveneightythree.com">hello@seveneightythree.com</a></span>
           </div>
-          <noscript><p class="receipt">Scripts are off. Email argelys@seveneightythree.com with your name, system objective and current architecture.</p></noscript>
+          <noscript><p class="receipt">Scripts are off. Email hello@seveneightythree.com with your name, system objective and current architecture.</p></noscript>
         </form>
       </section>
     </div>
@@ -249,7 +249,7 @@ html.menu-open{overflow:hidden}
 
 <script>
 /* Hard gate: three fields, no partial pass. Rejection names the empty fields and stops.
-   Draft the email prepares a message addressed to argelys@seveneightythree.com. */
+   Draft the email prepares a message addressed to hello@seveneightythree.com. */
 (function () {
   var form = document.getElementById('intake-form');
   var submit = document.getElementById('gate-submit');
@@ -278,7 +278,7 @@ html.menu-open{overflow:hidden}
     while (hex.length < 6) hex = '0' + hex;
     var ref = '783-' + hex;
     var body = 'Ref ' + ref + '\n\nName: ' + vals.name + '\n\nSystem Objective: ' + vals.objective + '\n\nCurrent Architecture: ' + vals.architecture + '\n';
-    var href = 'mailto:argelys@seveneightythree.com?subject=' + encodeURIComponent('Intake ' + ref) + '&body=' + encodeURIComponent(body);
+    var href = 'mailto:hello@seveneightythree.com?subject=' + encodeURIComponent('Intake ' + ref) + '&body=' + encodeURIComponent(body);
     if (href.length > 1900) {
       accept.hidden = true;
       reject.hidden = false;

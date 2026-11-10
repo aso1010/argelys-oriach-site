@@ -685,11 +685,11 @@ h1{margin:0;font-weight:900}
 /* The featured venture follows the opening monolith on every screen size. */
 .venture-feature{border-top:1px solid var(--ink)}
 .venture-feature>.wrap{padding-top:clamp(55px,6vw,89px);padding-bottom:clamp(55px,6vw,89px)}
-.venture-feature .mono{margin:0 0 34px}
 .venture-feature__body{display:grid;gap:34px;align-items:center}
 .venture-feature h2{margin:0;font-weight:900;font-variation-settings:'wdth' 125,'wght' 900;font-stretch:125%;font-size:clamp(36px,6.5vw,110px);line-height:1;letter-spacing:-.035em;text-transform:uppercase}
-.venture-feature__logo{display:block;width:100%;height:auto}
+.venture-feature__logo{display:block;width:100%;max-width:560px;height:auto}
 .venture-feature__copy p{margin:0 0 21px;max-width:30em;font-size:clamp(19px,.8vw + 14.5px,26px);line-height:1.42;font-weight:500}
+.venture-feature__copy .venture-feature__label{margin:0 0 13px;font-family:var(--sans);font-size:12px;line-height:1.4;font-weight:800;letter-spacing:.09em;text-transform:uppercase}
 .venture-feature__link{display:inline-flex;align-items:center;gap:21px;max-width:100%;padding:13px 21px;border:2px solid var(--ink);color:var(--ink);font-family:var(--mono);font-size:13px;line-height:1.5;letter-spacing:.06em;text-transform:uppercase;font-weight:700}
 .venture-feature__link:hover,.venture-feature__link:focus-visible{background:var(--ink);color:var(--ground)}
 @media(max-width:1099px){.venture-feature h2{font-size:clamp(36px,10vw,90px)}}
@@ -893,10 +893,10 @@ html.menu-open{overflow:hidden}
 
   <section class="venture-feature" id="wild-lake" aria-labelledby="wild-lake-h">
     <div class="wrap">
-      <p class="mono">Featured venture</p>
       <div class="venture-feature__body">
         <h2 id="wild-lake-h"><img class="venture-feature__logo" src="/media/wild-lake/monolith.svg" width="1600" height="900" alt="Wild Lake Studio" loading="lazy" decoding="async"></h2>
         <div class="venture-feature__copy">
+          <p class="venture-feature__label">Featured venture</p>
           <p>Artist development, A&amp;R, and structural stewardship for serious performers and creators.</p>
           <a class="venture-feature__link" href="https://wildlakestudio.com/" target="_blank" rel="noopener noreferrer">Explore Wild-Lake <span aria-hidden="true">&nearr;</span><span class="sr"> (opens in a new tab)</span></a>
         </div>

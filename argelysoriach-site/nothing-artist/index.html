@@ -585,7 +585,7 @@ input:-webkit-autofill,textarea:-webkit-autofill{-webkit-text-fill-color:#FFFFFF
   <div class="band__row">
     <h2 class="band__label mono">Intake</h2>
     <div class="gate">
-      <p class="gate__terms">Asynchronous portal. All three fields required. Initialize opens your email app with the load addressed to argelys@seveneightythree.com. Loads are reviewed against the baseline above; incomplete loads are rejected at the gate.</p>
+      <p class="gate__terms">Asynchronous portal. All three fields required. Initialize opens your email app with the load addressed to hello@seveneightythree.com. Loads are reviewed against the baseline above; incomplete loads are rejected at the gate.</p>
       <form id="intake-form" novalidate>
         <label>
           <span><span>Name</span><span class="req">Req</span></span>
@@ -609,7 +609,7 @@ input:-webkit-autofill,textarea:-webkit-autofill{-webkit-text-fill-color:#FFFFFF
           <span id="gate-ref"></span>
           <span id="gate-stamp"></span>
           <span>Opens in your email app &middot; Not sent until you send it &middot; Review window 72h &middot; No automated reply</span>
-          <span>If nothing opens: <a id="gate-send" href="mailto:argelys@seveneightythree.com">argelys@seveneightythree.com</a></span>
+          <span>If nothing opens: <a id="gate-send" href="mailto:hello@seveneightythree.com">hello@seveneightythree.com</a></span>
         </div>
       </form>
     </div>
@@ -620,7 +620,7 @@ input:-webkit-autofill,textarea:-webkit-autofill{-webkit-text-fill-color:#FFFFFF
 <footer class="ao-shell ao-footer">
   <div class="ao-footer-bar">
     <div class="ao-footer-links" role="navigation" aria-label="About this site">
-      <a href="mailto:argelys@seveneightythree.com">Contact</a>
+      <a href="mailto:hello@seveneightythree.com">Contact</a>
       <a href="/schema/">Schema</a>
       <a href="/privacy/">Privacy</a>
       <a href="/terms/">Terms</a>
@@ -669,7 +669,7 @@ input:-webkit-autofill,textarea:-webkit-autofill{-webkit-text-fill-color:#FFFFFF
     while (hex.length < 6) hex = '0' + hex;
     var ref = '783-' + hex;
     var body = 'Ref ' + ref + '\n\nName: ' + vals.name + '\n\nSystem Objective: ' + vals.objective + '\n\nCurrent Architecture: ' + vals.architecture + '\n';
-    var href = 'mailto:argelys@seveneightythree.com?subject=' + encodeURIComponent('Intake ' + ref) + '&body=' + encodeURIComponent(body);
+    var href = 'mailto:hello@seveneightythree.com?subject=' + encodeURIComponent('Intake ' + ref) + '&body=' + encodeURIComponent(body);
 
     if (href.length > 1900) {
       accept.hidden = true;

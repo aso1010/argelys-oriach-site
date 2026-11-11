@@ -680,7 +680,7 @@ a{color:inherit;text-decoration:none}
 /* Use image paint for the mark and title rule: Samsung Internet remaps inline fills and borders in dark mode. */
 .wordmark{display:block;width:100%;height:100%;overflow:visible;shape-rendering:geometricPrecision}
 @media(max-width:600px){
-  .cap{height:auto;padding:clamp(55px,12svh,100px) 0 21px}
+  .cap{width:calc(100% - 10px);height:100svh;padding:0}
   .mark{height:auto;display:block}
   .mark .wordmark{height:auto;aspect-ratio:4000 / 672}
 }

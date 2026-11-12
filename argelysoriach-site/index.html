@@ -702,6 +702,11 @@ h1{margin:0;font-weight:900}
 .role__item{display:block;flex:none;min-width:calc(100vw - 2 * var(--hero-gutter));padding-right:64px;white-space:nowrap;box-sizing:border-box}
 .role:hover .role__track,.role:focus .role__track{animation-play-state:paused}
 @keyframes role-ticker{to{transform:translateX(-50%)}}
+@media(min-width:601px){
+  .role__track{display:block;width:auto;animation:none}
+  .role__item{min-width:0;padding-right:0;white-space:normal}
+  .role__item+.role__item{display:none}
+}
 @media(prefers-reduced-motion:reduce){
   .role__track{display:block;width:auto;animation:none}
   .role__item{min-width:0;padding-right:0;white-space:normal}

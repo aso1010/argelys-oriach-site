@@ -5,7 +5,10 @@
       "@type": "ProfessionalService",
       "@id": "https://seveneightythree.com/#organization",
       "name": "Seven Eighty Three",
-      "alternateName": "783",
+      "alternateName": [
+        "Lab 783",
+        "783"
+      ],
       "url": "https://seveneightythree.com/",
       "description": "Systems design, workflow architecture, and automated infrastructure for executive leadership.",
       "founder": {

@@ -10,8 +10,8 @@ bio=home.split('<section class="bio"',1)[1].split('<section class="writing-featu
 paragraphs=[unescape(re.sub('<[^>]+>','',x)) for x in re.findall(r'<p>(.*?)</p>',bio,re.S)]
 assert len(paragraphs)==6
 person=read('schema/person.json')
-person['jobTitle']='Artist, Developer, and Systems Architect'
-person['hasOccupation']=[{'@type':'Occupation','name':name} for name in ['Artist','Developer','Systems Architect']]
+person['jobTitle']='Systems Architect & Performance Artist'
+person['hasOccupation']=[{'@type':'Occupation','name':name} for name in ['Systems Architect','Performance Artist','Multidisciplinary Artist','Creative Director','Actor','Vocalist','Writer','Engineer','Talent Architect','Artist Developer','Developer']]
 person['description']='\n\n'.join(paragraphs)
 person['homeLocation']={'@type':'Place','name':'Brooklyn, New York'}
 person['hasCredential']={'@type':'EducationalOccupationalCredential','name':'Bachelor’s degree in English','credentialCategory':'Bachelor’s degree','recognizedBy':{'@type':'CollegeOrUniversity','name':'Wesleyan University'}}
@@ -23,8 +23,8 @@ organizations=read('schema/organizations.json')
 for org in organizations['@graph']:
  if org['name']=='Wild-Lake':org['description']='A&R and talent architecture venture scouting and developing multidisciplinary artists. Wild Lake Studio, known as Wild-Lake, formalizes fifteen years of structural stewardship, physical carrying capacity, and live production architecture for twelve or more developing and independent multidisciplinary artists.'
 write('schema/organizations.json',organizations)
-website=read('schema/website.json');website['name']='Argelys Samuel Oriach | Artist, Developer, and Systems Architect';website['description']=paragraphs[0];write('schema/website.json',website)
-summary='Brooklyn-based multidisciplinary artist, creative director, and systems architect. Founder of Wild Lake Studio, scouting and developing multidisciplinary artists.'
+website=read('schema/website.json');website['name']='Argelys Samuel Oriach | Systems Architect & Performance Artist';website['description']=paragraphs[0];write('schema/website.json',website)
+summary='Brooklyn-based systems architect and performance artist. Founder of Wild Lake Studio, scouting and developing multidisciplinary artists.'
 canonical={x['@id']:{k:v for k,v in x.items() if k!='@context'} for x in [person,website,*organizations['@graph']]}
 canonical['https://argelysoriach.com/#home']={'@type':'WebPage','@id':'https://argelysoriach.com/#home','name':website['name'],'description':summary}
 def sync(x):
@@ -46,7 +46,7 @@ for path in root.rglob('*.html'):
   for attr,key in [('name','description'),('property','og:description'),('name','twitter:description')]:
    result=re.sub(rf'(<meta {attr}="{key}" content=")[^"]*',lambda m:m[1]+summary,result)
  if result!=source:path.write_text(result)
-llms=root/'llms.txt';text=llms.read_text();text=text.replace('Systems architecture, art, and talent infrastructure.','Artist, Developer, and Systems Architect.')
+llms=root/'llms.txt';text=llms.read_text();text=text.replace('Systems architecture, art, and talent infrastructure.','Systems Architect & Performance Artist.')
 text=re.sub(r'\n## Biography\n.*?(?=\n## |\Z)','',text,flags=re.S)
 text=text.replace('\n## Current practice','\n## Biography\n\n'+'\n\n'.join(paragraphs)+'\n\n## Current practice',1)
 text=text.replace('Talent architecture, structural mentorship, and development of artistic work.','A&R and talent architecture venture scouting and developing multidisciplinary artists. Structural stewardship, physical carrying capacity, and live production architecture.')

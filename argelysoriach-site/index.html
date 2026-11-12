@@ -666,7 +666,7 @@ a{color:inherit;text-decoration:none}
 .top a[aria-current]{border-bottom-color:var(--ink)}
 .top__end{display:flex;flex-wrap:wrap;align-items:center;gap:8px 34px}
 
-/* The name fills the opening viewport; its caption follows below. */
+/* The monolith and its grounding caption share the opening viewport. */
 :root{
   --strip:0rem;
   --fold-gap:13px;
@@ -690,28 +690,18 @@ a{color:inherit;text-decoration:none}
   .mark{height:auto;display:block}
   .mark .wordmark{height:auto;aspect-ratio:4000 / 672}
 }
+@media(min-width:601px){
+  .fold{height:100svh;display:grid;grid-template-rows:minmax(0,1fr) auto;padding:0 0 calc(21px + env(safe-area-inset-bottom))}
+  .cap{height:100%;min-height:0}
+  .fold>.wrap{margin-top:0}
+  .fold .role{padding-top:0}
+}
 .ltr{transform-box:fill-box;transform-origin:50% 50%}
 html.drop-wait .mark{visibility:hidden}
 @media (prefers-reduced-motion:no-preference){.mark{cursor:pointer;touch-action:manipulation;-webkit-tap-highlight-color:transparent;-webkit-user-select:none;user-select:none}}
 .sr{position:absolute;width:1px;height:1px;margin:-1px;padding:0;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap;border:0}
 h1{margin:0;font-weight:900}
 .role{display:block;padding-top:clamp(13px,1.6vw,21px);font-family:var(--mono);font-weight:400;font-variation-settings:normal;font-stretch:normal;text-transform:uppercase;letter-spacing:.06em;line-height:1.5;font-size:clamp(11px,.35vw + 10px,15px);text-align:left;white-space:normal}
-/* Two identical segments keep the title moving without a visible reset. */
-.role{overflow:hidden}
-.role__track{display:flex;width:max-content;animation:role-ticker 24s linear infinite}
-.role__item{display:block;flex:none;min-width:calc(100vw - 2 * var(--hero-gutter));padding-right:64px;white-space:nowrap;box-sizing:border-box}
-.role:hover .role__track,.role:focus .role__track{animation-play-state:paused}
-@keyframes role-ticker{to{transform:translateX(-50%)}}
-@media(min-width:601px){
-  .role__track{display:block;width:auto;animation:none}
-  .role__item{min-width:0;padding-right:0;white-space:normal}
-  .role__item+.role__item{display:none}
-}
-@media(prefers-reduced-motion:reduce){
-  .role__track{display:block;width:auto;animation:none}
-  .role__item{min-width:0;padding-right:0;white-space:normal}
-  .role__item+.role__item{display:none}
-}
 
 .writing-feature{margin:34px 0;border-top:4px solid var(--ink);padding-top:21px}
 .writing-feature h3.mono{margin:0 0 13px}
@@ -922,9 +912,7 @@ html.menu-open{overflow:hidden}
     <div class="wrap">
       <h1 id="headline">
         <span class="sr">Argelys Samuel Oriach</span>
-        <span class="role" tabindex="0" role="group" aria-label="Artist, Developer, and Systems Architect">
-          <span class="role__track" aria-hidden="true"><span class="role__item">Artist, Developer, and Systems Architect</span><span class="role__item">Artist, Developer, and Systems Architect</span></span>
-        </span>
+        <span class="role">Artist, Developer, and Systems Architect</span>
       </h1>
     </div>
   </section>

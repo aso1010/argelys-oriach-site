@@ -64,6 +64,26 @@
         "@id": "https://argelysoriach.com/#website"
       },
       "inLanguage": "en"
+    },
+    {
+      "@type": "BlogPosting",
+      "@id": "https://argelysoriach.com/beauty-salon/#the-messiness-of-becoming",
+      "headline": "The Messiness of Becoming",
+      "name": "The Messiness of Becoming",
+      "url": "https://argelysoriach.com/beauty-salon/",
+      "description": "An essay on migration, identity, and finding a voice between cultures, homes, and creative forms.",
+      "author": {
+        "@id": "https://argelysoriach.com/#person"
+      },
+      "publisher": {
+        "@id": "https://seveneightythree.com/#organization"
+      },
+      "isPartOf": {
+        "@type": "Periodical",
+        "name": "Beauty Salon",
+        "url": "https://argelysoriach.com/beauty-salon/"
+      },
+      "inLanguage": "en"
     }
   ]
 }

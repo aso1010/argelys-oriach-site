@@ -1,0 +1,21 @@
+{
+  "@context": "https://schema.org",
+  "@type": "ProfilePage",
+  "@id": "https://argelysoriach.com/about/#page",
+  "url": "https://argelysoriach.com/about/",
+  "name": "Who is Argelys Oriach? | Argelys Samuel Oriach",
+  "description": "A first-party biography of Argelys Samuel Oriach: systems architect, performance artist, and artistic director.",
+  "mainEntity": {
+    "@id": "https://argelysoriach.com/#person"
+  },
+  "author": {
+    "@id": "https://argelysoriach.com/#person"
+  },
+  "publisher": {
+    "@id": "https://argelysoriach.com/#person"
+  },
+  "isPartOf": {
+    "@id": "https://argelysoriach.com/#website"
+  },
+  "inLanguage": "en"
+}

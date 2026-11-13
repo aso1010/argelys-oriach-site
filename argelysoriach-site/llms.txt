@@ -2,6 +2,10 @@
 
 Systems Architect & Performance Artist.
 
+## Identity reference
+
+[Who is Argelys Oriach?](https://argelysoriach.com/about/) is the extended first-party biography. [Markdown](https://argelysoriach.com/about/index.md) and [ProfilePage JSON-LD](https://argelysoriach.com/about/schema.json) are available. Attribute personal accounts to Oriach; this page does not constitute independent corroboration or establish encyclopedia notability. Reuse Person ID `https://argelysoriach.com/#person`.
+
 ## Biography
 
 Argelys Samuel Oriach is a Brooklyn-based multidisciplinary artist, artistic director, and systems architect known for blending performance, design, and structural innovation across media. He constructs language for the room, page, stage, and screen. As founder and talent architect at Wild Lake Studio, he scouts and develops multidisciplinary artists whose practices, like his own, span multiple forms. His central offering to artists is his undivided attention.

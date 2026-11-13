@@ -11,7 +11,7 @@ paragraphs=[unescape(re.sub('<[^>]+>','',x)) for x in re.findall(r'<p>(.*?)</p>'
 assert len(paragraphs)==6
 person=read('schema/person.json')
 person['jobTitle']='Systems Architect & Performance Artist'
-person['hasOccupation']=[{'@type':'Occupation','name':name} for name in ['Systems Architect','Performance Artist','Multidisciplinary Artist','Creative Director','Actor','Vocalist','Writer','Engineer','Talent Architect','Artist Developer','Developer']]
+person['hasOccupation']=[{'@type':'Occupation','name':name} for name in ['Systems Architect','Performance Artist','Multidisciplinary Artist','Artistic Director','Actor','Vocalist','Writer','Engineer','Talent Architect','Artist Developer','Developer']]
 person['description']='\n\n'.join(paragraphs)
 person['homeLocation']={'@type':'Place','name':'Brooklyn, New York'}
 person['hasCredential']={'@type':'EducationalOccupationalCredential','name':'Bachelor’s degree in English','credentialCategory':'Bachelor’s degree','recognizedBy':{'@type':'CollegeOrUniversity','name':'Wesleyan University'}}

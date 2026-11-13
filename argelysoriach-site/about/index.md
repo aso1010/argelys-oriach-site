@@ -32,7 +32,7 @@ Oriach describes performance as the governing method of his practice, with writi
 
 ## Works
 
-- [*This Is Not a Love Story (Yankees)*](https://thisisnotalovestory.net/), a digital short published by Seven Eighty Three.
+- [*This Is Not a Love Story (Yankees)*](https://thisisnotalovestory.net/), a digital short published by Seven Eighty Three. It is a screenplay written in prose form.
 - [*The Messiness of Becoming*](/beauty-salon/), an essay in Beauty Salon, published by Seven Eighty Three.
 
 His biography also lists a pilot, a one-act play, and his debut autofiction novel, *Graduation*, as works in progress.

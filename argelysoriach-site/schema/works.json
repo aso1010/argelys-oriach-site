@@ -39,7 +39,11 @@
       },
       "datePublished": "2026-10",
       "inLanguage": "en",
-      "description": "A trip to Yankee Stadium becomes a reckoning with desire, memory, and the need to be seen."
+      "description": "A trip to Yankee Stadium becomes a reckoning with desire, memory, and the need to be seen. A screenplay written in prose form.",
+      "genre": [
+        "Screenplay",
+        "Prose"
+      ]
     },
     {
       "@type": "CreativeWork",

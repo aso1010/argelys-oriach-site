@@ -21,7 +21,10 @@ person['knowsAbout']=['Multidisciplinary art','Performance','Movement','Creative
 write('schema/person.json',person)
 organizations=read('schema/organizations.json')
 for org in organizations['@graph']:
- if org['name']=='Wild-Lake':org['description']='A&R and talent architecture venture scouting and developing multidisciplinary artists. Wild Lake Studio, known as Wild-Lake, formalizes fifteen years of structural stewardship, physical carrying capacity, and live production architecture for twelve or more developing and independent multidisciplinary artists.'
+ if org.get('@id')=='https://wild-lake.org/#organization':
+  org['name']='Wild Lake Studio';org['alternateName']='Wild-Lake'
+  org['description']='Research laboratory of Seven Eighty Three (Lab 783), guiding developing and independent artists.'
+  org['parentOrganization']={'@id':'https://seveneightythree.com/#organization'}
 write('schema/organizations.json',organizations)
 website=read('schema/website.json');website['name']='Argelys Samuel Oriach | Systems Architect & Performance Artist';website['description']=paragraphs[0];write('schema/website.json',website)
 summary='Brooklyn-based systems architect and performance artist. Founder of Wild Lake Studio, scouting and developing multidisciplinary artists.'
@@ -49,5 +52,5 @@ for path in root.rglob('*.html'):
 llms=root/'llms.txt';text=llms.read_text();text=text.replace('Systems architecture, art, and talent infrastructure.','Systems Architect & Performance Artist.')
 text=re.sub(r'\n## Biography\n.*?(?=\n## |\Z)','',text,flags=re.S)
 text=text.replace('\n## Current practice','\n## Biography\n\n'+'\n\n'.join(paragraphs)+'\n\n## Current practice',1)
-text=text.replace('Talent architecture, structural mentorship, and development of artistic work.','A&R and talent architecture venture scouting and developing multidisciplinary artists. Structural stewardship, physical carrying capacity, and live production architecture.')
+text=text.replace('Talent architecture, structural mentorship, and development of artistic work.','Research laboratory of Seven Eighty Three (Lab 783), guiding developing and independent artists. Structural stewardship, physical carrying capacity, and live production architecture.')
 llms.write_text(text)

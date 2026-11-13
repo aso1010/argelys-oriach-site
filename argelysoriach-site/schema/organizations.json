@@ -18,12 +18,16 @@
     {
       "@type": "ProfessionalService",
       "@id": "https://wild-lake.org/#organization",
-      "name": "Wild-Lake",
+      "name": "Wild Lake Studio",
       "legalName": "Wild Lake Studio",
       "url": "https://wildlakestudio.com/",
-      "description": "A&R and talent architecture venture scouting and developing multidisciplinary artists. Wild Lake Studio, known as Wild-Lake, formalizes fifteen years of structural stewardship, physical carrying capacity, and live production architecture for twelve or more developing and independent multidisciplinary artists.",
+      "description": "Research laboratory of Seven Eighty Three (Lab 783), guiding developing and independent artists.",
       "founder": {
         "@id": "https://argelysoriach.com/#person"
+      },
+      "alternateName": "Wild-Lake",
+      "parentOrganization": {
+        "@id": "https://seveneightythree.com/#organization"
       }
     }
   ]

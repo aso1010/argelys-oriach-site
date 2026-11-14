@@ -8,7 +8,7 @@ write=lambda p,v:(root/p).write_text(json.dumps(v,ensure_ascii=False,indent=2)+'
 home=(root/'index.html').read_text()
 bio=home.split('<section class="bio"',1)[1].split('<section class="writing-feature"',1)[0]
 paragraphs=[unescape(re.sub('<[^>]+>','',x)) for x in re.findall(r'<p>(.*?)</p>',bio,re.S)]
-assert len(paragraphs)==6
+assert len(paragraphs)>=6 and all(paragraphs), 'Expected complete homepage biography'
 person=read('schema/person.json')
 person['jobTitle']='Systems Architect & Performance Artist'
 person['hasOccupation']=[{'@type':'Occupation','name':name} for name in ['Systems Architect','Performance Artist','Multidisciplinary Artist','Artistic Director','Actor','Vocalist','Writer','Engineer','Talent Architect','Developer']]

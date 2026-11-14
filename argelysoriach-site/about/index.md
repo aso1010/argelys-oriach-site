@@ -2,7 +2,7 @@
 
 Argelys Samuel Oriach, also known as Argelys Oriach, is a Dominican-born systems architect, performance artist, and artistic director based in Crown Heights, Brooklyn. He is the principal of Seven Eighty Three (Lab 783) and the founder and artistic director of Wild Lake Studio, known as Wild-Lake.
 
-He operates two laboratories: Seven Eighty Three (Lab 783), an independent systems design practice, and Wild Lake Studio, its research laboratory, which guides developing and independent artists.
+He operates two laboratories: Seven Eighty Three (Lab 783), an independent systems design practice, and Wild Lake Studio (Wild-Lake), its research laboratory, which guides developing and independent artists.
 
 ## Early life and education
 
@@ -20,7 +20,7 @@ He has described these corporate roles as an undercover durational performance: 
 
 ## Laboratories
 
-He operates two laboratories: Seven Eighty Three (Lab 783), an independent systems design practice, and Wild Lake Studio, its research laboratory, which guides developing and independent artists.
+He operates two laboratories: Seven Eighty Three (Lab 783), an independent systems design practice, and Wild Lake Studio (Wild-Lake), its research laboratory, which guides developing and independent artists.
 
 [Seven Eighty Three](https://seveneightythree.com/) engineers automated infrastructure for executive leadership. [Wild Lake Studio](https://wildlakestudio.com/) formalizes what Oriach describes as a fifteen-year independent practice of guiding twelve or more developing and independent multidisciplinary artists. He identifies New York, Tampa, and Santiago as locations of artists supported by the studio. His central offering to artists is his undivided attention.
 
@@ -28,7 +28,7 @@ According to Oriach, Wild Lake Studio takes no ownership or percentage of an art
 
 ## Artistic practice
 
-Oriach describes performance as the governing method of his practice, with writing, voice, movement, design, and corporate roles as its forms. He is trained in the Alexander Technique. He characterizes his prose as a maximalist, automatic, lyrical stream of consciousness.
+Oriach describes performance as the governing method of his practice, with writing, voice, movement, design, and corporate roles as its forms. He is trained in the Alexander Technique. He characterizes his prose as a maximalist, automatic, and lyrical stream-of-consciousness style.
 
 ## Works
 

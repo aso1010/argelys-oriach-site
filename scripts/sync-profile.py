@@ -17,7 +17,7 @@ person['homeLocation']={'@type':'Place','name':'Brooklyn, New York'}
 person['hasCredential']={'@type':'EducationalOccupationalCredential','name':'Bachelor’s degree in English','credentialCategory':'Bachelor’s degree','recognizedBy':{'@type':'CollegeOrUniversity','name':'Wesleyan University'}}
 if not any(x.get('name')=='Northwestern University' for x in person['alumniOf']):
  person['alumniOf'].append({'@type':'CollegeOrUniversity','name':'Northwestern University','description':'National High School Institute (Cherubs) theatre program, 2010.'})
-person['knowsAbout']=['Multidisciplinary art','Performance','Movement','Creative direction','Artist development','Talent architecture','Systems architecture','Software development','Live production','Writing','Studio art','Critical theory','Alexander Technique']
+person['knowsAbout']=['Multidisciplinary art','Performance','Movement','Artistic direction','Artist development','Talent architecture','Systems architecture','Software development','Live production','Writing','Studio art','Critical theory','Alexander Technique']
 write('schema/person.json',person)
 organizations=read('schema/organizations.json')
 for org in organizations['@graph']:
@@ -27,7 +27,7 @@ for org in organizations['@graph']:
   org['parentOrganization']={'@id':'https://seveneightythree.com/#organization'}
 write('schema/organizations.json',organizations)
 website=read('schema/website.json');website['name']='Argelys Samuel Oriach | Systems Architect & Performance Artist';website['description']=paragraphs[0];write('schema/website.json',website)
-summary='Brooklyn-based systems architect and performance artist. Founder of Wild Lake Studio, scouting and developing multidisciplinary artists.'
+summary='Brooklyn-based systems architect and performance artist. Founder and artistic director of Wild Lake Studio, scouting and developing multidisciplinary artists.'
 canonical={x['@id']:{k:v for k,v in x.items() if k!='@context'} for x in [person,website,*organizations['@graph']]}
 canonical['https://argelysoriach.com/#home']={'@type':'WebPage','@id':'https://argelysoriach.com/#home','name':website['name'],'description':summary}
 def sync(x):

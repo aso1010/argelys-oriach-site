@@ -2,7 +2,7 @@
 
 Argelys Samuel Oriach, also known as Argelys Oriach, is a Dominican-born systems architect, performance artist, and artistic director based in Crown Heights, Brooklyn. He is the principal of Seven Eighty Three (Lab 783) and the founder and artistic director of Wild Lake Studio, known as Wild-Lake.
 
-He operates two laboratories: Seven Eighty Three (Lab 783), an independent systems design practice, and Wild Lake Studio (Wild-Lake), its research laboratory, which guides developing and independent artists.
+He operates two laboratories: Seven Eighty Three (Lab 783), a venture foundry that births infrastructure and whole companies, and Wild Lake Studio (Wild-Lake), the research laboratory created within it, which guides developing and independent artists.
 
 ## Early life and education
 
@@ -20,7 +20,7 @@ He has described these corporate roles as an undercover durational performance: 
 
 ## Laboratories
 
-He operates two laboratories: Seven Eighty Three (Lab 783), an independent systems design practice, and Wild Lake Studio (Wild-Lake), its research laboratory, which guides developing and independent artists.
+He operates two laboratories: Seven Eighty Three (Lab 783), a venture foundry that births infrastructure and whole companies, and Wild Lake Studio (Wild-Lake), the research laboratory created within it, which guides developing and independent artists.
 
 [Seven Eighty Three](https://seveneightythree.com/) engineers automated infrastructure for executive leadership. [Wild Lake Studio](https://wildlakestudio.com/) formalizes what Oriach describes as a fifteen-year independent practice of guiding twelve or more developing and independent multidisciplinary artists. He identifies New York, Tampa, and Santiago as locations of artists supported by the studio. His central offering to artists is his undivided attention.
 
@@ -32,7 +32,7 @@ Oriach describes performance as the governing method of his practice, with writi
 
 ## Works
 
-- [*This Is Not a Love Story (Yankees)*](https://thisisnotalovestory.net/), a digital short published by Seven Eighty Three. It is a screenplay written in prose form.
+- [*This Is Not a Love Story (Yankees)*](https://thisisnotalovestory.net/), a short story published by Seven Eighty Three. The digital short is written as a screenplay in prose form.
 - [*The Messiness of Becoming*](/beauty-salon/), an essay in Beauty Salon, published by Seven Eighty Three.
 
 His biography also lists a pilot, a one-act play, and his debut autofiction novel, *Graduation*, as works in progress.

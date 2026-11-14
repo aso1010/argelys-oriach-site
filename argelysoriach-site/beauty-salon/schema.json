@@ -11,7 +11,9 @@
   "creator": {
     "@type": "Person",
     "name": "Argelys Samuel Oriach",
-    "url": "https://argelysoriach.com"
+    "url": "https://argelysoriach.com",
+    "alternateName": "Argelys Oriach",
+    "description": "Brooklyn-based artist, writer, and systems architect. Principal of Seven Eighty Three, founder of Wild Lake Studio."
   },
   "about": "Systems design, brutalist web architecture, and closed-loop HTML frameworks.",
   "hasPart": [

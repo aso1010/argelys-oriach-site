@@ -6,7 +6,7 @@ template=(root/'assets/footer.html').read_text().strip()
 credits={
  'portfolio/index.html':'Set in Archivo · Direction, writing and design: Argelys Samuel Oriach · Built with Claude',
  'banana-republic/index.html':'Set in Archivo · Direction, writing and design: Argelys Samuel Oriach · Built with Claude',
- 'catalogue-001/index.html':'Catalogue 001 · October 2026 · Set in Archivo and JetBrains Mono · Built with Claude · With <a href="https://wildlakestudio.com/">Wild-Lake</a>, the artists agency',
+ 'catalogue-001/index.html':'Catalogue 001 · October 2026 · Set in Archivo and JetBrains Mono · Built with Claude · With <a href="https://wild-lake.org/">Wild-Lake</a>, the artists agency',
  'catalogue-002/index.html':'<a href="/catalogue-001/">Catalogue 001</a> · Catalogue 002 · October 2026 · Set in Archivo and JetBrains Mono · Built with Claude',
  'this-is-not-a-love-story-yankees/index.html':'Universe API · Seven Eighty Three · <a href="#top">Return to threshold</a>',
 }

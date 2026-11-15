@@ -2,12 +2,12 @@
 
 ## Current hierarchy
 
-1. Systems architecture - Seven Eighty Three and Universe API.
-2. Talent infrastructure - Wild-Lake / Wild Lake Studio.
-3. Art and writing - Portfolio and This Is Not a Love Story (Yankees).
-4. Background - Biography and CV.
-5. Contact - Email and the existing detailed intake form.
-6. Historical material - Dedicated `/archive/` index.
+1. Systems architecture — Seven Eighty Three and Universe API.
+2. Talent infrastructure — Wild-Lake / Wild Lake Studio.
+3. Art and writing — Portfolio and This Is Not a Love Story (Yankees).
+4. Background — Biography and CV.
+5. Contact — Email and the existing detailed intake form.
+6. Historical material — Dedicated `/archive/` index.
 
 ## Controlled demolition
 

@@ -410,7 +410,7 @@
           "@type": "WebPage",
           "@id": "https://argelysoriach.com/biography/#page",
           "url": "https://argelysoriach.com/",
-          "name": "Argelys Samuel Oriach - Systems Architect, Artist, and Auteur",
+          "name": "Argelys Samuel Oriach — Systems Architect, Artist, and Auteur",
           "isPartOf": {
             "@id": "https://argelysoriach.com/#website"
           },
@@ -447,7 +447,7 @@
           "@type": "WebPage",
           "@id": "https://argelysoriach.com/nothing-artist/#page",
           "url": "https://argelysoriach.com/nothing-artist/",
-          "name": "Argelys Samuel Oriach - Nothing Artist | Matter & Body Architect",
+          "name": "Argelys Samuel Oriach — Nothing Artist | Matter & Body Architect",
           "isPartOf": {
             "@id": "https://argelysoriach.com/#website"
           },
@@ -714,8 +714,42 @@ a{color:inherit;text-decoration:none}
 .top a[aria-current]{border-bottom-color:var(--ink)}
 .top__end{display:flex;flex-wrap:wrap;align-items:center;gap:8px 34px}
 
+/* The monolith and its grounding caption share the opening viewport. */
+:root{
+  --strip:0rem;
+  --fold-gap:13px;
+  --fold-pad:clamp(21px,3.2vw,55px);
+  --hero-gutter:clamp(13px,2vw,55px);
+  --monolith-width:calc((100svh - var(--strip) - 2 * clamp(13px,2svh,34px)) / .504);
+}
+.fold{padding:0 0 calc(var(--fold-pad) + env(safe-area-inset-bottom))}
+.cap{width:calc(100% - 2 * var(--hero-gutter));height:calc(100svh - var(--strip));margin:0 auto;padding:clamp(13px,2svh,34px) 0;display:flex;align-items:center;justify-content:center;container-type:inline-size}
+.mark{width:100%;height:100%;display:grid;grid-template-rows:repeat(3,minmax(0,1fr))}
+.fold>.wrap{width:calc(100% - 2 * var(--hero-gutter));max-width:none;padding:0;margin-top:var(--fold-gap);container-type:inline-size}
+/* The letters are high-resolution images of Archivo outlines at wght 900, wdth 125.
+   Each image keeps its original outline coordinates so the drop and interaction geometry stays the same. */
+/* Use image paint for the mark and title rule: Samsung Internet remaps inline fills and borders in dark mode. */
+.wordmark{display:block;width:100%;height:100%;overflow:visible;shape-rendering:geometricPrecision}
+@media(max-width:600px){
+  .fold{min-height:100svh;min-height:100dvh;display:flex;flex-direction:column;justify-content:center;padding:55px 0 calc(21px + env(safe-area-inset-bottom))}
+  .cap{width:calc(100% - 10px);height:auto;padding:0}
+  .fold>.wrap{width:calc(100% - 10px);margin-top:13px}
+  .fold .role{padding-top:0}
+  .mark{height:auto;display:block}
+  .mark .wordmark{height:auto;aspect-ratio:4000 / 672}
+}
+@media(min-width:601px){
+  .fold{height:100svh;display:grid;grid-template-rows:minmax(0,1fr) auto;padding:0 0 calc(21px + env(safe-area-inset-bottom))}
+  .cap{height:100%;min-height:0}
+  .fold>.wrap{margin-top:0}
+  .fold .role{padding-top:0}
+}
+.ltr{transform-box:fill-box;transform-origin:50% 50%}
+html.drop-wait .mark{visibility:hidden}
+@media (prefers-reduced-motion:no-preference){.mark{cursor:pointer;touch-action:manipulation;-webkit-tap-highlight-color:transparent;-webkit-user-select:none;user-select:none}}
 .sr{position:absolute;width:1px;height:1px;margin:-1px;padding:0;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap;border:0}
 h1{margin:0;font-weight:900}
+.role{display:block;padding-top:clamp(13px,1.6vw,21px);font-family:var(--mono);font-weight:400;font-variation-settings:normal;font-stretch:normal;text-transform:uppercase;letter-spacing:.06em;line-height:1.5;font-size:clamp(11px,.35vw + 10px,15px);text-align:left;white-space:normal}
 
 .writing-feature{margin:clamp(89px,8vw,144px) 0 0;border-block:4px solid var(--ink);padding-block:clamp(34px,4vw,55px)}
 .writing-post{margin-top:55px;padding-top:34px;border-top:1px solid var(--ink)}
@@ -830,12 +864,12 @@ html.menu-open{overflow:hidden}
 .top a.brand-avatar img{display:block;width:44px;height:44px;object-fit:contain}
 
 /* Pure-white paint for the existing raster monolith and its load-bearing rule. */
-.mark .wordmark,
+.mark .wordmark,.role{filter:brightness(0) invert(1)}
+
 .band.intake{--ground:#FFFFFF;--ink:#000000;background:var(--ground);color:var(--ink);color-scheme:light}
 .band.intake .avail .audience dd{color:var(--ink)}
 .band.intake .gate :is(input,textarea)::placeholder{color:var(--ink)}
 .band.intake .gate :is(input,textarea):focus::placeholder{color:transparent}
-.biography-heading{padding-top:55px;padding-bottom:55px}.biography-heading h1{font-size:clamp(34px,5vw,89px);line-height:1.1}
 </style>
 <script>
 /* Ethos has its own page; an old link to its anchor here goes there. Intake sits at the foot of this page, so a host
@@ -847,22 +881,50 @@ html.menu-open{overflow:hidden}
   document.addEventListener('DOMContentLoaded', function () { var t = document.getElementById('intake'); if (t) t.scrollIntoView(); });
 })(location);
 </script>
-
+<script>
+/* The name is dropped in on load, so it stays out of sight until its letters are up in the air. Shown regardless after 2.5 s. */
+(function (d) {
+  if (!window.requestAnimationFrame || (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches)) return;
+  d.classList.add('drop-wait');
+  setTimeout(function () { d.classList.remove('drop-wait'); }, 2500);
+})(document.documentElement);
+</script>
 <meta property="og:image" content="https://argelysoriach.com/social-card-monolith-only-v5.png">
 <meta property="og:image:secure_url" content="https://argelysoriach.com/social-card-monolith-only-v5.png">
 <meta property="og:image:type" content="image/png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
-<meta property="og:image:alt" content="Argelys Samuel Oriach - white monolith on black">
+<meta property="og:image:alt" content="Argelys Samuel Oriach — white monolith on black">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://argelysoriach.com/social-card-monolith-only-v5.png">
-<meta name="twitter:image:alt" content="Argelys Samuel Oriach - white monolith on black">
+<meta name="twitter:image:alt" content="Argelys Samuel Oriach — white monolith on black">
 <link rel="stylesheet" href="/assets/navigation.css?v=7">
 <script src="/assets/navigation.js?v=2" defer></script>
 <link rel="stylesheet" href="/assets/motion.css?v=3">
 <script src="/assets/motion.js?v=2" defer></script>
-
-
+<script>
+(function () {
+  if (window.parent === window || !new URLSearchParams(location.search).has('embedded')) return;
+  document.documentElement.classList.add('embedded-biography');
+  document.documentElement.style.setProperty('--embedded-viewport',window.parent.innerHeight + 'px');
+  var base = document.createElement('base');
+  base.target = '_top';
+  document.head.appendChild(base);
+})();
+</script>
+<style>
+html.embedded-biography,html.embedded-biography body{overflow:hidden}
+.embedded-biography .ao-icon,.embedded-biography .ao-menu,.embedded-biography .skip,.embedded-biography .ao-footer{display:none!important}
+.embedded-biography .fold{height:var(--embedded-viewport);min-height:0}
+.embedded-biography .fold{display:none!important}
+.embedded-biography .venture-feature{margin-top:0!important}
+.embedded-biography .cap{padding-top:21px;padding-bottom:21px}
+@media(max-width:600px){
+ .embedded-biography .fold{height:auto;min-height:var(--embedded-viewport)}
+ .embedded-biography .venture-feature{margin-top:calc(var(--embedded-viewport) / 2)}
+}
+@media(prefers-reduced-motion:reduce){.embedded-biography .ltr{transform:none!important}html.embedded-biography.drop-wait .mark{visibility:visible}}
+</style>
 <link rel="icon" type="image/png" href="/media/community-avatar.png?v=2">
 <link rel="apple-touch-icon" href="/media/community-avatar.png?v=2">
 </head>
@@ -919,7 +981,21 @@ html.menu-open{overflow:hidden}
 
 
 <main id="main">
-<header class="wrap biography-heading"><h1>Argelys Samuel Oriach</h1></header>
+  <section class="fold" aria-labelledby="headline">
+    <div class="cap">
+      <div class="mark" aria-hidden="true">
+        <svg class="wordmark" viewBox="0 0 4000 672" preserveAspectRatio="none" aria-hidden="true" focusable="false"><g class="ltr"><image href="/media/monolith/letter-01.png" x="4.199999809265137" y="43.79999923706055" width="609.7999877929688" height="621.2000122070312"/></g><g class="ltr"><image href="/media/monolith/letter-02.png" x="665.0999755859375" y="43.79999923706055" width="548.9000244140625" height="621.2000122070312"/></g><g class="ltr"><image href="/media/monolith/letter-03.png" x="1257.4000244140625" y="33" width="584.5" height="642.7999877929688"/></g><g class="ltr"><image href="/media/monolith/letter-04.png" x="1931.9000244140625" y="43.79999923706055" width="483.4998779296875" height="621.2000122070312"/></g><g class="ltr"><image href="/media/monolith/letter-05.png" x="2489.199951171875" y="43.79999923706055" width="451" height="621.2000122070312"/></g><g class="ltr"><image href="/media/monolith/letter-06.png" x="2838.39990234375" y="43.79999923706055" width="606" height="621.2000122070312"/></g><g class="ltr"><image href="/media/monolith/letter-07.png" x="3455.300048828125" y="33" width="522.300048828125" height="642.7999877929688"/></g></svg>
+        <svg class="wordmark" viewBox="0 0 4000 672" preserveAspectRatio="none" aria-hidden="true" focusable="false"><g class="ltr"><image href="/media/monolith/letter-08.png" x="29.399999618530273" y="33" width="570.699951171875" height="642.7999877929688"/></g><g class="ltr"><image href="/media/monolith/letter-09.png" x="629.2000122070312" y="43.79999923706055" width="666.2000122070312" height="621.2000122070312"/></g><g class="ltr"><image href="/media/monolith/letter-10.png" x="1351.4000244140625" y="43.79999923706055" width="731.4000244140625" height="621.2000122070312"/></g><g class="ltr"><image href="/media/monolith/letter-11.png" x="2185.60009765625" y="43.79999923706055" width="597.5" height="632"/></g><g class="ltr"><image href="/media/monolith/letter-12.png" x="2885.800048828125" y="43.79999923706055" width="528.099853515625" height="621.2000122070312"/></g><g class="ltr"><image href="/media/monolith/letter-13.png" x="3494.800048828125" y="43.79999923706055" width="492.699951171875" height="621.2000122070312"/></g></svg>
+        <svg class="wordmark" viewBox="0 0 4000 672" preserveAspectRatio="none" aria-hidden="true" focusable="false"><g class="ltr"><image href="/media/monolith/letter-14.png" x="33.599998474121094" y="33" width="707" height="642.7999877929688"/></g><g class="ltr"><image href="/media/monolith/letter-15.png" x="830" y="43.79999923706055" width="650.300048828125" height="621.2000122070312"/></g><g class="ltr"><image href="/media/monolith/letter-16.png" x="1554.199951171875" y="43.79999923706055" width="191.800048828125" height="621.2000122070312"/></g><g class="ltr"><image href="/media/monolith/letter-17.png" x="1806.9000244140625" y="43.79999923706055" width="722.4998779296875" height="621.2000122070312"/></g><g class="ltr"><image href="/media/monolith/letter-18.png" x="2537.39990234375" y="33" width="654.10009765625" height="642.7999877929688"/></g><g class="ltr"><image href="/media/monolith/letter-19.png" x="3280.800048828125" y="43.79999923706055" width="663.300048828125" height="621.2000122070312"/></g></svg>
+      </div>
+    </div>
+    <div class="wrap">
+      <h1 id="headline">
+        <span class="sr">Argelys Samuel Oriach</span>
+        <span class="role">Systems Architect &amp; Performance Artist</span>
+      </h1>
+    </div>
+  </section>
 
 
 
@@ -1053,7 +1129,168 @@ html.menu-open{overflow:hidden}
 </footer>
 <!-- /Shared footer -->
 
+<script>
+/* The name is dropped in on load. The letters tumble down, the bottom line first, hit their line, bounce and come
+   to rest every which way: most lean, a few lie on their side or stand on their head. Then, in reading order, each
+   one hops up, rights itself and lands in its place, and from there the name stands still and straight. Poke a
+   letter and it answers with a gesture, then stands straight again; poke it again and it answers with the next one.
+   A hop, a rock on its corners, a spin, a stretch, a turn on its axis, a shake, a throw. Each frame is drawn by the
+   page itself, so the edges stay hard in motion. No motion if the system asks for less. */
+(function () {
+  var root = document.documentElement, mark = document.querySelector('.mark');
+  if (root.classList.contains('embedded-biography')) { root.classList.remove('drop-wait'); return; }
+  if (!mark || !window.requestAnimationFrame || (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches)) {
+    root.classList.remove('drop-wait');
+    return;
+  }
 
+  /* Keyframes: t is the share of the gesture, x and y move in letter heights, r turns in degrees, sx and sy
+     scale, a turns the letter on its upright axis. e is how the segment arriving at that keyframe moves. */
+  var BASE = '50% 100%', MID = '50% 50%';
+  var GESTURES = [
+    { ms: 950, o: BASE, k: [{ t: 0 }, { t: .12, sx: 1.06, sy: .86, e: 'out' }, { t: .42, y: -.42, sx: .97, sy: 1.06, e: 'out' },
+      { t: .66, e: 'in' }, { t: .76, sx: 1.06, sy: .88, e: 'out' }, { t: .88, sx: .99, sy: 1.03, e: 'io' }, { t: 1, e: 'io' }] },
+    { ms: 1500, o: 'rock', k: [{ t: 0 }, { t: .22, r: 14, e: 'out' }, { t: .48, r: -7, e: 'io' }, { t: .68, r: 3.5, e: 'io' },
+      { t: .84, r: -1.2, e: 'io' }, { t: 1, e: 'io' }] },
+    { ms: 1100, o: MID, k: [{ t: 0 }, { t: .15, y: .03, sx: 1.03, sy: .94, e: 'out' }, { t: .55, y: -.22, r: 220, e: 'out' },
+      { t: .85, r: 360, e: 'in' }, { t: .93, r: 360, sx: 1.03, sy: .95, e: 'out' }, { t: 1, r: 360, e: 'io' }] },
+    { ms: 1100, o: BASE, k: [{ t: 0 }, { t: .16, sx: .88, sy: 1.32, e: 'out' }, { t: .36, sx: 1.08, sy: .84, e: 'io' },
+      { t: .54, sx: .95, sy: 1.12, e: 'io' }, { t: .7, sx: 1.02, sy: .95, e: 'io' }, { t: .85, sx: .99, sy: 1.02, e: 'io' }, { t: 1, e: 'io' }] },
+    { ms: 1000, o: MID, k: [{ t: 0 }, { t: .5, y: -.05, a: 180, e: 'in' }, { t: 1, a: 360, e: 'out' }] },
+    { ms: 800, o: BASE, k: [{ t: 0 }, { t: .1, x: -.09, r: -3, e: 'out' }, { t: .25, x: .08, r: 2.5, e: 'io' }, { t: .4, x: -.06, r: -2, e: 'io' },
+      { t: .55, x: .04, r: 1.2, e: 'io' }, { t: .7, x: -.02, r: -.6, e: 'io' }, { t: .85, x: .01, e: 'io' }, { t: 1, e: 'io' }] },
+    { ms: 1500, o: MID, k: [{ t: 0 }, { t: .08, y: .03, sx: 1.05, sy: .9, e: 'out' }, { t: .38, y: -.6, r: 180, e: 'out' },
+      { t: .66, r: 360, e: 'in' }, { t: .74, y: -.1, r: 360, e: 'out' }, { t: .82, r: 360, e: 'in' }, { t: .88, y: -.025, r: 360, e: 'out' },
+      { t: .94, r: 360, e: 'in' }, { t: 1, r: 360 }] }
+  ];
+  var EASE = {
+    'in': function (u) { return u * u; },
+    out: function (u) { return 1 - (1 - u) * (1 - u); },
+    io: function (u) { return 0.5 - 0.5 * Math.cos(Math.PI * u); }
+  };
+  var KEYS = ['x', 'y', 'r', 'sx', 'sy', 'a'], REST = { x: 0, y: 0, r: 0, sx: 1, sy: 1, a: 0 };
+  function val(f, key) { return f[key] === undefined ? REST[key] : f[key]; }
+  function rnd(a, b) { return a + Math.random() * (b - a); }
+
+  /* Where a gesture stands at share t of its length. */
+  function pose(k, t) {
+    var i = 1;
+    while (i < k.length - 1 && k[i].t < t) i++;
+    var from = k[i - 1], to = k[i], u = Math.min(1, Math.max(0, (t - from.t) / (to.t - from.t)));
+    u = (EASE[to.e] || function (v) { return v; })(u);
+    var p = {};
+    KEYS.forEach(function (key) { p[key] = val(from, key) + (val(to, key) - val(from, key)) * u; });
+    return p;
+  }
+
+  /* Draw a letter in a pose. */
+  function place(L, o, p) {
+    var h = L.h;
+    /* rocking pivots on whichever bottom corner the letter is leaning onto */
+    L.g.style.transformOrigin = o === 'rock' ? (p.r >= 0 ? '100% 100%' : '0% 100%') : o;
+    L.g.style.transform = 'translate(' + (p.x * h).toFixed(1) + 'px,' + (p.y * h).toFixed(1) + 'px) rotate(' + p.r.toFixed(2) + 'deg) scale(' +
+      (p.sx * Math.cos(p.a * Math.PI / 180)).toFixed(4) + ',' + p.sy.toFixed(4) + ')';
+  }
+
+  var letters = [], live = [], ticking = false;
+  Array.prototype.forEach.call(mark.querySelectorAll('svg.wordmark'), function (svg, line) {
+    var row = [];
+    Array.prototype.forEach.call(svg.querySelectorAll('.ltr'), function (g) {
+      var box = { x: 0, y: 0, width: 560, height: 617 };
+      try { box = g.getBBox(); } catch (e) {}
+      var L = { g: g, svg: svg, line: line, x0: box.x, x1: box.x + box.width, w: box.width, bh: box.height, h: 900 * 0.686,
+        next: letters.length % GESTURES.length, run: null };
+      letters.push(L); row.push(L);
+    });
+    /* A poke anywhere on a line reaches the letter it lands on, or the nearest one. */
+    svg.addEventListener('click', function (ev) {
+      var m = svg.getScreenCTM(), pt;
+      if (!m || !row.length) return;
+      pt = svg.createSVGPoint(); pt.x = ev.clientX; pt.y = ev.clientY;
+      var x = pt.matrixTransform(m.inverse()).x, best = null, gap = Infinity;
+      row.forEach(function (L) { var d = Math.max(L.x0 - x, 0, x - L.x1); if (d < gap) { gap = d; best = L; } });
+      poke(best);
+    });
+  });
+
+  function poke(L) {
+    if (L.run) return;                                   /* a letter finishes one gesture, or the drop, before the next */
+    L.run = { gesture: GESTURES[L.next], start: null };
+    L.next = (L.next + 1) % GESTURES.length;
+    go(L);
+  }
+
+  function go(L) {
+    live.push(L);
+    if (!ticking) { ticking = true; requestAnimationFrame(frame); }
+  }
+
+  function frame(now) {
+    live = live.filter(function (L) {
+      var run = L.run, gs = run.gesture;
+      if (run.start === null) run.start = now;
+      var t = Math.min(1, (now - run.start) / gs.ms);
+      if (t >= 1) { L.g.style.transform = ''; L.g.style.transformOrigin = ''; L.run = null; return false; }
+      place(L, gs.o, pose(gs.k, t));
+      return true;
+    });
+    if (live.length) requestAnimationFrame(frame); else ticking = false;
+  }
+
+  /* How a letter comes to rest after the drop, in letter heights. Most lean a little. A wild one lies on its side
+     or stands on its head. Turned about its middle, it is lifted or lowered so its lowest edge sits on its line. */
+  function landing(L, wild) {
+    var r;
+    if (wild) r = L.w > L.bh * .62 && Math.random() < .7 ? (Math.random() < .5 ? -90 : 90) + rnd(-4, 4) : 180 + rnd(-5, 5);
+    else r = (rnd(-1, 1) + rnd(-1, 1)) * 6;
+    var a = r * Math.PI / 180, low = L.w / 2 * Math.abs(Math.sin(a)) + L.bh / 2 * Math.abs(Math.cos(a));
+    return { x: rnd(-.04, .04), y: (L.bh / 2 - low) * (wild ? 1 : .7) / L.h, r: r };
+  }
+
+  /* The drop: one run per letter, from up in the air to its place, with the wait for its turn written in. */
+  function drop() {
+    var FALL = 640, BOUNCE = [150, 130, 90, 90], landBy = 0, wild = {}, n = 2 + Math.floor(Math.random() * 3);
+    while (n-- > 0) wild[Math.floor(Math.random() * letters.length)] = true;
+    var plans = letters.map(function (L, i) {
+      var r = L.svg.getBoundingClientRect(), s = r.width / 4000 || 1, h = L.h;
+      var end = landing(L, !!wild[i]), rock = rnd(6, 12) * (Math.random() < .5 ? -1 : 1);
+      /* start out of sight above the window, however far down the page the name sits */
+      var above = Math.max(1.4 * h * s, r.top + 664 * s + .45 * h * s + rnd(40, 320));
+      var sky = { x: end.x + rnd(-.2, .2), y: -above / s / h, r: end.r + Math.round(rnd(-3, 3)) * 90 };
+      var wait = Math.max(30, (2 - L.line) * 260 + rnd(0, 380));          /* the bottom line lands first */
+      landBy = Math.max(landBy, wait + FALL + 460);
+      return { L: L, end: end, rock: rock, sky: sky, wait: wait };
+    });
+    plans.forEach(function (p, i) {
+      var L = p.L, e = p.end, u = 1 / L.h, k = [], at = 0;
+      function key(ms, f) { at += ms; f.t = at; k.push(f); }
+      function hit(dy, f, ease) { return { x: e.x, y: e.y + dy * u, r: e.r + p.rock * f, e: ease }; }
+      key(0, { x: p.sky.x, y: p.sky.y, r: p.sky.r });
+      key(p.wait, { x: p.sky.x, y: p.sky.y, r: p.sky.r });
+      key(FALL, hit(14, 1, 'in'));
+      key(BOUNCE[0], hit(-52, -.55, 'out'));
+      key(BOUNCE[1], hit(6, .3, 'in'));
+      key(BOUNCE[2], hit(-12, -.12, 'out'));
+      key(BOUNCE[3], { x: e.x, y: e.y, r: e.r, e: 'in' });
+      /* righting itself: in reading order once every letter is down, a hop that turns it upright and sets it in place */
+      var home = Math.round(e.r / 360) * 360, turn = Math.min(1, Math.abs(home - e.r) / 180);
+      var ms = 520 + 200 * turn, up = .12 + .3 * turn, sy = .93;
+      key(landBy + 200 + i * 38 + rnd(0, 30) - at, { x: e.x, y: e.y, r: e.r });
+      key(ms * .45, { x: e.x * .3, y: Math.min(e.y, 0) - up, r: e.r + (home - e.r) * .75, e: 'out' });
+      key(ms * .35, { r: home, e: 'in' });
+      key(ms * .1, { r: home, sx: 1.04, sy: sy, y: (1 - sy) / 2 * L.bh * u, e: 'out' });
+      key(ms * .1, { r: home, e: 'io' });
+      k.forEach(function (f) { f.t /= at; });
+      L.run = { gesture: { ms: at, o: MID, k: k }, start: null };
+      place(L, MID, pose(k, 0));
+      go(L);
+    });
+  }
+
+  drop();
+  root.classList.remove('drop-wait');
+})();
+</script>
 <script>
 /* Hard gate: three fields, no partial pass. Rejection names the empty fields and stops.
    Draft the email prepares a message addressed to hello@seveneightythree.com. */
@@ -1106,6 +1343,36 @@ html.menu-open{overflow:hidden}
 
 
 
-
+<script>
+(function () {
+  if (!document.documentElement.classList.contains('embedded-biography')) return;
+  var origin = location.origin;
+  function measure() {
+    var height = document.body.getBoundingClientRect().height;
+    parent.postMessage({type:'biography-height',height:height},origin);
+  }
+  window.addEventListener('message',function (event) {
+    if (event.source !== parent || event.origin !== origin || !event.data || event.data.type !== 'biography-viewport') return;
+    var height = event.data.height;
+    if (!Number.isFinite(height) || height <= 0) return;
+    document.documentElement.style.setProperty('--embedded-viewport',height + 'px');
+    requestAnimationFrame(measure);
+  });
+  document.addEventListener('click',function (event) {
+    var link = event.target.closest('a[href^="#"]');
+    if (!link || event.button !== 0 || event.ctrlKey || event.metaKey || event.shiftKey || event.altKey) return;
+    var id;
+    try { id = decodeURIComponent(link.hash.slice(1)); } catch (_) { return; }
+    if (!document.getElementById(id)) return;
+    event.preventDefault();
+    parent.postMessage({type:'biography-anchor',id:id},origin);
+  });
+  if (window.ResizeObserver) new ResizeObserver(measure).observe(document.body);
+  window.addEventListener('load',measure);
+  if (document.fonts) document.fonts.ready.then(measure);
+  parent.postMessage({type:'biography-ready'},origin);
+  measure();
+})();
+</script>
 </body>
 </html>

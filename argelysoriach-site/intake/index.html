@@ -143,6 +143,11 @@ html.menu-open{overflow:hidden}
 .top .wrap{padding-top:5px;padding-bottom:5px}
 .top a.brand-avatar{display:inline-flex;align-items:center;justify-content:center;width:44px;height:44px;padding:0;border:0;flex-shrink:0}
 .top a.brand-avatar img{display:block;width:44px;height:44px;object-fit:contain}
+
+main{--ground:#FFFFFF;--ink:#000000;background:var(--ground);color:var(--ink);color-scheme:light}
+main .avail .audience dd{color:var(--ink)}
+main .gate :is(input,textarea)::placeholder{color:var(--ink)}
+main .gate :is(input,textarea):focus::placeholder{color:transparent}
 </style>
 <meta property="og:image" content="https://argelysoriach.com/social-card-monolith-only-v5.png">
 <meta property="og:image:secure_url" content="https://argelysoriach.com/social-card-monolith-only-v5.png">

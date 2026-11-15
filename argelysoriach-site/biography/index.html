@@ -871,6 +871,11 @@ html.menu-open{overflow:hidden}
 
 /* Pure-white paint for the existing raster monolith and its load-bearing rule. */
 .mark .wordmark,.role{filter:brightness(0) invert(1)}
+
+.band.intake{--ground:#FFFFFF;--ink:#000000;background:var(--ground);color:var(--ink);color-scheme:light}
+.band.intake .avail .audience dd{color:var(--ink)}
+.band.intake .gate :is(input,textarea)::placeholder{color:var(--ink)}
+.band.intake .gate :is(input,textarea):focus::placeholder{color:transparent}
 </style>
 <script>
 /* Ethos has its own page; an old link to its anchor here goes there. Intake sits at the foot of this page, so a host

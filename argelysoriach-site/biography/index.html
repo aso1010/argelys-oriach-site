@@ -906,6 +906,27 @@ html.menu-open{overflow:hidden}
 <script src="/assets/navigation.js?v=2" defer></script>
 <link rel="stylesheet" href="/assets/motion.css?v=3">
 <script src="/assets/motion.js?v=2" defer></script>
+<script>
+(function () {
+  if (window.parent === window || !new URLSearchParams(location.search).has('embedded')) return;
+  document.documentElement.classList.add('embedded-biography');
+  document.documentElement.style.setProperty('--embedded-viewport',window.parent.innerHeight + 'px');
+  var base = document.createElement('base');
+  base.target = '_top';
+  document.head.appendChild(base);
+})();
+</script>
+<style>
+html.embedded-biography,html.embedded-biography body{overflow:hidden}
+.embedded-biography .ao-icon,.embedded-biography .ao-menu,.embedded-biography .skip{display:none!important}
+.embedded-biography .fold{height:var(--embedded-viewport);min-height:0}
+.embedded-biography .cap{padding-top:21px;padding-bottom:21px}
+@media(max-width:600px){
+ .embedded-biography .fold{height:auto;min-height:var(--embedded-viewport)}
+ .embedded-biography .venture-feature{margin-top:calc(var(--embedded-viewport) / 2)}
+}
+@media(prefers-reduced-motion:reduce){.embedded-biography .ltr{transform:none!important}html.embedded-biography.drop-wait .mark{visibility:visible}}
+</style>
 </head>
 <body id="top">
 <!-- Shared navigation -->
@@ -1320,5 +1341,36 @@ html.menu-open{overflow:hidden}
 
 <script type="module" src="https://static.cloudflareinsights.com/beacon.min.js/vce701823e78c4301a35b7e07294d87301792088814092" integrity="sha512-UKNk8GbxkABxKcXYuLkO16EleLGUkcvJWtpSNmExE0Too3ZaFAxTscNWEc1OdAv5/BikHawapSCaiD2XCmp+Bw==" data-cf-beacon='{"version":"2024.11.0","token":"5dc1f8cb30c941d4bae97b5549cad8b7","r":1,"spa":2}' crossorigin="anonymous"></script>
 <script>window.__CF$cv$params={r:'a5166f51ebc2be78',t:'MTc5MzE1Mzc0OA==',u:'01a147d7004e72a5ad8ddbd1cd5c62c3',ut:'3kJSGQZypwtw5gsoitRZy8ZNeOTRn77aXxkGculHyNk-1793153748-1.2.1.1-G6ujIP8xPSox7sP.pnekMmhcZksRmMWH0HyaChuCGwHzmzMG3aB7HHYphsoGI1LytWK97oUBRxz6tOs9ovbKS6MbVfqUrPFBSzbt0LYmHIw',i:60};(function(){if(!document.body)return;var s=document.createElement('script');s.src='/cdn-cgi/challenge-platform/scripts/precursor/main.js';document.head.appendChild(s);})();</script><script>window.__CF$cv$params={r:'a516838639d1c269',t:'MTc5MzE1NDU3Ng==',u:'01a147d7004e72a5ad8ddbd1cd5c62c3',ut:'jQAf53v5sHJkGn5oz3bq96n56dTZYaqOpiADE5SyBVE-1793154576-1.2.1.1-hegzNwCH59kzByf2HHlwYVIbxGp4SZxxf9MYkYwX4ka0tL1A3AeAWEnCDgg4qyzQNemvHjljzHpPY8kq1ir0lq1v.z4przw.EVQxhxnTStQ',i:60};(function(){if(!document.body)return;var s=document.createElement('script');s.src='/cdn-cgi/challenge-platform/scripts/precursor/main.js';document.head.appendChild(s);})();</script><script type="module" src="https://static.cloudflareinsights.com/beacon.min.js/vce701823e78c4301a35b7e07294d87301792088814092" integrity="sha512-UKNk8GbxkABxKcXYuLkO16EleLGUkcvJWtpSNmExE0Too3ZaFAxTscNWEc1OdAv5/BikHawapSCaiD2XCmp+Bw==" data-cf-beacon='{"version":"2024.11.0","token":"5dc1f8cb30c941d4bae97b5549cad8b7","r":1,"spa":2}' crossorigin="anonymous"></script>
+<script>
+(function () {
+  if (!document.documentElement.classList.contains('embedded-biography')) return;
+  var origin = location.origin;
+  function measure() {
+    var height = document.body.getBoundingClientRect().height;
+    parent.postMessage({type:'biography-height',height:height},origin);
+  }
+  window.addEventListener('message',function (event) {
+    if (event.source !== parent || event.origin !== origin || !event.data || event.data.type !== 'biography-viewport') return;
+    var height = event.data.height;
+    if (!Number.isFinite(height) || height <= 0) return;
+    document.documentElement.style.setProperty('--embedded-viewport',height + 'px');
+    requestAnimationFrame(measure);
+  });
+  document.addEventListener('click',function (event) {
+    var link = event.target.closest('a[href^="#"]');
+    if (!link || event.button !== 0 || event.ctrlKey || event.metaKey || event.shiftKey || event.altKey) return;
+    var id;
+    try { id = decodeURIComponent(link.hash.slice(1)); } catch (_) { return; }
+    if (!document.getElementById(id)) return;
+    event.preventDefault();
+    parent.postMessage({type:'biography-anchor',id:id},origin);
+  });
+  if (window.ResizeObserver) new ResizeObserver(measure).observe(document.body);
+  window.addEventListener('load',measure);
+  if (document.fonts) document.fonts.ready.then(measure);
+  parent.postMessage({type:'biography-ready'},origin);
+  measure();
+})();
+</script>
 </body>
 </html>

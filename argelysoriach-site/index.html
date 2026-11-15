@@ -293,6 +293,11 @@ h3{font-size:var(--s21);line-height:var(--s34);font-weight:700;margin:0 0 var(--
  .short{margin-bottom:var(--s21)}
  .site-footer{padding:var(--s21)}
 }
+.hub-surface{min-height:100vh;min-height:100dvh;display:flex;flex-direction:column;background:var(--paper)}
+.hub-surface>main{flex:1;display:flex;flex-direction:column}
+.hub-surface .equilibrium{flex:1;display:flex;flex-direction:column;margin-bottom:0}
+.hub-surface .nodes{flex:1}
+.hub-continue{display:block;align-self:center;margin:var(--s13) 0;padding:var(--s5) var(--s13);font-size:var(--s21);line-height:var(--s34);text-decoration:none}
 .masthead{padding-right:var(--s144)}
 .hub-menu{position:fixed;right:var(--s21);top:var(--s13);z-index:10;background:var(--paper);color:var(--ink);border:var(--rule);font-size:var(--s13);line-height:var(--s21)}
 .hub-menu summary{cursor:pointer;padding:var(--s8) var(--s13);list-style:none;font-weight:600;text-transform:uppercase}
@@ -307,6 +312,7 @@ h3{font-size:var(--s21);line-height:var(--s34);font-weight:700;margin:0 0 var(--
 </head>
 <body>
 <a class="skip" href="#laboratories">Skip to laboratories</a>
+<div class="hub-surface">
 <header class="masthead">
 <p>Two laboratories / One practice</p>
 <details class="hub-menu" id="site-menu">
@@ -352,6 +358,8 @@ h3{font-size:var(--s21);line-height:var(--s34);font-weight:700;margin:0 0 var(--
 </div>
 </section>
 </main>
+<a class="hub-continue" href="#descent" aria-label="Continue to the biography"><span aria-hidden="true">↓</span></a>
+</div>
 <section class="descent" id="descent" aria-label="Biography">
 <div class="descent-void" aria-hidden="true"></div>
 <iframe class="descent-frame" id="biography-frame" title="Argelys Samuel Oriach: biography, writing, and intake" data-src="/biography/?embedded=1"></iframe>

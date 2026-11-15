@@ -8,7 +8,13 @@ Systems Architect & Performance Artist.
 
 ## Dual-laboratory hub
 
-The root homepage opens with the falling name monolith, continues through the two-laboratory hub, then presents the biography, Wild-Lake feature, and intake. The complete visual biography, writing features, and intake form are at [Biography](https://argelysoriach.com/biography/).
+The homepage opens directly into the Two of Pentacles hub, with Argelys Samuel Oriach as the central axis: Principal / Systems Architect / Artistic Director. Two laboratories, one closed-loop practice.
+
+- [Seven Eighty Three (Lab 783)](https://seveneightythree.com/): Systems Architecture & Steel Beams for Organizations. Zero-dependency infrastructure, bare-metal edge deployments, and turnkey organizational builds.
+- [Wild Lake Studio (Wild-Lake)](https://wildlakestudio.com/): Independent talent architecture, artistic direction, and sovereign A&R studio. Controlled demolition and load-bearing studio containers for generational artists on fixed retainers. 0% IP ownership / 0% revenue share. Created within Seven Eighty Three.
+- [Biography, writing, and intake](https://argelysoriach.com/biography/): a native static page reached directly, without an embedded browsing context.
+
+Canonical Person ID: `https://argelysoriach.com/#person`. Organization IDs: `https://seveneightythree.com/#organization` and `https://wildlakestudio.com/#organization`.
 
 ## Biography
 
@@ -28,7 +34,7 @@ Oriach’s focus remains on the underlying physical and digital mechanics across
 
 ## Current practice
 - [Systems architecture](https://seveneightythree.com/): Seven Eighty Three, also known as Lab 783. Independent systems design practice and venture foundry. Wild Lake Studio was created within it as its research laboratory.
-- [Talent infrastructure](https://wildlakestudio.com/): Wild-Lake. Formal name: Wild Lake Studio. Research laboratory of Seven Eighty Three (Lab 783), guiding developing and independent artists. Structural stewardship, physical carrying capacity, and live production architecture.
+- [Talent infrastructure](https://wildlakestudio.com/): Wild-Lake. Formal name: Wild Lake Studio. Independent talent architecture, artistic direction, and sovereign A&R studio on fixed retainers with 0% IP ownership and 0% revenue share. Created within Seven Eighty Three (Lab 783).
 - [Art and writing](https://argelysoriach.com/biography/#writing)
 - [Portfolio](https://argelysoriach.com/portfolio/)
 - [Universe API](https://argelysoriach.com/universe-api/)

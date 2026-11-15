@@ -63,7 +63,7 @@
       "@id": "https://seveneightythree.com/#organization"
     },
     {
-      "@id": "https://wild-lake.org/#organization"
+      "@id": "https://wildlakestudio.com/#organization"
     }
   ],
   "@reverse": {
@@ -72,7 +72,7 @@
         "@id": "https://seveneightythree.com/#organization"
       },
       {
-        "@id": "https://wild-lake.org/#organization"
+        "@id": "https://wildlakestudio.com/#organization"
       },
       {
         "@id": "https://communalfoundation.org/#organization"

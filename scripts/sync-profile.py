@@ -24,9 +24,9 @@ organizations=read('schema/organizations.json')
 for org in organizations['@graph']:
  if org.get('@id')=='https://seveneightythree.com/#organization':
   org['description']='Independent systems design practice and venture foundry engineering automated infrastructure for executive leadership. Wild Lake Studio was created within Seven Eighty Three as its research laboratory.'
- if org.get('@id')=='https://wild-lake.org/#organization':
+ if org.get('@id')=='https://wildlakestudio.com/#organization':
   org['name']='Wild Lake Studio';org['alternateName']='Wild-Lake'
-  org['description']='Research laboratory of Seven Eighty Three (Lab 783), guiding developing and independent artists.'
+  org['description']='Independent talent architecture, artistic direction, and sovereign A&R studio operating on fixed retainers with 0% IP ownership and 0% revenue share. Wild Lake Studio, known as Wild-Lake, was created within Seven Eighty Three (Lab 783).'
   org['parentOrganization']={'@id':'https://seveneightythree.com/#organization'}
 write('schema/organizations.json',organizations)
 website=read('schema/website.json');website['name']='Argelys Samuel Oriach | Artist, Writer, Systems Architect';website['description']=paragraphs[0];write('schema/website.json',website)

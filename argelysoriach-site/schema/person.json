@@ -13,19 +13,19 @@
   "hasOccupation": [
     {
       "@type": "Occupation",
-      "name": "Systems Architect"
-    },
-    {
-      "@type": "Occupation",
       "name": "Performance Artist"
     },
     {
       "@type": "Occupation",
-      "name": "Multidisciplinary Artist"
+      "name": "Artistic Director"
     },
     {
       "@type": "Occupation",
-      "name": "Artistic Director"
+      "name": "Systems Architect"
+    },
+    {
+      "@type": "Occupation",
+      "name": "Multidisciplinary Artist"
     },
     {
       "@type": "Occupation",
@@ -52,7 +52,7 @@
       "name": "Developer"
     }
   ],
-  "description": "Brooklyn-based artist, writer, and systems architect. Principal of Seven Eighty Three, founder of Wild Lake Studio.",
+  "description": "Brooklyn-based performance artist, artistic director, and systems architect. Principal of Seven Eighty Three, founder of Wild Lake Studio.",
   "birthDate": "1993-08-29T15:45:00-04:00",
   "birthPlace": {
     "@type": "Place",

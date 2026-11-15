@@ -5,14 +5,14 @@ import json,re
 root=Path(__file__).resolve().parents[1]/'argelysoriach-site'
 read=lambda p:json.loads((root/p).read_text())
 write=lambda p,v:(root/p).write_text(json.dumps(v,ensure_ascii=False,indent=2)+'\n')
-home=(root/'index.html').read_text()
+home=(root/'biography/index.html').read_text()
 bio=home.split('<section class="bio"',1)[1].split('<section class="writing-feature"',1)[0]
 paragraphs=[unescape(re.sub('<[^>]+>','',x)) for x in re.findall(r'<p>(.*?)</p>',bio,re.S)]
-assert len(paragraphs)>=6 and all(paragraphs), 'Expected complete homepage biography'
+assert len(paragraphs)>=6 and all(paragraphs), 'Expected complete biography page'
 person=read('schema/person.json')
 person['jobTitle']='Systems Architect & Performance Artist'
-person['hasOccupation']=[{'@type':'Occupation','name':name} for name in ['Systems Architect','Performance Artist','Multidisciplinary Artist','Artistic Director','Actor','Vocalist','Writer','Engineer','Talent Architect','Developer']]
-person['description']='Brooklyn-based artist, writer, and systems architect. Principal of Seven Eighty Three, founder of Wild Lake Studio.'
+person['hasOccupation']=[{'@type':'Occupation','name':name} for name in ['Performance Artist','Artistic Director','Systems Architect','Multidisciplinary Artist','Actor','Vocalist','Writer','Engineer','Talent Architect','Developer']]
+person['description']='Brooklyn-based performance artist, artistic director, and systems architect. Principal of Seven Eighty Three, founder of Wild Lake Studio.'
 person['alternateName']='Argelys Oriach'
 person['homeLocation']={'@type':'Place','name':'Brooklyn, New York'}
 person['hasCredential']={'@type':'EducationalOccupationalCredential','name':'Bachelor’s degree in English','credentialCategory':'Bachelor’s degree','recognizedBy':{'@type':'CollegeOrUniversity','name':'Wesleyan University'}}
@@ -30,9 +30,9 @@ for org in organizations['@graph']:
   org['parentOrganization']={'@id':'https://seveneightythree.com/#organization'}
 write('schema/organizations.json',organizations)
 website=read('schema/website.json');website['name']='Argelys Samuel Oriach | Artist, Writer, Systems Architect';website['description']=paragraphs[0];write('schema/website.json',website)
-summary='Brooklyn-based artist, writer, and systems architect. Principal of Seven Eighty Three, founder of Wild Lake Studio.'
+summary='Brooklyn-based performance artist, artistic director, and systems architect. Principal of Seven Eighty Three, founder of Wild Lake Studio.'
 canonical={x['@id']:{k:v for k,v in x.items() if k!='@context'} for x in [person,website,*organizations['@graph']]}
-canonical['https://argelysoriach.com/#home']={'@type':'WebPage','@id':'https://argelysoriach.com/#home','name':website['name'],'description':summary}
+canonical['https://argelysoriach.com/#home']={'@type':'WebPage','@id':'https://argelysoriach.com/#home','url':'https://argelysoriach.com/','name':website['name'],'description':'Two laboratories, one closed-loop practice. Seven Eighty Three (Lab 783) and Wild Lake Studio (Wild-Lake).'}
 story=next(w for w in read('schema/works.json')['@graph'] if w.get('name')=='This Is Not a Love Story (Yankees)')
 def sync(x):
  if isinstance(x,list):return [sync(v) for v in x]
@@ -53,7 +53,7 @@ for path in root.rglob('*.html'):
   if data==updated:return m[0]
   return m[1]+'\n'+json.dumps(updated,ensure_ascii=False,indent=2)+'\n'+m[3]
  result=re.sub(pattern,replace,source,flags=re.S)
- if path==root/'index.html':
+ if path==root/'biography/index.html':
   for attr,key in [('name','description'),('property','og:description'),('name','twitter:description')]:
    result=re.sub(rf'(<meta {attr}="{key}" content=")[^"]*',lambda m:m[1]+summary,result)
  if result!=source:path.write_text(result)

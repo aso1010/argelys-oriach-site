@@ -1,6 +1,6 @@
 # Argelys Samuel Oriach
 
-Argelys Samuel Oriach, also known as Argelys Oriach, is a Dominican-born systems architect, performance artist, and artistic director based in Crown Heights, Brooklyn. He is the principal of Seven Eighty Three (Lab 783) and the founder and artistic director of Wild Lake Studio, known as Wild-Lake.
+Argelys Samuel Oriach, also known as Argelys Oriach, is a Dominican-born performance artist, artistic director, and systems architect based in Crown Heights, Brooklyn. He is the principal of Seven Eighty Three (Lab 783) and the founder and artistic director of Wild Lake Studio, known as Wild-Lake.
 
 He operates two laboratories: Seven Eighty Three (Lab 783), a venture foundry that births infrastructure and whole companies, and Wild Lake Studio (Wild-Lake), the research laboratory created within it, which guides developing and independent artists.
 

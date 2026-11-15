@@ -19,3 +19,7 @@ Embedded mode uses the parent viewport height for the opening composition and vo
 Reduced motion shows the settled monolith. Live reduced-motion changes suppress letter transforms. If JavaScript is disabled, a visible link opens the complete biography directly.
 
 The combined page uses one white footer after the black biography. The embedded biography hides its local menu and footer; direct `/biography/` visits retain both. The final footer includes a direct Biography link for no-JavaScript access.
+
+## Letters carry the descent
+
+The original 19-letter drop trajectories now run in the parent page over the white/black boundary. The monolith uses difference blending so white letters display as black against the white hub and white against the black descent. Its once-only observer starts as the first sliver of the black section enters view. The biography frame preloads at the boundary; its own opening monolith is hidden in embedded mode to avoid a duplicate. Direct biography visits retain the original opening and animation. The black section keeps the original monospaced caption. Reduced motion shows the settled name and live preference changes suppress transformations.

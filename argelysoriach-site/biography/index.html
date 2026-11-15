@@ -920,6 +920,8 @@ html.menu-open{overflow:hidden}
 html.embedded-biography,html.embedded-biography body{overflow:hidden}
 .embedded-biography .ao-icon,.embedded-biography .ao-menu,.embedded-biography .skip,.embedded-biography .ao-footer{display:none!important}
 .embedded-biography .fold{height:var(--embedded-viewport);min-height:0}
+.embedded-biography .fold{display:none!important}
+.embedded-biography .venture-feature{margin-top:0!important}
 .embedded-biography .cap{padding-top:21px;padding-bottom:21px}
 @media(max-width:600px){
  .embedded-biography .fold{height:auto;min-height:var(--embedded-viewport)}
@@ -1137,6 +1139,7 @@ html.embedded-biography,html.embedded-biography body{overflow:hidden}
    page itself, so the edges stay hard in motion. No motion if the system asks for less. */
 (function () {
   var root = document.documentElement, mark = document.querySelector('.mark');
+  if (root.classList.contains('embedded-biography')) { root.classList.remove('drop-wait'); return; }
   if (!mark || !window.requestAnimationFrame || (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches)) {
     root.classList.remove('drop-wait');
     return;

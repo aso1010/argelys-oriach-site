@@ -23,3 +23,7 @@ The combined page uses one white footer after the black biography. The embedded 
 ## Letters carry the descent
 
 The original 19-letter drop trajectories now run in the parent page over the white/black boundary. The monolith uses difference blending so white letters display as black against the white hub and white against the black descent. Its once-only observer starts as the first sliver of the black section enters view. The biography frame preloads at the boundary; its own opening monolith is hidden in embedded mode to avoid a duplicate. Direct biography visits retain the original opening and animation. The black section keeps the original monospaced caption. Reduced motion shows the settled name and live preference changes suppress transformations.
+
+## Current sequence
+
+The opening screen is the falling white name monolith on black. Desktop rows fill the viewport; phone rows retain natural proportions at nearly full width. The white Two of Pentacles hub follows, without repeating the name as a visual heading. The black biography follows the white hub, then the Wild-Lake featured venture, intake, and one white footer. The original scroll-boundary fall was replaced by the same once-only drop starting immediately on initial load. The shared menu remains available throughout. The embedded biography's own monolith, menu, and footer remain hidden; the direct biography route remains usable.

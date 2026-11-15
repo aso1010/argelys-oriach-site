@@ -12,8 +12,10 @@ The two organization IDs and Person ID are retained. Wild Lake Studio retains Se
 
 ## Scroll descent
 
-The white hub uses a regular Archivo name heading. After the hub footer, a full visible viewport of black space precedes the preserved biography. IntersectionObserver starts loading `/biography/?embedded=1` only as the frame enters view. The existing monolith animation then runs on document load, once. Direct `/biography/` visits retain their original behavior.
+The white hub uses a regular Archivo name heading. After the hub, a full visible viewport of black space precedes the preserved biography. IntersectionObserver starts loading `/biography/?embedded=1` only as the frame enters view. The existing monolith animation then runs on document load, once. Direct `/biography/` visits retain their original behavior.
 
 Embedded mode uses the parent viewport height for the opening composition and void spacing. This prevents feedback between iframe document height and viewport units. ResizeObserver reports body height through messages validated against origin and source; no inner scrollbar or scroll hijacking is added. Links leave the frame normally, while local anchor messages update the parent hash and scroll to the corresponding position.
 
 Reduced motion shows the settled monolith. Live reduced-motion changes suppress letter transforms. If JavaScript is disabled, a visible link opens the complete biography directly.
+
+The combined page uses one white footer after the black biography. The embedded biography hides its local menu and footer; direct `/biography/` visits retain both. The final footer includes a direct Biography link for no-JavaScript access.

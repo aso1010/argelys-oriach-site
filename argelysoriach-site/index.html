@@ -272,7 +272,7 @@ h3{font-size:var(--s21);line-height:var(--s34);font-weight:700;margin:0 0 var(--
 .terms{margin:0 0 var(--s34);font-size:var(--s13);line-height:var(--s21);font-weight:600;text-transform:uppercase}
 .node .destination{display:block;margin-top:auto;border-top:var(--rule);padding-top:var(--s21);font-size:var(--s21);line-height:var(--s34);font-weight:700;overflow-wrap:anywhere}
 .node .destination a{display:inline-block}
-.site-footer{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:var(--s21);padding:var(--s21) var(--s34);border-top:var(--rule);font-size:var(--s13);line-height:var(--s21)}
+.site-footer{background:#FFFFFF;color:#000000;font-weight:700;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:var(--s21);padding:var(--s21) var(--s34);border-top:var(--rule);font-size:var(--s13);line-height:var(--s21)}
 .site-footer p{margin:0}
 .site-footer nav{display:flex;flex-wrap:wrap;gap:var(--s21)}
 @media(max-width:55rem){h1{font-size:var(--s34);line-height:var(--s55)}h2{font-size:var(--s34);line-height:var(--s55)}}
@@ -303,7 +303,6 @@ h3{font-size:var(--s21);line-height:var(--s34);font-weight:700;margin:0 0 var(--
 .descent{background:#000000;color:#FFFFFF}
 .descent-void{height:100vh;height:100dvh}
 .descent-frame{display:block;width:100%;height:100vh;height:100dvh;border:0;background:#000000;color-scheme:dark}
-.descent-fallback{margin:0;padding:var(--s21) var(--s34);font-size:var(--s13);line-height:var(--s21)}
 </style>
 </head>
 <body>
@@ -353,16 +352,17 @@ h3{font-size:var(--s21);line-height:var(--s34);font-weight:700;margin:0 0 var(--
 </div>
 </section>
 </main>
-<footer class="site-footer">
-<p>Argelys Samuel Oriach / Brooklyn, New York</p>
-<nav aria-label="Reference"><a href="/biography/">Biography</a><a href="/schema/">Schema</a><a href="/privacy/">Privacy</a><a href="/terms/">Terms</a></nav>
-</footer>
 <section class="descent" id="descent" aria-label="Biography">
 <div class="descent-void" aria-hidden="true"></div>
 <iframe class="descent-frame" id="biography-frame" title="Argelys Samuel Oriach: biography, writing, and intake" data-src="/biography/?embedded=1"></iframe>
-<p class="descent-fallback"><a href="/biography/">Open the biography directly</a></p>
 <noscript><style>.descent-frame{display:none}</style></noscript>
 </section>
+<footer class="site-footer">
+<nav aria-label="Footer"><a href="mailto:hello@seveneightythree.com">Contact</a><a href="/schema/">Schema</a><a href="/privacy/">Privacy</a><a href="/terms/">Terms</a><a href="/biography/">Biography</a></nav>
+<p>Brooklyn, New York</p>
+<p>&copy; 2026 Argelys Samuel Oriach / <a href="https://seveneightythree.com/">Seven Eighty Three</a></p>
+</footer>
+
 <script>
 (function () {
   var menu = document.getElementById('site-menu');

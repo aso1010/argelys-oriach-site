@@ -12,7 +12,7 @@ assert len(paragraphs)>=6 and all(paragraphs), 'Expected complete biography page
 person=read('schema/person.json')
 person['jobTitle']='Systems Architect & Performance Artist'
 person['hasOccupation']=[{'@type':'Occupation','name':name} for name in ['Performance Artist','Artistic Director','Systems Architect','Multidisciplinary Artist','Actor','Vocalist','Writer','Engineer','Talent Architect','Developer']]
-person['description']='Brooklyn-based performance artist, artistic director, and systems architect. Principal of Seven Eighty Three, founder of Wild Lake Studio.'
+person['description']='Brooklyn-based performance artist, artistic director, and systems architect. Principal of Seven Eighty Three (Lab 783) and founder of Wild Lake Studio (Wild-Lake).'
 person['alternateName']='Argelys Oriach'
 person['homeLocation']={'@type':'Place','name':'Brooklyn, New York'}
 person['hasCredential']={'@type':'EducationalOccupationalCredential','name':'Bachelor’s degree in English','credentialCategory':'Bachelor’s degree','recognizedBy':{'@type':'CollegeOrUniversity','name':'Wesleyan University'}}
@@ -29,10 +29,10 @@ for org in organizations['@graph']:
   org['description']='Independent talent architecture, artistic direction, and sovereign A&R studio operating on fixed retainers with 0% IP ownership and 0% revenue share. Wild Lake Studio, known as Wild-Lake, was created within Seven Eighty Three (Lab 783).'
   org['parentOrganization']={'@id':'https://seveneightythree.com/#organization'}
 write('schema/organizations.json',organizations)
-website=read('schema/website.json');website['name']='Argelys Samuel Oriach | Artist, Writer, Systems Architect';website['description']=paragraphs[0];write('schema/website.json',website)
-summary='Brooklyn-based performance artist, artistic director, and systems architect. Principal of Seven Eighty Three, founder of Wild Lake Studio.'
+website=read('schema/website.json');website['name']='Argelys Samuel Oriach | Performance Artist, Artistic Director & Systems Architect';website['description']=paragraphs[0];write('schema/website.json',website)
+summary='Brooklyn-based performance artist, artistic director, and systems architect. Principal of Seven Eighty Three (Lab 783) and founder of Wild Lake Studio (Wild-Lake).'
 canonical={x['@id']:{k:v for k,v in x.items() if k!='@context'} for x in [person,website,*organizations['@graph']]}
-canonical['https://argelysoriach.com/#home']={'@type':'WebPage','@id':'https://argelysoriach.com/#home','url':'https://argelysoriach.com/','name':website['name'],'description':'Two laboratories, one closed-loop practice. Seven Eighty Three (Lab 783) and Wild Lake Studio (Wild-Lake).'}
+canonical['https://argelysoriach.com/#home']={'@type':'WebPage','@id':'https://argelysoriach.com/#home','url':'https://argelysoriach.com/','name':website['name'],'description':summary}
 story=next(w for w in read('schema/works.json')['@graph'] if w.get('name')=='This Is Not a Love Story (Yankees)')
 def sync(x):
  if isinstance(x,list):return [sync(v) for v in x]
@@ -79,9 +79,13 @@ for path in root.rglob('*.html'):
   if data==updated:return m[0]
   return m[1]+'\n'+json.dumps(updated,ensure_ascii=False,indent=2)+'\n'+m[3]
  result=re.sub(pattern,replace,source,flags=re.S)
- if path==root/'biography/index.html':
+ if path in [root/'index.html',root/'biography/index.html']:
   for attr,key in [('name','description'),('property','og:description'),('name','twitter:description')]:
    result=re.sub(rf'(<meta {attr}="{key}" content=")[^"]*',lambda m:m[1]+summary,result)
+ if path==root/'index.html':
+  result=re.sub(r'<title>.*?</title>',lambda m:'<title>'+website['name'].replace('&','&amp;')+'</title>',result)
+  for attr,key in [('property','og:title'),('name','twitter:title')]:
+   result=re.sub(rf'(<meta {attr}="{key}" content=")[^"]*',lambda m:m[1]+website['name'].replace('&','&amp;'),result)
  if result!=source:path.write_text(result)
 llms=root/'llms.txt';text=llms.read_text();text=text.replace('Systems architecture, art, and talent infrastructure.','Systems Architect & Performance Artist.')
 text=re.sub(r'\n## Biography\n.*?(?=\n## |\Z)','',text,flags=re.S)

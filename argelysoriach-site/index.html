@@ -47,7 +47,29 @@
       },
       "isPartOf": {
         "@id": "https://argelysoriach.com/#website"
-      }
+      },
+      "mentions": [
+        {
+          "@id": "https://seveneightythree.com/#organization"
+        },
+        {
+          "@id": "https://wildlakestudio.com/#organization"
+        },
+        {
+          "@id": "https://argelysoriach.com/universe-api/#framework"
+        },
+        {
+          "@id": "https://communalfoundation.org/#organization"
+        },
+        {
+          "@id": "https://thisisnotalovestory.net/#work"
+        }
+      ],
+      "hasPart": [
+        {
+          "@id": "https://argelysoriach.com/biography/#deployments"
+        }
+      ]
     },
     {
       "@type": "Person",
@@ -232,6 +254,118 @@
       "parentOrganization": {
         "@id": "https://seveneightythree.com/#organization"
       }
+    },
+    {
+      "@type": "CreativeWork",
+      "@id": "https://argelysoriach.com/universe-api/#framework",
+      "name": "Universe API",
+      "url": "https://argelysoriach.com/universe-api/",
+      "description": "A foundational macro-systems design framework grounded in first-principles engineering and sovereign logic.",
+      "abstract": "The operating philosophy centers on re-architecting digital infrastructure from the mulch up: replacing synthetic friction with closed-loop systems, asset-based leverage, and forms of growth that emerge organically rather than through extractive mechanisms.",
+      "disambiguatingDescription": "Engineering makes the spirit legible. Spirit makes the engineering worth holding.",
+      "keywords": [
+        "Closed-loop systems",
+        "Sovereign logic",
+        "Asset-based leverage",
+        "First-principles engineering",
+        "Organic/unforced biological growth",
+        "Infrastructure designed to compound rather than extract"
+      ],
+      "author": {
+        "@id": "https://argelysoriach.com/#person"
+      },
+      "isPartOf": {
+        "@id": "https://argelysoriach.com/#website"
+      },
+      "inLanguage": "en"
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://communalfoundation.org/#organization",
+      "name": "Communal Foundation",
+      "url": "https://communalfoundation.org/",
+      "description": "Systems laboratory and turnkey food infrastructure framework merging hyper-local demographic constraints with chef-driven culinary artistry.",
+      "parentOrganization": {
+        "@id": "https://seveneightythree.com/#organization"
+      },
+      "founder": {
+        "@id": "https://argelysoriach.com/#person"
+      }
+    },
+    {
+      "@type": "ShortStory",
+      "@id": "https://thisisnotalovestory.net/#work",
+      "name": "This Is Not a Love Story (Yankees)",
+      "url": "https://thisisnotalovestory.net/",
+      "sameAs": "https://argelysoriach.com/this-is-not-a-love-story-yankees/",
+      "author": {
+        "@id": "https://argelysoriach.com/#person"
+      },
+      "publisher": {
+        "@id": "https://seveneightythree.com/#organization"
+      },
+      "datePublished": "2026-10",
+      "inLanguage": "en",
+      "description": "A short story by Argelys Samuel Oriach, also known as Argelys Oriach. The digital short is written as a screenplay in prose form. Published by Seven Eighty Three.",
+      "genre": [
+        "Short story",
+        "Screenplay",
+        "Prose"
+      ]
+    },
+    {
+      "@type": "ItemList",
+      "@id": "https://argelysoriach.com/biography/#deployments",
+      "name": "Deployments",
+      "itemListOrder": "https://schema.org/ItemListOrderAscending",
+      "numberOfItems": 5,
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "item": {
+            "@id": "https://seveneightythree.com/#organization",
+            "name": "Seven Eighty Three",
+            "url": "https://seveneightythree.com/"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "item": {
+            "@id": "https://wildlakestudio.com/#organization",
+            "name": "Wild Lake Studio",
+            "url": "https://wildlakestudio.com/"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "item": {
+            "@id": "https://argelysoriach.com/universe-api/#framework",
+            "name": "Universe API",
+            "url": "https://argelysoriach.com/universe-api/"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "item": {
+            "@id": "https://communalfoundation.org/#organization",
+            "name": "Communal Foundation",
+            "url": "https://communalfoundation.org/"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 5,
+          "item": {
+            "@id": "https://thisisnotalovestory.net/#work",
+            "name": "This Is Not a Love Story",
+            "url": "https://thisisnotalovestory.net/"
+          }
+        }
+      ]
     }
   ]
 }
@@ -322,6 +456,17 @@ h3{font-size:var(--s21);line-height:var(--s34);font-weight:700;margin:0 0 var(--
  .descent-mark .wordmark{height:auto;aspect-ratio:4000 / 672}
  }
 @media(prefers-reduced-motion:reduce){.descent-mark .ltr{transform:none!important}.descent-pending .descent-mark{visibility:visible}}
+
+.spotify-widget{position:fixed;right:21px;bottom:max(21px,env(safe-area-inset-bottom));z-index:20;max-width:calc(100vw - 26px);background:#000000;color:#FFFFFF;border:1px solid #FFFFFF;font-family:inherit;font-size:13px;line-height:21px}
+.spotify-widget summary{padding:13px 21px;cursor:pointer;list-style:none;text-transform:uppercase;letter-spacing:.06em}
+.spotify-widget summary::-webkit-details-marker{display:none}
+.spotify-widget summary::after{content:" +"}
+.spotify-widget[open] summary::after{content:" −"}
+.spotify-widget summary:focus-visible,.spotify-widget a:focus-visible{outline:2px solid #FFFFFF;outline-offset:-3px}
+.spotify-player{width:377px;max-width:calc(100vw - 28px);border-top:1px solid #FFFFFF}
+.spotify-player iframe{display:block;width:100%;height:352px;max-height:calc(100dvh - 144px);border:0}
+.spotify-player a{display:block;padding:8px 13px;color:#FFFFFF;font-size:11px}
+@media(max-width:600px){.spotify-widget{right:13px;bottom:max(13px,env(safe-area-inset-bottom))}}
 </style>
 <link rel="icon" type="image/svg+xml" href="/favicon-square.svg?v=1">
 <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-square.png?v=1">
@@ -605,6 +750,29 @@ h3{font-size:var(--s21);line-height:var(--s34);font-weight:700;margin:0 0 var(--
     },{rootMargin:'100% 0px',threshold:0});
     observer.observe(document.querySelector('.descent'));
   } else load();
+})();
+</script>
+
+<details class="spotify-widget" id="spotify-widget">
+<summary aria-label="Listen: toggle Spotify playlist">Listen</summary>
+<div class="spotify-player">
+<iframe data-src="https://open.spotify.com/embed/playlist/5ehGqkwtgJbNunzxpljMqA?utm_source=generator&amp;theme=0" title="Spotify playlist player" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+<a href="https://open.spotify.com/playlist/5ehGqkwtgJbNunzxpljMqA" target="_blank" rel="noopener noreferrer">Open in Spotify ↗</a>
+</div>
+</details>
+<script>
+(function () {
+  var widget = document.getElementById('spotify-widget');
+  var player = widget.querySelector('iframe');
+  widget.addEventListener('toggle', function () {
+    if (widget.open && !player.hasAttribute('src')) player.src = player.dataset.src;
+  });
+  document.addEventListener('keydown', function (event) {
+    if (event.key === 'Escape' && widget.open) {
+      widget.open = false;
+      widget.querySelector('summary').focus();
+    }
+  });
 })();
 </script>
 </body>

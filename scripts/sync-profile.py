@@ -45,11 +45,37 @@ def sync(x):
  if x.get('@id') in canonical and '@type' in x:
   return {**x,**canonical[x['@id']]}
  return {k:sync(v) for k,v in x.items()}
+deployments=read('schema/deployments.json')
+deployment_ids=[entry['item']['@id'] for entry in deployments['itemListElement']]
+biography_graph=json.loads(re.search(r'<script type="application/ld\+json">(.*?)</script>',home,re.S)[1])['@graph']
+deployment_definitions={node['@id']:node for node in biography_graph if node.get('@id') in deployment_ids}
+deployment_definitions.update({key:value for key,value in canonical.items() if key in deployment_ids})
+def sync_deployments(data,relative_path):
+ if relative_path not in ['index.html','biography/index.html'] or '@graph' not in data:return data
+ graph=data['@graph']
+ definitions={**deployment_definitions,**{node['@id']:node for node in graph if node.get('@id') in deployment_ids}}
+ indices=[i for i,node in enumerate(graph) if node.get('@id') in deployment_ids]
+ slot=min(indices) if indices else len(graph)
+ remaining=[node for node in graph if node.get('@id') not in deployment_ids and node.get('@id')!=deployments['@id']]
+ ordered=[definitions[key] for key in deployment_ids]
+ graph=remaining[:slot]+ordered+remaining[slot:]
+ refs=[{'@id':key} for key in deployment_ids]
+ page_id='https://argelysoriach.com/#home' if relative_path=='index.html' else 'https://argelysoriach.com/biography/#page'
+ page=next((node for node in graph if node.get('@id')==page_id),None)
+ if page is None:
+  page={'@type':'WebPage','@id':page_id,'url':'https://argelysoriach.com/biography/','name':'Argelys Samuel Oriach | Biography','isPartOf':{'@id':'https://argelysoriach.com/#website'}}
+  graph.append(page)
+ page['mentions']=refs
+ parts=page.get('hasPart',[])
+ if isinstance(parts,dict):parts=[parts]
+ page['hasPart']=[item for item in parts if item.get('@id')!=deployments['@id']]+[{'@id':deployments['@id']}]
+ graph.append({k:v for k,v in deployments.items() if k!='@context'})
+ return {**data,'@graph':graph}
 pattern=r'(<script\b[^>]*type=["\']application/ld\+json["\'][^>]*>)(.*?)(</script>)'
 for path in root.rglob('*.html'):
  source=path.read_text()
  def replace(m):
-  data=json.loads(m[2]);updated=sync(data)
+  data=json.loads(m[2]);updated=sync_deployments(sync(data),path.relative_to(root).as_posix())
   if data==updated:return m[0]
   return m[1]+'\n'+json.dumps(updated,ensure_ascii=False,indent=2)+'\n'+m[3]
  result=re.sub(pattern,replace,source,flags=re.S)

@@ -1,0 +1,55 @@
+{
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  "@id": "https://argelysoriach.com/biography/#deployments",
+  "name": "Deployments",
+  "itemListOrder": "https://schema.org/ItemListOrderAscending",
+  "numberOfItems": 5,
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "item": {
+        "@id": "https://seveneightythree.com/#organization",
+        "name": "Seven Eighty Three",
+        "url": "https://seveneightythree.com/"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "item": {
+        "@id": "https://wildlakestudio.com/#organization",
+        "name": "Wild Lake Studio",
+        "url": "https://wildlakestudio.com/"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "item": {
+        "@id": "https://argelysoriach.com/universe-api/#framework",
+        "name": "Universe API",
+        "url": "https://argelysoriach.com/universe-api/"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 4,
+      "item": {
+        "@id": "https://communalfoundation.org/#organization",
+        "name": "Communal Foundation",
+        "url": "https://communalfoundation.org/"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 5,
+      "item": {
+        "@id": "https://thisisnotalovestory.net/#work",
+        "name": "This Is Not a Love Story",
+        "url": "https://thisisnotalovestory.net/"
+      }
+    }
+  ]
+}

@@ -43,3 +43,7 @@ Oriach’s focus remains on the underlying physical and digital mechanics across
 
 ## Historical material
 [Archive](https://argelysoriach.com/archive/): earlier statements, catalogues, practice definitions, and proposals.
+
+## Deployment order
+
+The ordered deployment index is Seven Eighty Three, Wild Lake Studio, Universe API, Communal Foundation, and This Is Not a Love Story. Canonical URLs and entity IDs are published in [Deployments JSON](https://argelysoriach.com/schema/deployments.json).

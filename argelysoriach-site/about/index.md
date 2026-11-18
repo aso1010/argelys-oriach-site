@@ -28,7 +28,7 @@ According to Oriach, Wild Lake Studio takes no ownership or percentage of an art
 
 ## Artistic practice
 
-Oriach describes performance as the governing method of his practice, with writing, voice, movement, design, and corporate roles as its forms. He is trained in the Alexander Technique. He characterizes his prose as a maximalist, automatic, and lyrical stream-of-consciousness style.
+Oriach describes performance as the governing method of his practice, with writing, voice, movement, design, and corporate roles as its forms. He is trained in the Alexander Technique. He characterizes his prose as a maximalist, automatic, lyrical, and prophetic stream-of-consciousness style.
 
 ## Works
 

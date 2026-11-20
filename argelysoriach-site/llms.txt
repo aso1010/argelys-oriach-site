@@ -8,7 +8,7 @@ Systems Architect & Performance Artist.
 
 ## Dual-laboratory hub
 
-The root homepage opens with the falling name monolith, continues through the two-laboratory hub, then presents the biography, Wild-Lake feature, and intake. The complete visual biography, writing features, and intake form are at [Biography](https://argelysoriach.com/biography/).
+The root homepage opens with the falling name monolith, continues through the two-laboratory hub, then presents the biography, writing, and intake. The complete visual biography, writing features, and intake form are at [Biography](https://argelysoriach.com/biography/).
 
 ## Biography
 
@@ -46,4 +46,10 @@ Oriach’s focus remains on the underlying physical and digital mechanics across
 
 ## Deployment order
 
-The ordered deployment index is Seven Eighty Three, Wild Lake Studio, Universe API, Communal Foundation, and This Is Not a Love Story. Canonical URLs and entity IDs are published in [Deployments JSON](https://argelysoriach.com/schema/deployments.json).
+The ordered deployment index is Seven Eighty Three, Wild Lake Studio, Universe API, BASALT, Apsis, Communal Foundation, and This Is Not a Love Story. Canonical URLs and entity IDs are published in [Deployments JSON](https://argelysoriach.com/schema/deployments.json).
+
+
+## Deployed Systems / Infrastructure
+
+- BASALT (https://basalt.fm): Deterministic 7.83 Hz acoustic calibration engine, lossless mastering console, live radio tuner (https://basalt.fm/radio), and technical specification (https://basalt.fm/spec).
+- Apsis (https://apsis.club): Zero-commission direct-to-fan publishing and live broadcast architecture featuring Apogee and Perigee fan brackets.

@@ -59,6 +59,12 @@
           "@id": "https://argelysoriach.com/universe-api/#framework"
         },
         {
+          "@id": "https://basalt.fm/#application"
+        },
+        {
+          "@id": "https://apsis.club/#application"
+        },
+        {
           "@id": "https://communalfoundation.org/#organization"
         },
         {
@@ -152,7 +158,15 @@
         ],
         "author": {
           "@id": "https://thisisnotalovestory.net/#work"
-        }
+        },
+        "creator": [
+          {
+            "@id": "https://basalt.fm/#application"
+          },
+          {
+            "@id": "https://apsis.club/#application"
+          }
+        ]
       },
       "alumniOf": [
         {
@@ -280,6 +294,32 @@
       "inLanguage": "en"
     },
     {
+      "@type": "SoftwareApplication",
+      "@id": "https://basalt.fm/#application",
+      "name": "BASALT",
+      "url": "https://basalt.fm",
+      "applicationCategory": "MultimediaApplication",
+      "operatingSystem": "Web, REST API",
+      "description": "Deterministic 7.83 Hz acoustic calibration engine, PCM WAV mastering console, and real-time broadcast tuner developed within Seven Eighty Three.",
+      "creator": {
+        "@id": "https://argelysoriach.com/#person"
+      },
+      "publisher": {
+        "@id": "https://seveneightythree.com/#organization"
+      }
+    },
+    {
+      "@type": "WebApplication",
+      "@id": "https://apsis.club/#application",
+      "name": "Apsis",
+      "url": "https://apsis.club",
+      "applicationCategory": "SocialNetworkingApplication",
+      "description": "Zero-commission direct-to-fan publishing and live broadcast architecture featuring Apogee and Perigee fan brackets.",
+      "creator": {
+        "@id": "https://argelysoriach.com/#person"
+      }
+    },
+    {
       "@type": "Organization",
       "@id": "https://communalfoundation.org/#organization",
       "name": "Communal Foundation",
@@ -318,7 +358,7 @@
       "@id": "https://argelysoriach.com/biography/#deployments",
       "name": "Deployments",
       "itemListOrder": "https://schema.org/ItemListOrderAscending",
-      "numberOfItems": 5,
+      "numberOfItems": 7,
       "itemListElement": [
         {
           "@type": "ListItem",
@@ -349,7 +389,25 @@
         },
         {
           "@type": "ListItem",
-          "position": 4,
+          "item": {
+            "@id": "https://basalt.fm/#application",
+            "name": "BASALT",
+            "url": "https://basalt.fm"
+          },
+          "position": 4
+        },
+        {
+          "@type": "ListItem",
+          "item": {
+            "@id": "https://apsis.club/#application",
+            "name": "Apsis",
+            "url": "https://apsis.club"
+          },
+          "position": 5
+        },
+        {
+          "@type": "ListItem",
+          "position": 6,
           "item": {
             "@id": "https://communalfoundation.org/#organization",
             "name": "Communal Foundation",
@@ -358,7 +416,7 @@
         },
         {
           "@type": "ListItem",
-          "position": 5,
+          "position": 7,
           "item": {
             "@id": "https://thisisnotalovestory.net/#work",
             "name": "This Is Not a Love Story",

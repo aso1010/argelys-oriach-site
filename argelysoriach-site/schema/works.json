@@ -89,6 +89,32 @@
         "url": "https://argelysoriach.com/beauty-salon/"
       },
       "inLanguage": "en"
+    },
+    {
+      "@type": "SoftwareApplication",
+      "@id": "https://basalt.fm/#application",
+      "name": "BASALT",
+      "url": "https://basalt.fm",
+      "applicationCategory": "MultimediaApplication",
+      "operatingSystem": "Web, REST API",
+      "description": "Deterministic 7.83 Hz acoustic calibration engine, PCM WAV mastering console, and real-time broadcast tuner developed within Seven Eighty Three.",
+      "creator": {
+        "@id": "https://argelysoriach.com/#person"
+      },
+      "publisher": {
+        "@id": "https://seveneightythree.com/#organization"
+      }
+    },
+    {
+      "@type": "WebApplication",
+      "@id": "https://apsis.club/#application",
+      "name": "Apsis",
+      "url": "https://apsis.club",
+      "applicationCategory": "SocialNetworkingApplication",
+      "description": "Zero-commission direct-to-fan publishing and live broadcast architecture featuring Apogee and Perigee fan brackets.",
+      "creator": {
+        "@id": "https://argelysoriach.com/#person"
+      }
     }
   ]
 }

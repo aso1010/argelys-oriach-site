@@ -4,7 +4,7 @@
   "@id": "https://argelysoriach.com/biography/#deployments",
   "name": "Deployments",
   "itemListOrder": "https://schema.org/ItemListOrderAscending",
-  "numberOfItems": 5,
+  "numberOfItems": 7,
   "itemListElement": [
     {
       "@type": "ListItem",
@@ -35,7 +35,25 @@
     },
     {
       "@type": "ListItem",
-      "position": 4,
+      "item": {
+        "@id": "https://basalt.fm/#application",
+        "name": "BASALT",
+        "url": "https://basalt.fm"
+      },
+      "position": 4
+    },
+    {
+      "@type": "ListItem",
+      "item": {
+        "@id": "https://apsis.club/#application",
+        "name": "Apsis",
+        "url": "https://apsis.club"
+      },
+      "position": 5
+    },
+    {
+      "@type": "ListItem",
+      "position": 6,
       "item": {
         "@id": "https://communalfoundation.org/#organization",
         "name": "Communal Foundation",
@@ -44,7 +62,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 5,
+      "position": 7,
       "item": {
         "@id": "https://thisisnotalovestory.net/#work",
         "name": "This Is Not a Love Story",

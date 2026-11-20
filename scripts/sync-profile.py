@@ -34,6 +34,7 @@ summary='Brooklyn-based performance artist, artistic director, and systems archi
 canonical={x['@id']:{k:v for k,v in x.items() if k!='@context'} for x in [person,website,*organizations['@graph']]}
 canonical['https://argelysoriach.com/#home']={'@type':'WebPage','@id':'https://argelysoriach.com/#home','url':'https://argelysoriach.com/','name':website['name'],'description':summary}
 story=next(w for w in read('schema/works.json')['@graph'] if w.get('name')=='This Is Not a Love Story (Yankees)')
+canonical.update({node['@id']:node for node in read('schema/works.json')['@graph'] if node.get('@type') in ['SoftwareApplication','WebApplication']})
 def sync(x):
  if isinstance(x,list):return [sync(v) for v in x]
  if not isinstance(x,dict):return x

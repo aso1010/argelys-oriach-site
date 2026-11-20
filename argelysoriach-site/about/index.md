@@ -16,7 +16,7 @@ He obtained a bachelor’s degree in English from Wesleyan University, with cour
 
 Oriach worked in growth and brand marketing for about twelve years. He served as social media manager for Cynthia Nixon’s 2018 campaign for governor of New York. His [CV](/cv/) lists roles as Director of Marketing at VinePair, Lead, Brand Voice & Content Strategy at Kickstarter, and Lead, Organic Growth & AI Modernization at CookUnity.
 
-He has described these corporate roles as an undercover durational performance: a calculated effort to build his life out of poverty while studying how complex systems scale from the inside out. He says that performance cycle has closed with a return to his body, breath, and voice. His biography states that he is still building his life out of poverty.
+He has described these corporate roles as an undercover durational performance: a calculated effort to build his life out of poverty while studying how complex systems scale from the inside out. He says that performance cycle has closed with a return to his body, breath, and voice.
 
 ## Laboratories
 

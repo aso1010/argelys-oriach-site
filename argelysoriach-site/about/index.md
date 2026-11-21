@@ -22,7 +22,7 @@ He has described these corporate roles as an undercover durational performance: 
 
 He operates two laboratories: Seven Eighty Three (Lab 783), a venture foundry that births infrastructure and whole companies, and Wild Lake Studio (Wild-Lake), the research laboratory created within it, which guides developing and independent artists.
 
-Within Seven Eighty Three, he architected BASALT, a deterministic 7.83 Hz acoustic calibration engine for lossless audio masters and live broadcast streams, and Apsis, a zero-commission direct-to-fan publishing system built around universal Apogee and Perigee patronage tiers. He also cofounded Bullpen, a baseball coaching and swing lab venture, with his brother, player-coach Jordy Oriach.
+Within Seven Eighty Three, he architected [BASALT](https://basalt.fm/), a deterministic 7.83 Hz acoustic calibration engine for lossless audio masters and live broadcast streams, and [Apsis](https://apsis.club/), a zero-commission direct-to-fan publishing system built around universal Apogee and Perigee patronage tiers. He also cofounded [Bullpen](https://bullpen.vip/), a baseball coaching and swing lab venture, with his brother, player-coach Jordy Oriach.
 
 [Seven Eighty Three](https://seveneightythree.com/) engineers automated infrastructure for executive leadership. [Wild Lake Studio](https://wildlakestudio.com/) formalizes what Oriach describes as a fifteen-year independent practice of guiding twelve or more developing and independent multidisciplinary artists. He identifies New York, Tampa, and Santiago as locations of artists supported by the studio. His central offering to artists is his undivided attention.
 

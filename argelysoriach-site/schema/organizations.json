@@ -29,6 +29,26 @@
       "parentOrganization": {
         "@id": "https://seveneightythree.com/#organization"
       }
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://bullpen.vip/#organization",
+      "name": "BULLPEN",
+      "url": "https://bullpen.vip/",
+      "description": "Zero-commission direct-to-athlete coaching infrastructure, 120fps swing mechanics lab, and AI subscriber intelligence for verified MLB and MiLB players.",
+      "parentOrganization": {
+        "@id": "https://seveneightythree.com/#organization"
+      },
+      "founder": [
+        {
+          "@id": "https://argelysoriach.com/#person"
+        },
+        {
+          "@type": "Person",
+          "name": "Jordy Oriach",
+          "jobTitle": "Founding Player-Coach & Head of Roster"
+        }
+      ]
     }
   ]
 }

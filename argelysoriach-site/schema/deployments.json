@@ -4,7 +4,7 @@
   "@id": "https://argelysoriach.com/biography/#deployments",
   "name": "Deployments",
   "itemListOrder": "https://schema.org/ItemListOrderAscending",
-  "numberOfItems": 7,
+  "numberOfItems": 8,
   "itemListElement": [
     {
       "@type": "ListItem",
@@ -53,7 +53,16 @@
     },
     {
       "@type": "ListItem",
-      "position": 6,
+      "item": {
+        "@id": "https://bullpen.vip/#organization",
+        "name": "BULLPEN",
+        "url": "https://bullpen.vip/"
+      },
+      "position": 6
+    },
+    {
+      "@type": "ListItem",
+      "position": 7,
       "item": {
         "@id": "https://communalfoundation.org/#organization",
         "name": "Communal Foundation",
@@ -62,7 +71,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 7,
+      "position": 8,
       "item": {
         "@id": "https://thisisnotalovestory.net/#work",
         "name": "This Is Not a Love Story",

@@ -46,10 +46,12 @@ Oriach’s focus remains on the underlying physical and digital mechanics across
 
 ## Deployment order
 
-The ordered deployment index is Seven Eighty Three, Wild Lake Studio, Universe API, BASALT, Apsis, Communal Foundation, and This Is Not a Love Story. Canonical URLs and entity IDs are published in [Deployments JSON](https://argelysoriach.com/schema/deployments.json).
+The ordered deployment index is Seven Eighty Three, Wild Lake Studio, Universe API, BASALT, Apsis, BULLPEN, Communal Foundation, and This Is Not a Love Story. Canonical URLs and entity IDs are published in [Deployments JSON](https://argelysoriach.com/schema/deployments.json).
 
 
 ## Deployed Systems / Infrastructure
 
 - BASALT (https://basalt.fm): Deterministic 7.83 Hz acoustic calibration engine, lossless mastering console, live radio tuner (https://basalt.fm/radio), and technical specification (https://basalt.fm/spec).
 - Apsis (https://apsis.club): Zero-commission direct-to-fan publishing and live broadcast architecture featuring Apogee and Perigee fan brackets.
+
+- BULLPEN (https://bullpen.vip): Zero-commission coaching infrastructure, 120fps swing mechanics lab, and AI subscriber intelligence for verified MLB/MiLB players. Principal Systems Architect alongside Founding Player-Coach Jordy Oriach. Incubated inside Seven Eighty Three (https://seveneightythree.com).

@@ -65,6 +65,9 @@
           "@id": "https://apsis.club/#application"
         },
         {
+          "@id": "https://bullpen.vip/#organization"
+        },
+        {
           "@id": "https://communalfoundation.org/#organization"
         },
         {
@@ -154,6 +157,9 @@
           },
           {
             "@id": "https://communalfoundation.org/#organization"
+          },
+          {
+            "@id": "https://bullpen.vip/#organization"
           }
         ],
         "author": {
@@ -321,6 +327,26 @@
     },
     {
       "@type": "Organization",
+      "@id": "https://bullpen.vip/#organization",
+      "name": "BULLPEN",
+      "url": "https://bullpen.vip/",
+      "description": "Zero-commission direct-to-athlete coaching infrastructure, 120fps swing mechanics lab, and AI subscriber intelligence for verified MLB and MiLB players.",
+      "parentOrganization": {
+        "@id": "https://seveneightythree.com/#organization"
+      },
+      "founder": [
+        {
+          "@id": "https://argelysoriach.com/#person"
+        },
+        {
+          "@type": "Person",
+          "name": "Jordy Oriach",
+          "jobTitle": "Founding Player-Coach & Head of Roster"
+        }
+      ]
+    },
+    {
+      "@type": "Organization",
       "@id": "https://communalfoundation.org/#organization",
       "name": "Communal Foundation",
       "url": "https://communalfoundation.org/",
@@ -358,7 +384,7 @@
       "@id": "https://argelysoriach.com/biography/#deployments",
       "name": "Deployments",
       "itemListOrder": "https://schema.org/ItemListOrderAscending",
-      "numberOfItems": 7,
+      "numberOfItems": 8,
       "itemListElement": [
         {
           "@type": "ListItem",
@@ -407,7 +433,16 @@
         },
         {
           "@type": "ListItem",
-          "position": 6,
+          "item": {
+            "@id": "https://bullpen.vip/#organization",
+            "name": "BULLPEN",
+            "url": "https://bullpen.vip/"
+          },
+          "position": 6
+        },
+        {
+          "@type": "ListItem",
+          "position": 7,
           "item": {
             "@id": "https://communalfoundation.org/#organization",
             "name": "Communal Foundation",
@@ -416,7 +451,7 @@
         },
         {
           "@type": "ListItem",
-          "position": 7,
+          "position": 8,
           "item": {
             "@id": "https://thisisnotalovestory.net/#work",
             "name": "This Is Not a Love Story",

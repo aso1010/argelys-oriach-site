@@ -2,6 +2,16 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
+<script>
+(function () {
+  if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+    document.documentElement.classList.add('descent-pending');
+    window.monolithFallback = setTimeout(function () {
+      document.documentElement.classList.remove('descent-pending');
+    }, 4000);
+  }
+})();
+</script>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="color-scheme" content="light">
 <meta name="theme-color" content="#FFFFFF">
@@ -547,7 +557,8 @@ h3{font-size:var(--s21);line-height:var(--s34);font-weight:700;margin:0 0 var(--
 .descent{position:relative}
 .descent-void{display:grid;grid-template-rows:minmax(0,1fr);padding:21px 0;overflow:visible}
 .descent-mark{position:relative;z-index:1;width:calc(100% - 26px);height:100%;margin:0 auto;display:grid;grid-template-rows:repeat(3,minmax(0,1fr));mix-blend-mode:normal}
-.descent-mark .wordmark{display:block;width:100%;height:100%;overflow:visible;filter:brightness(0) invert(1)}
+.descent-mark .wordmark{display:block;width:100%;height:100%;overflow:visible}
+.descent-mark .ltr image{filter:brightness(0) invert(1)}
 .descent-mark .ltr{transform-box:fill-box;transform-origin:50% 50%}
 @font-face{font-family:"JetBrains Mono";src:url("/fonts/JetBrainsMono-Variable.woff2") format("woff2");font-weight:100 800;font-display:swap}
 .descent-pending .descent-mark{visibility:hidden}
@@ -645,7 +656,8 @@ h3{font-size:var(--s21);line-height:var(--s34);font-weight:700;margin:0 0 var(--
 (function () {
   var root = document.documentElement, mark = document.querySelector('.descent-mark');
   if (!mark || !window.requestAnimationFrame || (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches)) {
-    root.classList.remove('drop-wait');
+    root.classList.remove('descent-pending');
+    clearTimeout(window.monolithFallback);
     return;
   }
 
@@ -697,7 +709,7 @@ h3{font-size:var(--s21);line-height:var(--s34);font-weight:700;margin:0 0 var(--
       (p.sx * Math.cos(p.a * Math.PI / 180)).toFixed(4) + ',' + p.sy.toFixed(4) + ')';
   }
 
-  var letters = [], live = [], ticking = false;
+  var letters = [], live = [], ticking = false, dropStart = null;
   Array.prototype.forEach.call(mark.querySelectorAll('svg.wordmark'), function (svg, line) {
     var row = [];
     Array.prototype.forEach.call(svg.querySelectorAll('.ltr'), function (g) {
@@ -739,7 +751,7 @@ h3{font-size:var(--s21);line-height:var(--s34);font-weight:700;margin:0 0 var(--
       place(L, gs.o, pose(gs.k, t));
       return true;
     });
-    if (live.length) requestAnimationFrame(frame); else ticking = false;
+    if (live.length) requestAnimationFrame(frame); else { ticking = false; dropStart = null; }
   }
 
   /* How a letter comes to rest after the drop, in letter heights. Most lean a little. A wild one lies on its side
@@ -757,11 +769,11 @@ h3{font-size:var(--s21);line-height:var(--s34);font-weight:700;margin:0 0 var(--
     var FALL = 640, BOUNCE = [150, 130, 90, 90], landBy = 0, wild = {}, n = 2 + Math.floor(Math.random() * 3);
     while (n-- > 0) wild[Math.floor(Math.random() * letters.length)] = true;
     var plans = letters.map(function (L, i) {
-      var r = L.svg.getBoundingClientRect(), s = r.width / 4000 || 1, h = L.h;
+      var r = L.svg.getBoundingClientRect(), matrix = L.svg.getScreenCTM(), sy = matrix ? Math.abs(matrix.d) : r.height / 672, h = L.h;
       var end = landing(L, !!wild[i]), rock = rnd(6, 12) * (Math.random() < .5 ? -1 : 1);
       /* start out of sight above the window, however far down the page the name sits */
-      var above = Math.max(1.4 * h * s, r.top + 664 * s + .45 * h * s + rnd(40, 320));
-      var sky = { x: end.x + rnd(-.2, .2), y: -above / s / h, r: end.r + Math.round(rnd(-3, 3)) * 90 };
+      var above = (r.bottom + Math.max(r.height, r.width) + 55) / (sy || 1);
+      var sky = { x: end.x + rnd(-.2, .2), y: -above / h, r: end.r + Math.round(rnd(-3, 3)) * 90 };
       var wait = Math.max(30, (2 - L.line) * 260 + rnd(0, 380));          /* the bottom line lands first */
       landBy = Math.max(landBy, wait + FALL + 460);
       return { L: L, end: end, rock: rock, sky: sky, wait: wait };
@@ -786,21 +798,33 @@ h3{font-size:var(--s21);line-height:var(--s34);font-weight:700;margin:0 0 var(--
       key(ms * .1, { r: home, sx: 1.04, sy: sy, y: (1 - sy) / 2 * L.bh * u, e: 'out' });
       key(ms * .1, { r: home, e: 'io' });
       k.forEach(function (f) { f.t /= at; });
-      L.run = { gesture: { ms: at, o: MID, k: k }, start: null };
+      L.run = { gesture: { ms: at, o: MID, k: k }, start: dropStart };
       place(L, MID, pose(k, 0));
       go(L);
     });
   }
 
   var played = false;
-  root.classList.add('descent-pending');
   function enter() {
     if (played) return;
     played = true;
+    clearTimeout(window.monolithFallback);
+    dropStart = performance.now();
     if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) drop();
     root.classList.remove('descent-pending');
   }
-  requestAnimationFrame(enter);
+  var decoded = Array.prototype.map.call(mark.querySelectorAll('image'), function (letter) {
+    var image = new Image();
+    image.src = letter.getAttribute('href');
+    return image.decode ? image.decode().catch(function () {}) : new Promise(function (resolve) {
+      if (image.complete) resolve();
+      else { image.onload = resolve; image.onerror = resolve; }
+    });
+  });
+  Promise.all(decoded).then(function () {
+    if (!root.classList.contains('descent-pending')) { played = true; return; }
+    requestAnimationFrame(enter);
+  });
 })();
 
 </script>

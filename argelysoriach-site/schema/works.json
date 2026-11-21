@@ -92,9 +92,9 @@
     },
     {
       "@type": "SoftwareApplication",
-      "@id": "https://basalt.fm/#application",
-      "name": "BASALT",
-      "url": "https://basalt.fm",
+      "@id": "https://basalt.fm/#engine",
+      "name": "Basalt Acoustic Calibration Engine",
+      "url": "https://basalt.fm/",
       "applicationCategory": "MultimediaApplication",
       "operatingSystem": "Web, REST API",
       "description": "Deterministic 7.83 Hz acoustic calibration engine, PCM WAV mastering console, and real-time broadcast tuner developed within Seven Eighty Three.",
@@ -103,7 +103,15 @@
       },
       "publisher": {
         "@id": "https://seveneightythree.com/#organization"
-      }
+      },
+      "author": {
+        "@id": "https://argelysoriach.com/#person"
+      },
+      "sourceOrganization": {
+        "@id": "https://seveneightythree.com/#organization"
+      },
+      "datePublished": "2026-11-19",
+      "releaseNotes": "https://basalt.fm/spec#provenance"
     },
     {
       "@type": "WebApplication",

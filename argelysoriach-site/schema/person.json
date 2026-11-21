@@ -86,7 +86,7 @@
     },
     "creator": [
       {
-        "@id": "https://basalt.fm/#application"
+        "@id": "https://basalt.fm/#engine"
       },
       {
         "@id": "https://apsis.club/#application"

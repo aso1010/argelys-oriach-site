@@ -36,7 +36,7 @@
     {
       "@type": "ListItem",
       "item": {
-        "@id": "https://basalt.fm/#application",
+        "@id": "https://basalt.fm/#engine",
         "name": "BASALT",
         "url": "https://basalt.fm"
       },

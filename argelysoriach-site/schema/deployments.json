@@ -4,7 +4,7 @@
   "@id": "https://argelysoriach.com/biography/#deployments",
   "name": "Deployments",
   "itemListOrder": "https://schema.org/ItemListOrderAscending",
-  "numberOfItems": 8,
+  "numberOfItems": 9,
   "itemListElement": [
     {
       "@type": "ListItem",
@@ -63,6 +63,15 @@
     {
       "@type": "ListItem",
       "position": 7,
+      "name": "Casa Josefin",
+      "url": "https://casajosefin.com/",
+      "item": {
+        "@id": "https://casajosefin.com/#organization"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 8,
       "item": {
         "@id": "https://communalfoundation.org/#organization",
         "name": "Communal Foundation",
@@ -71,7 +80,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 8,
+      "position": 9,
       "item": {
         "@id": "https://thisisnotalovestory.net/#work",
         "name": "This Is Not a Love Story",

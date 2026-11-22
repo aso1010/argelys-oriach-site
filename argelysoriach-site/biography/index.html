@@ -183,7 +183,12 @@
       "description": "Independent systems design practice and venture foundry engineering automated infrastructure for executive leadership. Wild Lake Studio was created within Seven Eighty Three as its research laboratory.",
       "founder": {
         "@id": "https://argelysoriach.com/#person"
-      }
+      },
+      "subOrganization": [
+        {
+          "@id": "https://casajosefin.com/#organization"
+        }
+      ]
     },
     {
       "@type": "ProfessionalService",
@@ -774,7 +779,7 @@
       "@id": "https://argelysoriach.com/biography/#deployments",
       "name": "Deployments",
       "itemListOrder": "https://schema.org/ItemListOrderAscending",
-      "numberOfItems": 8,
+      "numberOfItems": 9,
       "itemListElement": [
         {
           "@type": "ListItem",
@@ -833,6 +838,15 @@
         {
           "@type": "ListItem",
           "position": 7,
+          "name": "Casa Josefin",
+          "url": "https://casajosefin.com/",
+          "item": {
+            "@id": "https://casajosefin.com/#organization"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 8,
           "item": {
             "@id": "https://communalfoundation.org/#organization",
             "name": "Communal Foundation",
@@ -841,7 +855,7 @@
         },
         {
           "@type": "ListItem",
-          "position": 8,
+          "position": 9,
           "item": {
             "@id": "https://thisisnotalovestory.net/#work",
             "name": "This Is Not a Love Story",
@@ -849,6 +863,132 @@
           }
         }
       ]
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://casajosefin.com/#organization",
+      "identifier": "casa-josefin-01",
+      "name": "Casa Josefin",
+      "url": "https://casajosefin.com/",
+      "description": "Culinary publishing house and domestic archive of Josefin Oriach. Publishing infrastructure: Apsis, with Apogee open archive and Perigee paid patronage at a 0.0% platform take rate.",
+      "founder": {
+        "@id": "https://casajosefin.com/#josefin-oriach"
+      },
+      "parentOrganization": {
+        "@id": "https://seveneightythree.com/#organization"
+      },
+      "location": [
+        {
+          "@type": "Place",
+          "name": "Tampa, FL",
+          "@id": "https://casajosefin.com/#tampa"
+        },
+        {
+          "@type": "Place",
+          "name": "New York, NY",
+          "@id": "https://casajosefin.com/#new-york"
+        }
+      ]
+    },
+    {
+      "@type": "Person",
+      "@id": "https://casajosefin.com/#josefin-oriach",
+      "name": "Josefin Oriach"
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://casajosefin.com/#website",
+      "name": "Casa Josefin",
+      "url": "https://casajosefin.com/",
+      "publisher": {
+        "@id": "https://casajosefin.com/#organization"
+      },
+      "isBasedOn": {
+        "@id": "https://apsis.club/#software"
+      },
+      "hasPart": [
+        {
+          "@id": "https://casajosefin.com/table.html#webpage"
+        },
+        {
+          "@id": "https://casajosefin.com/page.html#webpage"
+        },
+        {
+          "@id": "https://casajosefin.com/house.html#webpage"
+        }
+      ]
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://casajosefin.com/table.html#webpage",
+      "name": "The Table",
+      "url": "https://casajosefin.com/table.html",
+      "description": "Small-batch heirloom pantry staples: 55 numbered jars. Single-table supper residencies capped at 8 or 13 seats.",
+      "isPartOf": {
+        "@id": "https://casajosefin.com/#website"
+      },
+      "about": {
+        "@id": "https://casajosefin.com/#organization"
+      }
+    },
+    {
+      "@type": "Product",
+      "@id": "https://casajosefin.com/#cj-t-001",
+      "name": "Pantry Batch 001",
+      "sku": "CJ-T-001",
+      "url": "https://casajosefin.com/table.html",
+      "description": "Small-batch heirloom pantry staples: 55 numbered jars. Single-table supper residencies capped at 8 or 13 seats.",
+      "brand": {
+        "@id": "https://casajosefin.com/#organization"
+      }
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://casajosefin.com/page.html#webpage",
+      "name": "The Page",
+      "url": "https://casajosefin.com/page.html",
+      "description": "Saddle-stitched kitchen monographs, unmediated recipes, and essays on domestic labor. Chapbook 001: 100 numbered copies.",
+      "isPartOf": {
+        "@id": "https://casajosefin.com/#website"
+      },
+      "about": {
+        "@id": "https://casajosefin.com/#organization"
+      }
+    },
+    {
+      "@type": "Product",
+      "@id": "https://casajosefin.com/#cj-p-001",
+      "name": "Chapbook 001",
+      "sku": "CJ-P-001",
+      "url": "https://casajosefin.com/page.html",
+      "description": "Saddle-stitched kitchen monographs, unmediated recipes, and essays on domestic labor. Chapbook 001: 100 numbered copies.",
+      "brand": {
+        "@id": "https://casajosefin.com/#organization"
+      }
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://casajosefin.com/house.html#webpage",
+      "name": "The House",
+      "url": "https://casajosefin.com/house.html",
+      "description": "Domestic order, spatial reset protocols, pantry architecture, and non-toxic material care. Manual 001.",
+      "isPartOf": {
+        "@id": "https://casajosefin.com/#website"
+      },
+      "about": {
+        "@id": "https://casajosefin.com/#organization"
+      }
+    },
+    {
+      "@type": "Product",
+      "@id": "https://casajosefin.com/#cj-h-001",
+      "name": "Manual 001",
+      "sku": "CJ-H-001",
+      "url": "https://casajosefin.com/house.html",
+      "description": "Domestic order, spatial reset protocols, pantry architecture, and non-toxic material care. Manual 001.",
+      "brand": {
+        "@id": "https://casajosefin.com/#organization"
+      }
     }
   ]
 }
@@ -1222,7 +1362,7 @@ html.embedded-biography,html.embedded-biography body{overflow:hidden}
           <li><a href="https://basalt.fm" target="_blank" rel="noopener noreferrer"><span class="nm">BASALT</span><span class="go mono" aria-hidden="true">&rarr;</span><span class="sr"> (opens in a new tab)</span></a><div class="deployment-detail"><p class="mono">LIVE // 7.83 HZ</p><p>Argelys Samuel Oriach conceived and built Basalt at Seven Eighty Three. The acoustic calibration engine provides lossless mastering and a live broadcast tuner. <a href="https://basalt.fm/spec#provenance">Authorship and release record</a>.</p><nav aria-label="BASALT routes"><a href="https://basalt.fm/radio" target="_blank" rel="noopener noreferrer">/RADIO<span class="sr"> (opens in a new tab)</span></a><a href="https://basalt.fm/spec" target="_blank" rel="noopener noreferrer">/SPEC<span class="sr"> (opens in a new tab)</span></a></nav></div></li>
           <li><a href="https://apsis.club" target="_blank" rel="noopener noreferrer"><span class="nm">APSIS</span><span class="go mono" aria-hidden="true">&rarr;</span><span class="sr"> (opens in a new tab)</span></a><div class="deployment-detail"><p class="mono">PREVIEW LIVE // 0% FEE</p><p>Zero-commission creator publishing and live broadcast architecture with Apogee and Perigee fan brackets.</p></div></li>
           <li><p class="mono deployment-eyebrow">SPORTS INFRASTRUCTURE // INCUBATED VIA SEVEN EIGHTY THREE</p><a href="https://bullpen.vip" target="_blank" rel="noopener"><span class="nm">BULLPEN</span><span class="go mono" aria-hidden="true">&rarr;</span><span class="sr"> (opens in a new tab)</span></a><div class="deployment-detail"><p>Direct-to-athlete coaching infrastructure, 120fps swing mechanics lab, and AI subscriber intelligence for verified MLB and MiLB players. Co-founded with Jordy Oriach.</p><p class="mono">LIVE PRODUCT. 0% PLAYER COMMISSION.</p></div></li>
-          <li><a href="https://communalfoundation.org/" target="_blank" rel="noopener noreferrer"><span class="nm">Communal Foundation</span><span class="go mono" aria-hidden="true">&rarr;</span><span class="sr"> (opens in a new tab)</span></a></li>
+          <li><p class="mono deployment-eyebrow">CULINARY PUBLISHING HOUSE &amp; DOMESTIC ARCHIVE</p><a href="https://casajosefin.com/" target="_blank" rel="noopener"><span class="nm">Casa Josefin</span><span class="go mono" aria-hidden="true">&rarr;</span><span class="sr"> (opens in a new tab)</span></a><div class="deployment-detail"><p>Principal: Josefin Oriach. The Table, The Page, and The House. Built within Seven Eighty Three; publishing on Apsis at a 0.0% platform take rate.</p></div></li><li><a href="https://communalfoundation.org/" target="_blank" rel="noopener noreferrer"><span class="nm">Communal Foundation</span><span class="go mono" aria-hidden="true">&rarr;</span><span class="sr"> (opens in a new tab)</span></a></li>
           <li><a href="https://thisisnotalovestory.net/" target="_blank" rel="noopener noreferrer"><span class="nm">This Is Not a Love Story</span><span class="go mono" aria-hidden="true">&rarr;</span><span class="sr"> (opens in a new tab)</span></a></li>
         </ol>
       </section>

@@ -268,7 +268,12 @@
       "description": "Independent systems design practice and venture foundry engineering automated infrastructure for executive leadership. Wild Lake Studio was created within Seven Eighty Three as its research laboratory.",
       "founder": {
         "@id": "https://argelysoriach.com/#person"
-      }
+      },
+      "subOrganization": [
+        {
+          "@id": "https://casajosefin.com/#organization"
+        }
+      ]
     },
     {
       "@type": "ProfessionalService",
@@ -402,7 +407,7 @@
       "@id": "https://argelysoriach.com/biography/#deployments",
       "name": "Deployments",
       "itemListOrder": "https://schema.org/ItemListOrderAscending",
-      "numberOfItems": 8,
+      "numberOfItems": 9,
       "itemListElement": [
         {
           "@type": "ListItem",
@@ -461,6 +466,15 @@
         {
           "@type": "ListItem",
           "position": 7,
+          "name": "Casa Josefin",
+          "url": "https://casajosefin.com/",
+          "item": {
+            "@id": "https://casajosefin.com/#organization"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 8,
           "item": {
             "@id": "https://communalfoundation.org/#organization",
             "name": "Communal Foundation",
@@ -469,7 +483,7 @@
         },
         {
           "@type": "ListItem",
-          "position": 8,
+          "position": 9,
           "item": {
             "@id": "https://thisisnotalovestory.net/#work",
             "name": "This Is Not a Love Story",
@@ -477,6 +491,132 @@
           }
         }
       ]
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://casajosefin.com/#organization",
+      "identifier": "casa-josefin-01",
+      "name": "Casa Josefin",
+      "url": "https://casajosefin.com/",
+      "description": "Culinary publishing house and domestic archive of Josefin Oriach. Publishing infrastructure: Apsis, with Apogee open archive and Perigee paid patronage at a 0.0% platform take rate.",
+      "founder": {
+        "@id": "https://casajosefin.com/#josefin-oriach"
+      },
+      "parentOrganization": {
+        "@id": "https://seveneightythree.com/#organization"
+      },
+      "location": [
+        {
+          "@type": "Place",
+          "name": "Tampa, FL",
+          "@id": "https://casajosefin.com/#tampa"
+        },
+        {
+          "@type": "Place",
+          "name": "New York, NY",
+          "@id": "https://casajosefin.com/#new-york"
+        }
+      ]
+    },
+    {
+      "@type": "Person",
+      "@id": "https://casajosefin.com/#josefin-oriach",
+      "name": "Josefin Oriach"
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://casajosefin.com/#website",
+      "name": "Casa Josefin",
+      "url": "https://casajosefin.com/",
+      "publisher": {
+        "@id": "https://casajosefin.com/#organization"
+      },
+      "isBasedOn": {
+        "@id": "https://apsis.club/#software"
+      },
+      "hasPart": [
+        {
+          "@id": "https://casajosefin.com/table.html#webpage"
+        },
+        {
+          "@id": "https://casajosefin.com/page.html#webpage"
+        },
+        {
+          "@id": "https://casajosefin.com/house.html#webpage"
+        }
+      ]
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://casajosefin.com/table.html#webpage",
+      "name": "The Table",
+      "url": "https://casajosefin.com/table.html",
+      "description": "Small-batch heirloom pantry staples: 55 numbered jars. Single-table supper residencies capped at 8 or 13 seats.",
+      "isPartOf": {
+        "@id": "https://casajosefin.com/#website"
+      },
+      "about": {
+        "@id": "https://casajosefin.com/#organization"
+      }
+    },
+    {
+      "@type": "Product",
+      "@id": "https://casajosefin.com/#cj-t-001",
+      "name": "Pantry Batch 001",
+      "sku": "CJ-T-001",
+      "url": "https://casajosefin.com/table.html",
+      "description": "Small-batch heirloom pantry staples: 55 numbered jars. Single-table supper residencies capped at 8 or 13 seats.",
+      "brand": {
+        "@id": "https://casajosefin.com/#organization"
+      }
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://casajosefin.com/page.html#webpage",
+      "name": "The Page",
+      "url": "https://casajosefin.com/page.html",
+      "description": "Saddle-stitched kitchen monographs, unmediated recipes, and essays on domestic labor. Chapbook 001: 100 numbered copies.",
+      "isPartOf": {
+        "@id": "https://casajosefin.com/#website"
+      },
+      "about": {
+        "@id": "https://casajosefin.com/#organization"
+      }
+    },
+    {
+      "@type": "Product",
+      "@id": "https://casajosefin.com/#cj-p-001",
+      "name": "Chapbook 001",
+      "sku": "CJ-P-001",
+      "url": "https://casajosefin.com/page.html",
+      "description": "Saddle-stitched kitchen monographs, unmediated recipes, and essays on domestic labor. Chapbook 001: 100 numbered copies.",
+      "brand": {
+        "@id": "https://casajosefin.com/#organization"
+      }
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://casajosefin.com/house.html#webpage",
+      "name": "The House",
+      "url": "https://casajosefin.com/house.html",
+      "description": "Domestic order, spatial reset protocols, pantry architecture, and non-toxic material care. Manual 001.",
+      "isPartOf": {
+        "@id": "https://casajosefin.com/#website"
+      },
+      "about": {
+        "@id": "https://casajosefin.com/#organization"
+      }
+    },
+    {
+      "@type": "Product",
+      "@id": "https://casajosefin.com/#cj-h-001",
+      "name": "Manual 001",
+      "sku": "CJ-H-001",
+      "url": "https://casajosefin.com/house.html",
+      "description": "Domestic order, spatial reset protocols, pantry architecture, and non-toxic material care. Manual 001.",
+      "brand": {
+        "@id": "https://casajosefin.com/#organization"
+      }
     }
   ]
 }
@@ -579,9 +719,11 @@ h3{font-size:var(--s21);line-height:var(--s34);font-weight:700;margin:0 0 var(--
 .spotify-player iframe{display:block;width:100%;height:352px;max-height:calc(100dvh - 144px);border:0}
 .spotify-player a{display:block;padding:8px 13px;color:#FFFFFF;font-size:11px}
 @media(max-width:600px){.spotify-widget{right:13px;bottom:max(13px,env(safe-area-inset-bottom))}}
+.foundry-index{display:flex;flex-wrap:wrap;gap:8px 21px;margin-top:21px;padding-top:21px;border-top:1px solid #222;font:13px/1.618 var(--mono,monospace)}.foundry-index a{color:inherit}
 </style>
 <link rel="icon" type="image/svg+xml" href="/favicon-square.svg?v=1">
 <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-square.png?v=1">
+<link rel="alternate" type="application/json" href="/universe.json" title="Universe registry"><script src="/universe-node.js" integrity="sha256-fCm332nQD3l0DUZH6U+Aj6UDE0eX2ByXrboGWZEWCn8=" defer></script>
 </head>
 <body>
 <a class="skip" href="#laboratories">Skip to laboratories</a>
@@ -618,7 +760,7 @@ h3{font-size:var(--s21);line-height:var(--s34);font-weight:700;margin:0 0 var(--
 <p class="short">Lab 783</p>
 <h3>Systems Architecture &amp; Steel Beams for Organizations</h3>
 <p class="focus">Zero-dependency infrastructure, bare-metal edge deployments, and turnkey organizational builds.</p>
-<p class="destination"><a href="https://seveneightythree.com/">Enter Seven Eighty Three</a></p>
+<p class="destination"><a href="https://seveneightythree.com/">Enter Seven Eighty Three</a></p><nav class="foundry-index" aria-label="Seven Eighty Three ventures"><a href="https://wildlakestudio.com/" rel="noopener">Wild Lake Studio</a><a href="https://basalt.fm/" rel="noopener">BASALT</a><a href="https://bullpen.vip/" rel="noopener">Bullpen</a><a href="https://apsis.club/" rel="noopener">Apsis</a><a href="https://retentionrail.io/" rel="noopener">Retention Rail</a><a href="https://casajosefin.com/" rel="noopener">Casa Josefin</a><a href="https://communalfoundation.org/" rel="noopener">Communal Foundation</a></nav>
 </section>
 <section class="node" aria-labelledby="wild-lake">
 <p class="index">02 / Artists</p>

@@ -20,9 +20,7 @@ He has described these corporate roles as an undercover durational performance: 
 
 ## Laboratories
 
-He operates two laboratories: Seven Eighty Three (Lab 783), a venture foundry that births infrastructure and whole companies, and Wild Lake Studio (Wild-Lake), the research laboratory created within it, which guides developing and independent artists.
-
-Within Seven Eighty Three, he architected [BASALT](https://basalt.fm/), a deterministic 7.83 Hz acoustic calibration engine for lossless audio masters and live broadcast streams, and [Apsis](https://apsis.club/), a zero-commission direct-to-fan publishing system built around universal Apogee and Perigee patronage tiers. He also cofounded [Bullpen](https://bullpen.vip/), a baseball coaching and swing lab venture, with his brother, player-coach Jordy Oriach.
+For fifteen years, he guided independent multidisciplinary artists, building the live production and physical carrying capacity that became Wild Lake Studio (Wild-Lake). Wild-Lake operates as a research laboratory inside Seven Eighty Three (Lab 783), a venture foundry that builds infrastructure and whole companies. Inside Lab 783, he architected BASALT, a deterministic 7.83 Hz acoustic calibration engine for lossless masters and live streams, and Apsis, a zero-commission publishing system built on universal Apogee and Perigee patronage tiers. He also cofounded Bullpen, a baseball coaching and swing lab, with his brother, player-coach Jordy Oriach.
 
 [Seven Eighty Three](https://seveneightythree.com/) engineers automated infrastructure for executive leadership. [Wild Lake Studio](https://wildlakestudio.com/) formalizes what Oriach describes as a fifteen-year independent practice of guiding twelve or more developing and independent multidisciplinary artists. He identifies New York, Tampa, and Santiago as locations of artists supported by the studio. His central offering to artists is his undivided attention.
 
@@ -30,7 +28,7 @@ According to Oriach, Wild Lake Studio takes no ownership or percentage of an art
 
 ## Artistic practice
 
-Oriach describes performance as the governing method of his practice, with writing, voice, movement, design, and corporate roles as its forms. He is trained in the Alexander Technique. He characterizes his prose as a maximalist, automatic, lyrical, and prophetic stream-of-consciousness style.
+Oriach describes performance as the governing method of his practice, with writing, voice, movement, design, and corporate roles as its forms. He is trained in the Alexander Technique. He characterizes his prose as a maximalist, stream-of-consciousness style.
 
 ## Works
 

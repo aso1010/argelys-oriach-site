@@ -826,14 +826,14 @@ a:focus-visible{outline:var(--s2) solid var(--ink);outline-offset:var(--s5)}
 h1{font-size:var(--s55);line-height:var(--s55);font-weight:800;font-stretch:110%;margin:0;letter-spacing:-.03em}
 .axis .roles{margin:var(--s21) 0 0;font-size:var(--s13);line-height:var(--s21);text-transform:uppercase;font-weight:500}
 .axis .mandate{margin:var(--s21) 0 0;font-size:var(--s21);line-height:var(--s34)}
-.axis::after{content:"";display:block;width:1px;height:var(--s34);background:var(--ink);margin:var(--s34) auto 0}
+.axis::after{content:"";display:block;height:var(--s34);margin:var(--s34) auto 0}
 .equilibrium{margin:0 var(--s34) var(--s55);position:relative;border:var(--rule)}
 .datum{height:var(--s144);border-bottom:var(--rule);display:block;width:100%}
-.datum path,.datum-mobile path{fill:none;stroke:#000000;stroke-width:1;vector-effect:non-scaling-stroke}
+.datum path,.datum line,.datum-mobile path{fill:none;stroke:#000000;stroke-width:1;vector-effect:non-scaling-stroke}
 .datum-mobile{display:none}
-.nodes{display:grid;grid-template-columns:1fr 1fr;position:relative}
+.nodes{display:grid;grid-template-columns:minmax(0,1fr);position:relative}
 .node{padding:var(--s34);display:flex;flex-direction:column;min-width:0}
-.node+.node{border-left:var(--rule)}
+.node+.node{border-top:var(--rule)}
 .node .index{font-size:var(--s13);line-height:var(--s21);margin:0 0 var(--s34);text-transform:uppercase;font-weight:600;letter-spacing:.05em}
 h2{font-size:var(--s55);line-height:var(--s55);font-weight:800;font-stretch:110%;letter-spacing:-.03em;margin:0}
 .short{font-size:var(--s21);line-height:var(--s34);font-weight:500;margin:var(--s8) 0 var(--s34)}
@@ -851,9 +851,7 @@ h3{font-size:var(--s21);line-height:var(--s34);font-weight:700;margin:0 0 var(--
  .axis{padding:var(--s34) var(--s21) 0}
  .axis .index{margin-bottom:var(--s13)}
  .axis::after{margin-top:var(--s21);height:var(--s21)}
- .equilibrium{margin:0 var(--s21) var(--s34);padding-left:var(--s34)}
- .datum{display:none}
- .datum-mobile{display:block;position:absolute;top:0;left:0;width:var(--s34);height:100%;border-right:var(--rule)}
+ .equilibrium{margin:0 var(--s21) var(--s34)}
  .nodes{grid-template-columns:minmax(0,1fr)}
  .node{padding:var(--s21)}
  .node+.node{border-left:0;border-top:var(--rule)}
@@ -904,7 +902,7 @@ h3{font-size:var(--s21);line-height:var(--s34);font-weight:700;margin:0 0 var(--
 .spotify-player iframe{display:block;width:100%;height:352px;max-height:calc(100dvh - 144px);border:0}
 .spotify-player a{display:block;padding:8px 13px;color:#FFFFFF;font-size:11px}
 @media(max-width:600px){.spotify-widget{right:13px;bottom:max(13px,env(safe-area-inset-bottom))}}
-.foundry-index{display:flex;flex-wrap:wrap;gap:8px 21px;margin-top:21px;padding-top:21px;border-top:1px solid #222;font:13px/1.618 var(--mono,monospace)}.foundry-index a{color:inherit}
+.foundry-index{display:flex;flex-wrap:wrap;gap:8px 21px;margin-top:21px;padding-top:21px;border-top:1px solid #000000;font:13px/1.618 var(--mono,monospace)}.foundry-index a{color:inherit}
 
 .capital-telemetry{display:flex;flex-wrap:wrap;align-items:center;gap:var(--s13) var(--s34)}
 .capital-telemetry p:last-child{color:#C8A265}
@@ -935,6 +933,24 @@ h3{font-size:var(--s21);line-height:var(--s34);font-weight:700;margin:0 0 var(--
 .instagram-profile summary:focus-visible{outline:2px solid #000000;outline-offset:3px}
 .instagram-slot{width:100%;max-width:610px;min-height:377px;margin-top:var(--s21)}
 .instagram-slot .instagram-media{box-sizing:border-box!important;min-width:0!important;width:100%!important;max-width:100%!important;margin:0!important;border-radius:0!important;box-shadow:none!important}
+
+@media(min-width:987px){
+ .nodes{grid-template-columns:repeat(3,minmax(0,1fr));grid-template-rows:auto auto auto auto 1fr auto auto auto}
+ .node{display:grid;grid-template-rows:subgrid;grid-row:span 8;padding:var(--s34)}
+ .node+.node{border-top:0;border-left:var(--rule)}
+ .node h2{font-size:clamp(34px,3vw,55px);line-height:1}
+ .node .terms{min-height:var(--s21)}
+ .node .destination{margin:0;padding-top:var(--s21);align-self:start}
+ .node .foundry-index{margin-top:var(--s21);align-self:end}
+}
+@media(max-width:986px){
+ .equilibrium{padding-left:var(--s34)}
+ .datum{display:none}
+ .datum-mobile{display:block;position:absolute;top:0;left:0;width:var(--s34);height:100%;border-right:var(--rule)}
+ .node{padding:var(--s21)}
+ .node+.node{border-left:0;border-top:var(--rule)}
+ .node .terms:empty{display:none}
+}
 </style>
 <link rel="alternate" type="application/json" href="/universe.json" title="Universe registry"><script src="/universe-node.js" integrity="sha256-fCm332nQD3l0DUZH6U+Aj6UDE0eX2ByXrboGWZEWCn8=" defer></script>
 <meta property="og:image:type" content="image/png">
@@ -974,11 +990,11 @@ h3{font-size:var(--s21);line-height:var(--s34);font-weight:700;margin:0 0 var(--
 <p class="identity">Gotham Gay / Argelys Samuel Oriach / Sam Oriach</p>
 <p class="capital-thesis">Personal index of Argelys Samuel Oriach and home of Gotham Gay Ventures, an independent angel investment firm deploying capital into zero-dependency systems, brutalist infrastructure, and sovereign founder-built companies.</p>
 <p class="roles">Angel Investor / Systems Architect / Artist</p>
-<p class="mandate">Two laboratories, one closed-loop practice.</p>
+<p class="mandate">Three umbrellas, one closed-loop practice.</p>
 </header>
-<section class="equilibrium" id="laboratories" aria-label="The two laboratories">
-<svg class="datum" viewBox="0 0 1000 144" preserveAspectRatio="none" role="img" aria-label="A continuous figure-eight connects the two laboratories through a shared central axis"><path d="M500 0 V72 M500 72 C375 -13 55 -13 55 72 C55 157 375 157 500 72 C625 -13 945 -13 945 72 C945 157 625 157 500 72 Z"/></svg>
-<svg class="datum-mobile" viewBox="0 0 34 1000" preserveAspectRatio="none" aria-hidden="true"><path d="M17 500 C-3 375 -3 55 17 55 C37 55 37 375 17 500 C-3 625 -3 945 17 945 C37 945 37 625 17 500 Z"/></svg>
+<section class="equilibrium" id="laboratories" aria-label="Three umbrellas: infrastructure, artists, and capital">
+<svg class="datum" viewBox="0 0 1200 144" preserveAspectRatio="none" role="img" aria-label="A three-lobe harmonic wave anchors infrastructure, artists, and capital"><line x1="600" y1="0" x2="600" y2="21"/><path stroke-dasharray="3 3" d="M0 72 C100 4 300 4 400 72 C500 140 700 140 800 72 C900 4 1100 4 1200 72"/><path d="M400 72 V144 M800 72 V144"/></svg>
+<svg class="datum-mobile" viewBox="0 0 34 1200" preserveAspectRatio="none" aria-hidden="true"><path stroke-dasharray="3 3" d="M17 0 C1 100 1 300 17 400 C33 500 33 700 17 800 C1 900 1 1100 17 1200"/></svg>
 <div class="nodes">
 <section class="node" aria-labelledby="lab-783">
 <p class="index">01 / Infrastructure</p>
@@ -986,7 +1002,8 @@ h3{font-size:var(--s21);line-height:var(--s34);font-weight:700;margin:0 0 var(--
 <p class="short">Lab 783</p>
 <h3>Systems Architecture &amp; Steel Beams for Organizations</h3>
 <p class="focus">Zero-dependency infrastructure, bare-metal edge deployments, and turnkey organizational builds.</p>
-<p class="destination"><a href="https://seveneightythree.com/">Enter Seven Eighty Three</a></p><nav class="foundry-index" aria-label="Seven Eighty Three ventures"><a href="https://pogo.vet/" rel="noopener">Pogo</a><a href="https://wildlakestudio.com/" rel="noopener">Wild Lake Studio</a><a href="https://basalt.fm/" rel="noopener">BASALT</a><a href="https://bullpen.vip/" rel="noopener">Bullpen</a><a href="https://apsis.club/" rel="noopener">Apsis</a><a href="https://retentionrail.io/" rel="noopener">Retention Rail</a><a href="https://casajosefin.com/" rel="noopener">Casa Josefin</a><a href="https://communalfoundation.org/" rel="noopener">Communal Foundation</a></nav>
+<p class="terms" aria-hidden="true"></p>
+<p class="destination"><a href="https://seveneightythree.com/">Enter Seven Eighty Three</a></p><nav class="foundry-index" aria-label="Seven Eighty Three ventures"><a href="https://pogo.vet/" rel="noopener">Pogo</a><a href="https://basalt.fm/" rel="noopener">BASALT</a><a href="https://bullpen.vip/" rel="noopener">Bullpen</a><a href="https://apsis.club/" rel="noopener">Apsis</a><a href="https://retentionrail.io/" rel="noopener">Retention Rail</a><a href="https://casajosefin.com/" rel="noopener">Casa Josefin</a><a href="https://communalfoundation.org/" rel="noopener">Communal Foundation</a></nav>
 </section>
 <section class="node" aria-labelledby="wild-lake">
 <p class="index">02 / Artists</p>
@@ -996,6 +1013,15 @@ h3{font-size:var(--s21);line-height:var(--s34);font-weight:700;margin:0 0 var(--
 <p class="focus">Sovereign A&amp;R, controlled demolition, and load-bearing studio containers for generational artists on fixed retainers.</p>
 <p class="terms">0% IP ownership / 0% revenue share</p>
 <p class="destination"><a href="https://wildlakestudio.com/">Enter Wild-Lake</a></p>
+</section>
+<section class="node" aria-labelledby="capital-umbrella">
+<p class="index">03 / Capital</p>
+<h2 id="capital-umbrella">Gotham Gay Ventures</h2>
+<p class="short">Gotham Gay</p>
+<h3>Angel Capital &amp; Sovereign Holding Vehicle</h3>
+<p class="focus">Pre-seed and seed capital backing zero-dependency systems, brutalist infrastructure, and founder-owned companies.</p>
+<p class="terms">$25K to $250K checks / Zero board seats</p>
+<p class="destination"><a href="#capital">Enter Gotham Gay Ventures</a></p>
 </section>
 </div>
 </section>

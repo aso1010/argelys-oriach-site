@@ -11,8 +11,8 @@ paragraphs=[unescape(re.sub('<[^>]+>','',x)) for x in re.findall(r'<p>(.*?)</p>'
 assert len(paragraphs)>=6 and all(paragraphs), 'Expected complete biography page'
 person=read('schema/person.json')
 person['jobTitle']='Managing Principal'
-person['worksFor']={'@id':'https://theangel.biz/#organization'}
-person['affiliation']={'@id':'https://theangel.biz/#organization'}
+person['worksFor']={'@id':'https://angelventures.biz/#organization'}
+person['affiliation']={'@id':'https://angelventures.biz/#organization'}
 person['hasOccupation']=[{'@type':'Occupation','name':name} for name in ['Angel Investor','Systems Architect','Artist','Performance Artist','Artistic Director','Multidisciplinary Artist','Actor','Vocalist','Writer','Engineer','Talent Architect','Developer','Angel Investor','Managing Principal']]
 person['description']='Brooklyn-based angel investor, systems architect, and artist. Managing principal of Angel, an independent angel investment firm.'
 person['mainEntityOfPage']={'@id':'https://gothamgay.com/#profilepage'}
@@ -27,16 +27,16 @@ organizations=read('schema/organizations.json')
 for org in organizations['@graph']:
  if org.get('@id')=='https://seveneightythree.com/#organization':
   org['description']='Systems laboratory and venture foundry building zero-dependency digital infrastructure and the Universe API. An operating lab of Angel.'
-  org['parentOrganization']={'@id':'https://theangel.biz/#organization'}
+  org['parentOrganization']={'@id':'https://angelventures.biz/#organization'}
  if org.get('@id')=='https://wildlakestudio.com/#organization':
   org['name']='Wild Lake Studio';org['alternateName']='Wild-Lake'
   org['description']='Talent architecture and sovereign A&R operating lab of Angel, building operational, somatic, and digital infrastructure for independent artists with zero ownership or backend percentages.'
-  org['parentOrganization']={'@id':'https://theangel.biz/#organization'}
+  org['parentOrganization']={'@id':'https://angelventures.biz/#organization'}
 write('schema/organizations.json',organizations)
-website=read('schema/website.json');website['name']='Argelys Samuel Oriach | The Angel';website['alternateName']=['The Gotham Gay','Argelys Samuel Oriach'];website['description']='Angel (Angel Ventures, theangel.biz) is the angel investment firm of Argelys Samuel Oriach, housing operating labs Seven Eighty Three and Wild Lake Studio alongside eight internal portfolio assets.';write('schema/website.json',website)
+website=read('schema/website.json');website['name']='The Angel | Argelys Samuel Oriach';website['alternateName']=['The Gotham Gay','Argelys Samuel Oriach'];website['description']='The Angel is the personal index of Argelys Samuel Oriach, an angel investor, systems architect, and artist, and the doorway to Angel Ventures at angelventures.biz.';write('schema/website.json',website)
 summary='Brooklyn-based performance artist, artistic director, and systems architect. Principal of Seven Eighty Three (Lab 783) and founder of Wild Lake Studio (Wild-Lake).'
 canonical={x['@id']:{k:v for k,v in x.items() if k!='@context'} for x in [person,website,*organizations['@graph']]}
-canonical['https://gothamgay.com/#profilepage']={'@type':'ProfilePage','@id':'https://gothamgay.com/#profilepage','url':'https://gothamgay.com/','name':'Argelys Samuel Oriach | The Angel','description':website['description']}
+canonical['https://gothamgay.com/#profilepage']={'@type':'ProfilePage','@id':'https://gothamgay.com/#profilepage','url':'https://gothamgay.com/','name':'The Angel | Argelys Samuel Oriach','description':website['description']}
 story=next(w for w in read('schema/works.json')['@graph'] if w.get('name')=='This Is Not a Love Story (Yankees)')
 canonical.update({node['@id']:node for node in read('schema/works.json')['@graph'] if node.get('@type') in ['SoftwareApplication','WebApplication']})
 def sync(x):
@@ -88,7 +88,7 @@ for path in root.rglob('*.html'):
   for attr,key in [('name','description'),('property','og:description'),('name','twitter:description')]:
    result=re.sub(rf'(<meta {attr}="{key}" content=")[^"]*',lambda m:m[1]+(website['description'] if path==root/'index.html' else summary),result)
  if path==root/'index.html':
-  result=re.sub(r'<title>.*?</title>',lambda m:'<title>Argelys Samuel Oriach | The Angel - Performance Artist, Systems Architect &amp; Angel Investor</title>',result)
+  result=re.sub(r'<title>.*?</title>',lambda m:'<title>The Angel | Argelys Samuel Oriach</title>',result)
   for attr,key in [('property','og:title'),('name','twitter:title')]:
    result=re.sub(rf'(<meta {attr}="{key}" content=")[^"]*',lambda m:m[1]+'Argelys Samuel Oriach | The Angel',result)
  if result!=source:path.write_text(result)

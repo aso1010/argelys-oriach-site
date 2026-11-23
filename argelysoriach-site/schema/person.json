@@ -68,14 +68,14 @@
       "name": "Managing Principal"
     }
   ],
-  "description": "Brooklyn-based angel investor, systems architect, and artist. Managing principal of Angel, an independent angel investment firm.",
+  "description": "Argelys Samuel Oriach, known as The Angel, is an angel investor, systems architect, and artist. Managing principal of Angel Ventures.",
   "birthDate": "1993-08-29T15:45:00-04:00",
   "birthPlace": {
     "@type": "Place",
     "name": "Santiago de los Caballeros, Dominican Republic"
   },
   "worksFor": {
-    "@id": "https://theangel.biz/#organization"
+    "@id": "https://angelventures.biz/#organization"
   },
   "@reverse": {
     "founder": [
@@ -92,7 +92,7 @@
         "@id": "https://bullpen.vip/#organization"
       },
       {
-        "@id": "https://theangel.biz/#organization"
+        "@id": "https://angelventures.biz/#organization"
       }
     ],
     "author": [
@@ -170,6 +170,6 @@
     }
   },
   "affiliation": {
-    "@id": "https://theangel.biz/#organization"
+    "@id": "https://angelventures.biz/#organization"
   }
 }

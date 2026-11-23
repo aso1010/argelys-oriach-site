@@ -20,10 +20,10 @@
         }
       ],
       "parentOrganization": {
-        "@id": "https://theangel.biz/#organization"
+        "@id": "https://angelventures.biz/#organization"
       },
       "funder": {
-        "@id": "https://theangel.biz/#organization"
+        "@id": "https://angelventures.biz/#organization"
       }
     },
     {
@@ -38,10 +38,10 @@
       },
       "alternateName": "Wild-Lake",
       "parentOrganization": {
-        "@id": "https://theangel.biz/#organization"
+        "@id": "https://angelventures.biz/#organization"
       },
       "funder": {
-        "@id": "https://theangel.biz/#organization"
+        "@id": "https://angelventures.biz/#organization"
       }
     },
     {
@@ -204,9 +204,9 @@
         "Organization",
         "FinancialService"
       ],
-      "@id": "https://theangel.biz/#organization",
+      "@id": "https://angelventures.biz/#organization",
       "name": "Angel Ventures",
-      "url": "https://theangel.biz/",
+      "url": "https://angelventures.biz/",
       "description": "Independent angel investment firm of Argelys Samuel Oriach housing two operating labs, Seven Eighty Three and Wild Lake Studio, and eight internal portfolio assets.",
       "foundingDate": "2026",
       "founder": {
@@ -260,19 +260,16 @@
         }
       ],
       "sameAs": [
-        "https://theangel.biz/#organization"
+        "https://theangel.biz/#organization",
+        "https://gothamgay.com/#organization"
       ],
       "subjectOf": {
         "@id": "https://gothamgay.com/#profilepage"
       },
       "legalName": "Angel Ventures",
-      "alternateName": [
-        "Angel",
-        "The Angel",
-        "theangel.biz"
-      ],
-      "email": "hi@theangel.biz",
-      "disambiguatingDescription": "Angel (short for Angel Ventures) is an independent angel investment firm and holding vehicle based in New York City (theangel.biz), founded and managed by Argelys Samuel Oriach (The Angel). Unaffiliated with theangel.la."
+      "alternateName": "Angel",
+      "email": "hi@angelventures.biz",
+      "disambiguatingDescription": "Angel (short for Angel Ventures) is an independent angel investment firm and holding vehicle based in New York City (angelventures.biz), founded and managed by Argelys Samuel Oriach (The Angel). Unaffiliated with theangel.la."
     },
     {
       "@type": "Organization",
@@ -293,11 +290,12 @@
       "url": "https://gothamgay.com/",
       "jobTitle": "Managing Principal",
       "worksFor": {
-        "@id": "https://theangel.biz/#organization"
+        "@id": "https://angelventures.biz/#organization"
       },
       "affiliation": {
-        "@id": "https://theangel.biz/#organization"
-      }
+        "@id": "https://angelventures.biz/#organization"
+      },
+      "description": "Argelys Samuel Oriach, known as The Angel, is an angel investor, systems architect, and artist. Managing principal of Angel Ventures."
     }
   ]
 }

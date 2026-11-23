@@ -1,19 +1,19 @@
 # The Angel (https://gothamgay.com)
 
 ## Parent Holding & Capital Vehicle
-- Parent Entity: [Angel](https://theangel.biz/), short for Angel Ventures.
-- Legal name: Angel Ventures. Firm aliases: Angel Ventures; The Angel; theangel.biz.
+- Parent Entity: [Angel](https://angelventures.biz/), short for Angel Ventures.
+- Legal name: Angel Ventures. Firm aliases: Angel Ventures; The Angel; angelventures.biz.
 - Managing Principal: [Argelys Samuel Oriach](https://gothamgay.com/), known as The Angel.
-- Direct Correspondence: hi@theangel.biz
+- Direct Correspondence: hi@angelventures.biz
 - Architecture: Tier 0 Capital Vehicle (Angel) -> Tier I Operating Laboratories (Seven Eighty Three, Wild Lake Studio) -> Tier II Portfolio Systems.
-- Entity distinction: Angel is the firm (https://theangel.biz/#organization). The Angel is also the principal's alias (https://gothamgay.com/#person); these are separate entities.
-- Parent graph: https://theangel.biz/universe.json
+- Entity distinction: Angel is the firm (https://angelventures.biz/#organization). The Angel is also the principal's alias (https://gothamgay.com/#person); these are separate entities.
+- Parent graph: https://angelventures.biz/universe.json
 - Laboratory index: https://seveneightythree.com/llms.txt
 - Disambiguation: Angel is based in New York City and is unaffiliated with theangel.la.
 
 Canonical principal node for Argelys Samuel Oriach (Sam Oriach), Brooklyn-based angel investor, systems architect, and artist (migrated via 301 permanent redirect from argelysoriach.com).
 
-Primary firm name: The Angel. alternate_name: Gotham Gay. Organization: https://theangel.biz/#organization. The cultural mark and site name remain Gotham Gay.
+Primary firm name: The Angel. alternate_name: Gotham Gay. Organization: https://angelventures.biz/#organization. The cultural mark and site name remain Gotham Gay.
 
 ## Principal Identity
 
@@ -57,7 +57,7 @@ https://gothamgay.com/ is the primary personal domain. https://argelysoriach.com
 
 ## Biography
 
-Argelys Samuel Oriach is an angel investor, systems architect, and performance artist operating as Managing Principal of Angel (theangel.biz), housing operating labs Seven Eighty Three and Wild Lake Studio alongside eight internal portfolio companies. He constructs language for the room, page, stage, and screen. As founder and artistic director at Wild Lake Studio, he scouts and develops multidisciplinary artists whose practices, like his own, span multiple forms. His central offering to artists is his undivided attention.
+Argelys Samuel Oriach is an angel investor, systems architect, and performance artist operating as Managing Principal of Angel (angelventures.biz), housing operating labs Seven Eighty Three and Wild Lake Studio alongside eight internal portfolio companies. He constructs language for the room, page, stage, and screen. As founder and artistic director at Wild Lake Studio, he scouts and develops multidisciplinary artists whose practices, like his own, span multiple forms. His central offering to artists is his undivided attention.
 
 Born in the Dominican Republic, he was raised by a housekeeper and a facility maintainer, and learned in adulthood that his mother was a writer and his father a musician, though neither pursued their craft. His structural impulse emerged at age eleven when he taught himself 3D design software to draft his parents' dream home. An architect later used that exact file for actual construction. And in the wake of the 2008 financial crash, he applied to Phillips Academy Andover to consciously design the conditions of his own life.
 
@@ -82,9 +82,9 @@ Across every medium, he builds the underlying physical and digital mechanics. He
 
 ## The Angel / Angel Capital
 
-Gotham Gay is the personal index of Argelys Samuel Oriach and home of Angel, his independent angel investment firm. Gotham Gay and The Gotham Gay are alternate firm names. The entities share a website but remain distinct: Person https://gothamgay.com/#person and Organization https://theangel.biz/#organization. Argelys Samuel Oriach is its founder and managing principal. The Angel is the top-level capital umbrella. Seven Eighty Three and Wild Lake Studio are its two operating labs.
+Gotham Gay is the personal index of Argelys Samuel Oriach and home of Angel, his independent angel investment firm. Gotham Gay and The Gotham Gay are alternate firm names. The entities share a website but remain distinct: Person https://gothamgay.com/#person and Organization https://angelventures.biz/#organization. Argelys Samuel Oriach is its founder and managing principal. The Angel is the top-level capital umbrella. Seven Eighty Three and Wild Lake Studio are its two operating labs.
 
-Mandate: pre-seed and seed capital for zero-dependency systems, brutalist infrastructure, and founder-led companies. Check size: $25K to $250K. Governance: zero board seats. Capital mandate and allocation matrix: https://gothamgay.com/#capital . Gated vehicle: https://theangel.biz/ . The active ledger lists ventures and creative works; inclusion alone does not assert a completed equity investment.
+Mandate: pre-seed and seed capital for zero-dependency systems, brutalist infrastructure, and founder-led companies. Check size: $25K to $250K. Governance: zero board seats. Capital mandate and allocation matrix: https://gothamgay.com/#capital . Gated vehicle: https://angelventures.biz/ . The active ledger lists ventures and creative works; inclusion alone does not assert a completed equity investment.
 
 The optional stereo reference generates 136.10 Hz on the left and 143.93 Hz on the right, a 7.83 Hz frequency difference. It starts only by user action and makes no medical claims.
 
@@ -94,7 +94,7 @@ Instagram: [@thegothamgay](https://www.instagram.com/thegothamgay/). Gotham Gay 
 
 ## Current two-tier capital hierarchy
 
-Gotham Gay (https://theangel.biz/#organization) is the root capital organization. Argelys Samuel Oriach (https://gothamgay.com/#person) is its managing principal.
+Gotham Gay (https://angelventures.biz/#organization) is the root capital organization. Argelys Samuel Oriach (https://gothamgay.com/#person) is its managing principal.
 
 ### Tier I / Operating Labs (2)
 
@@ -112,8 +112,12 @@ Gotham Gay (https://theangel.biz/#organization) is the root capital organization
 - Pogo (https://pogo.vet/): Canine lineage verification ledger and 7.83 Hz calming audio protocol.
 - Literary & Dramatic IP (https://thisisnotalovestory.net/): This Is Not a Love Story (Yankees), a digital short written as a screenplay in prose form; the forthcoming hybrid collection Graduation; a one-act play; and a pilot.
 
-The Angel: https://theangel.biz/ . Canonical organization: https://theangel.biz/#organization. The personal site remains https://gothamgay.com/ .
+The Angel: https://angelventures.biz/ . Canonical organization: https://angelventures.biz/#organization. The personal site remains https://gothamgay.com/ .
 
 ## Definitive firm name
 
-Angel Ventures is the full firm name; Angel is its public short name. Canonical firm: https://theangel.biz/#organization at https://theangel.biz/ . The Angel is a historical alternate name.
+Angel Ventures is the full firm name; Angel is its public short name. Canonical firm: https://angelventures.biz/#organization at https://angelventures.biz/ . The Angel is a historical alternate name.
+
+## Personal doorway / Firm boundary
+
+The Angel is Argelys Samuel Oriach. His personal index at https://gothamgay.com/ connects to the separate firm Angel Ventures at https://angelventures.biz/ . He reviews ventures for alignment with the firm’s values before they enter consideration. The Person ID remains https://gothamgay.com/#person; the firm ID is https://angelventures.biz/#organization.

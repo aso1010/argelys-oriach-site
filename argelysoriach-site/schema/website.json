@@ -3,8 +3,8 @@
   "@type": "WebSite",
   "@id": "https://gothamgay.com/#website",
   "url": "https://gothamgay.com/",
-  "name": "Argelys Samuel Oriach | The Angel",
-  "description": "Angel (Angel Ventures, theangel.biz) is the angel investment firm of Argelys Samuel Oriach, housing operating labs Seven Eighty Three and Wild Lake Studio alongside eight internal portfolio assets.",
+  "name": "The Angel | Argelys Samuel Oriach",
+  "description": "The Angel is the personal index of Argelys Samuel Oriach, an angel investor, systems architect, and artist, and the doorway to Angel Ventures at angelventures.biz.",
   "about": {
     "@id": "https://gothamgay.com/#person"
   },

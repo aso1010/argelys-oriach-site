@@ -86,8 +86,8 @@
   "website_id": "https://gothamgay.com/#website",
   "linked_nodes": [
     {
-      "domain": "theangel.biz",
-      "url": "https://theangel.biz/"
+      "domain": "angelventures.biz",
+      "url": "https://angelventures.biz/"
     },
     {
       "domain": "seveneightythree.com",
@@ -131,7 +131,7 @@
     }
   ],
   "angel_firm": {
-    "@id": "https://theangel.biz/#organization",
+    "@id": "https://angelventures.biz/#organization",
     "name": "Angel Ventures",
     "principal_id": "https://gothamgay.com/#person",
     "managing_principal": "Argelys Samuel Oriach",
@@ -146,7 +146,7 @@
     },
     "board_seats": 0,
     "mandate": "Zero-dependency systems, brutalist infrastructure, and founder-led companies",
-    "url": "https://theangel.biz/",
+    "url": "https://angelventures.biz/",
     "datum_color": "#D9381E",
     "resonance_hz": 7.83,
     "operating_labs": [
@@ -190,6 +190,13 @@
   "name": "Gotham Gay",
   "alternate_name": "The Gotham Gay",
   "holding_entity": "Angel",
-  "holding_url": "https://theangel.biz/",
-  "principal_role": "Managing Principal, Angel"
+  "holding_url": "https://angelventures.biz/",
+  "principal_role": "Managing Principal, Angel",
+  "personal_identity": {
+    "name": "Argelys Samuel Oriach",
+    "alternate_name": "The Angel",
+    "@id": "https://gothamgay.com/#person",
+    "url": "https://gothamgay.com/",
+    "role": "Personal doorway and values-alignment review for Angel Ventures"
+  }
 }

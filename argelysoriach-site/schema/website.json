@@ -1,15 +1,15 @@
 {
   "@context": "https://schema.org",
   "@type": "WebSite",
-  "@id": "https://gothamgay.com/#website",
-  "url": "https://gothamgay.com/",
-  "name": "The Angel | Argelys Samuel Oriach",
-  "description": "The Angel is the personal index of Argelys Samuel Oriach, an angel investor, systems architect, and artist, and the doorway to Angel Ventures at angelventures.biz.",
+  "@id": "https://angelventures.biz/#website",
+  "url": "https://angelventures.biz/",
+  "name": "Angel Ventures",
+  "description": "Angel Ventures is an independent angel investment firm led by Argelys Samuel Oriach, backing founder-led systems and infrastructure at pre-seed and seed.",
   "about": {
-    "@id": "https://gothamgay.com/#person"
+    "@id": "https://theangel.biz/#person"
   },
   "publisher": {
-    "@id": "https://gothamgay.com/#person"
+    "@id": "https://angelventures.biz/#organization"
   },
   "alternateName": [
     "The Gotham Gay",

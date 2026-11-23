@@ -3,9 +3,9 @@
   "@graph": [
     {
       "@type": "CreativeWork",
-      "@id": "https://gothamgay.com/banana-republic/#work",
+      "@id": "https://angelventures.biz/banana-republic/#work",
       "name": "Banana Republic, Rebrand Concept",
-      "url": "https://gothamgay.com/banana-republic/",
+      "url": "https://angelventures.biz/banana-republic/",
       "description": "An independent, speculative rebrand concept for the clothing retailer Banana Republic. The wordmark is wayward: every letter leaves the line, and the one R in the name is cut. Includes a re-architected homepage. Not affiliated with Banana Republic or Gap Inc.",
       "creativeWorkStatus": "Concept",
       "genre": [
@@ -17,10 +17,10 @@
         "name": "Banana Republic"
       },
       "author": {
-        "@id": "https://gothamgay.com/#person"
+        "@id": "https://theangel.biz/#person"
       },
       "isPartOf": {
-        "@id": "https://gothamgay.com/#website"
+        "@id": "https://angelventures.biz/#website"
       },
       "dateCreated": "2026-10",
       "inLanguage": "en"
@@ -30,9 +30,9 @@
       "@id": "https://thisisnotalovestory.net/#work",
       "name": "This Is Not a Love Story (Yankees)",
       "url": "https://thisisnotalovestory.net/",
-      "sameAs": "https://gothamgay.com/this-is-not-a-love-story-yankees/",
+      "sameAs": "https://angelventures.biz/this-is-not-a-love-story-yankees/",
       "author": {
-        "@id": "https://gothamgay.com/#person"
+        "@id": "https://theangel.biz/#person"
       },
       "publisher": {
         "@id": "https://seveneightythree.com/#organization"
@@ -48,9 +48,9 @@
     },
     {
       "@type": "CreativeWork",
-      "@id": "https://gothamgay.com/universe-api/#framework",
+      "@id": "https://angelventures.biz/universe-api/#framework",
       "name": "Universe API",
-      "url": "https://gothamgay.com/universe-api/",
+      "url": "https://angelventures.biz/universe-api/",
       "description": "A foundational macro-systems design framework grounded in first-principles engineering and sovereign logic.",
       "abstract": "The operating philosophy centers on re-architecting digital infrastructure from the mulch up: replacing synthetic friction with closed-loop systems, asset-based leverage, and forms of growth that emerge organically rather than through extractive mechanisms.",
       "disambiguatingDescription": "Engineering makes the spirit legible. Spirit makes the engineering worth holding.",
@@ -63,22 +63,22 @@
         "Infrastructure designed to compound rather than extract"
       ],
       "author": {
-        "@id": "https://gothamgay.com/#person"
+        "@id": "https://theangel.biz/#person"
       },
       "isPartOf": {
-        "@id": "https://gothamgay.com/#website"
+        "@id": "https://angelventures.biz/#website"
       },
       "inLanguage": "en"
     },
     {
       "@type": "BlogPosting",
-      "@id": "https://gothamgay.com/beauty-salon/#the-messiness-of-becoming",
+      "@id": "https://angelventures.biz/beauty-salon/#the-messiness-of-becoming",
       "headline": "The Messiness of Becoming",
       "name": "The Messiness of Becoming",
-      "url": "https://gothamgay.com/beauty-salon/",
+      "url": "https://angelventures.biz/beauty-salon/",
       "description": "An essay on migration, identity, and finding a voice between cultures, homes, and creative forms.",
       "author": {
-        "@id": "https://gothamgay.com/#person"
+        "@id": "https://theangel.biz/#person"
       },
       "publisher": {
         "@id": "https://seveneightythree.com/#organization"
@@ -86,7 +86,7 @@
       "isPartOf": {
         "@type": "Periodical",
         "name": "Beauty Salon",
-        "url": "https://gothamgay.com/beauty-salon/"
+        "url": "https://angelventures.biz/beauty-salon/"
       },
       "inLanguage": "en"
     },
@@ -99,13 +99,13 @@
       "operatingSystem": "Web, REST API",
       "description": "Deterministic 7.83 Hz acoustic calibration engine, PCM WAV mastering console, and real-time broadcast tuner developed within Seven Eighty Three.",
       "creator": {
-        "@id": "https://gothamgay.com/#person"
+        "@id": "https://theangel.biz/#person"
       },
       "publisher": {
         "@id": "https://seveneightythree.com/#organization"
       },
       "author": {
-        "@id": "https://gothamgay.com/#person"
+        "@id": "https://theangel.biz/#person"
       },
       "sourceOrganization": {
         "@id": "https://seveneightythree.com/#organization"
@@ -121,12 +121,12 @@
       "applicationCategory": "SocialNetworkingApplication",
       "description": "Zero-commission direct-to-fan publishing and live broadcast architecture featuring Apogee and Perigee fan brackets.",
       "creator": {
-        "@id": "https://gothamgay.com/#person"
+        "@id": "https://theangel.biz/#person"
       }
     },
     {
       "@type": "Book",
-      "@id": "https://gothamgay.com/#graduation",
+      "@id": "https://angelventures.biz/#graduation",
       "name": "Graduation",
       "genre": [
         "Autofiction",
@@ -135,49 +135,49 @@
       "creativeWorkStatus": "In progress",
       "description": "Forthcoming debut autofiction novel and hybrid collection by Argelys Samuel Oriach.",
       "author": {
-        "@id": "https://gothamgay.com/#person"
+        "@id": "https://theangel.biz/#person"
       }
     },
     {
       "@type": "CreativeWorkSeries",
-      "@id": "https://gothamgay.com/#literary-dramatic-ip",
+      "@id": "https://angelventures.biz/#literary-dramatic-ip",
       "name": "Literary & Dramatic IP",
       "url": "https://thisisnotalovestory.net/",
       "description": "This Is Not a Love Story (Yankees), the forthcoming hybrid collection Graduation, a one-act play, and a pilot.",
       "author": {
-        "@id": "https://gothamgay.com/#person"
+        "@id": "https://theangel.biz/#person"
       },
       "hasPart": [
         {
           "@id": "https://thisisnotalovestory.net/#work"
         },
         {
-          "@id": "https://gothamgay.com/#graduation"
+          "@id": "https://angelventures.biz/#graduation"
         },
         {
-          "@id": "https://gothamgay.com/#one-act-play"
+          "@id": "https://angelventures.biz/#one-act-play"
         },
         {
-          "@id": "https://gothamgay.com/#pilot"
+          "@id": "https://angelventures.biz/#pilot"
         }
       ]
     },
     {
       "@type": "Play",
-      "@id": "https://gothamgay.com/#one-act-play",
+      "@id": "https://angelventures.biz/#one-act-play",
       "name": "One-act play",
       "creativeWorkStatus": "In progress",
       "author": {
-        "@id": "https://gothamgay.com/#person"
+        "@id": "https://theangel.biz/#person"
       }
     },
     {
       "@type": "CreativeWork",
-      "@id": "https://gothamgay.com/#pilot",
+      "@id": "https://angelventures.biz/#pilot",
       "name": "Television pilot",
       "creativeWorkStatus": "In progress",
       "author": {
-        "@id": "https://gothamgay.com/#person"
+        "@id": "https://theangel.biz/#person"
       }
     },
     {
@@ -192,24 +192,24 @@
       "url": "https://angelventures.biz/",
       "email": "hi@angelventures.biz",
       "founder": {
-        "@id": "https://gothamgay.com/#person"
+        "@id": "https://theangel.biz/#person"
       },
       "disambiguatingDescription": "Angel (short for Angel Ventures) is an independent angel investment firm and holding vehicle based in New York City (angelventures.biz), founded and managed by Argelys Samuel Oriach (The Angel). Unaffiliated with theangel.la.",
       "sameAs": [
         "https://theangel.biz/#organization",
-        "https://gothamgay.com/#organization"
+        "https://angelventures.biz/#organization"
       ]
     },
     {
       "@type": "Person",
-      "@id": "https://gothamgay.com/#person",
+      "@id": "https://theangel.biz/#person",
       "name": "Argelys Samuel Oriach",
       "alternateName": [
         "The Angel",
         "Sam Oriach",
         "Argelys Oriach"
       ],
-      "url": "https://gothamgay.com/",
+      "url": "https://theangel.biz/",
       "jobTitle": "Managing Principal",
       "worksFor": {
         "@id": "https://angelventures.biz/#organization"
@@ -217,7 +217,10 @@
       "affiliation": {
         "@id": "https://angelventures.biz/#organization"
       },
-      "description": "Argelys Samuel Oriach, known as The Angel, is an angel investor, systems architect, and artist. Managing principal of Angel Ventures."
+      "description": "Argelys Samuel Oriach, known as The Angel, is an angel investor, systems architect, and artist. Managing principal of Angel Ventures.",
+      "mainEntityOfPage": {
+        "@id": "https://theangel.biz/#page"
+      }
     }
   ]
 }

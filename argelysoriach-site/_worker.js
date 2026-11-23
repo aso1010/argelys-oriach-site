@@ -1,8 +1,15 @@
-const CANONICAL_HOST = 'gothamgay.com';
+const CANONICAL_HOST = 'angelventures.biz';
 
 export default {
   async fetch(request, env) {
     const url = new URL(request.url);
+    if (url.pathname === '/biography' || url.pathname.startsWith('/biography/')) {
+      const destination = new URL('https://theangel.biz/');
+      destination.search = url.search;
+      destination.hash = 'bio';
+      return new Response(null, { status: 301, headers: { Location: destination.href } });
+    }
+
     const redirectPath = url.pathname === '/beauty-supply'
       ? '/beauty-salon/'
       : url.pathname === '/home' ? '/' : null;

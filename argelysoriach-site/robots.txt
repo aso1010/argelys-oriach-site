@@ -16,4 +16,4 @@ Allow: /
 User-agent: Google-Extended
 Allow: /
 
-Sitemap: https://gothamgay.com/sitemap.xml
+Sitemap: https://angelventures.biz/sitemap.xml

@@ -1,7 +1,7 @@
 {
   "@context": "https://schema.org",
   "@type": "Person",
-  "@id": "https://gothamgay.com/#person",
+  "@id": "https://theangel.biz/#person",
   "name": "Argelys Samuel Oriach",
   "alternateName": [
     "The Angel",
@@ -11,7 +11,7 @@
   "givenName": "Argelys",
   "additionalName": "Samuel",
   "familyName": "Oriach",
-  "url": "https://gothamgay.com/",
+  "url": "https://theangel.biz/",
   "email": "hello@seveneightythree.com",
   "jobTitle": "Managing Principal",
   "hasOccupation": [
@@ -100,7 +100,7 @@
         "@id": "https://thisisnotalovestory.net/#work"
       },
       {
-        "@id": "https://gothamgay.com/#graduation"
+        "@id": "https://angelventures.biz/#graduation"
       }
     ],
     "creator": [
@@ -149,12 +149,12 @@
   "sameAs": [
     "https://www.linkedin.com/in/argelys-samuel-oriach/",
     "https://paragraph.com/@seven83hertz",
-    "https://gothamgay.com/#person",
     "https://argelysoriach.com/",
-    "https://www.instagram.com/thegothamgay/"
+    "https://www.instagram.com/thegothamgay/",
+    "https://gothamgay.com/#person"
   ],
   "mainEntityOfPage": {
-    "@id": "https://gothamgay.com/#profilepage"
+    "@id": "https://theangel.biz/#page"
   },
   "homeLocation": {
     "@type": "Place",

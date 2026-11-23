@@ -12,7 +12,7 @@
       "url": "https://seveneightythree.com/",
       "description": "Systems laboratory and venture foundry building zero-dependency digital infrastructure and the Universe API. An operating lab of Angel.",
       "founder": {
-        "@id": "https://gothamgay.com/#person"
+        "@id": "https://theangel.biz/#person"
       },
       "subOrganization": [
         {
@@ -34,7 +34,7 @@
       "url": "https://wildlakestudio.com/",
       "description": "Talent architecture and sovereign A&R operating lab of Angel, building operational, somatic, and digital infrastructure for independent artists with zero ownership or backend percentages.",
       "founder": {
-        "@id": "https://gothamgay.com/#person"
+        "@id": "https://theangel.biz/#person"
       },
       "alternateName": "Wild-Lake",
       "parentOrganization": {
@@ -55,7 +55,7 @@
       },
       "founder": [
         {
-          "@id": "https://gothamgay.com/#person"
+          "@id": "https://theangel.biz/#person"
         },
         {
           "@type": "Person",
@@ -210,7 +210,7 @@
       "description": "Independent angel investment firm of Argelys Samuel Oriach housing two operating labs, Seven Eighty Three and Wild Lake Studio, and eight internal portfolio assets.",
       "foundingDate": "2026",
       "founder": {
-        "@id": "https://gothamgay.com/#person"
+        "@id": "https://theangel.biz/#person"
       },
       "location": {
         "@type": "Place",
@@ -256,15 +256,15 @@
           "@id": "https://pogo.vet/#organization"
         },
         {
-          "@id": "https://gothamgay.com/#literary-dramatic-ip"
+          "@id": "https://angelventures.biz/#literary-dramatic-ip"
         }
       ],
       "sameAs": [
         "https://theangel.biz/#organization",
-        "https://gothamgay.com/#organization"
+        "https://angelventures.biz/#organization"
       ],
       "subjectOf": {
-        "@id": "https://gothamgay.com/#profilepage"
+        "@id": "https://angelventures.biz/#profilepage"
       },
       "legalName": "Angel Ventures",
       "alternateName": "Angel",
@@ -280,14 +280,14 @@
     },
     {
       "@type": "Person",
-      "@id": "https://gothamgay.com/#person",
+      "@id": "https://theangel.biz/#person",
       "name": "Argelys Samuel Oriach",
       "alternateName": [
         "The Angel",
         "Sam Oriach",
         "Argelys Oriach"
       ],
-      "url": "https://gothamgay.com/",
+      "url": "https://theangel.biz/",
       "jobTitle": "Managing Principal",
       "worksFor": {
         "@id": "https://angelventures.biz/#organization"
@@ -295,7 +295,10 @@
       "affiliation": {
         "@id": "https://angelventures.biz/#organization"
       },
-      "description": "Argelys Samuel Oriach, known as The Angel, is an angel investor, systems architect, and artist. Managing principal of Angel Ventures."
+      "description": "Argelys Samuel Oriach, known as The Angel, is an angel investor, systems architect, and artist. Managing principal of Angel Ventures.",
+      "mainEntityOfPage": {
+        "@id": "https://theangel.biz/#page"
+      }
     }
   ]
 }

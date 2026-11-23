@@ -4,7 +4,7 @@
     {
       "@type": "Periodical",
       "name": "BEAUTY SALON",
-      "url": "https://gothamgay.com/beauty-salon/",
+      "url": "https://angelventures.biz/beauty-salon/",
       "issn": "0000-0000",
       "publisher": {
         "@type": "Organization",
@@ -13,7 +13,7 @@
       "creator": {
         "@type": "Person",
         "name": "Argelys Samuel Oriach",
-        "url": "https://gothamgay.com",
+        "url": "https://angelventures.biz",
         "alternateName": "Argelys Oriach",
         "description": "Brooklyn-based artist, writer, and systems architect. Principal of Seven Eighty Three, founder of Wild Lake Studio."
       },
@@ -45,24 +45,24 @@
       "url": "https://angelventures.biz/",
       "email": "hi@angelventures.biz",
       "founder": {
-        "@id": "https://gothamgay.com/#person"
+        "@id": "https://theangel.biz/#person"
       },
       "disambiguatingDescription": "Angel (short for Angel Ventures) is an independent angel investment firm and holding vehicle based in New York City (angelventures.biz), founded and managed by Argelys Samuel Oriach (The Angel). Unaffiliated with theangel.la.",
       "sameAs": [
         "https://theangel.biz/#organization",
-        "https://gothamgay.com/#organization"
+        "https://angelventures.biz/#organization"
       ]
     },
     {
       "@type": "Person",
-      "@id": "https://gothamgay.com/#person",
+      "@id": "https://theangel.biz/#person",
       "name": "Argelys Samuel Oriach",
       "alternateName": [
         "The Angel",
         "Sam Oriach",
         "Argelys Oriach"
       ],
-      "url": "https://gothamgay.com/",
+      "url": "https://theangel.biz/",
       "jobTitle": "Managing Principal",
       "worksFor": {
         "@id": "https://angelventures.biz/#organization"
@@ -70,7 +70,10 @@
       "affiliation": {
         "@id": "https://angelventures.biz/#organization"
       },
-      "description": "Argelys Samuel Oriach, known as The Angel, is an angel investor, systems architect, and artist. Managing principal of Angel Ventures."
+      "description": "Argelys Samuel Oriach, known as The Angel, is an angel investor, systems architect, and artist. Managing principal of Angel Ventures.",
+      "mainEntityOfPage": {
+        "@id": "https://theangel.biz/#page"
+      }
     }
   ]
 }

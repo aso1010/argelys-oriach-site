@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "canonical_url": "https://gothamgay.com/",
+  "canonical_url": "https://angelventures.biz/",
   "resonance_hz": 7.83,
   "nodes": [
     {
@@ -77,13 +77,13 @@
     }
   ],
   "node_id": "gothamgay-01",
-  "canonical_domain": "gothamgay.com",
+  "canonical_domain": "angelventures.biz",
   "migrated_from": [
     "https://argelysoriach.com/"
   ],
   "principal": "Argelys Samuel Oriach",
-  "person_id": "https://gothamgay.com/#person",
-  "website_id": "https://gothamgay.com/#website",
+  "person_id": "https://theangel.biz/#person",
+  "website_id": "https://angelventures.biz/#website",
   "linked_nodes": [
     {
       "domain": "angelventures.biz",
@@ -133,7 +133,7 @@
   "angel_firm": {
     "@id": "https://angelventures.biz/#organization",
     "name": "Angel Ventures",
-    "principal_id": "https://gothamgay.com/#person",
+    "principal_id": "https://theangel.biz/#person",
     "managing_principal": "Argelys Samuel Oriach",
     "stage": [
       "Pre-Seed",
@@ -181,7 +181,7 @@
         "@id": "https://pogo.vet/#organization"
       },
       {
-        "@id": "https://gothamgay.com/#literary-dramatic-ip"
+        "@id": "https://angelventures.biz/#literary-dramatic-ip"
       }
     ],
     "hierarchy": "The Angel is the top-level capital umbrella. Two operating labs and eight internal portfolio assets.",
@@ -195,8 +195,8 @@
   "personal_identity": {
     "name": "Argelys Samuel Oriach",
     "alternate_name": "The Angel",
-    "@id": "https://gothamgay.com/#person",
-    "url": "https://gothamgay.com/",
+    "@id": "https://theangel.biz/#person",
+    "url": "https://angelventures.biz/",
     "role": "Personal doorway and values-alignment review for Angel Ventures"
   }
 }

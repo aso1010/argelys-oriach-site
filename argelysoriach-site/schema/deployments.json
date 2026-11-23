@@ -1,7 +1,7 @@
 {
   "@context": "https://schema.org",
   "@type": "ItemList",
-  "@id": "https://gothamgay.com/biography/#deployments",
+  "@id": "https://angelventures.biz/practice/#deployments",
   "name": "Deployments",
   "itemListOrder": "https://schema.org/ItemListOrderAscending",
   "numberOfItems": 10,
@@ -35,9 +35,9 @@
       "@type": "ListItem",
       "position": 4,
       "item": {
-        "@id": "https://gothamgay.com/universe-api/#framework",
+        "@id": "https://angelventures.biz/universe-api/#framework",
         "name": "Universe API",
-        "url": "https://gothamgay.com/universe-api/"
+        "url": "https://angelventures.biz/universe-api/"
       }
     },
     {

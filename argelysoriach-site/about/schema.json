@@ -1,21 +1,21 @@
 {
   "@context": "https://schema.org",
   "@type": "ProfilePage",
-  "@id": "https://gothamgay.com/about/#page",
-  "url": "https://gothamgay.com/about/",
+  "@id": "https://angelventures.biz/about/#page",
+  "url": "https://angelventures.biz/about/",
   "name": "Who is Argelys Oriach? | Argelys Samuel Oriach",
   "description": "A first-party biography of Argelys Samuel Oriach: systems architect, performance artist, and artistic director.",
   "mainEntity": {
-    "@id": "https://gothamgay.com/#person"
+    "@id": "https://theangel.biz/#person"
   },
   "author": {
-    "@id": "https://gothamgay.com/#person"
+    "@id": "https://theangel.biz/#person"
   },
   "publisher": {
-    "@id": "https://gothamgay.com/#person"
+    "@id": "https://theangel.biz/#person"
   },
   "isPartOf": {
-    "@id": "https://gothamgay.com/#website"
+    "@id": "https://angelventures.biz/#website"
   },
   "inLanguage": "en"
 }

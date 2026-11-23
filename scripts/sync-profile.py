@@ -12,7 +12,7 @@ assert len(paragraphs)>=6 and all(paragraphs), 'Expected complete biography page
 person=read('schema/person.json')
 person['jobTitle']=['Angel Investor','Systems Architect','Artist']
 person['hasOccupation']=[{'@type':'Occupation','name':name} for name in ['Angel Investor','Systems Architect','Artist','Performance Artist','Artistic Director','Multidisciplinary Artist','Actor','Vocalist','Writer','Engineer','Talent Architect','Developer','Angel Investor','Managing Principal']]
-person['description']='Brooklyn-based angel investor, systems architect, and artist. Managing principal of Gotham Gay, an independent angel investment firm.'
+person['description']='Brooklyn-based angel investor, systems architect, and artist. Managing principal of Gotham Gay Ventures, an independent angel investment firm.'
 person['mainEntityOfPage']={'@id':'https://gothamgay.com/#profilepage'}
 person['alternateName']=['Sam Oriach','Argelys Oriach','Gotham Gay','The Gotham Gay']
 person['homeLocation']={'@type':'Place','name':'Crown Heights, Brooklyn, New York'}
@@ -24,14 +24,14 @@ write('schema/person.json',person)
 organizations=read('schema/organizations.json')
 for org in organizations['@graph']:
  if org.get('@id')=='https://seveneightythree.com/#organization':
-  org['description']='Systems laboratory and venture foundry building zero-dependency digital infrastructure and the Universe API. An operating lab of Gotham Gay.'
+  org['description']='Systems laboratory and venture foundry building zero-dependency digital infrastructure and the Universe API. An operating lab of Gotham Gay Ventures.'
   org['parentOrganization']={'@id':'https://gothamgay.com/#organization'}
  if org.get('@id')=='https://wildlakestudio.com/#organization':
   org['name']='Wild Lake Studio';org['alternateName']='Wild-Lake'
-  org['description']='Talent architecture and sovereign A&R operating lab of Gotham Gay, building operational, somatic, and digital infrastructure for independent artists with zero ownership or backend percentages.'
+  org['description']='Talent architecture and sovereign A&R operating lab of Gotham Gay Ventures, building operational, somatic, and digital infrastructure for independent artists with zero ownership or backend percentages.'
   org['parentOrganization']={'@id':'https://gothamgay.com/#organization'}
 write('schema/organizations.json',organizations)
-website=read('schema/website.json');website['name']='Gotham Gay';website['alternateName']=['The Gotham Gay','Argelys Samuel Oriach'];website['description']='Gotham Gay is the angel investment firm and personal index of Argelys Samuel Oriach. Pre-seed and seed capital for founder-led systems and infrastructure.';write('schema/website.json',website)
+website=read('schema/website.json');website['name']='Gotham Gay';website['alternateName']=['The Gotham Gay','Argelys Samuel Oriach'];website['description']='Gotham Gay is the personal index of Argelys Samuel Oriach and home of Gotham Gay Ventures, his angel investment firm. Pre-seed and seed capital for founder-led systems and infrastructure.';write('schema/website.json',website)
 summary='Brooklyn-based performance artist, artistic director, and systems architect. Principal of Seven Eighty Three (Lab 783) and founder of Wild Lake Studio (Wild-Lake).'
 canonical={x['@id']:{k:v for k,v in x.items() if k!='@context'} for x in [person,website,*organizations['@graph']]}
 canonical['https://gothamgay.com/#profilepage']={'@type':'ProfilePage','@id':'https://gothamgay.com/#profilepage','url':'https://gothamgay.com/','name':'Argelys Samuel Oriach | Gotham Gay','description':website['description']}

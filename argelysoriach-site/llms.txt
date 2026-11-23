@@ -12,8 +12,8 @@ https://gothamgay.com/ is the primary personal domain. https://argelysoriach.com
 
 ## Studios & Ventures
 
-- Seven Eighty Three (Lab 783): https://seveneightythree.com/ . Systems laboratory and venture foundry; an operating lab of Gotham Gay.
-- Wild Lake Studio (Wild-Lake): https://wildlakestudio.com/ . Talent architecture and artistic direction; an operating lab of Gotham Gay, originally created within Lab 783.
+- Seven Eighty Three (Lab 783): https://seveneightythree.com/ . Systems laboratory and venture foundry; an operating lab of Gotham Gay Ventures.
+- Wild Lake Studio (Wild-Lake): https://wildlakestudio.com/ . Talent architecture and artistic direction; an operating lab of Gotham Gay Ventures, originally created within Lab 783.
 - Pogo: https://pogo.vet/ . Venture via Seven Eighty Three.
 - BASALT: https://basalt.fm/ . Deterministic 7.83 Hz acoustic calibration, lossless mastering, and live radio. Specification: https://basalt.fm/spec . Canonical engine: https://basalt.fm/#engine.
 - Bullpen: https://bullpen.vip/ . Baseball coaching and swing lab cofounded with player-coach Jordy Oriach.
@@ -67,9 +67,9 @@ Across every medium, he builds the underlying physical and digital mechanics. He
 - https://gothamgay.com/universe-api/
 
 
-## Gotham Gay / Angel Capital
+## Gotham Gay Ventures / Angel Capital
 
-Gotham Gay is both the personal index of Argelys Samuel Oriach and his independent angel investment firm. The entities share a website but remain distinct: Person https://gothamgay.com/#person and Organization https://gothamgay.com/#organization. Argelys Samuel Oriach is its founder and managing principal. Gotham Gay is the top-level capital umbrella. Seven Eighty Three and Wild Lake Studio are its two operating labs.
+Gotham Gay is the personal index of Argelys Samuel Oriach and home of Gotham Gay Ventures, his independent angel investment firm. Gotham Gay and The Gotham Gay are alternate firm names. The entities share a website but remain distinct: Person https://gothamgay.com/#person and Organization https://gothamgay.com/#organization. Argelys Samuel Oriach is its founder and managing principal. Gotham Gay Ventures is the top-level capital umbrella. Seven Eighty Three and Wild Lake Studio are its two operating labs.
 
 Mandate: pre-seed and seed capital for zero-dependency systems, brutalist infrastructure, and founder-led companies. Check size: $25K to $250K. Governance: zero board seats. Capital mandate and allocation matrix: https://gothamgay.com/#capital . The active ledger lists ventures and creative works; inclusion alone does not assert a completed equity investment.
 

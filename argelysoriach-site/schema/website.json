@@ -4,7 +4,7 @@
   "@id": "https://gothamgay.com/#website",
   "url": "https://gothamgay.com/",
   "name": "Gotham Gay",
-  "description": "Gotham Gay is the angel investment firm and personal index of Argelys Samuel Oriach. Pre-seed and seed capital for founder-led systems and infrastructure.",
+  "description": "Gotham Gay is the personal index of Argelys Samuel Oriach and home of Gotham Gay Ventures, his angel investment firm. Pre-seed and seed capital for founder-led systems and infrastructure.",
   "about": {
     "@id": "https://gothamgay.com/#person"
   },

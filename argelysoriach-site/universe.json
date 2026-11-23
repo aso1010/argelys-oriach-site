@@ -86,6 +86,10 @@
   "website_id": "https://gothamgay.com/#website",
   "linked_nodes": [
     {
+      "domain": "theangel.biz",
+      "url": "https://theangel.biz/"
+    },
+    {
       "domain": "seveneightythree.com",
       "url": "https://seveneightythree.com/"
     },
@@ -127,8 +131,8 @@
     }
   ],
   "angel_firm": {
-    "@id": "https://gothamgay.com/#organization",
-    "name": "Gotham Gay Ventures",
+    "@id": "https://theangel.biz/#organization",
+    "name": "The Angel",
     "principal_id": "https://gothamgay.com/#person",
     "managing_principal": "Argelys Samuel Oriach",
     "stage": [
@@ -142,7 +146,7 @@
     },
     "board_seats": 0,
     "mandate": "Zero-dependency systems, brutalist infrastructure, and founder-led companies",
-    "url": "https://gothamgay.com/#capital",
+    "url": "https://theangel.biz/",
     "datum_color": "#D9381E",
     "resonance_hz": 7.83,
     "operating_labs": [
@@ -180,9 +184,8 @@
         "@id": "https://gothamgay.com/#literary-dramatic-ip"
       }
     ],
-    "hierarchy": "Gotham Gay Ventures is the top-level capital umbrella. Two operating labs and eight internal portfolio assets.",
-    "alternate_name": "Gotham Gay"
+    "hierarchy": "The Angel is the top-level capital umbrella. Two operating labs and eight internal portfolio assets."
   },
-  "name": "Gotham Gay Ventures",
-  "alternate_name": "Gotham Gay"
+  "name": "Gotham Gay",
+  "alternate_name": "The Gotham Gay"
 }

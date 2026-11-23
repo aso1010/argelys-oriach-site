@@ -73,7 +73,7 @@
       "name": "Managing Principal"
     }
   ],
-  "description": "Brooklyn-based angel investor, systems architect, and artist. Managing principal of Gotham Gay Ventures, an independent angel investment firm.",
+  "description": "Brooklyn-based angel investor, systems architect, and artist. Managing principal of The Angel, an independent angel investment firm.",
   "birthDate": "1993-08-29T15:45:00-04:00",
   "birthPlace": {
     "@type": "Place",
@@ -87,7 +87,7 @@
       "@id": "https://wildlakestudio.com/#organization"
     },
     {
-      "@id": "https://gothamgay.com/#organization"
+      "@id": "https://theangel.biz/#organization"
     }
   ],
   "@reverse": {
@@ -105,7 +105,7 @@
         "@id": "https://bullpen.vip/#organization"
       },
       {
-        "@id": "https://gothamgay.com/#organization"
+        "@id": "https://theangel.biz/#organization"
       }
     ],
     "author": [

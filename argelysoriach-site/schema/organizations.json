@@ -216,10 +216,7 @@
         "7.83 Hz Acoustic Calibration",
         "Artist Development"
       ],
-      "alternateName": [
-        "Gotham Gay",
-        "The Gotham Gay"
-      ],
+      "alternateName": "Gotham Gay",
       "subOrganization": [
         {
           "@id": "https://seveneightythree.com/#organization"

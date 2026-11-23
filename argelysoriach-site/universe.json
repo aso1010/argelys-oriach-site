@@ -181,9 +181,8 @@
       }
     ],
     "hierarchy": "Gotham Gay Ventures is the top-level capital umbrella. Two operating labs and eight internal portfolio assets.",
-    "alternate_names": [
-      "Gotham Gay",
-      "The Gotham Gay"
-    ]
-  }
+    "alternate_name": "Gotham Gay"
+  },
+  "name": "Gotham Gay Ventures",
+  "alternate_name": "Gotham Gay"
 }

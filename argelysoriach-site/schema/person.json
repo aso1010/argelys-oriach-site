@@ -4,21 +4,16 @@
   "@id": "https://gothamgay.com/#person",
   "name": "Argelys Samuel Oriach",
   "alternateName": [
+    "The Angel",
     "Sam Oriach",
-    "Argelys Oriach",
-    "Gotham Gay",
-    "The Gotham Gay"
+    "Argelys Oriach"
   ],
   "givenName": "Argelys",
   "additionalName": "Samuel",
   "familyName": "Oriach",
   "url": "https://gothamgay.com/",
   "email": "hello@seveneightythree.com",
-  "jobTitle": [
-    "Angel Investor",
-    "Systems Architect",
-    "Artist"
-  ],
+  "jobTitle": "Managing Principal",
   "hasOccupation": [
     {
       "@type": "Occupation",
@@ -73,23 +68,15 @@
       "name": "Managing Principal"
     }
   ],
-  "description": "Brooklyn-based angel investor, systems architect, and artist. Managing principal of The Angel, an independent angel investment firm.",
+  "description": "Brooklyn-based angel investor, systems architect, and artist. Managing principal of Angel, an independent angel investment firm.",
   "birthDate": "1993-08-29T15:45:00-04:00",
   "birthPlace": {
     "@type": "Place",
     "name": "Santiago de los Caballeros, Dominican Republic"
   },
-  "worksFor": [
-    {
-      "@id": "https://seveneightythree.com/#organization"
-    },
-    {
-      "@id": "https://wildlakestudio.com/#organization"
-    },
-    {
-      "@id": "https://theangel.biz/#organization"
-    }
-  ],
+  "worksFor": {
+    "@id": "https://theangel.biz/#organization"
+  },
   "@reverse": {
     "founder": [
       {
@@ -162,7 +149,7 @@
   "sameAs": [
     "https://www.linkedin.com/in/argelys-samuel-oriach/",
     "https://paragraph.com/@seven83hertz",
-    "https://argelysoriach.com/#person",
+    "https://gothamgay.com/#person",
     "https://argelysoriach.com/",
     "https://www.instagram.com/thegothamgay/"
   ],
@@ -181,5 +168,8 @@
       "@type": "CollegeOrUniversity",
       "name": "Wesleyan University"
     }
+  },
+  "affiliation": {
+    "@id": "https://theangel.biz/#organization"
   }
 }

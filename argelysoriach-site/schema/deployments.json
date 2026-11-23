@@ -9,9 +9,7 @@
     {
       "@type": "ListItem",
       "item": {
-        "@id": "https://theangel.biz/#organization",
-        "name": "The Angel",
-        "url": "https://theangel.biz/"
+        "@id": "https://theangel.biz/#organization"
       },
       "position": 1
     },

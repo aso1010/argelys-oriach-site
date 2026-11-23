@@ -31,21 +31,16 @@
       "@id": "https://gothamgay.com/#person",
       "name": "Argelys Samuel Oriach",
       "alternateName": [
+        "The Angel",
         "Sam Oriach",
-        "Argelys Oriach",
-        "Gotham Gay",
-        "The Gotham Gay"
+        "Argelys Oriach"
       ],
       "givenName": "Argelys",
       "additionalName": "Samuel",
       "familyName": "Oriach",
       "url": "https://gothamgay.com/",
       "email": "hello@seveneightythree.com",
-      "jobTitle": [
-        "Angel Investor",
-        "Systems Architect",
-        "Artist"
-      ],
+      "jobTitle": "Managing Principal",
       "hasOccupation": [
         {
           "@type": "Occupation",
@@ -100,23 +95,15 @@
           "name": "Managing Principal"
         }
       ],
-      "description": "Brooklyn-based angel investor, systems architect, and artist. Managing principal of The Angel, an independent angel investment firm.",
+      "description": "Brooklyn-based angel investor, systems architect, and artist. Managing principal of Angel, an independent angel investment firm.",
       "birthDate": "1993-08-29T15:45:00-04:00",
       "birthPlace": {
         "@type": "Place",
         "name": "Santiago de los Caballeros, Dominican Republic"
       },
-      "worksFor": [
-        {
-          "@id": "https://seveneightythree.com/#organization"
-        },
-        {
-          "@id": "https://wildlakestudio.com/#organization"
-        },
-        {
-          "@id": "https://theangel.biz/#organization"
-        }
-      ],
+      "worksFor": {
+        "@id": "https://theangel.biz/#organization"
+      },
       "@reverse": {
         "founder": [
           {
@@ -189,7 +176,7 @@
       "sameAs": [
         "https://www.linkedin.com/in/argelys-samuel-oriach/",
         "https://paragraph.com/@seven83hertz",
-        "https://argelysoriach.com/#person",
+        "https://gothamgay.com/#person",
         "https://argelysoriach.com/",
         "https://www.instagram.com/thegothamgay/"
       ],
@@ -208,6 +195,9 @@
           "@type": "CollegeOrUniversity",
           "name": "Wesleyan University"
         }
+      },
+      "affiliation": {
+        "@id": "https://theangel.biz/#organization"
       }
     },
     {
@@ -219,7 +209,7 @@
         "783"
       ],
       "url": "https://seveneightythree.com/",
-      "description": "Systems laboratory and venture foundry building zero-dependency digital infrastructure and the Universe API. An operating lab of The Angel.",
+      "description": "Systems laboratory and venture foundry building zero-dependency digital infrastructure and the Universe API. An operating lab of Angel.",
       "founder": {
         "@id": "https://gothamgay.com/#person"
       },
@@ -230,6 +220,9 @@
       ],
       "parentOrganization": {
         "@id": "https://theangel.biz/#organization"
+      },
+      "funder": {
+        "@id": "https://theangel.biz/#organization"
       }
     },
     {
@@ -238,12 +231,15 @@
       "name": "Wild Lake Studio",
       "legalName": "Wild Lake Studio",
       "url": "https://wildlakestudio.com/",
-      "description": "Talent architecture and sovereign A&R operating lab of The Angel, building operational, somatic, and digital infrastructure for independent artists with zero ownership or backend percentages.",
+      "description": "Talent architecture and sovereign A&R operating lab of Angel, building operational, somatic, and digital infrastructure for independent artists with zero ownership or backend percentages.",
       "founder": {
         "@id": "https://gothamgay.com/#person"
       },
       "alternateName": "Wild-Lake",
       "parentOrganization": {
+        "@id": "https://theangel.biz/#organization"
+      },
+      "funder": {
         "@id": "https://theangel.biz/#organization"
       }
     },
@@ -512,7 +508,7 @@
         "The Gotham Gay",
         "Argelys Samuel Oriach"
       ],
-      "description": "The Angel (theangel.biz) is the angel investment firm of Argelys Samuel Oriach, housing operating labs Seven Eighty Three and Wild Lake Studio alongside eight internal portfolio assets.",
+      "description": "Angel (Angel Ventures, theangel.biz) is the angel investment firm of Argelys Samuel Oriach, housing operating labs Seven Eighty Three and Wild Lake Studio alongside eight internal portfolio assets.",
       "inLanguage": "en-US",
       "publisher": {
         "@id": "https://gothamgay.com/#person"
@@ -835,9 +831,7 @@
         {
           "@type": "ListItem",
           "item": {
-            "@id": "https://theangel.biz/#organization",
-            "name": "The Angel",
-            "url": "https://theangel.biz/"
+            "@id": "https://theangel.biz/#organization"
           },
           "position": 1
         },
@@ -1051,9 +1045,12 @@
       }
     },
     {
-      "@type": "Organization",
+      "@type": [
+        "Organization",
+        "FinancialService"
+      ],
       "@id": "https://theangel.biz/#organization",
-      "name": "The Angel",
+      "name": "Angel",
       "url": "https://theangel.biz/",
       "description": "Independent angel investment firm of Argelys Samuel Oriach housing two operating labs, Seven Eighty Three and Wild Lake Studio, and eight internal portfolio assets.",
       "foundingDate": "2026",
@@ -1108,11 +1105,19 @@
         }
       ],
       "sameAs": [
-        "https://gothamgay.com/#organization"
+        "https://theangel.biz/#organization"
       ],
       "subjectOf": {
         "@id": "https://gothamgay.com/#profilepage"
-      }
+      },
+      "legalName": "Angel Ventures",
+      "alternateName": [
+        "Angel Ventures",
+        "The Angel",
+        "theangel.biz"
+      ],
+      "email": "hi@theangel.biz",
+      "disambiguatingDescription": "Angel (short for Angel Ventures) is an independent angel investment firm and holding vehicle based in New York City (theangel.biz), founded and managed by Argelys Samuel Oriach (The Angel). Unaffiliated with theangel.la."
     }
   ]
 }
@@ -1371,6 +1376,10 @@ html.embedded-biography,html.embedded-biography body{overflow:hidden}
 <link rel="icon" href="/favicon-16x16.png?v=gg1" type="image/png" sizes="16x16">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png?v=gg1" sizes="180x180">
 <link rel="manifest" href="/site.webmanifest?v=gg1">
+<link rel="me" href="https://theangel.biz/">
+<style>
+.holding-attribution{font:400 11px/1.5 monospace;letter-spacing:.06em;margin:21px 0;padding-left:13px;border-left:1px solid #D9381E;text-transform:uppercase}.holding-attribution a{color:inherit}
+</style>
 </head>
 <body id="top">
 <!-- Shared navigation -->
@@ -1448,7 +1457,7 @@ html.embedded-biography,html.embedded-biography body{overflow:hidden}
       <section class="bio" id="bio" aria-labelledby="bio-h">
   <h2 class="mono" id="bio-h">About</h2>
   <div class="lead">
-    <p>Argelys Samuel Oriach is an angel investor, systems architect, and performance artist operating as Managing Principal of <a href="https://theangel.biz/" rel="noopener">The Angel (theangel.biz)</a>, housing operating labs Seven Eighty Three and Wild Lake Studio alongside eight internal portfolio companies. He constructs language for the room, page, stage, and screen. As founder and artistic director at <a href="https://wildlakestudio.com/">Wild Lake Studio</a>, he scouts and develops multidisciplinary artists whose practices, like his own, span multiple forms. His central offering to artists is his undivided attention.</p>
+    <p>Argelys Samuel Oriach is an angel investor, systems architect, and performance artist operating as Managing Principal of <a href="https://theangel.biz/" rel="noopener">Angel (theangel.biz)</a>, housing operating labs Seven Eighty Three and Wild Lake Studio alongside eight internal portfolio companies. He constructs language for the room, page, stage, and screen. As founder and artistic director at <a href="https://wildlakestudio.com/">Wild Lake Studio</a>, he scouts and develops multidisciplinary artists whose practices, like his own, span multiple forms. His central offering to artists is his undivided attention.</p>
 
     <p>Born in the Dominican Republic, he was raised by a housekeeper and a facility maintainer, and learned in adulthood that his mother was a writer and his father a musician, though neither pursued their craft. His structural impulse emerged at age eleven when he taught himself 3D design software to draft his parents' dream home. An architect later used that exact file for actual construction. And in the wake of the 2008 financial crash, he applied to Phillips Academy Andover to consciously design the conditions of his own life.</p>
 
@@ -1483,7 +1492,7 @@ html.embedded-biography,html.embedded-biography body{overflow:hidden}
       <section class="deploy" id="deployments" aria-labelledby="dep-h">
         <h2 class="mono" id="dep-h">Deployments</h2>
         <ol class="matrix">
-          <li><a href="https://theangel.biz/" rel="noopener"><span class="nm">THE ANGEL</span><span class="go mono" aria-hidden="true">&rarr;</span></a></li>
+          <li><a href="https://theangel.biz/" rel="noopener"><span class="nm">ANGEL</span><span class="go mono" aria-hidden="true">&rarr;</span></a></li>
           <li><a href="https://seveneightythree.com/" target="_blank" rel="noopener noreferrer"><span class="nm">Seven Eighty Three</span><span class="go mono" aria-hidden="true">&rarr;</span><span class="sr"> (opens in a new tab)</span></a></li>
           <li><a href="https://wildlakestudio.com/" target="_blank" rel="noopener noreferrer"><span class="nm">Wild Lake Studio</span><span class="go mono" aria-hidden="true">&rarr;</span><span class="sr"> (opens in a new tab)</span></a></li>
           <li><a href="https://gothamgay.com/universe-api/"><span class="nm">Universe API</span><span class="go mono" aria-hidden="true">&rarr;</span></a></li>
@@ -1562,6 +1571,7 @@ html.embedded-biography,html.embedded-biography body{overflow:hidden}
     <p class="ao-copyright">&copy; 2026 Argelys Samuel Oriach / <a href="https://seveneightythree.com/">Seven Eighty Three</a></p>
   </div>
 
+<p class="holding-attribution"><a href="https://gothamgay.com/" rel="noopener">ARGELYS SAMUEL ORIACH</a>, THE ANGEL // MANAGING PRINCIPAL OF <a href="https://theangel.biz/" rel="noopener">ANGEL</a> (ANGEL VENTURES)</p>
 </footer>
 <!-- /Shared footer -->
 

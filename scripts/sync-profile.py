@@ -10,11 +10,13 @@ bio=home.split('<section class="bio"',1)[1].split('<section class="writing-featu
 paragraphs=[unescape(re.sub('<[^>]+>','',x)) for x in re.findall(r'<p>(.*?)</p>',bio,re.S)]
 assert len(paragraphs)>=6 and all(paragraphs), 'Expected complete biography page'
 person=read('schema/person.json')
-person['jobTitle']=['Angel Investor','Systems Architect','Artist']
+person['jobTitle']='Managing Principal'
+person['worksFor']={'@id':'https://theangel.biz/#organization'}
+person['affiliation']={'@id':'https://theangel.biz/#organization'}
 person['hasOccupation']=[{'@type':'Occupation','name':name} for name in ['Angel Investor','Systems Architect','Artist','Performance Artist','Artistic Director','Multidisciplinary Artist','Actor','Vocalist','Writer','Engineer','Talent Architect','Developer','Angel Investor','Managing Principal']]
-person['description']='Brooklyn-based angel investor, systems architect, and artist. Managing principal of The Angel, an independent angel investment firm.'
+person['description']='Brooklyn-based angel investor, systems architect, and artist. Managing principal of Angel, an independent angel investment firm.'
 person['mainEntityOfPage']={'@id':'https://gothamgay.com/#profilepage'}
-person['alternateName']=['Sam Oriach','Argelys Oriach','Gotham Gay','The Gotham Gay']
+person['alternateName']=['The Angel','Sam Oriach','Argelys Oriach']
 person['homeLocation']={'@type':'Place','name':'Crown Heights, Brooklyn, New York'}
 person['hasCredential']={'@type':'EducationalOccupationalCredential','name':'Bachelor’s degree in English','credentialCategory':'Bachelor’s degree','recognizedBy':{'@type':'CollegeOrUniversity','name':'Wesleyan University'}}
 if not any(x.get('name')=='Northwestern University' for x in person['alumniOf']):
@@ -24,14 +26,14 @@ write('schema/person.json',person)
 organizations=read('schema/organizations.json')
 for org in organizations['@graph']:
  if org.get('@id')=='https://seveneightythree.com/#organization':
-  org['description']='Systems laboratory and venture foundry building zero-dependency digital infrastructure and the Universe API. An operating lab of The Angel.'
+  org['description']='Systems laboratory and venture foundry building zero-dependency digital infrastructure and the Universe API. An operating lab of Angel.'
   org['parentOrganization']={'@id':'https://theangel.biz/#organization'}
  if org.get('@id')=='https://wildlakestudio.com/#organization':
   org['name']='Wild Lake Studio';org['alternateName']='Wild-Lake'
-  org['description']='Talent architecture and sovereign A&R operating lab of The Angel, building operational, somatic, and digital infrastructure for independent artists with zero ownership or backend percentages.'
+  org['description']='Talent architecture and sovereign A&R operating lab of Angel, building operational, somatic, and digital infrastructure for independent artists with zero ownership or backend percentages.'
   org['parentOrganization']={'@id':'https://theangel.biz/#organization'}
 write('schema/organizations.json',organizations)
-website=read('schema/website.json');website['name']='Argelys Samuel Oriach | The Angel';website['alternateName']=['The Gotham Gay','Argelys Samuel Oriach'];website['description']='The Angel (theangel.biz) is the angel investment firm of Argelys Samuel Oriach, housing operating labs Seven Eighty Three and Wild Lake Studio alongside eight internal portfolio assets.';write('schema/website.json',website)
+website=read('schema/website.json');website['name']='Argelys Samuel Oriach | The Angel';website['alternateName']=['The Gotham Gay','Argelys Samuel Oriach'];website['description']='Angel (Angel Ventures, theangel.biz) is the angel investment firm of Argelys Samuel Oriach, housing operating labs Seven Eighty Three and Wild Lake Studio alongside eight internal portfolio assets.';write('schema/website.json',website)
 summary='Brooklyn-based performance artist, artistic director, and systems architect. Principal of Seven Eighty Three (Lab 783) and founder of Wild Lake Studio (Wild-Lake).'
 canonical={x['@id']:{k:v for k,v in x.items() if k!='@context'} for x in [person,website,*organizations['@graph']]}
 canonical['https://gothamgay.com/#profilepage']={'@type':'ProfilePage','@id':'https://gothamgay.com/#profilepage','url':'https://gothamgay.com/','name':'Argelys Samuel Oriach | The Angel','description':website['description']}

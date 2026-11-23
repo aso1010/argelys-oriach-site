@@ -132,7 +132,7 @@
   ],
   "angel_firm": {
     "@id": "https://theangel.biz/#organization",
-    "name": "Angel",
+    "name": "Angel Ventures",
     "principal_id": "https://gothamgay.com/#person",
     "managing_principal": "Argelys Samuel Oriach",
     "stage": [
@@ -184,7 +184,8 @@
         "@id": "https://gothamgay.com/#literary-dramatic-ip"
       }
     ],
-    "hierarchy": "The Angel is the top-level capital umbrella. Two operating labs and eight internal portfolio assets."
+    "hierarchy": "The Angel is the top-level capital umbrella. Two operating labs and eight internal portfolio assets.",
+    "alternate_name": "Angel"
   },
   "name": "Gotham Gay",
   "alternate_name": "The Gotham Gay",

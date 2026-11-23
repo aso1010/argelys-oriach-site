@@ -205,7 +205,7 @@
         "FinancialService"
       ],
       "@id": "https://theangel.biz/#organization",
-      "name": "Angel",
+      "name": "Angel Ventures",
       "url": "https://theangel.biz/",
       "description": "Independent angel investment firm of Argelys Samuel Oriach housing two operating labs, Seven Eighty Three and Wild Lake Studio, and eight internal portfolio assets.",
       "foundingDate": "2026",
@@ -267,7 +267,7 @@
       },
       "legalName": "Angel Ventures",
       "alternateName": [
-        "Angel Ventures",
+        "Angel",
         "The Angel",
         "theangel.biz"
       ],
@@ -279,7 +279,7 @@
       "@id": "https://retentionrail.io/#organization",
       "name": "Retention Rail",
       "url": "https://retentionrail.io/",
-      "description": "Post-sale net dollar retention and recurring revenue infrastructure. The Angel holds a 50% equity position."
+      "description": "Post-sale net dollar retention and recurring revenue infrastructure. Angel Ventures holds a 50% equity position."
     },
     {
       "@type": "Person",

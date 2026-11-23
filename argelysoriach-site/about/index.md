@@ -39,7 +39,7 @@ His biography also lists a pilot, a one-act play, and his debut hybrid collectio
 
 ## External links
 
-- [Personal website](https://argelysoriach.com/)
+- [Personal website](https://gothamgay.com/)
 - [Wild Lake Studio](https://wildlakestudio.com/)
 - [Seven Eighty Three](https://seveneightythree.com/)
 - [LinkedIn](https://www.linkedin.com/in/argelys-samuel-oriach/)

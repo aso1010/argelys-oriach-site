@@ -1,4 +1,4 @@
-const CANONICAL_HOST = 'argelysoriach.com';
+const CANONICAL_HOST = 'gothamgay.com';
 
 export default {
   async fetch(request, env) {

@@ -2,7 +2,7 @@
   "@context": "https://schema.org",
   "@type": "Periodical",
   "name": "BEAUTY SALON",
-  "url": "https://argelysoriach.com/beauty-salon/",
+  "url": "https://gothamgay.com/beauty-salon/",
   "issn": "0000-0000",
   "publisher": {
     "@type": "Organization",
@@ -11,7 +11,7 @@
   "creator": {
     "@type": "Person",
     "name": "Argelys Samuel Oriach",
-    "url": "https://argelysoriach.com",
+    "url": "https://gothamgay.com",
     "alternateName": "Argelys Oriach",
     "description": "Brooklyn-based artist, writer, and systems architect. Principal of Seven Eighty Three, founder of Wild Lake Studio."
   },

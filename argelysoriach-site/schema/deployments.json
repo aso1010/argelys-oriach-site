@@ -1,7 +1,7 @@
 {
   "@context": "https://schema.org",
   "@type": "ItemList",
-  "@id": "https://argelysoriach.com/biography/#deployments",
+  "@id": "https://gothamgay.com/biography/#deployments",
   "name": "Deployments",
   "itemListOrder": "https://schema.org/ItemListOrderAscending",
   "numberOfItems": 9,
@@ -28,9 +28,9 @@
       "@type": "ListItem",
       "position": 3,
       "item": {
-        "@id": "https://argelysoriach.com/universe-api/#framework",
+        "@id": "https://gothamgay.com/universe-api/#framework",
         "name": "Universe API",
-        "url": "https://argelysoriach.com/universe-api/"
+        "url": "https://gothamgay.com/universe-api/"
       }
     },
     {

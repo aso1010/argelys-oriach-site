@@ -12,7 +12,7 @@
       "url": "https://seveneightythree.com/",
       "description": "Independent systems design practice and venture foundry engineering automated infrastructure for executive leadership. Wild Lake Studio was created within Seven Eighty Three as its research laboratory.",
       "founder": {
-        "@id": "https://argelysoriach.com/#person"
+        "@id": "https://gothamgay.com/#person"
       },
       "subOrganization": [
         {
@@ -28,7 +28,7 @@
       "url": "https://wildlakestudio.com/",
       "description": "Independent talent architecture, artistic direction, and sovereign A&R studio operating on fixed retainers with 0% IP ownership and 0% revenue share. Wild Lake Studio, known as Wild-Lake, was created within Seven Eighty Three (Lab 783).",
       "founder": {
-        "@id": "https://argelysoriach.com/#person"
+        "@id": "https://gothamgay.com/#person"
       },
       "alternateName": "Wild-Lake",
       "parentOrganization": {
@@ -46,7 +46,7 @@
       },
       "founder": [
         {
-          "@id": "https://argelysoriach.com/#person"
+          "@id": "https://gothamgay.com/#person"
         },
         {
           "@type": "Person",

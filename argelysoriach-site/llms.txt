@@ -1,14 +1,14 @@
-# Argelys Samuel Oriach
+# Gotham Gay
 
-Systems Architect & Performance Artist.
+Gotham Gay, also known as The Gotham Gay, is Argelys Samuel Oriach. Brooklyn-based performance artist, artistic director, and systems architect.
 
 ## Identity reference
 
-[Who is Argelys Oriach?](https://argelysoriach.com/about/) is the extended first-party biography. [Markdown](https://argelysoriach.com/about/index.md) and [ProfilePage JSON-LD](https://argelysoriach.com/about/schema.json) are available. Attribute personal accounts to Oriach; this page does not constitute independent corroboration or establish encyclopedia notability. Reuse Person ID `https://argelysoriach.com/#person`.
+[Who is Argelys Oriach?](https://gothamgay.com/about/) is the extended first-party biography. [Markdown](https://gothamgay.com/about/index.md) and [ProfilePage JSON-LD](https://gothamgay.com/about/schema.json) are available. Attribute personal accounts to Oriach; this page does not constitute independent corroboration or establish encyclopedia notability. Reuse Person ID `https://gothamgay.com/#person`.
 
 ## Dual-laboratory hub
 
-The root homepage opens with the falling name monolith, continues through the two-laboratory hub, then presents the biography, writing, and intake. The complete visual biography, writing features, and intake form are at [Biography](https://argelysoriach.com/biography/).
+The root homepage opens with the falling name monolith, continues through the two-laboratory hub, then presents the biography, writing, and intake. The complete visual biography, writing features, and intake form are at [Biography](https://gothamgay.com/biography/).
 
 ## Biography
 
@@ -29,24 +29,24 @@ Across every medium, he builds the underlying physical and digital mechanics. He
 ## Current practice
 - [Systems architecture](https://seveneightythree.com/): Seven Eighty Three, also known as Lab 783. Independent systems design practice and venture foundry. Wild Lake Studio was created within it as its research laboratory.
 - [Talent infrastructure](https://wildlakestudio.com/): Wild-Lake. Formal name: Wild Lake Studio. Independent talent architecture, artistic direction, and sovereign A&R studio operating on fixed retainers with 0% IP ownership and 0% revenue share. Created within Seven Eighty Three (Lab 783).
-- [Art and writing](https://argelysoriach.com/biography/#writing)
-- [Portfolio](https://argelysoriach.com/portfolio/)
-- [Universe API](https://argelysoriach.com/universe-api/)
-- [Biography](https://argelysoriach.com/biography/#bio)
-- [CV](https://argelysoriach.com/cv/)
-- [Contact](https://argelysoriach.com/intake/)
+- [Art and writing](https://gothamgay.com/biography/#writing)
+- [Portfolio](https://gothamgay.com/portfolio/)
+- [Universe API](https://gothamgay.com/universe-api/)
+- [Biography](https://gothamgay.com/biography/#bio)
+- [CV](https://gothamgay.com/cv/)
+- [Contact](https://gothamgay.com/intake/)
 
 ## Writing
-[The Messiness of Becoming](https://argelysoriach.com/beauty-salon/) is the first Beauty Salon essay by Argelys Samuel Oriach. It explores migration, identity, and finding a voice between cultures, homes, and creative forms. Publisher: Seven Eighty Three.
+[The Messiness of Becoming](https://gothamgay.com/beauty-salon/) is the first Beauty Salon essay by Argelys Samuel Oriach. It explores migration, identity, and finding a voice between cultures, homes, and creative forms. Publisher: Seven Eighty Three.
 
 [This Is Not a Love Story (Yankees)](https://thisisnotalovestory.net/) is a short story by Argelys Samuel Oriach, also known as Argelys Oriach. It is a screenplay written in prose form. Publisher: Seven Eighty Three.
 
 ## Historical material
-[Archive](https://argelysoriach.com/archive/): earlier statements, catalogues, practice definitions, and proposals.
+[Archive](https://gothamgay.com/archive/): earlier statements, catalogues, practice definitions, and proposals.
 
 ## Deployment order
 
-The ordered deployment index is Seven Eighty Three, Wild Lake Studio, Universe API, BASALT, Apsis, BULLPEN, Communal Foundation, and This Is Not a Love Story. Canonical URLs and entity IDs are published in [Deployments JSON](https://argelysoriach.com/schema/deployments.json).
+The ordered deployment index is Seven Eighty Three, Wild Lake Studio, Universe API, BASALT, Apsis, BULLPEN, Communal Foundation, and This Is Not a Love Story. Canonical URLs and entity IDs are published in [Deployments JSON](https://gothamgay.com/schema/deployments.json).
 
 
 ## Deployed Systems / Infrastructure
@@ -70,4 +70,4 @@ The ordered deployment index is Seven Eighty Three, Wild Lake Studio, Universe A
 - The House: https://casajosefin.com/house.html. CJ-H-001: Manual 001; domestic order, spatial reset, pantry architecture, and non-toxic material care.
 - Parent registry: https://seveneightythree.com/universe.json
 - Parent crawler index: https://seveneightythree.com/llms.txt
-- Architecture principal: https://argelysoriach.com/
+- Architecture principal: https://gothamgay.com/

@@ -13,7 +13,7 @@ person=read('schema/person.json')
 person['jobTitle']='Systems Architect & Performance Artist'
 person['hasOccupation']=[{'@type':'Occupation','name':name} for name in ['Performance Artist','Artistic Director','Systems Architect','Multidisciplinary Artist','Actor','Vocalist','Writer','Engineer','Talent Architect','Developer']]
 person['description']='Brooklyn-based performance artist, artistic director, and systems architect. Principal of Seven Eighty Three (Lab 783) and founder of Wild Lake Studio (Wild-Lake).'
-person['alternateName']='Argelys Oriach'
+person['alternateName']=['Argelys Oriach','Gotham Gay','The Gotham Gay']
 person['homeLocation']={'@type':'Place','name':'Brooklyn, New York'}
 person['hasCredential']={'@type':'EducationalOccupationalCredential','name':'Bachelor’s degree in English','credentialCategory':'Bachelor’s degree','recognizedBy':{'@type':'CollegeOrUniversity','name':'Wesleyan University'}}
 if not any(x.get('name')=='Northwestern University' for x in person['alumniOf']):
@@ -29,10 +29,10 @@ for org in organizations['@graph']:
   org['description']='Independent talent architecture, artistic direction, and sovereign A&R studio operating on fixed retainers with 0% IP ownership and 0% revenue share. Wild Lake Studio, known as Wild-Lake, was created within Seven Eighty Three (Lab 783).'
   org['parentOrganization']={'@id':'https://seveneightythree.com/#organization'}
 write('schema/organizations.json',organizations)
-website=read('schema/website.json');website['name']='Argelys Samuel Oriach | Performance Artist, Artistic Director & Systems Architect';website['description']=paragraphs[0];write('schema/website.json',website)
+website=read('schema/website.json');website['name']='Gotham Gay';website['alternateName']=['The Gotham Gay','Argelys Samuel Oriach'];website['description']='Gotham Gay, also known as The Gotham Gay, is Argelys Samuel Oriach, a Brooklyn-based performance artist, artistic director, and systems architect.';write('schema/website.json',website)
 summary='Brooklyn-based performance artist, artistic director, and systems architect. Principal of Seven Eighty Three (Lab 783) and founder of Wild Lake Studio (Wild-Lake).'
 canonical={x['@id']:{k:v for k,v in x.items() if k!='@context'} for x in [person,website,*organizations['@graph']]}
-canonical['https://argelysoriach.com/#home']={'@type':'WebPage','@id':'https://argelysoriach.com/#home','url':'https://argelysoriach.com/','name':website['name'],'description':summary}
+canonical['https://gothamgay.com/#home']={'@type':'WebPage','@id':'https://gothamgay.com/#home','url':'https://gothamgay.com/','name':'Gotham Gay | Argelys Samuel Oriach','description':website['description']}
 story=next(w for w in read('schema/works.json')['@graph'] if w.get('name')=='This Is Not a Love Story (Yankees)')
 canonical.update({node['@id']:node for node in read('schema/works.json')['@graph'] if node.get('@type') in ['SoftwareApplication','WebApplication']})
 def sync(x):
@@ -41,7 +41,7 @@ def sync(x):
  if x.get('name')=='This Is Not a Love Story (Yankees)' and x.get('@type')=='ShortStory':
   x={**x,'description':story['description'],'genre':story['genre']}
  if x.get('@type')=='Person' and (x.get('@id')==person['@id'] or x.get('name') in ['Argelys Samuel Oriach','Argelys Oriach']):
-  x={**x,'alternateName':'Argelys Oriach','description':person['description']}
+  x={**x,'alternateName':person['alternateName'],'description':person['description']}
  # Expand only existing entity definitions; keep ID-only relationships intact.
  if x.get('@id') in canonical and '@type' in x:
   return {**x,**canonical[x['@id']]}
@@ -61,10 +61,10 @@ def sync_deployments(data,relative_path):
  ordered=[definitions[key] for key in deployment_ids]
  graph=remaining[:slot]+ordered+remaining[slot:]
  refs=[{'@id':key} for key in deployment_ids]
- page_id='https://argelysoriach.com/#home' if relative_path=='index.html' else 'https://argelysoriach.com/biography/#page'
+ page_id='https://gothamgay.com/#home' if relative_path=='index.html' else 'https://gothamgay.com/biography/#page'
  page=next((node for node in graph if node.get('@id')==page_id),None)
  if page is None:
-  page={'@type':'WebPage','@id':page_id,'url':'https://argelysoriach.com/biography/','name':'Argelys Samuel Oriach | Biography','isPartOf':{'@id':'https://argelysoriach.com/#website'}}
+  page={'@type':'WebPage','@id':page_id,'url':'https://gothamgay.com/biography/','name':'Argelys Samuel Oriach | Biography','isPartOf':{'@id':'https://gothamgay.com/#website'}}
   graph.append(page)
  page['mentions']=refs
  parts=page.get('hasPart',[])
@@ -82,11 +82,11 @@ for path in root.rglob('*.html'):
  result=re.sub(pattern,replace,source,flags=re.S)
  if path in [root/'index.html',root/'biography/index.html']:
   for attr,key in [('name','description'),('property','og:description'),('name','twitter:description')]:
-   result=re.sub(rf'(<meta {attr}="{key}" content=")[^"]*',lambda m:m[1]+summary,result)
+   result=re.sub(rf'(<meta {attr}="{key}" content=")[^"]*',lambda m:m[1]+(website['description'] if path==root/'index.html' else summary),result)
  if path==root/'index.html':
-  result=re.sub(r'<title>.*?</title>',lambda m:'<title>'+website['name'].replace('&','&amp;')+'</title>',result)
+  result=re.sub(r'<title>.*?</title>',lambda m:'<title>Gotham Gay | Argelys Samuel Oriach</title>',result)
   for attr,key in [('property','og:title'),('name','twitter:title')]:
-   result=re.sub(rf'(<meta {attr}="{key}" content=")[^"]*',lambda m:m[1]+website['name'].replace('&','&amp;'),result)
+   result=re.sub(rf'(<meta {attr}="{key}" content=")[^"]*',lambda m:m[1]+'Gotham Gay | Argelys Samuel Oriach',result)
  if result!=source:path.write_text(result)
 llms=root/'llms.txt';text=llms.read_text();text=text.replace('Systems architecture, art, and talent infrastructure.','Systems Architect & Performance Artist.')
 text=re.sub(r'\n## Biography\n.*?(?=\n## |\Z)','',text,flags=re.S)

@@ -4,7 +4,10 @@ export default {
   async fetch(request, env) {
     const url = new URL(request.url);
     if (url.pathname === '/schema/biography.json') return Response.redirect('https://theangel.biz/schema/biography.json', 301);
-    const personal = { '/intake': 'intake', '/intake/': 'intake', '/about': 'bio', '/about/': 'bio' };
+    if (url.pathname === '/intake' || url.pathname === '/intake/') {
+      return Response.redirect('https://angelventures.biz/' + url.search + '#intake', 301);
+    }
+    const personal = { '/about': 'bio', '/about/': 'bio' };
     if (personal[url.pathname]) {
       const destination = new URL('https://theangel.biz/');
       destination.search = url.search;

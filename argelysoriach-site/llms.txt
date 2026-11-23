@@ -106,8 +106,11 @@ The Angel is Argelys Samuel Oriach. His personal index at https://angelventures.
 
 Angel Ventures is hosted at https://angelventures.biz/ . Argelys Samuel Oriach’s personal index and biography are hosted at https://theangel.biz/ . Legacy argelysoriach.com and gothamgay.com requests route to the firm, except biography requests which route to The Angel.
 
-Canonical firm index: https://angelventures.biz/ . Personal biography: https://theangel.biz/#bio . Writing and intake: https://theangel.biz/#writing and https://theangel.biz/#intake . Systems and companies: https://angelventures.biz/#portfolio .
+Canonical firm index: https://angelventures.biz/ . Personal biography: https://theangel.biz/#bio . Writing and intake: https://theangel.biz/#writing and https://angelventures.biz/#intake . Systems and companies: https://angelventures.biz/#portfolio .
 
 ## Content ownership
 
-Angel Ventures is the capital, operating labs, systems, and companies index. Its native ledger is at https://angelventures.biz/#systems and https://angelventures.biz/#portfolio. The full About, Writing, Availability and Intake sections belong to Argelys Samuel Oriach at https://theangel.biz/#bio, https://theangel.biz/#writing, and https://theangel.biz/#intake. No personal About or Availability module is embedded on the firm homepage.
+Angel Ventures is the capital, operating labs, systems, and companies index. Its native ledger is at https://angelventures.biz/#systems and https://angelventures.biz/#portfolio. Personal About and Writing belong to Argelys Samuel Oriach at https://theangel.biz/#bio and https://theangel.biz/#writing. The firm renders its own capital, company building, and acquisitions inquiry module at https://angelventures.biz/#intake. No personal biography is embedded on the firm homepage.
+
+## Venture inquiries
+Angel handles capital, company building, and acquisitions at https://angelventures.biz/#intake . Inquiries are drafted to hi@angelventures.biz. The personal site keeps biography, writing, and personal social links.

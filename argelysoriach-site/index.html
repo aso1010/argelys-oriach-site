@@ -954,6 +954,29 @@ h3{font-size:var(--s21);line-height:var(--s34);font-weight:700;margin:0 0 var(--
  .node+.node{border-left:0;border-top:var(--rule)}
  .node .terms:empty{display:none}
 }
+.venture-intake{background:#FFFFFF;color:#000000;padding:89px 34px;border-top:1px solid #000000}
+.venture-intake>.wrap{max-width:1200px;margin:auto;display:grid;grid-template-columns:minmax(0,5fr) minmax(0,8fr);gap:55px}
+.venture-intake .mono{font-size:13px;line-height:21px;text-transform:uppercase;letter-spacing:.06em}
+.venture-intake h2{font-size:13px;line-height:21px;margin:0 0 34px;font-weight:600}
+.venture-intake .kinds{list-style:none;margin:0 0 34px;padding:0;font-size:34px;line-height:1.3;font-weight:900;text-transform:uppercase}
+.venture-intake .kinds li+li{margin-top:8px}
+.venture-intake .kinds .mono{display:inline-block;font-weight:500;font-size:13px;line-height:21px}
+.venture-intake .audience{font-size:21px;line-height:34px}.venture-intake dt{font-size:13px;line-height:21px;text-transform:uppercase;margin-bottom:8px}.venture-intake dd{margin:0}
+.venture-intake .terms{font-size:13px;line-height:21px;margin:0 0 34px}
+.venture-intake .field{margin-bottom:21px}
+.venture-intake label{display:flex;justify-content:space-between;gap:13px;margin-bottom:8px}
+.venture-intake input,.venture-intake textarea{box-sizing:border-box;display:block;width:100%;min-width:0;max-width:100%;border:1px solid #000000;border-radius:0;background:#FFFFFF;color:#000000;padding:13px;font:inherit;font-size:21px;line-height:34px}
+.venture-intake textarea{resize:vertical}.venture-intake input:focus,.venture-intake textarea:focus{outline:2px solid #000000;outline-offset:3px}
+.venture-intake ::placeholder{color:#000000;opacity:1}.venture-intake :focus::placeholder{color:transparent}
+.venture-intake button{display:flex;justify-content:space-between;gap:34px;max-width:100%;border:1px solid #000000;border-radius:0;background:#000000;color:#FFFFFF;padding:13px 21px;font:inherit;font-size:13px;line-height:21px;text-transform:uppercase;letter-spacing:.06em;cursor:pointer}
+.venture-intake button:focus-visible{outline:2px solid #000000;outline-offset:3px}
+.venture-intake .gate-msg{margin-top:21px;font-size:13px;line-height:21px}
+.sr{position:absolute;width:1px;height:1px;margin:-1px;padding:0;overflow:hidden;clip:rect(0,0,0,0);border:0}
+[hidden]{display:none!important}
+@media(max-width:767px){.venture-intake{padding:55px 21px}.venture-intake>.wrap{grid-template-columns:1fr;gap:55px}.venture-intake .kinds{font-size:34px}}
+
+
+.venture-intake a{color:inherit;text-decoration:underline;text-underline-offset:3px}.venture-intake .receipt span{display:block;margin-top:8px}
 </style>
 <link rel="alternate" type="application/json" href="/universe.json" title="Universe registry"><script src="/universe-node.js" integrity="sha256-HFfyiWk3wkDmRDM85miLAYDF2t1GWDDfNDq1HsA8a/0=" defer></script>
 <meta property="og:image:type" content="image/png">
@@ -988,9 +1011,9 @@ h3{font-size:var(--s21);line-height:var(--s34);font-weight:700;margin:0 0 var(--
 <a href="https://angelventures.biz/" rel="noopener">Angel</a>
 <a href="https://seveneightythree.com/">Seven Eighty Three</a>
 <a href="https://wildlakestudio.com/">Wild-Lake</a>
-<a href="https://theangel.biz/#bio">About the principal</a>
+<a href="#intake">Work with Angel</a><a href="https://theangel.biz/#bio">About the principal</a>
 <a href="/about/">Full profile</a>
-<a href="mailto:hello@seveneightythree.com">Contact</a>
+<a href="#intake">Venture inquiries</a>
 </nav>
 </details>
 </header>
@@ -1052,11 +1075,59 @@ h3{font-size:var(--s21);line-height:var(--s34);font-weight:700;margin:0 0 var(--
 
 </div></section>
 
-
+<section class="venture-intake" id="intake" aria-labelledby="availability-h">
+    <div class="wrap">
+      <section class="avail" id="availability" aria-labelledby="availability-h">
+        <h2 class="mono" id="availability-h">03 // Work with Angel</h2>
+        <p class="terms">Here at Angel, capital, infrastructure, and artistic practice work together. Bring a founder-owned company, a system worth building, or an acquisition inquiry.</p>
+        <ul class="kinds" aria-label="Engagements">
+          <li>Capital</li>
+          <li>Company building</li>
+          <li>Acquisitions<br><span class="mono">Acquire a specified venture built within Seven Eighty Three, such as <a href="https://communalfoundation.org/" target="_blank" rel="noopener noreferrer">Communal Foundation</a> and its Food API specification.</span></li>
+        </ul>
+        <dl class="audience">
+          <div><dt>Sectors</dt><dd>Physical industries · Cultural industries</dd></div>
+        </dl>
+      </section>
+      <section class="gate" aria-labelledby="portal-h">
+        <h2 class="mono" id="portal-h">Venture inquiry</h2>
+        <p class="terms">All three fields are required. Drafting opens your email app with a message to <a href="mailto:hi@angelventures.biz">hi@angelventures.biz</a>. Nothing is sent until you send it.</p>
+        <form id="intake-form" novalidate>
+          <div class="field">
+            <label class="mono" for="f-name"><span>Name</span><span>Required</span></label>
+            <input id="f-name" type="text" name="name" autocomplete="name" aria-required="true" data-label="Name">
+          </div>
+          <div class="field">
+            <label class="mono" for="f-objective"><span>Venture &amp; purpose</span><span>Required</span></label>
+            <p class="sr" id="h-objective">What are you building, who does it serve, and why now?</p>
+            <textarea placeholder="What are you building, who does it serve, and why now?" id="f-objective" name="objective" rows="3" aria-required="true" aria-describedby="h-objective" data-label="Venture and purpose"></textarea>
+          </div>
+          <div class="field">
+            <label class="mono" for="f-architecture"><span>Stage &amp; alignment</span><span>Required</span></label>
+            <p class="sr" id="h-architecture">What exists today, what do you need, and why is Angel the right fit?</p>
+            <textarea placeholder="What exists today, what do you need, and why is Angel the right fit?" id="f-architecture" name="architecture" rows="4" aria-required="true" aria-describedby="h-architecture" data-label="Stage and alignment"></textarea>
+          </div>
+          <button type="submit" id="gate-submit">
+            <span class="label">Draft the email</span>
+            <span class="glyph" aria-hidden="true">&rarr;</span>
+          </button>
+          <p class="receipt" id="gate-reject" role="alert" hidden></p>
+          <div class="receipt" id="gate-accept" role="status" hidden>
+            <span class="head">Draft ready</span>
+            <span id="gate-ref"></span>
+            <span id="gate-stamp"></span>
+            <span>Your email app should open with the message. Nothing is sent until you send it. Angel reviews inquiries for alignment with its capital mandate and operating practice.</span>
+            <span>If nothing opens, use this link: <a id="gate-send" href="mailto:hi@angelventures.biz">hi@angelventures.biz</a></span>
+          </div>
+          <noscript><p class="receipt">Scripts are off. Email hi@angelventures.biz with your name, venture purpose, current stage and alignment with Angel.</p></noscript>
+        </form>
+      </section>
+    </div>
+  </section>
 
 </main>
 <footer class="site-footer">
-<nav aria-label="Footer"><a href="mailto:hello@seveneightythree.com">Contact</a><a href="/schema/">Schema</a><a href="/privacy/">Privacy</a><a href="/terms/">Terms</a><a href="https://theangel.biz/#bio">About the principal</a></nav>
+<nav aria-label="Footer"><a href="#intake">Venture inquiries</a><a href="/schema/">Schema</a><a href="/privacy/">Privacy</a><a href="/terms/">Terms</a><a href="https://theangel.biz/#bio">About the principal</a></nav>
 <p>Brooklyn, New York</p>
 <p>MANAGING PRINCIPAL: ARGELYS SAMUEL ORIACH | ANGEL VENTURES</p>
 <p>&copy; 2026 Argelys Samuel Oriach</p>
@@ -1310,5 +1381,54 @@ h3{font-size:var(--s21);line-height:var(--s34);font-weight:700;margin:0 0 var(--
 })();
 </script>
 
+<script>
+/* Hard gate: three fields, no partial pass. Rejection names the empty fields and stops.
+   Draft the email prepares a message addressed to hi@angelventures.biz. */
+(function () {
+  var form = document.getElementById('intake-form');
+  var submit = document.getElementById('gate-submit');
+  var reject = document.getElementById('gate-reject');
+  var accept = document.getElementById('gate-accept');
+
+  form.addEventListener('submit', function (e) {
+    e.preventDefault();
+    var fields = form.querySelectorAll('[data-label]');
+    var missing = [];
+    fields.forEach(function (f) { f.removeAttribute('aria-invalid'); });
+    var firstEmpty = null;
+    fields.forEach(function (f) {
+      if (!f.value.trim()) { missing.push(f.dataset.label); f.setAttribute('aria-invalid', 'true'); if (!firstEmpty) firstEmpty = f; }
+    });
+    if (missing.length) {
+      accept.hidden = true;
+      reject.hidden = false;
+      reject.textContent = 'Not drafted yet. Fill in ' + (missing.length > 1 ? missing.slice(0, -1).join(', ') + ' and ' + missing[missing.length - 1] : missing[0]) + '.';
+      if (firstEmpty) firstEmpty.focus();
+      return;
+    }
+    var vals = {};
+    fields.forEach(function (f) { vals[f.name] = f.value.trim(); });
+    var hex = Math.floor(Math.random() * 0xffffff).toString(16).toUpperCase();
+    while (hex.length < 6) hex = '0' + hex;
+    var ref = 'ANGEL-' + hex;
+    var body = 'Ref ' + ref + '\n\nName: ' + vals.name + '\n\nVenture and purpose: ' + vals.objective + '\n\nStage and alignment: ' + vals.architecture + '\n';
+    var href = 'mailto:hi@angelventures.biz?subject=' + encodeURIComponent('Angel venture inquiry ' + ref) + '&body=' + encodeURIComponent(body);
+    if (href.length > 1900) {
+      accept.hidden = true;
+      reject.hidden = false;
+      reject.textContent = 'Too long to send by email. Shorten your answers and try again.';
+      return;
+    }
+    reject.hidden = true;
+    accept.hidden = false;
+    document.getElementById('gate-ref').textContent = 'Ref ' + ref;
+    document.getElementById('gate-stamp').textContent = 'Prepared ' + new Date().toISOString().replace('T', ' ').slice(0, 19) + 'Z';
+    document.getElementById('gate-send').href = href;
+    submit.querySelector('.label').textContent = 'Draft ready';
+    submit.querySelector('.glyph').textContent = '\u2588';
+    window.location.href = href;
+  });
+})();
+</script>
 </body>
 </html>

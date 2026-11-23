@@ -131,7 +131,6 @@
     "name": "Gotham Gay",
     "principal_id": "https://gothamgay.com/#person",
     "managing_principal": "Argelys Samuel Oriach",
-    "parent_organization": "https://seveneightythree.com/#organization",
     "stage": [
       "Pre-Seed",
       "Seed"
@@ -145,6 +144,42 @@
     "mandate": "Zero-dependency systems, brutalist infrastructure, and founder-led companies",
     "url": "https://gothamgay.com/#capital",
     "datum_color": "#C8A265",
-    "resonance_hz": 7.83
+    "resonance_hz": 7.83,
+    "operating_labs": [
+      {
+        "@id": "https://seveneightythree.com/#organization"
+      },
+      {
+        "@id": "https://wildlakestudio.com/#organization"
+      }
+    ],
+    "portfolio_assets": [
+      {
+        "@id": "https://basalt.fm/#engine"
+      },
+      {
+        "@id": "https://apsis.club/#application"
+      },
+      {
+        "@id": "https://bullpen.vip/#organization"
+      },
+      {
+        "@id": "https://communalfoundation.org/#organization"
+      },
+      {
+        "@id": "https://retentionrail.io/#organization",
+        "equity_fraction": 0.5
+      },
+      {
+        "@id": "https://casajosefin.com/#organization"
+      },
+      {
+        "@id": "https://pogo.vet/#organization"
+      },
+      {
+        "@id": "https://gothamgay.com/#literary-dramatic-ip"
+      }
+    ],
+    "hierarchy": "Gotham Gay is the top-level capital umbrella. Two operating labs and eight internal portfolio assets."
   }
 }

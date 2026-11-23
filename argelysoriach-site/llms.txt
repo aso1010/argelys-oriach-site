@@ -12,8 +12,8 @@ https://gothamgay.com/ is the primary personal domain. https://argelysoriach.com
 
 ## Studios & Ventures
 
-- Seven Eighty Three (Lab 783): https://seveneightythree.com/ . Parent foundry.
-- Wild Lake Studio (Wild-Lake): https://wildlakestudio.com/ . Talent architecture and artistic direction, created within Lab 783.
+- Seven Eighty Three (Lab 783): https://seveneightythree.com/ . Systems laboratory and venture foundry; an operating lab of Gotham Gay.
+- Wild Lake Studio (Wild-Lake): https://wildlakestudio.com/ . Talent architecture and artistic direction; an operating lab of Gotham Gay, originally created within Lab 783.
 - Pogo: https://pogo.vet/ . Venture via Seven Eighty Three.
 - BASALT: https://basalt.fm/ . Deterministic 7.83 Hz acoustic calibration, lossless mastering, and live radio. Specification: https://basalt.fm/spec . Canonical engine: https://basalt.fm/#engine.
 - Bullpen: https://bullpen.vip/ . Baseball coaching and swing lab cofounded with player-coach Jordy Oriach.
@@ -69,7 +69,7 @@ Across every medium, he builds the underlying physical and digital mechanics. He
 
 ## Gotham Gay / Angel Capital
 
-Gotham Gay is both the personal index of Argelys Samuel Oriach and his independent angel investment firm. The entities share a website but remain distinct: Person https://gothamgay.com/#person and Organization https://gothamgay.com/#organization. Argelys Samuel Oriach is its founder and managing principal. The firm operates within Seven Eighty Three (https://seveneightythree.com/).
+Gotham Gay is both the personal index of Argelys Samuel Oriach and his independent angel investment firm. The entities share a website but remain distinct: Person https://gothamgay.com/#person and Organization https://gothamgay.com/#organization. Argelys Samuel Oriach is its founder and managing principal. Gotham Gay is the top-level capital umbrella. Seven Eighty Three and Wild Lake Studio are its two operating labs.
 
 Mandate: pre-seed and seed capital for zero-dependency systems, brutalist infrastructure, and founder-led companies. Check size: $25K to $250K. Governance: zero board seats. Capital mandate and allocation matrix: https://gothamgay.com/#capital . The active ledger lists ventures and creative works; inclusion alone does not assert a completed equity investment.
 
@@ -78,3 +78,23 @@ The optional stereo reference generates 136.10 Hz on the left and 143.93 Hz on t
 ## Social profile
 
 Instagram: [@thegothamgay](https://www.instagram.com/thegothamgay/). Gotham Gay is the primary name; The Gotham Gay is an alternate name.
+
+## Current two-tier capital hierarchy
+
+Gotham Gay (https://gothamgay.com/#organization) is the root capital organization. Argelys Samuel Oriach (https://gothamgay.com/#person) is its managing principal.
+
+### Tier I / Operating Labs (2)
+
+- Seven Eighty Three (https://seveneightythree.com/): Systems laboratory and venture foundry building zero-dependency digital infrastructure and the Universe API.
+- Wild Lake Studio (https://wildlakestudio.com/): Talent architecture and sovereign A&R lab building operational, somatic, and digital infrastructure for independent artists.
+
+### Tier II / Internal Portfolio (8)
+
+- BASALT (https://basalt.fm/): Deterministic 7.83 Hz acoustic calibration engine, radio tuner, and PCM WAV mastering API.
+- Apsis (https://apsis.club/): Zero-commission direct-to-fan publishing and live broadcast engine with Apogee and Perigee brackets.
+- Bullpen (https://bullpen.vip/): Zero-commission kinematic swing telemetry and private video coaching lab for baseball players.
+- Communal Foundation (https://communalfoundation.org/): Closed-loop food-systems architecture routing chef networks, demand, and delivery on the Food API specification. Documented and available for acquisition.
+- Retention Rail (https://retentionrail.io/): Post-sale net dollar retention and recurring revenue infrastructure. 50% equity position.
+- Casa Josefin (https://casajosefin.com/): Culinary publishing venture and domestic archive: The Table, The Page, The House.
+- Pogo (https://pogo.vet/): Canine lineage verification ledger and 7.83 Hz calming audio protocol.
+- Literary & Dramatic IP (https://thisisnotalovestory.net/): This Is Not a Love Story (Yankees), a digital short written as a screenplay in prose form; the forthcoming hybrid collection Graduation; a one-act play; and a pilot.

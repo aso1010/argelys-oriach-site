@@ -137,6 +137,48 @@
       "author": {
         "@id": "https://gothamgay.com/#person"
       }
+    },
+    {
+      "@type": "CreativeWorkSeries",
+      "@id": "https://gothamgay.com/#literary-dramatic-ip",
+      "name": "Literary & Dramatic IP",
+      "url": "https://thisisnotalovestory.net/",
+      "description": "This Is Not a Love Story (Yankees), the forthcoming hybrid collection Graduation, a one-act play, and a pilot.",
+      "author": {
+        "@id": "https://gothamgay.com/#person"
+      },
+      "hasPart": [
+        {
+          "@id": "https://thisisnotalovestory.net/#work"
+        },
+        {
+          "@id": "https://gothamgay.com/#graduation"
+        },
+        {
+          "@id": "https://gothamgay.com/#one-act-play"
+        },
+        {
+          "@id": "https://gothamgay.com/#pilot"
+        }
+      ]
+    },
+    {
+      "@type": "Play",
+      "@id": "https://gothamgay.com/#one-act-play",
+      "name": "One-act play",
+      "creativeWorkStatus": "In progress",
+      "author": {
+        "@id": "https://gothamgay.com/#person"
+      }
+    },
+    {
+      "@type": "CreativeWork",
+      "@id": "https://gothamgay.com/#pilot",
+      "name": "Television pilot",
+      "creativeWorkStatus": "In progress",
+      "author": {
+        "@id": "https://gothamgay.com/#person"
+      }
     }
   ]
 }

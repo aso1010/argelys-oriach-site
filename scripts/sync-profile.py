@@ -24,11 +24,12 @@ write('schema/person.json',person)
 organizations=read('schema/organizations.json')
 for org in organizations['@graph']:
  if org.get('@id')=='https://seveneightythree.com/#organization':
-  org['description']='Independent systems design practice and venture foundry engineering automated infrastructure for executive leadership. Wild Lake Studio was created within Seven Eighty Three as its research laboratory.'
+  org['description']='Systems laboratory and venture foundry building zero-dependency digital infrastructure and the Universe API. An operating lab of Gotham Gay.'
+  org['parentOrganization']={'@id':'https://gothamgay.com/#organization'}
  if org.get('@id')=='https://wildlakestudio.com/#organization':
   org['name']='Wild Lake Studio';org['alternateName']='Wild-Lake'
-  org['description']='Independent talent architecture, artistic direction, and sovereign A&R studio operating on fixed retainers with 0% IP ownership and 0% revenue share. Wild Lake Studio, known as Wild-Lake, was created within Seven Eighty Three (Lab 783).'
-  org['parentOrganization']={'@id':'https://seveneightythree.com/#organization'}
+  org['description']='Talent architecture and sovereign A&R operating lab of Gotham Gay, building operational, somatic, and digital infrastructure for independent artists with zero ownership or backend percentages.'
+  org['parentOrganization']={'@id':'https://gothamgay.com/#organization'}
 write('schema/organizations.json',organizations)
 website=read('schema/website.json');website['name']='Gotham Gay';website['alternateName']=['The Gotham Gay','Argelys Samuel Oriach'];website['description']='Gotham Gay is the angel investment firm and personal index of Argelys Samuel Oriach. Pre-seed and seed capital for founder-led systems and infrastructure.';write('schema/website.json',website)
 summary='Brooklyn-based performance artist, artistic director, and systems architect. Principal of Seven Eighty Three (Lab 783) and founder of Wild Lake Studio (Wild-Lake).'

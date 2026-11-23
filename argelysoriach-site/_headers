@@ -75,3 +75,8 @@
 
 /schema/terms.json
   X-Robots-Tag: noindex, follow
+
+/downloads/gotham-gay-is-in-the-building.png
+  Content-Disposition: attachment; filename="gotham-gay-is-in-the-building.png"
+  X-Robots-Tag: noindex, noarchive
+  Cache-Control: no-store

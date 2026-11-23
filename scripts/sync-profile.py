@@ -10,8 +10,8 @@ bio=home.split('<section class="bio"',1)[1].split('<section class="writing-featu
 paragraphs=[unescape(re.sub('<[^>]+>','',x)) for x in re.findall(r'<p>(.*?)</p>',bio,re.S)]
 assert len(paragraphs)>=6 and all(paragraphs), 'Expected complete biography page'
 person=read('schema/person.json')
-person['jobTitle']=['Performance Artist','Artistic Director','Principal Systems Architect']
-person['hasOccupation']=[{'@type':'Occupation','name':name} for name in ['Performance Artist','Artistic Director','Systems Architect','Multidisciplinary Artist','Actor','Vocalist','Writer','Engineer','Talent Architect','Developer']]
+person['jobTitle']=['Performance Artist','Artistic Director','Principal Systems Architect','Angel Investor']
+person['hasOccupation']=[{'@type':'Occupation','name':name} for name in ['Performance Artist','Artistic Director','Systems Architect','Multidisciplinary Artist','Actor','Vocalist','Writer','Engineer','Talent Architect','Developer','Angel Investor']]
 person['description']='Brooklyn-based performance artist, artistic director, and principal systems architect building zero-dependency digital infrastructure, creative works, and sovereign ventures.'
 person['mainEntityOfPage']={'@id':'https://gothamgay.com/#profilepage'}
 person['alternateName']=['Sam Oriach','Argelys Oriach','Gotham Gay','The Gotham Gay']

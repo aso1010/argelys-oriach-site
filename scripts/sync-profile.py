@@ -5,9 +5,7 @@ import json,re
 root=Path(__file__).resolve().parents[1]/'argelysoriach-site'
 read=lambda p:json.loads((root/p).read_text())
 write=lambda p,v:(root/p).write_text(json.dumps(v,ensure_ascii=False,indent=2)+'\n')
-home=(root/'practice/index.html').read_text()
-paragraphs=read('schema/biography.json')['paragraphs']
-assert len(paragraphs)>=6 and all(paragraphs), 'Expected complete biography page'
+home=(root/'index.html').read_text()
 person=read('schema/person.json')
 person['jobTitle']='Managing Principal'
 person['worksFor']={'@id':'https://angelventures.biz/#organization'}
@@ -55,7 +53,7 @@ biography_graph=json.loads(re.search(r'<script type="application/ld\+json">(.*?)
 deployment_definitions={node['@id']:node for node in biography_graph if node.get('@id') in deployment_ids}
 deployment_definitions.update({key:value for key,value in canonical.items() if key in deployment_ids})
 def sync_deployments(data,relative_path):
- if relative_path not in ['index.html','practice/index.html'] or '@graph' not in data:return data
+ if relative_path not in ['index.html'] or '@graph' not in data:return data
  graph=data['@graph']
  definitions={**deployment_definitions,**{node['@id']:node for node in graph if node.get('@id') in deployment_ids}}
  indices=[i for i,node in enumerate(graph) if node.get('@id') in deployment_ids]
@@ -83,7 +81,7 @@ for path in root.rglob('*.html'):
   if data==updated:return m[0]
   return m[1]+'\n'+json.dumps(updated,ensure_ascii=False,indent=2)+'\n'+m[3]
  result=re.sub(pattern,replace,source,flags=re.S)
- if path in [root/'index.html',root/'practice/index.html']:
+ if path==root/'index.html':
   for attr,key in [('name','description'),('property','og:description'),('name','twitter:description')]:
    result=re.sub(rf'(<meta {attr}="{key}" content=")[^"]*',lambda m:m[1]+(website['description'] if path==root/'index.html' else summary),result)
  if path==root/'index.html':
@@ -93,6 +91,6 @@ for path in root.rglob('*.html'):
  if result!=source:path.write_text(result)
 llms=root/'llms.txt';text=llms.read_text();text=text.replace('Systems architecture, art, and talent infrastructure.','Systems Architect & Performance Artist.')
 text=re.sub(r'\n## Biography\n.*?(?=\n## |\Z)','',text,flags=re.S)
-text=text.replace('\n## Current practice','\n## Biography\n\n'+'\n\n'.join(paragraphs)+'\n\n## Current practice',1)
+text=text.replace('\n## Current practice','\n## Biography\n\nPersonal biography: https://theangel.biz/#bio .\n\n## Current practice',1)
 text=text.replace('Talent architecture, structural mentorship, and development of artistic work.','Research laboratory of Seven Eighty Three (Lab 783), guiding developing and independent artists. Structural stewardship, physical carrying capacity, and live production architecture.')
 llms.write_text(text)

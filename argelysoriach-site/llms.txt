@@ -1,15 +1,6 @@
 # Angel Ventures (https://angelventures.biz)
 
-## Parent Holding & Capital Vehicle
-- Parent Entity: [Angel](https://angelventures.biz/), short for Angel Ventures.
-- Legal name: Angel Ventures. Firm aliases: Angel Ventures; The Angel; angelventures.biz.
-- Managing Principal: [Argelys Samuel Oriach](https://angelventures.biz/), known as The Angel.
-- Direct Correspondence: hi@angelventures.biz
-- Architecture: Tier 0 Capital Vehicle (Angel) -> Tier I Operating Laboratories (Seven Eighty Three, Wild Lake Studio) -> Tier II Portfolio Systems.
-- Entity distinction: Angel is the firm (https://angelventures.biz/#organization). The Angel is also the principal's alias (https://theangel.biz/#person); these are separate entities.
-- Parent graph: https://angelventures.biz/universe.json
-- Laboratory index: https://seveneightythree.com/llms.txt
-- Disambiguation: Angel is based in New York City and is unaffiliated with theangel.la.
+Angel Ventures is an independent angel investment firm and holding architecture, with two operating labs and eight internal portfolio assets. Canonical firm: https://angelventures.biz/#organization. Managing principal: Argelys Samuel Oriach.
 
 Canonical principal node for Argelys Samuel Oriach (Sam Oriach), Brooklyn-based angel investor, systems architect, and artist (migrated via 301 permanent redirect from argelysoriach.com).
 
@@ -115,4 +106,8 @@ The Angel is Argelys Samuel Oriach. His personal index at https://angelventures.
 
 Angel Ventures is hosted at https://angelventures.biz/ . Argelys Samuel Oriach’s personal index and biography are hosted at https://theangel.biz/ . Legacy argelysoriach.com and gothamgay.com requests route to the firm, except biography requests which route to The Angel.
 
-Canonical firm index: https://angelventures.biz/ . Personal biography: https://theangel.biz/#bio . Writing, deployments and intake: https://angelventures.biz/practice/ .
+Canonical firm index: https://angelventures.biz/ . Personal biography: https://theangel.biz/#bio . Writing and intake: https://theangel.biz/#writing and https://theangel.biz/#intake . Systems and companies: https://angelventures.biz/#portfolio .
+
+## Content ownership
+
+Angel Ventures is the capital, operating labs, systems, and companies index. Its native ledger is at https://angelventures.biz/#systems and https://angelventures.biz/#portfolio. The full About, Writing, Availability and Intake sections belong to Argelys Samuel Oriach at https://theangel.biz/#bio, https://theangel.biz/#writing, and https://theangel.biz/#intake. No personal About or Availability module is embedded on the firm homepage.

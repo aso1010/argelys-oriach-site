@@ -4,7 +4,7 @@
   "@id": "https://gothamgay.com/#website",
   "url": "https://gothamgay.com/",
   "name": "Gotham Gay",
-  "description": "Gotham Gay, also known as The Gotham Gay, is Argelys Samuel Oriach, a Brooklyn-based performance artist, artistic director, and systems architect.",
+  "description": "Personal index of Argelys Samuel Oriach (Sam Oriach) and Gotham Gay, an independent angel investment firm backing zero-dependency systems, architectural monoliths, and founder-led infrastructure.",
   "about": {
     "@id": "https://gothamgay.com/#person"
   },

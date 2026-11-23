@@ -10,8 +10,8 @@ bio=home.split('<section class="bio"',1)[1].split('<section class="writing-featu
 paragraphs=[unescape(re.sub('<[^>]+>','',x)) for x in re.findall(r'<p>(.*?)</p>',bio,re.S)]
 assert len(paragraphs)>=6 and all(paragraphs), 'Expected complete biography page'
 person=read('schema/person.json')
-person['jobTitle']=['Performance Artist','Artistic Director','Principal Systems Architect','Angel Investor']
-person['hasOccupation']=[{'@type':'Occupation','name':name} for name in ['Performance Artist','Artistic Director','Systems Architect','Multidisciplinary Artist','Actor','Vocalist','Writer','Engineer','Talent Architect','Developer','Angel Investor']]
+person['jobTitle']=['Performance Artist','Artistic Director','Principal Systems Architect','Angel Investor','Managing Principal']
+person['hasOccupation']=[{'@type':'Occupation','name':name} for name in ['Performance Artist','Artistic Director','Systems Architect','Multidisciplinary Artist','Actor','Vocalist','Writer','Engineer','Talent Architect','Developer','Angel Investor','Managing Principal']]
 person['description']='Brooklyn-based performance artist, artistic director, and principal systems architect building zero-dependency digital infrastructure, creative works, and sovereign ventures.'
 person['mainEntityOfPage']={'@id':'https://gothamgay.com/#profilepage'}
 person['alternateName']=['Sam Oriach','Argelys Oriach','Gotham Gay','The Gotham Gay']
@@ -30,7 +30,7 @@ for org in organizations['@graph']:
   org['description']='Independent talent architecture, artistic direction, and sovereign A&R studio operating on fixed retainers with 0% IP ownership and 0% revenue share. Wild Lake Studio, known as Wild-Lake, was created within Seven Eighty Three (Lab 783).'
   org['parentOrganization']={'@id':'https://seveneightythree.com/#organization'}
 write('schema/organizations.json',organizations)
-website=read('schema/website.json');website['name']='Gotham Gay';website['alternateName']=['The Gotham Gay','Argelys Samuel Oriach'];website['description']='Gotham Gay, also known as The Gotham Gay, is Argelys Samuel Oriach, a Brooklyn-based performance artist, artistic director, and systems architect.';write('schema/website.json',website)
+website=read('schema/website.json');website['name']='Gotham Gay';website['alternateName']=['The Gotham Gay','Argelys Samuel Oriach'];website['description']='Personal index of Argelys Samuel Oriach (Sam Oriach) and Gotham Gay, an independent angel investment firm backing zero-dependency systems, architectural monoliths, and founder-led infrastructure.';write('schema/website.json',website)
 summary='Brooklyn-based performance artist, artistic director, and systems architect. Principal of Seven Eighty Three (Lab 783) and founder of Wild Lake Studio (Wild-Lake).'
 canonical={x['@id']:{k:v for k,v in x.items() if k!='@context'} for x in [person,website,*organizations['@graph']]}
 canonical['https://gothamgay.com/#profilepage']={'@type':'ProfilePage','@id':'https://gothamgay.com/#profilepage','url':'https://gothamgay.com/','name':'Argelys Samuel Oriach | Gotham Gay','description':website['description']}
@@ -85,7 +85,7 @@ for path in root.rglob('*.html'):
   for attr,key in [('name','description'),('property','og:description'),('name','twitter:description')]:
    result=re.sub(rf'(<meta {attr}="{key}" content=")[^"]*',lambda m:m[1]+(website['description'] if path==root/'index.html' else summary),result)
  if path==root/'index.html':
-  result=re.sub(r'<title>.*?</title>',lambda m:'<title>Argelys Samuel Oriach | Gotham Gay | Performance Artist &amp; Systems Architect</title>',result)
+  result=re.sub(r'<title>.*?</title>',lambda m:'<title>Argelys Samuel Oriach | Gotham Gay - Performance Artist, Systems Architect &amp; Angel Investor</title>',result)
   for attr,key in [('property','og:title'),('name','twitter:title')]:
    result=re.sub(rf'(<meta {attr}="{key}" content=")[^"]*',lambda m:m[1]+'Argelys Samuel Oriach | Gotham Gay',result)
  if result!=source:path.write_text(result)

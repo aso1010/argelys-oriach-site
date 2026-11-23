@@ -65,3 +65,12 @@ Across every medium, he builds the underlying physical and digital mechanics. He
 - https://gothamgay.com/cv/
 - https://gothamgay.com/portfolio/
 - https://gothamgay.com/universe-api/
+
+
+## Gotham Gay / Angel Capital
+
+Gotham Gay is both the personal index of Argelys Samuel Oriach and his independent angel investment firm. The entities share a website but remain distinct: Person https://gothamgay.com/#person and Organization https://gothamgay.com/#organization. Argelys Samuel Oriach is its founder and managing principal. The firm operates within Seven Eighty Three (https://seveneightythree.com/).
+
+Mandate: pre-seed and seed capital for zero-dependency systems, brutalist infrastructure, and founder-led companies. Check size: $25K to $250K. Governance: zero board seats. Capital mandate and allocation matrix: https://gothamgay.com/#capital . The active ledger lists ventures and creative works; inclusion alone does not assert a completed equity investment.
+
+The optional stereo reference generates 136.10 Hz on the left and 143.93 Hz on the right, a 7.83 Hz frequency difference. It starts only by user action and makes no medical claims.

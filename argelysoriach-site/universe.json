@@ -125,5 +125,26 @@
       "domain": "casajosefin.com",
       "url": "https://casajosefin.com/"
     }
-  ]
+  ],
+  "angel_firm": {
+    "@id": "https://gothamgay.com/#organization",
+    "name": "Gotham Gay",
+    "principal_id": "https://gothamgay.com/#person",
+    "managing_principal": "Argelys Samuel Oriach",
+    "parent_organization": "https://seveneightythree.com/#organization",
+    "stage": [
+      "Pre-Seed",
+      "Seed"
+    ],
+    "check_size": {
+      "currency": "USD",
+      "minimum": 25000,
+      "maximum": 250000
+    },
+    "board_seats": 0,
+    "mandate": "Zero-dependency systems, brutalist infrastructure, and founder-led companies",
+    "url": "https://gothamgay.com/#capital",
+    "datum_color": "#C8A265",
+    "resonance_hz": 7.83
+  }
 }

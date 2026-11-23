@@ -189,6 +189,33 @@
       "parentOrganization": {
         "@id": "https://seveneightythree.com/#organization"
       }
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://gothamgay.com/#organization",
+      "name": "Gotham Gay",
+      "url": "https://gothamgay.com/",
+      "description": "Independent angel investment firm of Argelys Samuel Oriach deploying pre-seed and seed capital into zero-dependency systems, brutalist digital architecture, and founder-led companies. Check sizes range from $25K to $250K with zero board seats.",
+      "foundingDate": "2026",
+      "founder": {
+        "@id": "https://gothamgay.com/#person"
+      },
+      "parentOrganization": {
+        "@id": "https://seveneightythree.com/#organization"
+      },
+      "location": {
+        "@type": "Place",
+        "name": "Crown Heights, Brooklyn, New York"
+      },
+      "knowsAbout": [
+        "Angel Investing",
+        "Pre-Seed Capital",
+        "Seed Capital",
+        "Zero-Dependency Systems Architecture",
+        "Performance Art",
+        "7.83 Hz Acoustic Calibration",
+        "Artist Development"
+      ]
     }
   ]
 }

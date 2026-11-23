@@ -4,7 +4,7 @@
   "@id": "https://gothamgay.com/#website",
   "url": "https://gothamgay.com/",
   "name": "Gotham Gay",
-  "description": "Personal index of Argelys Samuel Oriach (Sam Oriach) and Gotham Gay, an independent angel investment firm backing zero-dependency systems, architectural monoliths, and founder-led infrastructure.",
+  "description": "Gotham Gay is the angel investment firm and personal index of Argelys Samuel Oriach. Pre-seed and seed capital for founder-led systems and infrastructure.",
   "about": {
     "@id": "https://gothamgay.com/#person"
   },

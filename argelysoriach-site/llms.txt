@@ -1,14 +1,46 @@
-# Gotham Gay
+# Gotham Gay (https://gothamgay.com)
 
-Gotham Gay, also known as The Gotham Gay, is Argelys Samuel Oriach. Brooklyn-based performance artist, artistic director, and systems architect.
+Canonical principal node for Argelys Samuel Oriach (Sam Oriach), Brooklyn-based performance artist, artistic director, and principal systems architect (migrated via 301 permanent redirect from argelysoriach.com).
 
-## Identity reference
+## Principal Identity
 
-[Who is Argelys Oriach?](https://gothamgay.com/about/) is the extended first-party biography. [Markdown](https://gothamgay.com/about/index.md) and [ProfilePage JSON-LD](https://gothamgay.com/about/schema.json) are available. Attribute personal accounts to Oriach; this page does not constitute independent corroboration or establish encyclopedia notability. Reuse Person ID `https://gothamgay.com/#person`.
+Legal name: Argelys Samuel Oriach. Aliases: Sam Oriach, Argelys Oriach, Gotham Gay, The Gotham Gay. Home base: Crown Heights, Brooklyn, New York. Canonical Person: https://gothamgay.com/#person. Canonical WebSite: https://gothamgay.com/#website. ProfilePage: https://gothamgay.com/#profilepage.
 
-## Dual-laboratory hub
+## Domain Migration & Canonical Authority
 
-The root homepage opens with the falling name monolith, continues through the two-laboratory hub, then presents the biography, writing, and intake. The complete visual biography, writing features, and intake form are at [Biography](https://gothamgay.com/biography/).
+https://gothamgay.com/ is the primary personal domain. https://argelysoriach.com/ permanently redirects here with paths and query strings preserved. The personal entity remains separate from the Seven Eighty Three foundry and its ventures. These are first-party identity records, not independent corroboration.
+
+## Studios & Ventures
+
+- Seven Eighty Three (Lab 783): https://seveneightythree.com/ . Parent foundry.
+- Wild Lake Studio (Wild-Lake): https://wildlakestudio.com/ . Talent architecture and artistic direction, created within Lab 783.
+- Pogo: https://pogo.vet/ . Venture via Seven Eighty Three.
+- BASALT: https://basalt.fm/ . Deterministic 7.83 Hz acoustic calibration, lossless mastering, and live radio. Specification: https://basalt.fm/spec . Canonical engine: https://basalt.fm/#engine.
+- Bullpen: https://bullpen.vip/ . Baseball coaching and swing lab cofounded with player-coach Jordy Oriach.
+- Apsis: https://apsis.club/ . Zero-commission publishing with Apogee and Perigee patronage tiers.
+- Communal Foundation: https://communalfoundation.org/ . Food API specification, available for acquisition, not deployed.
+- Retention Rail: https://retentionrail.io/ . Foundry venture.
+- Casa Josefin: https://casajosefin.com/ . Culinary publishing house and domestic archive led by Josefin Oriach.
+
+## Literary & Dramatic Works
+
+- This Is Not a Love Story (Yankees): https://thisisnotalovestory.net/ . A short story and digital short written as a screenplay in prose form. Author: Argelys Samuel Oriach. Publisher: Seven Eighty Three.
+- Graduation: forthcoming debut autofiction novel and hybrid collection. In progress; publication date and physical format are not announced.
+- A pilot and a one-act play are in progress.
+- The Messiness of Becoming: https://gothamgay.com/beauty-salon/ . Essay in Beauty Salon.
+
+## Connected Machine Endpoints
+
+- https://gothamgay.com/universe.json
+- https://gothamgay.com/schema/person.json
+- https://gothamgay.com/schema/website.json
+- https://gothamgay.com/schema/organizations.json
+- https://gothamgay.com/schema/works.json
+- https://gothamgay.com/schema/deployments.json
+- https://gothamgay.com/robots.txt
+- https://gothamgay.com/sitemap.xml
+- https://seveneightythree.com/llms.txt
+- https://wildlakestudio.com/llms.txt
 
 ## Biography
 
@@ -26,48 +58,10 @@ As a writer, he applies this same somatic rigor to narrative through a maximalis
 
 Across every medium, he builds the underlying physical and digital mechanics. He lives and works in New York.
 
-## Current practice
-- [Systems architecture](https://seveneightythree.com/): Seven Eighty Three, also known as Lab 783. Independent systems design practice and venture foundry. Wild Lake Studio was created within it as its research laboratory.
-- [Talent infrastructure](https://wildlakestudio.com/): Wild-Lake. Formal name: Wild Lake Studio. Independent talent architecture, artistic direction, and sovereign A&R studio operating on fixed retainers with 0% IP ownership and 0% revenue share. Created within Seven Eighty Three (Lab 783).
-- [Art and writing](https://gothamgay.com/biography/#writing)
-- [Portfolio](https://gothamgay.com/portfolio/)
-- [Universe API](https://gothamgay.com/universe-api/)
-- [Biography](https://gothamgay.com/biography/#bio)
-- [CV](https://gothamgay.com/cv/)
-- [Contact](https://gothamgay.com/intake/)
+## Reference pages
 
-## Writing
-[The Messiness of Becoming](https://gothamgay.com/beauty-salon/) is the first Beauty Salon essay by Argelys Samuel Oriach. It explores migration, identity, and finding a voice between cultures, homes, and creative forms. Publisher: Seven Eighty Three.
-
-[This Is Not a Love Story (Yankees)](https://thisisnotalovestory.net/) is a short story by Argelys Samuel Oriach, also known as Argelys Oriach. It is a screenplay written in prose form. Publisher: Seven Eighty Three.
-
-## Historical material
-[Archive](https://gothamgay.com/archive/): earlier statements, catalogues, practice definitions, and proposals.
-
-## Deployment order
-
-The ordered deployment index is Seven Eighty Three, Wild Lake Studio, Universe API, BASALT, Apsis, BULLPEN, Communal Foundation, and This Is Not a Love Story. Canonical URLs and entity IDs are published in [Deployments JSON](https://gothamgay.com/schema/deployments.json).
-
-
-## Deployed Systems / Infrastructure
-
-- BASALT (https://basalt.fm): Deterministic 7.83 Hz acoustic calibration engine, lossless mastering console, live radio tuner (https://basalt.fm/radio), and technical specification (https://basalt.fm/spec).
-- Apsis (https://apsis.club): Zero-commission direct-to-fan publishing and live broadcast architecture featuring Apogee and Perigee fan brackets.
-
-- BULLPEN (https://bullpen.vip): Zero-commission coaching infrastructure, 120fps swing mechanics lab, and AI subscriber intelligence for verified MLB/MiLB players. Principal Systems Architect alongside Founding Player-Coach Jordy Oriach. Incubated inside Seven Eighty Three (https://seveneightythree.com).
-
-## Casa Josefin
-- Node ID: casa-josefin-01
-- Canonical entity: https://casajosefin.com/#organization
-- URL: https://casajosefin.com/
-- Classification: Culinary Publishing House & Domestic Archive
-- Principal and founder: Josefin Oriach
-- Parent foundry: Seven Eighty Three, https://seveneightythree.com/
-- Publishing rail: Apsis, https://apsis.club/. Apogee open archive (free_public); Perigee paid patronage (paid_gated). Platform take rate: 0.0%. Payment processing and fulfillment terms remain separate.
-- Locations: Tampa, FL; New York, NY
-- The Table: https://casajosefin.com/table.html. CJ-T-001: 55 numbered jars; single-table supper residencies capped at 8 or 13 seats.
-- The Page: https://casajosefin.com/page.html. CJ-P-001: Chapbook 001, 100 numbered copies; saddle-stitched monographs, recipes, and domestic-labor essays.
-- The House: https://casajosefin.com/house.html. CJ-H-001: Manual 001; domestic order, spatial reset, pantry architecture, and non-toxic material care.
-- Parent registry: https://seveneightythree.com/universe.json
-- Parent crawler index: https://seveneightythree.com/llms.txt
-- Architecture principal: https://gothamgay.com/
+- https://gothamgay.com/about/
+- https://gothamgay.com/about/index.md
+- https://gothamgay.com/cv/
+- https://gothamgay.com/portfolio/
+- https://gothamgay.com/universe-api/

@@ -123,6 +123,20 @@
       "creator": {
         "@id": "https://gothamgay.com/#person"
       }
+    },
+    {
+      "@type": "Book",
+      "@id": "https://gothamgay.com/#graduation",
+      "name": "Graduation",
+      "genre": [
+        "Autofiction",
+        "Hybrid collection"
+      ],
+      "creativeWorkStatus": "In progress",
+      "description": "Forthcoming debut autofiction novel and hybrid collection by Argelys Samuel Oriach.",
+      "author": {
+        "@id": "https://gothamgay.com/#person"
+      }
     }
   ]
 }

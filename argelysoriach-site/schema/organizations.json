@@ -180,6 +180,15 @@
       "brand": {
         "@id": "https://casajosefin.com/#organization"
       }
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://pogo.vet/#organization",
+      "name": "Pogo",
+      "url": "https://pogo.vet/",
+      "parentOrganization": {
+        "@id": "https://seveneightythree.com/#organization"
+      }
     }
   ]
 }

@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "canonical_url": "https://seveneightythree.com/universe.json",
+  "canonical_url": "https://gothamgay.com/",
   "resonance_hz": 7.83,
   "nodes": [
     {
@@ -74,6 +74,56 @@
     {
       "id": "communal-foundation",
       "domain": "communalfoundation.org"
+    }
+  ],
+  "node_id": "gothamgay-01",
+  "canonical_domain": "gothamgay.com",
+  "migrated_from": [
+    "https://argelysoriach.com/"
+  ],
+  "principal": "Argelys Samuel Oriach",
+  "person_id": "https://gothamgay.com/#person",
+  "website_id": "https://gothamgay.com/#website",
+  "linked_nodes": [
+    {
+      "domain": "seveneightythree.com",
+      "url": "https://seveneightythree.com/"
+    },
+    {
+      "domain": "wildlakestudio.com",
+      "url": "https://wildlakestudio.com/"
+    },
+    {
+      "domain": "thisisnotalovestory.net",
+      "url": "https://thisisnotalovestory.net/"
+    },
+    {
+      "domain": "pogo.vet",
+      "url": "https://pogo.vet/"
+    },
+    {
+      "domain": "basalt.fm",
+      "url": "https://basalt.fm/"
+    },
+    {
+      "domain": "bullpen.vip",
+      "url": "https://bullpen.vip/"
+    },
+    {
+      "domain": "apsis.club",
+      "url": "https://apsis.club/"
+    },
+    {
+      "domain": "communalfoundation.org",
+      "url": "https://communalfoundation.org/"
+    },
+    {
+      "domain": "retentionrail.io",
+      "url": "https://retentionrail.io/"
+    },
+    {
+      "domain": "casajosefin.com",
+      "url": "https://casajosefin.com/"
     }
   ]
 }

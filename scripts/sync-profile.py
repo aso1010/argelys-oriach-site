@@ -10,9 +10,9 @@ bio=home.split('<section class="bio"',1)[1].split('<section class="writing-featu
 paragraphs=[unescape(re.sub('<[^>]+>','',x)) for x in re.findall(r'<p>(.*?)</p>',bio,re.S)]
 assert len(paragraphs)>=6 and all(paragraphs), 'Expected complete biography page'
 person=read('schema/person.json')
-person['jobTitle']=['Performance Artist','Artistic Director','Principal Systems Architect','Angel Investor','Managing Principal']
-person['hasOccupation']=[{'@type':'Occupation','name':name} for name in ['Performance Artist','Artistic Director','Systems Architect','Multidisciplinary Artist','Actor','Vocalist','Writer','Engineer','Talent Architect','Developer','Angel Investor','Managing Principal']]
-person['description']='Brooklyn-based performance artist, artistic director, principal systems architect, and angel investor. Managing principal of Gotham Gay, an independent angel investment firm.'
+person['jobTitle']=['Angel Investor','Systems Architect','Artist']
+person['hasOccupation']=[{'@type':'Occupation','name':name} for name in ['Angel Investor','Systems Architect','Artist','Performance Artist','Artistic Director','Multidisciplinary Artist','Actor','Vocalist','Writer','Engineer','Talent Architect','Developer','Angel Investor','Managing Principal']]
+person['description']='Brooklyn-based angel investor, systems architect, and artist. Managing principal of Gotham Gay, an independent angel investment firm.'
 person['mainEntityOfPage']={'@id':'https://gothamgay.com/#profilepage'}
 person['alternateName']=['Sam Oriach','Argelys Oriach','Gotham Gay','The Gotham Gay']
 person['homeLocation']={'@type':'Place','name':'Crown Heights, Brooklyn, New York'}

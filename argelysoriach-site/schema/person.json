@@ -15,13 +15,23 @@
   "url": "https://gothamgay.com/",
   "email": "hello@seveneightythree.com",
   "jobTitle": [
-    "Performance Artist",
-    "Artistic Director",
-    "Principal Systems Architect",
     "Angel Investor",
-    "Managing Principal"
+    "Systems Architect",
+    "Artist"
   ],
   "hasOccupation": [
+    {
+      "@type": "Occupation",
+      "name": "Angel Investor"
+    },
+    {
+      "@type": "Occupation",
+      "name": "Systems Architect"
+    },
+    {
+      "@type": "Occupation",
+      "name": "Artist"
+    },
     {
       "@type": "Occupation",
       "name": "Performance Artist"
@@ -29,10 +39,6 @@
     {
       "@type": "Occupation",
       "name": "Artistic Director"
-    },
-    {
-      "@type": "Occupation",
-      "name": "Systems Architect"
     },
     {
       "@type": "Occupation",
@@ -64,14 +70,10 @@
     },
     {
       "@type": "Occupation",
-      "name": "Angel Investor"
-    },
-    {
-      "@type": "Occupation",
       "name": "Managing Principal"
     }
   ],
-  "description": "Brooklyn-based performance artist, artistic director, principal systems architect, and angel investor. Managing principal of Gotham Gay, an independent angel investment firm.",
+  "description": "Brooklyn-based angel investor, systems architect, and artist. Managing principal of Gotham Gay, an independent angel investment firm.",
   "birthDate": "1993-08-29T15:45:00-04:00",
   "birthPlace": {
     "@type": "Place",

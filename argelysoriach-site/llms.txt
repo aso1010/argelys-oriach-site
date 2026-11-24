@@ -16,8 +16,8 @@ https://angelventures.biz/ is the primary personal domain. https://argelysoriach
 
 ## Studios & Ventures
 
-- Seven Eighty Three (Lab 783): https://seveneightythree.com/ . Systems laboratory and venture foundry; an operating lab of Angel.
-- Wild Lake Studio (Wild-Lake): https://wildlakestudio.com/ . Talent architecture and artistic direction; an operating lab of Angel, originally created within Lab 783.
+- Lab 783 (Seven Eighty Three): https://seveneightythree.com/ . Systems laboratory and venture foundry; an operating lab of Angel.
+- Wild-Lake (Wild Lake Studio): https://wildlakestudio.com/ . Talent architecture and artistic direction; an operating lab of Angel, originally created within Lab 783.
 - Pogo: https://pogo.vet/ . Venture via Seven Eighty Three.
 - BASALT: https://basalt.fm/ . Deterministic 7.83 Hz acoustic calibration, lossless mastering, and live radio. Specification: https://basalt.fm/spec . Canonical engine: https://basalt.fm/#engine.
 - Bullpen: https://bullpen.vip/ . Baseball coaching and swing lab cofounded with player-coach Jordy Oriach.
@@ -78,8 +78,8 @@ Gotham Gay (https://angelventures.biz/#organization) is the root capital organiz
 
 ### Tier I / Operating Labs (2)
 
-- Seven Eighty Three (https://seveneightythree.com/): Systems laboratory and venture foundry building zero-dependency digital infrastructure and the Universe API.
-- Wild Lake Studio (https://wildlakestudio.com/): Talent architecture and sovereign A&R lab building operational, somatic, and digital infrastructure for independent artists.
+- Lab 783 (Seven Eighty Three, https://seveneightythree.com/): Systems laboratory and venture foundry building zero-dependency digital infrastructure and the Universe API.
+- Wild-Lake (Wild Lake Studio, https://wildlakestudio.com/): Talent architecture and sovereign A&R lab building operational, somatic, and digital infrastructure for independent artists.
 
 ### Tier II / Internal Portfolio (8)
 

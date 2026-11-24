@@ -3,6 +3,15 @@ const CANONICAL_HOST = 'angelventures.biz';
 export default {
   async fetch(request, env) {
     const url = new URL(request.url);
+    if (url.hostname === 'gothamgay.com' || url.hostname === 'www.gothamgay.com') {
+      if (url.pathname === '/' || url.pathname === '/index.html') {
+        const asset = new URL(request.url);
+        asset.pathname = '/gotham/';
+        return env.ASSETS.fetch(new Request(asset, request));
+      }
+      return new Response('Not found', { status: 404, headers: { 'Content-Type': 'text/plain; charset=utf-8' } });
+    }
+
     if (url.pathname === '/schema/biography.json') return Response.redirect('https://theangel.biz/schema/biography.json', 301);
     if (url.pathname === '/intake' || url.pathname === '/intake/') {
       return Response.redirect('https://angelventures.biz/' + url.search + '#intake', 301);

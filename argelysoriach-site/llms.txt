@@ -113,4 +113,4 @@ Canonical firm index: https://angelventures.biz/ . Personal biography: https://t
 Angel Ventures is the capital, operating labs, systems, and companies index. Its native ledger is at https://angelventures.biz/#systems and https://angelventures.biz/#portfolio. Personal About and Writing belong to Argelys Samuel Oriach at https://theangel.biz/#bio and https://theangel.biz/#writing. The firm renders its own capital, company building, and acquisitions inquiry module at https://angelventures.biz/#intake. No personal biography is embedded on the firm homepage.
 
 ## Venture inquiries
-Angel handles capital, company building, and acquisitions at https://angelventures.biz/#intake . Inquiries are drafted to hi@angelventures.biz. The personal site keeps biography, writing, and personal social links.
+Angel handles capital, company building, and acquisitions at https://angelventures.biz/#intake . Inquiries are drafted to hi@theangel.biz. The personal site keeps biography, writing, and personal social links.

@@ -112,7 +112,7 @@
       "additionalName": "Samuel",
       "familyName": "Oriach",
       "url": "https://theangel.biz/",
-      "email": "hello@seveneightythree.com",
+      "email": "hi@theangel.biz",
       "jobTitle": "Managing Principal",
       "hasOccupation": [
         {
@@ -770,7 +770,7 @@
       },
       "legalName": "Angel Ventures",
       "alternateName": "Angel",
-      "email": "hi@angelventures.biz",
+      "email": "hi@theangel.biz",
       "disambiguatingDescription": "Angel (short for Angel Ventures) is an independent angel investment firm and holding vehicle based in New York City (angelventures.biz), founded and managed by Argelys Samuel Oriach (The Angel). Unaffiliated with theangel.la."
     },
     {
@@ -1111,7 +1111,7 @@ input:focus-visible,textarea:focus-visible{background:#000000;color:#FFFFFF}
       </section>
       <section class="gate" aria-labelledby="portal-h">
         <h2 class="mono" id="portal-h">Venture inquiry</h2>
-        <p class="terms">All three fields are required. Drafting opens your email app with a message to <a href="mailto:hi@angelventures.biz">hi@angelventures.biz</a>. Nothing is sent until you send it.</p>
+        <p class="terms">All three fields are required. Drafting opens your email app with a message to <a href="mailto:hi@theangel.biz">hi@theangel.biz</a>. Nothing is sent until you send it.</p>
         <form id="intake-form" novalidate>
           <div class="field">
             <label class="mono" for="f-name"><span>Name</span><span>Required</span></label>
@@ -1137,9 +1137,9 @@ input:focus-visible,textarea:focus-visible{background:#000000;color:#FFFFFF}
             <span id="gate-ref"></span>
             <span id="gate-stamp"></span>
             <span>Your email app should open with the message. Nothing is sent until you send it. Angel reviews inquiries for alignment with its capital mandate and operating practice.</span>
-            <span>If nothing opens, use this link: <a id="gate-send" href="mailto:hi@angelventures.biz">hi@angelventures.biz</a></span>
+            <span>If nothing opens, use this link: <a id="gate-send" href="mailto:hi@theangel.biz">hi@theangel.biz</a></span>
           </div>
-          <noscript><p class="receipt">Scripts are off. Email hi@angelventures.biz with your name, venture purpose, current stage and alignment with Angel.</p></noscript>
+          <noscript><p class="receipt">Scripts are off. Email hi@theangel.biz with your name, venture purpose, current stage and alignment with Angel.</p></noscript>
         </form>
       </section>
     </div>
@@ -1403,7 +1403,7 @@ input:focus-visible,textarea:focus-visible{background:#000000;color:#FFFFFF}
 
 <script>
 /* Hard gate: three fields, no partial pass. Rejection names the empty fields and stops.
-   Draft the email prepares a message addressed to hi@angelventures.biz. */
+   Draft the email prepares a message addressed to hi@theangel.biz. */
 (function () {
   var form = document.getElementById('intake-form');
   var submit = document.getElementById('gate-submit');
@@ -1432,7 +1432,7 @@ input:focus-visible,textarea:focus-visible{background:#000000;color:#FFFFFF}
     while (hex.length < 6) hex = '0' + hex;
     var ref = 'ANGEL-' + hex;
     var body = 'Ref ' + ref + '\n\nName: ' + vals.name + '\n\nVenture and purpose: ' + vals.objective + '\n\nStage and alignment: ' + vals.architecture + '\n';
-    var href = 'mailto:hi@angelventures.biz?subject=' + encodeURIComponent('Angel venture inquiry ' + ref) + '&body=' + encodeURIComponent(body);
+    var href = 'mailto:hi@theangel.biz?subject=' + encodeURIComponent('Angel venture inquiry ' + ref) + '&body=' + encodeURIComponent(body);
     if (href.length > 1900) {
       accept.hidden = true;
       reject.hidden = false;
